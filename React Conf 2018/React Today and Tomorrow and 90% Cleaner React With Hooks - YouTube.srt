@@ -1,0 +1,7184 @@
+1
+00:00:00,350 --> 00:00:06,470
+good morning everyone whoo good morning
+
+2
+00:00:06,470 --> 00:00:11,400
+welcome to React Conf 2018 my name is
+
+3
+00:00:11,400 --> 00:00:13,139
+Tom Occhino I'm the engineering director
+
+4
+00:00:13,139 --> 00:00:15,420
+of the react group at Facebook I'm
+
+5
+00:00:15,420 --> 00:00:16,560
+really excited to be here I'm actually
+
+6
+00:00:16,560 --> 00:00:18,750
+really excited to talk to people from
+
+7
+00:00:18,750 --> 00:00:20,039
+all over the country and actually all
+
+8
+00:00:20,039 --> 00:00:22,529
+over the world and I know joining us on
+
+9
+00:00:22,529 --> 00:00:23,670
+the live stream we have people from all
+
+10
+00:00:23,670 --> 00:00:25,410
+over the place so thank you for being
+
+11
+00:00:25,410 --> 00:00:27,180
+here with us before we get started just
+
+12
+00:00:27,180 --> 00:00:29,550
+a couple of quick logistics if you
+
+13
+00:00:29,550 --> 00:00:30,960
+haven't read the code of conduct yet
+
+14
+00:00:30,960 --> 00:00:33,600
+please do so it's posted by registration
+
+15
+00:00:33,600 --> 00:00:36,390
+it's posted on the website follow it if
+
+16
+00:00:36,390 --> 00:00:38,790
+you have any issues please reach out to
+
+17
+00:00:38,790 --> 00:00:40,680
+me or anyone on the staff the staff is
+
+18
+00:00:40,680 --> 00:00:44,160
+all wearing purple shirts we got a great
+
+19
+00:00:44,160 --> 00:00:45,870
+lineup of talks they're gonna be in this
+
+20
+00:00:45,870 --> 00:00:49,680
+room today and tomorrow but if you need
+
+21
+00:00:49,680 --> 00:00:52,590
+anything else if you need to just get
+
+22
+00:00:52,590 --> 00:00:55,079
+away if you need to make a phone call we
+
+23
+00:00:55,079 --> 00:00:56,579
+have room set up actually directly
+
+24
+00:00:56,579 --> 00:00:58,649
+behind me the breakfast room is
+
+25
+00:00:58,649 --> 00:01:01,680
+available and in the hallway here we're
+
+26
+00:01:01,680 --> 00:01:03,570
+gonna have the fiber arts circle
+
+27
+00:01:03,570 --> 00:01:05,880
+knitting tract with Jen lucre so check
+
+28
+00:01:05,880 --> 00:01:07,710
+that out as well if you want to get away
+
+29
+00:01:07,710 --> 00:01:10,710
+from the talks lastly there's gonna be
+
+30
+00:01:10,710 --> 00:01:12,390
+more updates throughout the day we'll
+
+31
+00:01:12,390 --> 00:01:17,490
+have lunch at noon but before the rest
+
+32
+00:01:17,490 --> 00:01:20,340
+of the the talks here I just wanted to
+
+33
+00:01:20,340 --> 00:01:23,030
+give a big thank you to the organizers
+
+34
+00:01:23,030 --> 00:01:25,680
+putting this on is a lot of work we were
+
+35
+00:01:25,680 --> 00:01:26,820
+a little worried that we weren't gonna
+
+36
+00:01:26,820 --> 00:01:28,110
+be able to put it on this year because
+
+37
+00:01:28,110 --> 00:01:30,270
+it is so much work but we found the
+
+38
+00:01:30,270 --> 00:01:33,270
+organizers of reactor rally ng-conf
+
+39
+00:01:33,270 --> 00:01:37,710
+jameson matt and and joe and then zero
+
+40
+00:01:37,710 --> 00:01:39,530
+slope events really helped us get this
+
+41
+00:01:39,530 --> 00:01:41,460
+put together this year and i'm really
+
+42
+00:01:41,460 --> 00:01:42,899
+really happy that we were able to do it
+
+43
+00:01:42,899 --> 00:01:45,540
+thank you all for being here the first
+
+44
+00:01:45,540 --> 00:01:47,640
+talk is is our keynote talk with Sophie
+
+45
+00:01:47,640 --> 00:01:50,189
+Alpert and Dan Abramov we're all really
+
+46
+00:01:50,189 --> 00:01:51,659
+looking forward to this I'm gonna invite
+
+47
+00:01:51,659 --> 00:01:54,090
+Sophie up first to kick things off for
+
+48
+00:01:54,090 --> 00:01:57,050
+us thanks
+
+49
+00:01:57,050 --> 00:02:05,060
+[Applause]
+
+50
+00:02:05,060 --> 00:02:12,120
+good morning see ya there hello everyone
+
+51
+00:02:12,120 --> 00:02:14,670
+welcome to react calm I'm really excited
+
+52
+00:02:14,670 --> 00:02:16,410
+to be here I'm really excited for the
+
+53
+00:02:16,410 --> 00:02:19,080
+stuff that we have to announce for you
+
+54
+00:02:19,080 --> 00:02:22,310
+this week my name is Sophie Alpert I
+
+55
+00:02:22,310 --> 00:02:24,720
+Sophie bits on the Internet
+
+56
+00:02:24,720 --> 00:02:26,870
+I manage the react core team at Facebook
+
+57
+00:02:26,870 --> 00:02:30,270
+by any better that you use react is
+
+58
+00:02:30,270 --> 00:02:30,990
+doing great
+
+59
+00:02:30,990 --> 00:02:32,850
+our npm downloads are up 70%
+
+60
+00:02:32,850 --> 00:02:35,760
+year-over-year the chrome dev tools
+
+61
+00:02:35,760 --> 00:02:37,890
+extension for react dev tools has been
+
+62
+00:02:37,890 --> 00:02:39,450
+installed by one and a quarter million
+
+63
+00:02:39,450 --> 00:02:42,270
+developers and I can show you this list
+
+64
+00:02:42,270 --> 00:02:44,730
+of companies it's using react although
+
+65
+00:02:44,730 --> 00:02:46,140
+at this point it's so long it's kind of
+
+66
+00:02:46,140 --> 00:02:47,670
+hard to tell how much it changes each
+
+67
+00:02:47,670 --> 00:02:51,930
+year for another point of data we can
+
+68
+00:02:51,930 --> 00:02:53,970
+look at Google Trends which shows web
+
+69
+00:02:53,970 --> 00:02:56,010
+search traffic so it searches for react
+
+70
+00:02:56,010 --> 00:02:58,230
+continue to go up hopefully that means
+
+71
+00:02:58,230 --> 00:02:59,970
+more people are using react not that
+
+72
+00:02:59,970 --> 00:03:04,170
+it's getting more confusing but for a
+
+73
+00:03:04,170 --> 00:03:06,630
+point of comparison we can look at a
+
+74
+00:03:06,630 --> 00:03:10,200
+jQuery which we have just passed for the
+
+75
+00:03:10,200 --> 00:03:15,820
+first time in history
+
+76
+00:03:15,820 --> 00:03:19,160
+but this also shows that we have a lot
+
+77
+00:03:19,160 --> 00:03:21,740
+more room to grow I was procrastinating
+
+78
+00:03:21,740 --> 00:03:24,290
+when I was writing this talk so I was
+
+79
+00:03:24,290 --> 00:03:26,330
+curious to see what else react is more
+
+80
+00:03:26,330 --> 00:03:29,770
+popular than whoops
+
+81
+00:03:29,770 --> 00:03:35,690
+spoiled my joke but react is more
+
+82
+00:03:35,690 --> 00:03:37,580
+popular I found out than renewable
+
+83
+00:03:37,580 --> 00:03:40,820
+energy it's also more popular than
+
+84
+00:03:40,820 --> 00:03:43,400
+orange juice just think about how common
+
+85
+00:03:43,400 --> 00:03:45,350
+orange juice is right and not only that
+
+86
+00:03:45,350 --> 00:03:47,360
+it's more popular than renewable energy
+
+87
+00:03:47,360 --> 00:03:50,060
+and orange juice put together so I think
+
+88
+00:03:50,060 --> 00:03:53,180
+we have a lot to be proud of but but
+
+89
+00:03:53,180 --> 00:03:56,480
+enough about these numbers what I really
+
+90
+00:03:56,480 --> 00:03:59,900
+like to talk about today is our mission
+
+91
+00:03:59,900 --> 00:04:02,240
+would react
+
+92
+00:04:02,240 --> 00:04:04,010
+ever since react was released in 2013
+
+93
+00:04:04,010 --> 00:04:05,450
+our overarching goal
+
+94
+00:04:05,450 --> 00:04:08,480
+our primary mission has been to make it
+
+95
+00:04:08,480 --> 00:04:11,750
+easier to build great UIs and so when
+
+96
+00:04:11,750 --> 00:04:14,120
+we're adding new features we always try
+
+97
+00:04:14,120 --> 00:04:15,620
+to be very deliberate we want to
+
+98
+00:04:15,620 --> 00:04:16,970
+consider a bunch of things when deciding
+
+99
+00:04:16,970 --> 00:04:19,520
+whether to add a new API if it makes it
+
+100
+00:04:19,520 --> 00:04:20,989
+possible to do something you couldn't do
+
+101
+00:04:20,989 --> 00:04:23,480
+before if it can dramatically simplify
+
+102
+00:04:23,480 --> 00:04:25,940
+the code around react in your components
+
+103
+00:04:25,940 --> 00:04:27,470
+and libraries so that you all have less
+
+104
+00:04:27,470 --> 00:04:29,540
+work to do and users have less code to
+
+105
+00:04:29,540 --> 00:04:32,120
+download that's a win or if it helps
+
+106
+00:04:32,120 --> 00:04:33,950
+encourage best practices like code
+
+107
+00:04:33,950 --> 00:04:35,450
+splitting if we make it easier to code
+
+108
+00:04:35,450 --> 00:04:37,730
+split your app into multiple bundles
+
+109
+00:04:37,730 --> 00:04:39,919
+then our hope is that your apps will end
+
+110
+00:04:39,919 --> 00:04:41,720
+up being faster so that's why we add
+
+111
+00:04:41,720 --> 00:04:43,430
+things like react dot lazy which we
+
+112
+00:04:43,430 --> 00:04:44,870
+announced two days ago you might have
+
+113
+00:04:44,870 --> 00:04:48,200
+seen it but thinking about this mission
+
+114
+00:04:48,200 --> 00:04:50,300
+make it easier to great to build great
+
+115
+00:04:50,300 --> 00:04:50,960
+UIs
+
+116
+00:04:50,960 --> 00:04:52,640
+there are a lot of different ways that
+
+117
+00:04:52,640 --> 00:04:55,730
+we approach this one way we do this is
+
+118
+00:04:55,730 --> 00:04:58,000
+trying to simplify things that are hard
+
+119
+00:04:58,000 --> 00:05:01,220
+if you saw Dayton Dan Abramov stalk from
+
+120
+00:05:01,220 --> 00:05:03,500
+JS conf Iceland then you saw a sneak
+
+121
+00:05:03,500 --> 00:05:06,440
+peek at suspense which is our idea about
+
+122
+00:05:06,440 --> 00:05:08,810
+how to dramatically simplify what's
+
+123
+00:05:08,810 --> 00:05:10,850
+required to do data fetching code
+
+124
+00:05:10,850 --> 00:05:13,940
+splitting and any kind of async data
+
+125
+00:05:13,940 --> 00:05:17,210
+dependencies in your app now another way
+
+126
+00:05:17,210 --> 00:05:19,730
+we try to improve react is by focusing
+
+127
+00:05:19,730 --> 00:05:22,520
+on performance if your app runs faster
+
+128
+00:05:22,520 --> 00:05:24,530
+your users are going to enjoy using it
+
+129
+00:05:24,530 --> 00:05:26,310
+more conversely if your
+
+130
+00:05:26,310 --> 00:05:28,889
+it's laggy if your app is janky then
+
+131
+00:05:28,889 --> 00:05:30,210
+there your users aren't gonna have a
+
+132
+00:05:30,210 --> 00:05:32,880
+great time so we try to spend time on
+
+133
+00:05:32,880 --> 00:05:35,190
+making react itself faster because if
+
+134
+00:05:35,190 --> 00:05:37,230
+react is faster out of the box you all
+
+135
+00:05:37,230 --> 00:05:38,880
+need to spend less time optimizing your
+
+136
+00:05:38,880 --> 00:05:41,970
+own code one recent performance related
+
+137
+00:05:41,970 --> 00:05:43,830
+effort that Dan also talked about in
+
+138
+00:05:43,830 --> 00:05:46,310
+Iceland as what we call time slicing
+
+139
+00:05:46,310 --> 00:05:49,470
+this is going to let you make sure that
+
+140
+00:05:49,470 --> 00:05:51,270
+the most important renders in your app
+
+141
+00:05:51,270 --> 00:05:53,340
+are processed first in order to unblock
+
+142
+00:05:53,340 --> 00:05:55,080
+the main thread and make your apps
+
+143
+00:05:55,080 --> 00:05:58,530
+faster and a third angle that we
+
+144
+00:05:58,530 --> 00:06:00,419
+approach our mission from is developer
+
+145
+00:06:00,419 --> 00:06:03,180
+tooling to help you debug and understand
+
+146
+00:06:03,180 --> 00:06:04,980
+your app from the start
+
+147
+00:06:04,980 --> 00:06:07,050
+react has included developer friendly
+
+148
+00:06:07,050 --> 00:06:09,990
+warnings to help point out problems
+
+149
+00:06:09,990 --> 00:06:11,580
+before you might otherwise notice them
+
+150
+00:06:11,580 --> 00:06:13,200
+and we've had the reactive tools
+
+151
+00:06:13,200 --> 00:06:15,120
+extension which lets you inspect and
+
+152
+00:06:15,120 --> 00:06:17,580
+debug your component trees and in react
+
+153
+00:06:17,580 --> 00:06:20,340
+16-5 we introduced a new profiler it's a
+
+154
+00:06:20,340 --> 00:06:24,660
+second I don't know what's up with this
+
+155
+00:06:24,660 --> 00:06:27,210
+clicker a second tab their profiler tab
+
+156
+00:06:27,210 --> 00:06:28,740
+that helps you understand what's
+
+157
+00:06:28,740 --> 00:06:32,690
+happening in your app and optimize it so
+
+158
+00:06:32,690 --> 00:06:35,580
+suspense time slicing and the profiler
+
+159
+00:06:35,580 --> 00:06:37,770
+are three of the new features that we've
+
+160
+00:06:37,770 --> 00:06:39,990
+been working on over the last year we're
+
+161
+00:06:39,990 --> 00:06:41,250
+really excited to tell you more about
+
+162
+00:06:41,250 --> 00:06:43,169
+them but that's actually not what I'm
+
+163
+00:06:43,169 --> 00:06:44,729
+here to talk about you're gonna have to
+
+164
+00:06:44,729 --> 00:06:46,169
+wait till Andrew and Brian's talk
+
+165
+00:06:46,169 --> 00:06:47,729
+tomorrow morning to hear about that
+
+166
+00:06:47,729 --> 00:06:50,850
+today I want to take a step back and
+
+167
+00:06:50,850 --> 00:06:52,080
+focus on something else
+
+168
+00:06:52,080 --> 00:06:55,470
+what I like to ask is what in react
+
+169
+00:06:55,470 --> 00:06:58,560
+still sucks and I have three problems
+
+170
+00:06:58,560 --> 00:07:01,410
+that I would like to talk through the
+
+171
+00:07:01,410 --> 00:07:03,990
+first one is reusing logic between
+
+172
+00:07:03,990 --> 00:07:07,320
+multiple components in react our main
+
+173
+00:07:07,320 --> 00:07:09,030
+building block for our applications is a
+
+174
+00:07:09,030 --> 00:07:10,710
+component and components form the
+
+175
+00:07:10,710 --> 00:07:13,350
+foundation of the two main patterns for
+
+176
+00:07:13,350 --> 00:07:15,030
+sharing code in react apps between
+
+177
+00:07:15,030 --> 00:07:16,500
+components which are higher-order
+
+178
+00:07:16,500 --> 00:07:19,560
+components and render props both of
+
+179
+00:07:19,560 --> 00:07:21,120
+these patterns are great for some cases
+
+180
+00:07:21,120 --> 00:07:22,979
+but they also come with a significant
+
+181
+00:07:22,979 --> 00:07:25,380
+downside you need to restructure your
+
+182
+00:07:25,380 --> 00:07:26,970
+app anytime you want to pull one of
+
+183
+00:07:26,970 --> 00:07:29,250
+these in in more complicated examples
+
+184
+00:07:29,250 --> 00:07:31,610
+this leads to what I call wrapper hell
+
+185
+00:07:31,610 --> 00:07:33,930
+most of us have seen component trees
+
+186
+00:07:33,930 --> 00:07:37,479
+that look something like this
+
+187
+00:07:37,479 --> 00:07:41,749
+and the the nesting you end up with
+
+188
+00:07:41,749 --> 00:07:43,519
+makes it difficult to follow the data
+
+189
+00:07:43,519 --> 00:07:45,259
+flow through the app it would be really
+
+190
+00:07:45,259 --> 00:07:47,239
+nice if there was some way to reuse this
+
+191
+00:07:47,239 --> 00:07:48,949
+sort of stateful logic without needing
+
+192
+00:07:48,949 --> 00:07:51,759
+to change the component hierarchy right
+
+193
+00:07:51,759 --> 00:07:53,899
+the second problem I would like to talk
+
+194
+00:07:53,899 --> 00:07:57,080
+about is giant components whose logic is
+
+195
+00:07:57,080 --> 00:07:59,179
+just sort of a tangled mess when you
+
+196
+00:07:59,179 --> 00:08:00,739
+look at a thousand line react component
+
+197
+00:08:00,739 --> 00:08:03,379
+chances are the logic is going to be
+
+198
+00:08:03,379 --> 00:08:04,369
+split across a lot of different
+
+199
+00:08:04,369 --> 00:08:06,080
+lifecycle methods in a way that's pretty
+
+200
+00:08:06,080 --> 00:08:08,239
+difficult to follow let's look at an
+
+201
+00:08:08,239 --> 00:08:10,459
+example let's say we have a class
+
+202
+00:08:10,459 --> 00:08:12,589
+component and in its component did mount
+
+203
+00:08:12,589 --> 00:08:14,119
+method it does a few different things it
+
+204
+00:08:14,119 --> 00:08:15,919
+subscribes to a datastore it sends off a
+
+205
+00:08:15,919 --> 00:08:17,739
+network requests and it starts a timer
+
+206
+00:08:17,739 --> 00:08:20,989
+well if we look at the component we'll
+
+207
+00:08:20,989 --> 00:08:23,029
+unmount method then we're going to see
+
+208
+00:08:23,029 --> 00:08:24,679
+basically the exact three opposite
+
+209
+00:08:24,679 --> 00:08:26,179
+things it needs to unsubscribe from the
+
+210
+00:08:26,179 --> 00:08:28,189
+store it needs to cancel that Network
+
+211
+00:08:28,189 --> 00:08:29,869
+request and it needs to stop the timers
+
+212
+00:08:29,869 --> 00:08:31,879
+and when it comes to implementing
+
+213
+00:08:31,879 --> 00:08:34,039
+component did update the logic tends to
+
+214
+00:08:34,039 --> 00:08:35,329
+get even trickier because you need to
+
+215
+00:08:35,329 --> 00:08:38,089
+compare the old and new props and and
+
+216
+00:08:38,089 --> 00:08:41,360
+and also mirror it again the same tasks
+
+217
+00:08:41,360 --> 00:08:43,099
+that you have in your other lifecycle
+
+218
+00:08:43,099 --> 00:08:49,189
+methods in this example each call here
+
+219
+00:08:49,189 --> 00:08:50,720
+is just one line so this is actually a
+
+220
+00:08:50,720 --> 00:08:52,100
+lot simpler than what you normally see
+
+221
+00:08:52,100 --> 00:08:53,990
+in your components in real-world
+
+222
+00:08:53,990 --> 00:08:55,730
+components you often end up with an even
+
+223
+00:08:55,730 --> 00:08:58,100
+more tangled mess because each each
+
+224
+00:08:58,100 --> 00:08:59,899
+individual task has to be split across
+
+225
+00:08:59,899 --> 00:09:02,240
+different life cycle methods that makes
+
+226
+00:09:02,240 --> 00:09:04,279
+it hard to tell if for instance you
+
+227
+00:09:04,279 --> 00:09:06,170
+forgot to clean up one of the resources
+
+228
+00:09:06,170 --> 00:09:07,639
+when you're unmounting your component
+
+229
+00:09:07,639 --> 00:09:08,810
+it's pretty hard to see that from the
+
+230
+00:09:08,810 --> 00:09:13,540
+code and the third thing that sucks is
+
+231
+00:09:13,540 --> 00:09:17,180
+the class understanding classes in
+
+232
+00:09:17,180 --> 00:09:18,620
+JavaScript can be pretty tricky and
+
+233
+00:09:18,620 --> 00:09:22,220
+today we require you to use class
+
+234
+00:09:22,220 --> 00:09:24,680
+components in order to access state and
+
+235
+00:09:24,680 --> 00:09:27,019
+life cycles if you've ever taken a
+
+236
+00:09:27,019 --> 00:09:28,880
+function component and converted it to a
+
+237
+00:09:28,880 --> 00:09:30,800
+class to add some state you know that
+
+238
+00:09:30,800 --> 00:09:31,910
+there's a fair amount of boilerplate
+
+239
+00:09:31,910 --> 00:09:35,089
+that's required in order to just define
+
+240
+00:09:35,089 --> 00:09:37,850
+a class component most beginners and
+
+241
+00:09:37,850 --> 00:09:40,660
+many experienced devs also tell us that
+
+242
+00:09:40,660 --> 00:09:43,819
+the way binding and this work in classes
+
+243
+00:09:43,819 --> 00:09:46,160
+is pretty confusing it's annoying to
+
+244
+00:09:46,160 --> 00:09:48,050
+have to think about and we also
+
+245
+00:09:48,050 --> 00:09:49,550
+frequently hear that people don't
+
+246
+00:09:49,550 --> 00:09:50,089
+exactly
+
+247
+00:09:50,089 --> 00:09:51,589
+know when to use function components
+
+248
+00:09:51,589 --> 00:09:52,970
+partly because there's always this fear
+
+249
+00:09:52,970 --> 00:09:54,740
+that you're gonna have to convert it to
+
+250
+00:09:54,740 --> 00:09:56,870
+a class later anyway and so you're like
+
+251
+00:09:56,870 --> 00:10:00,079
+should I should I do it now I don't know
+
+252
+00:10:00,079 --> 00:10:02,870
+and so I claim classes are hard for
+
+253
+00:10:02,870 --> 00:10:07,309
+humans but it's not just humans I claim
+
+254
+00:10:07,309 --> 00:10:09,819
+the classes are also hard for machines
+
+255
+00:10:09,819 --> 00:10:11,899
+if you ever looked at a minute ID
+
+256
+00:10:11,899 --> 00:10:13,550
+component file you'll see that all the
+
+257
+00:10:13,550 --> 00:10:16,699
+method names are still unmanned that if
+
+258
+00:10:16,699 --> 00:10:18,170
+you have a method that's completely
+
+259
+00:10:18,170 --> 00:10:19,759
+unused it doesn't get stripped out
+
+260
+00:10:19,759 --> 00:10:21,709
+that's because it's hard to tell at
+
+261
+00:10:21,709 --> 00:10:22,339
+compile time
+
+262
+00:10:22,339 --> 00:10:25,029
+exactly how all the methods fit together
+
+263
+00:10:25,029 --> 00:10:27,620
+we also found that classes make it
+
+264
+00:10:27,620 --> 00:10:29,269
+difficult for us to implement hot
+
+265
+00:10:29,269 --> 00:10:32,899
+reloading reliably and finally when we
+
+266
+00:10:32,899 --> 00:10:34,730
+were prototyping an optimizing compiler
+
+267
+00:10:34,730 --> 00:10:36,800
+to improve the performance of react
+
+268
+00:10:36,800 --> 00:10:39,319
+components we found that classes can
+
+269
+00:10:39,319 --> 00:10:41,329
+encourage some patterns that make it a
+
+270
+00:10:41,329 --> 00:10:46,009
+lot harder for compilers to optimize so
+
+271
+00:10:46,009 --> 00:10:47,420
+here are the three problems that we have
+
+272
+00:10:47,420 --> 00:10:52,300
+we using logic giant components and and
+
+273
+00:10:52,300 --> 00:10:55,399
+classes so reusing logic because you
+
+274
+00:10:55,399 --> 00:10:56,769
+often end up with this wrapper hell
+
+275
+00:10:56,769 --> 00:10:59,240
+giant components because you have the
+
+276
+00:10:59,240 --> 00:11:01,129
+logic split across different life cycles
+
+277
+00:11:01,129 --> 00:11:04,220
+and classes which are difficult for both
+
+278
+00:11:04,220 --> 00:11:07,459
+humans and machines so we think we have
+
+279
+00:11:07,459 --> 00:11:09,529
+a solution that can help with all three
+
+280
+00:11:09,529 --> 00:11:11,449
+of these we're really excited to share
+
+281
+00:11:11,449 --> 00:11:13,639
+it with you to tell you more about it I
+
+282
+00:11:13,639 --> 00:11:16,290
+want to welcome up Dan Abramov
+
+283
+00:11:16,290 --> 00:11:26,080
+[Applause]
+
+284
+00:11:26,080 --> 00:11:27,820
+[Applause]
+
+285
+00:11:27,820 --> 00:11:34,370
+hi my name is Dan I work on the react
+
+286
+00:11:34,370 --> 00:11:37,579
+team and this is my first time in three
+
+287
+00:11:37,579 --> 00:11:51,980
+homes and so Sophie talked about these
+
+288
+00:11:51,980 --> 00:11:54,560
+problems that I think most of you have
+
+289
+00:11:54,560 --> 00:11:58,100
+encountered in react development and of
+
+290
+00:11:58,100 --> 00:11:59,449
+course we could approach these problems
+
+291
+00:11:59,449 --> 00:12:02,329
+one by one so we could try to solve them
+
+292
+00:12:02,329 --> 00:12:05,660
+in isolation but it seems like solving
+
+293
+00:12:05,660 --> 00:12:08,649
+one of them makes some other one worse
+
+294
+00:12:08,649 --> 00:12:12,019
+so for example if we try to solve the
+
+295
+00:12:12,019 --> 00:12:14,899
+rapper hell by putting more logic into
+
+296
+00:12:14,899 --> 00:12:17,600
+components themselves then our
+
+297
+00:12:17,600 --> 00:12:19,699
+components become larger and harder to
+
+298
+00:12:19,699 --> 00:12:22,699
+refactor and then on the other hand if
+
+299
+00:12:22,699 --> 00:12:25,730
+we try to split the components apart
+
+300
+00:12:25,730 --> 00:12:29,839
+into smaller pieces and reuse those then
+
+301
+00:12:29,839 --> 00:12:31,370
+we end up with more nests than in the
+
+302
+00:12:31,370 --> 00:12:32,959
+component tree and we get the rapper
+
+303
+00:12:32,959 --> 00:12:37,339
+hell again and finally in either case we
+
+304
+00:12:37,339 --> 00:12:39,319
+have all the confusion that comes with
+
+305
+00:12:39,319 --> 00:12:42,050
+the classes so we think that this is
+
+306
+00:12:42,050 --> 00:12:43,730
+because these are not three separate
+
+307
+00:12:43,730 --> 00:12:47,480
+problems we think that this is these are
+
+308
+00:12:47,480 --> 00:12:51,290
+three symptoms of one problem and the
+
+309
+00:12:51,290 --> 00:12:53,569
+problem is that react does not provide a
+
+310
+00:12:53,569 --> 00:12:58,670
+simpler smaller lightweight primitive to
+
+311
+00:12:58,670 --> 00:13:01,490
+add state or lifecycle than a class
+
+312
+00:13:01,490 --> 00:13:05,180
+component and so once you add a class
+
+313
+00:13:05,180 --> 00:13:08,240
+component you can split it up further
+
+314
+00:13:08,240 --> 00:13:12,010
+without introducing the rapper helm and
+
+315
+00:13:12,010 --> 00:13:15,709
+in fact it's not a new problem so if you
+
+316
+00:13:15,709 --> 00:13:18,350
+use react for like more than a couple of
+
+317
+00:13:18,350 --> 00:13:20,870
+years you might remember then when react
+
+318
+00:13:20,870 --> 00:13:23,149
+came out it actually included a solution
+
+319
+00:13:23,149 --> 00:13:26,930
+to this problem it was make sense so
+
+320
+00:13:26,930 --> 00:13:30,319
+mix-ins allows you to reuse some methods
+
+321
+00:13:30,319 --> 00:13:31,880
+between classes and this way you
+
+322
+00:13:31,880 --> 00:13:34,430
+wouldn't have all these rappers so
+
+323
+00:13:34,430 --> 00:13:40,610
+should we add mix ends back to react
+
+324
+00:13:40,610 --> 00:13:44,130
+that's right no no we're not gonna do
+
+325
+00:13:44,130 --> 00:13:46,860
+that I mean the codes usually make sense
+
+326
+00:13:46,860 --> 00:13:49,050
+the rounds it's not like it's not broken
+
+327
+00:13:49,050 --> 00:13:51,420
+but we don't encourage using mix-ins and
+
+328
+00:13:51,420 --> 00:13:53,700
+react and if you curious why there is a
+
+329
+00:13:53,700 --> 00:13:56,730
+blog post that we wrote code called
+
+330
+00:13:56,730 --> 00:13:58,860
+mix-ins considered harmful on the react
+
+331
+00:13:58,860 --> 00:14:02,730
+log where we explain that we think in
+
+332
+00:14:02,730 --> 00:14:06,240
+our experience the problems that mix-ins
+
+333
+00:14:06,240 --> 00:14:08,820
+create are worse than the problems that
+
+334
+00:14:08,820 --> 00:14:11,610
+they solve so that's why we don't
+
+335
+00:14:11,610 --> 00:14:15,690
+encourage using mix-ins so perhaps we
+
+336
+00:14:15,690 --> 00:14:17,130
+could just can't solve this problem
+
+337
+00:14:17,130 --> 00:14:19,680
+maybe its inherent to the react
+
+338
+00:14:19,680 --> 00:14:21,600
+component model maybe we should just
+
+339
+00:14:21,600 --> 00:14:34,290
+accept it oh maybe in there is a perhaps
+
+340
+00:14:34,290 --> 00:14:36,330
+there is a different way we could write
+
+341
+00:14:36,330 --> 00:14:39,540
+our components that doesn't suffer from
+
+342
+00:14:39,540 --> 00:14:43,020
+either of these problems and that's what
+
+343
+00:14:43,020 --> 00:14:46,500
+I'm going to talk about today but before
+
+344
+00:14:46,500 --> 00:14:48,660
+I start I want to touch a little bit on
+
+345
+00:14:48,660 --> 00:14:51,780
+the way we approach making changes and
+
+346
+00:14:51,780 --> 00:14:55,020
+additions to react which is a year ago
+
+347
+00:14:55,020 --> 00:14:58,110
+we set up an RFC process so RFC stands
+
+348
+00:14:58,110 --> 00:15:00,660
+for request for comments and it means
+
+349
+00:15:00,660 --> 00:15:02,700
+that whenever we want to make or
+
+350
+00:15:02,700 --> 00:15:04,500
+somebody else wants to make a
+
+351
+00:15:04,500 --> 00:15:07,440
+substantial change or addition to react
+
+352
+00:15:07,440 --> 00:15:10,650
+they need to write up a proposal with
+
+353
+00:15:10,650 --> 00:15:13,080
+detail in the motivation and the
+
+354
+00:15:13,080 --> 00:15:15,480
+detailed design of how this will work
+
+355
+00:15:15,480 --> 00:15:20,070
+and so that's what we're going to do
+
+356
+00:15:20,070 --> 00:15:23,340
+we're excited to announce that we are
+
+357
+00:15:23,340 --> 00:15:25,860
+ready to present a proposal for how we
+
+358
+00:15:25,860 --> 00:15:29,340
+can solve these three problems
+
+359
+00:15:29,340 --> 00:15:33,240
+and importantly this proposal does not
+
+360
+00:15:33,240 --> 00:15:35,640
+have breaking changes or deprecations in
+
+361
+00:15:35,640 --> 00:15:39,810
+it it is strictly additive it is opt-in
+
+362
+00:15:39,810 --> 00:15:44,610
+and it adds some new api's which happens
+
+363
+00:15:44,610 --> 00:15:47,430
+when they try to solve problems and we
+
+364
+00:15:47,430 --> 00:15:49,529
+would love to hear your feedback on this
+
+365
+00:15:49,529 --> 00:15:52,440
+proposal which is why we're we're going
+
+366
+00:15:52,440 --> 00:15:55,260
+to publish it today and we thought about
+
+367
+00:15:55,260 --> 00:15:57,330
+many ways we could share this proposal
+
+368
+00:15:57,330 --> 00:15:59,190
+so maybe we just like right off in there
+
+369
+00:15:59,190 --> 00:16:03,060
+write up an RFC and post it but since we
+
+370
+00:16:03,060 --> 00:16:05,520
+were going to run react Kampf anyway we
+
+371
+00:16:05,520 --> 00:16:09,470
+just decided to to show it here and
+
+372
+00:16:09,470 --> 00:16:13,530
+we're going to demo
+
+373
+00:16:13,530 --> 00:16:23,299
+[Applause]
+
+374
+00:16:23,299 --> 00:16:30,749
+don't worry Damaris the displays sorry
+
+375
+00:16:30,749 --> 00:16:43,490
+technical glitch
+
+376
+00:16:43,490 --> 00:16:46,100
+can somebody who understands projectors
+
+377
+00:16:46,100 --> 00:16:57,070
+help me can I make it mirror my desktop
+
+378
+00:16:57,070 --> 00:17:05,110
+please
+
+379
+00:17:05,110 --> 00:17:10,790
+yeah
+
+380
+00:17:10,790 --> 00:17:14,190
+okay but it doesn't show on the screen I
+
+381
+00:17:14,190 --> 00:17:17,800
+don't see anything
+
+382
+00:17:17,800 --> 00:17:32,210
+that's that's the problem that I had
+
+383
+00:17:32,210 --> 00:17:41,000
+okay disaster averted
+
+384
+00:17:41,000 --> 00:17:45,840
+alright um let me check the font size a
+
+385
+00:17:45,840 --> 00:17:51,780
+little bit you see it fell all right
+
+386
+00:17:51,780 --> 00:17:57,960
+so here is a simple react component that
+
+387
+00:17:57,960 --> 00:18:00,660
+just it is a row this is just some
+
+388
+00:18:00,660 --> 00:18:03,690
+styling and it it renders a person's
+
+389
+00:18:03,690 --> 00:18:06,990
+name and so let's say that we want this
+
+390
+00:18:06,990 --> 00:18:11,160
+name to be editable so how do you do it
+
+391
+00:18:11,160 --> 00:18:13,380
+in react normally well like if we want
+
+392
+00:18:13,380 --> 00:18:16,020
+to add an input there we need to return
+
+393
+00:18:16,020 --> 00:18:18,450
+this component into a class add some
+
+394
+00:18:18,450 --> 00:18:20,220
+local state to it and let that state
+
+395
+00:18:20,220 --> 00:18:22,560
+drive the input so that's exactly what
+
+396
+00:18:22,560 --> 00:18:25,010
+I'm going to do that's what we do today
+
+397
+00:18:25,010 --> 00:18:29,210
+so I'm gonna do the expert default class
+
+398
+00:18:29,210 --> 00:18:36,540
+greeting extense react component and so
+
+399
+00:18:36,540 --> 00:18:38,730
+I'm going to use only stable JavaScript
+
+400
+00:18:38,730 --> 00:18:44,660
+syntax so constructor props super props
+
+401
+00:18:44,660 --> 00:18:49,490
+there is the state going to initialize
+
+402
+00:18:49,490 --> 00:18:54,780
+name to Mary here and I'm going to
+
+403
+00:18:54,780 --> 00:18:58,140
+declare a random method and copy and
+
+404
+00:18:58,140 --> 00:19:05,770
+paste this
+
+405
+00:19:05,770 --> 00:19:08,500
+sorry
+
+406
+00:19:08,500 --> 00:19:11,860
+okay and so I want this to be instead of
+
+407
+00:19:11,860 --> 00:19:13,270
+just rendering the name I want the
+
+408
+00:19:13,270 --> 00:19:15,220
+surrender and input so I'm replacing
+
+409
+00:19:15,220 --> 00:19:20,140
+this by an input and the value of the
+
+410
+00:19:20,140 --> 00:19:24,270
+input is this that state that name and
+
+411
+00:19:24,270 --> 00:19:26,980
+if I make a change I want to call this
+
+412
+00:19:26,980 --> 00:19:30,730
+dot handle name change that's going to
+
+413
+00:19:30,730 --> 00:19:34,390
+be my change color and I'm going to
+
+414
+00:19:34,390 --> 00:19:37,150
+declare it here when the name changes we
+
+415
+00:19:37,150 --> 00:19:40,480
+call says state like we normally do and
+
+416
+00:19:40,480 --> 00:19:43,720
+we set the name to eat at target dot
+
+417
+00:19:43,720 --> 00:19:50,260
+value right so now if I edit the okay so
+
+418
+00:19:50,260 --> 00:19:56,890
+I I need to bind sorry I need to find
+
+419
+00:19:56,890 --> 00:20:00,760
+the events on there okay so now I can
+
+420
+00:20:00,760 --> 00:20:04,210
+actually edit it and it works so a
+
+421
+00:20:04,210 --> 00:20:07,270
+familiar class component is if you work
+
+422
+00:20:07,270 --> 00:20:09,100
+with reactive properly right a lot of
+
+423
+00:20:09,100 --> 00:20:15,880
+those but let's take a step back what if
+
+424
+00:20:15,880 --> 00:20:19,120
+we didn't have to write a class when we
+
+425
+00:20:19,120 --> 00:20:22,240
+wanted to use state so I'm not sure how
+
+426
+00:20:22,240 --> 00:20:24,820
+that's gonna work but I'll just start
+
+427
+00:20:24,820 --> 00:20:26,380
+with what I know I want to render an
+
+428
+00:20:26,380 --> 00:20:30,210
+input so I'm gonna put an input here and
+
+429
+00:20:30,210 --> 00:20:32,799
+the input has a valley and that Valley
+
+430
+00:20:32,799 --> 00:20:35,289
+is the current name so I'll just pass
+
+431
+00:20:35,289 --> 00:20:38,530
+name I don't know where to get name from
+
+432
+00:20:38,530 --> 00:20:42,179
+so it doesn't come from props
+
+433
+00:20:42,179 --> 00:20:46,230
+I'll just declare it and I don't know
+
+434
+00:20:46,230 --> 00:20:50,020
+I'll fill it in later it's gonna have a
+
+435
+00:20:50,020 --> 00:20:51,610
+change down there as well so I'm going
+
+436
+00:20:51,610 --> 00:20:56,909
+to declare unchanged handle name change
+
+437
+00:20:56,909 --> 00:21:02,049
+and I'm adding a function here takes an
+
+438
+00:21:02,049 --> 00:21:05,980
+event and then here I want to tell react
+
+439
+00:21:05,980 --> 00:21:09,250
+to set the name to something but again
+
+440
+00:21:09,250 --> 00:21:11,020
+I'm not sure how to do that from a
+
+441
+00:21:11,020 --> 00:21:12,820
+functional component so I'll just call
+
+442
+00:21:12,820 --> 00:21:15,100
+something called set name
+
+443
+00:21:15,100 --> 00:21:20,830
+with the current input value and I'll
+
+444
+00:21:20,830 --> 00:21:30,390
+just declare it here
+
+445
+00:21:30,390 --> 00:21:32,860
+all right so these two things they're
+
+446
+00:21:32,860 --> 00:21:34,900
+closely related right so one of them is
+
+447
+00:21:34,900 --> 00:21:37,450
+the current value of the name state
+
+448
+00:21:37,450 --> 00:21:41,260
+variable and the other is a function
+
+449
+00:21:41,260 --> 00:21:44,520
+that lets us set the name state variable
+
+450
+00:21:44,520 --> 00:21:46,750
+and so because these things are closely
+
+451
+00:21:46,750 --> 00:21:48,640
+related I'm actually going to put them
+
+452
+00:21:48,640 --> 00:21:53,770
+together as a pair of valleys so I'm
+
+453
+00:21:53,770 --> 00:21:55,210
+going to get them together from
+
+454
+00:21:55,210 --> 00:21:59,040
+somewhere so where do I get them from
+
+455
+00:21:59,040 --> 00:22:03,870
+from react local state so how do I use
+
+456
+00:22:03,870 --> 00:22:06,190
+react local state from a function
+
+457
+00:22:06,190 --> 00:22:10,780
+component well what if I could just use
+
+458
+00:22:10,780 --> 00:22:17,760
+state
+
+459
+00:22:17,760 --> 00:22:25,050
+and past the initial state to specify it
+
+460
+00:22:25,050 --> 00:22:31,830
+let's see if this works yeah it works
+
+461
+00:22:31,830 --> 00:22:41,130
+[Applause]
+
+462
+00:22:41,130 --> 00:22:43,450
+so let's let's compare the two
+
+463
+00:22:43,450 --> 00:22:48,940
+approaches so on the Left we have a
+
+464
+00:22:48,940 --> 00:22:51,520
+familiar class component this state has
+
+465
+00:22:51,520 --> 00:22:55,000
+to be an object we bind some event
+
+466
+00:22:55,000 --> 00:22:56,980
+handlers so that we can access this
+
+467
+00:22:56,980 --> 00:22:59,919
+inside the event handler for this that's
+
+468
+00:22:59,919 --> 00:23:02,980
+a state when we call says state it
+
+469
+00:23:02,980 --> 00:23:04,840
+actually doesn't just set the state that
+
+470
+00:23:04,840 --> 00:23:08,440
+merges the state are the argument into
+
+471
+00:23:08,440 --> 00:23:10,870
+the state object and then when we want
+
+472
+00:23:10,870 --> 00:23:12,940
+to access the state which it is that
+
+473
+00:23:12,940 --> 00:23:16,179
+state and that's something so in the
+
+474
+00:23:16,179 --> 00:23:19,179
+example on the right we don't need to
+
+475
+00:23:19,179 --> 00:23:21,760
+access this that stayed at something
+
+476
+00:23:21,760 --> 00:23:24,159
+because the name state variable is
+
+477
+00:23:24,159 --> 00:23:26,350
+already available in the function it's
+
+478
+00:23:26,350 --> 00:23:29,260
+just the variable and similarly when we
+
+479
+00:23:29,260 --> 00:23:31,360
+need to set the state we don't need to
+
+480
+00:23:31,360 --> 00:23:35,140
+access this that's something because the
+
+481
+00:23:35,140 --> 00:23:37,270
+function that lets has said the name is
+
+482
+00:23:37,270 --> 00:23:43,090
+also available in the scope so what is
+
+483
+00:23:43,090 --> 00:23:49,380
+use state exactly your state is a hook a
+
+484
+00:23:49,380 --> 00:23:53,020
+hook is a function provided by react
+
+485
+00:23:53,020 --> 00:23:56,490
+that lets you hook into react features
+
+486
+00:23:56,490 --> 00:24:00,820
+from your function components and you
+
+487
+00:24:00,820 --> 00:24:02,799
+state is the first hook that we're going
+
+488
+00:24:02,799 --> 00:24:04,690
+to take a look at today but there are a
+
+489
+00:24:04,690 --> 00:24:06,909
+few more so we're going to see them
+
+490
+00:24:06,909 --> 00:24:16,070
+later
+
+491
+00:24:16,070 --> 00:24:18,450
+all right so let's go back to our
+
+492
+00:24:18,450 --> 00:24:21,990
+Familia a class example so let's say we
+
+493
+00:24:21,990 --> 00:24:24,870
+wanted to add a second field for example
+
+494
+00:24:24,870 --> 00:24:28,139
+for a surname so the way we normally do
+
+495
+00:24:28,139 --> 00:24:30,929
+this is we add another key to the state
+
+496
+00:24:30,929 --> 00:24:36,840
+and we I'm going to copy and paste this
+
+497
+00:24:36,840 --> 00:24:42,389
+row it's gonna say surname now it's
+
+498
+00:24:42,389 --> 00:24:45,450
+going to render a surname and handle
+
+499
+00:24:45,450 --> 00:24:48,809
+surname change when I copy and paste
+
+500
+00:24:48,809 --> 00:24:54,080
+this event handler this will be surname
+
+501
+00:24:54,080 --> 00:25:06,630
+and I need to bind it
+
+502
+00:25:06,630 --> 00:25:13,650
+okay MARY POPPINS so we can see that it
+
+503
+00:25:13,650 --> 00:25:18,000
+works so how do we do the same with
+
+504
+00:25:18,000 --> 00:25:23,820
+hooks so one thing we could do is we
+
+505
+00:25:23,820 --> 00:25:26,309
+could make our state an object as you
+
+506
+00:25:26,309 --> 00:25:29,130
+can see that the state with hooks state
+
+507
+00:25:29,130 --> 00:25:30,809
+doesn't have to be an object it can be
+
+508
+00:25:30,809 --> 00:25:32,910
+any primitive we could make it an object
+
+509
+00:25:32,910 --> 00:25:35,280
+if we wanted to but we also don't have
+
+510
+00:25:35,280 --> 00:25:39,120
+to so conceptually surname is is not
+
+511
+00:25:39,120 --> 00:25:43,140
+closely related to state to the name so
+
+512
+00:25:43,140 --> 00:25:44,970
+what we could do is we could declare a
+
+513
+00:25:44,970 --> 00:25:48,600
+second state variable by calling the you
+
+514
+00:25:48,600 --> 00:25:50,539
+state hook again
+
+515
+00:25:50,539 --> 00:25:53,760
+so all declare surname I can give it any
+
+516
+00:25:53,760 --> 00:25:55,409
+name it's just the variable in my code
+
+517
+00:25:55,409 --> 00:26:00,870
+and sets her name callin you state and
+
+518
+00:26:00,870 --> 00:26:03,419
+passing the initial state for that state
+
+519
+00:26:03,419 --> 00:26:05,330
+variable poppins
+
+520
+00:26:05,330 --> 00:26:07,620
+so again government gonna copy and paste
+
+521
+00:26:07,620 --> 00:26:14,880
+the row say username the valet surname
+
+522
+00:26:14,880 --> 00:26:19,500
+handle surname change and when the user
+
+523
+00:26:19,500 --> 00:26:26,909
+edits the surname not sir name we want
+
+524
+00:26:26,909 --> 00:26:31,740
+to set the surname
+
+525
+00:26:31,740 --> 00:26:38,120
+let's see if this works
+
+526
+00:26:38,120 --> 00:26:46,480
+yay it looks like it works
+
+527
+00:26:46,480 --> 00:26:50,450
+so we can see that we can use hooks more
+
+528
+00:26:50,450 --> 00:26:53,780
+than once in a component let's compare
+
+529
+00:26:53,780 --> 00:26:58,220
+the two approaches in more detail so on
+
+530
+00:26:58,220 --> 00:27:00,860
+the Left familiar class component state
+
+531
+00:27:00,860 --> 00:27:03,830
+is always an object has multiple fields
+
+532
+00:27:03,830 --> 00:27:06,440
+McCall says state will merge some
+
+533
+00:27:06,440 --> 00:27:09,590
+something into that object and then when
+
+534
+00:27:09,590 --> 00:27:11,330
+we want to access it we do this that
+
+535
+00:27:11,330 --> 00:27:16,220
+state that something on the right in the
+
+536
+00:27:16,220 --> 00:27:19,580
+example using hooks we use the state
+
+537
+00:27:19,580 --> 00:27:23,810
+hook twice and that declares two state
+
+538
+00:27:23,810 --> 00:27:27,650
+variables name and surname and whenever
+
+539
+00:27:27,650 --> 00:27:30,380
+we call set name or set surname
+
+540
+00:27:30,380 --> 00:27:32,570
+this tells react that it needs to
+
+541
+00:27:32,570 --> 00:27:34,820
+rerender this component just like if we
+
+542
+00:27:34,820 --> 00:27:37,670
+called says state and so the next time
+
+543
+00:27:37,670 --> 00:27:40,190
+reactor renders our components is going
+
+544
+00:27:40,190 --> 00:27:43,400
+to pass the current name and the current
+
+545
+00:27:43,400 --> 00:27:47,330
+surname to our component and then we can
+
+546
+00:27:47,330 --> 00:27:49,340
+use it directly without accessing these
+
+547
+00:27:49,340 --> 00:28:00,220
+that state that something
+
+548
+00:28:00,220 --> 00:28:03,460
+all right so let's go back to our class
+
+549
+00:28:03,460 --> 00:28:07,330
+example what else what other features of
+
+550
+00:28:07,330 --> 00:28:10,299
+reactor we know so another thing you
+
+551
+00:28:10,299 --> 00:28:12,490
+might want to do from a component is to
+
+552
+00:28:12,490 --> 00:28:16,390
+read context so context in case you're
+
+553
+00:28:16,390 --> 00:28:18,669
+not familiar it's like kind of like
+
+554
+00:28:18,669 --> 00:28:21,309
+global variables for a subtree so it's
+
+555
+00:28:21,309 --> 00:28:23,950
+useful for things like read the current
+
+556
+00:28:23,950 --> 00:28:26,679
+theme like visual theme or the current
+
+557
+00:28:26,679 --> 00:28:29,470
+language that the user is using and it's
+
+558
+00:28:29,470 --> 00:28:31,870
+useful to avoid passing everything
+
+559
+00:28:31,870 --> 00:28:33,970
+through props if you need all components
+
+560
+00:28:33,970 --> 00:28:36,850
+to be able to read some value so we're
+
+561
+00:28:36,850 --> 00:28:41,230
+going to import theme context and local
+
+562
+00:28:41,230 --> 00:28:43,809
+context which I already declared in
+
+563
+00:28:43,809 --> 00:28:47,140
+another file and the API you've probably
+
+564
+00:28:47,140 --> 00:28:49,720
+most familiar with for consuming context
+
+565
+00:28:49,720 --> 00:28:51,039
+especially if you have to consume
+
+566
+00:28:51,039 --> 00:28:53,860
+multiple contexts is the render crop API
+
+567
+00:28:53,860 --> 00:28:57,039
+and it looks like this so I'm going to
+
+568
+00:28:57,039 --> 00:29:00,549
+scroll down here so we can choose theme
+
+569
+00:29:00,549 --> 00:29:04,409
+context consumer that gives us the theme
+
+570
+00:29:04,409 --> 00:29:07,240
+in my case it's just going to be a CSS
+
+571
+00:29:07,240 --> 00:29:13,929
+class so I copy this all this code
+
+572
+00:29:13,929 --> 00:29:19,270
+inside the render prop and I'm going to
+
+573
+00:29:19,270 --> 00:29:24,970
+use class name equals theme all right
+
+574
+00:29:24,970 --> 00:29:28,100
+very old-timey
+
+575
+00:29:28,100 --> 00:29:30,590
+and I also want to show the current
+
+576
+00:29:30,590 --> 00:29:33,559
+language so I'm going to use local
+
+577
+00:29:33,559 --> 00:29:42,110
+context consumer and it's going to
+
+578
+00:29:42,110 --> 00:29:46,490
+render another role so I will copy and
+
+579
+00:29:46,490 --> 00:29:51,789
+paste this role can say language
+
+580
+00:29:51,789 --> 00:29:58,580
+language and render it here okay we can
+
+581
+00:29:58,580 --> 00:30:01,370
+see that context works and that's
+
+582
+00:30:01,370 --> 00:30:03,740
+probably normally consume context we
+
+583
+00:30:03,740 --> 00:30:05,600
+actually added a more convenient API for
+
+584
+00:30:05,600 --> 00:30:09,620
+accessing it even classes in 1606 but
+
+585
+00:30:09,620 --> 00:30:11,720
+this is how you can see multiple
+
+586
+00:30:11,720 --> 00:30:17,299
+contexts so let's look at the at how we
+
+587
+00:30:17,299 --> 00:30:21,289
+could do this with hooks so as we said
+
+588
+00:30:21,289 --> 00:30:23,600
+that state is a fundamental feature of
+
+589
+00:30:23,600 --> 00:30:26,510
+react and this is why you can use state
+
+590
+00:30:26,510 --> 00:30:31,159
+and so if we want to use context I need
+
+591
+00:30:31,159 --> 00:30:34,580
+to import my contexts so this is gonna
+
+592
+00:30:34,580 --> 00:30:41,320
+be a themed context local context and
+
+593
+00:30:41,320 --> 00:30:44,480
+now if I want to use context from my
+
+594
+00:30:44,480 --> 00:30:51,020
+component I can use context and then to
+
+595
+00:30:51,020 --> 00:30:55,059
+get the current theme I can use context
+
+596
+00:30:55,059 --> 00:30:58,880
+same context and to get the current
+
+597
+00:30:58,880 --> 00:31:03,230
+locale I can use context local context
+
+598
+00:31:03,230 --> 00:31:06,380
+and this doesn't just read the context
+
+599
+00:31:06,380 --> 00:31:08,539
+it also subscribes the component to
+
+600
+00:31:08,539 --> 00:31:11,510
+updates to this context but it just
+
+601
+00:31:11,510 --> 00:31:13,700
+gives me the current values so I can I
+
+602
+00:31:13,700 --> 00:31:19,970
+can put it into my CSS class name and I
+
+603
+00:31:19,970 --> 00:31:29,090
+can add the bro first language and I can
+
+604
+00:31:29,090 --> 00:31:33,060
+put it here
+
+605
+00:31:33,060 --> 00:31:42,230
+[Applause]
+
+606
+00:31:42,230 --> 00:31:44,970
+all right so let's let's compare the two
+
+607
+00:31:44,970 --> 00:31:48,990
+approaches so this is the traditional
+
+608
+00:31:48,990 --> 00:31:52,190
+kind of render prop API
+
+609
+00:31:52,190 --> 00:31:54,960
+it is very explicit about what it's
+
+610
+00:31:54,960 --> 00:31:58,470
+doing but it does get a little bit
+
+611
+00:31:58,470 --> 00:32:02,250
+nested and you encounter this not just
+
+612
+00:32:02,250 --> 00:32:03,750
+with context with with any kind of
+
+613
+00:32:03,750 --> 00:32:08,700
+render properly API so with hooks it
+
+614
+00:32:08,700 --> 00:32:13,320
+does the same thing but it's flat so we
+
+615
+00:32:13,320 --> 00:32:15,179
+just say we use this context in this
+
+616
+00:32:15,179 --> 00:32:17,640
+context and we get the theme and locale
+
+617
+00:32:17,640 --> 00:32:23,940
+and then we can use them so you might be
+
+618
+00:32:23,940 --> 00:32:25,799
+wondering at this point how can react
+
+619
+00:32:25,799 --> 00:32:28,559
+possibly know for example I have this to
+
+620
+00:32:28,559 --> 00:32:30,960
+you state calls so how does it know
+
+621
+00:32:30,960 --> 00:32:33,210
+which state variable corresponds to
+
+622
+00:32:33,210 --> 00:32:37,590
+which you state call and the answer is
+
+623
+00:32:37,590 --> 00:32:40,679
+that react relies on the order of these
+
+624
+00:32:40,679 --> 00:32:44,250
+calls this may be a little bit unusual
+
+625
+00:32:44,250 --> 00:32:48,450
+and in order for this to work correctly
+
+626
+00:32:48,450 --> 00:32:50,760
+there is a rule that you need to follow
+
+627
+00:32:50,760 --> 00:32:54,270
+when you use cooks and the rule is that
+
+628
+00:32:54,270 --> 00:32:57,990
+you cannot call hook inside a condition
+
+629
+00:32:57,990 --> 00:33:00,510
+it has to be at the top level of your
+
+630
+00:33:00,510 --> 00:33:02,970
+component so if I do something like if
+
+631
+00:33:02,970 --> 00:33:07,200
+props condition and then I call the you
+
+632
+00:33:07,200 --> 00:33:09,809
+state hook here we actually have a
+
+633
+00:33:09,809 --> 00:33:12,840
+linter plugin that is going to complain
+
+634
+00:33:12,840 --> 00:33:14,820
+that this is not the correct way to use
+
+635
+00:33:14,820 --> 00:33:18,870
+hooks and we realize that this is an
+
+636
+00:33:18,870 --> 00:33:23,460
+unusual limitation but it is pretty
+
+637
+00:33:23,460 --> 00:33:26,010
+important for hooks tour correctly and
+
+638
+00:33:26,010 --> 00:33:28,740
+also to enable certain things that I
+
+639
+00:33:28,740 --> 00:33:31,200
+think will you will like that our so a
+
+640
+00:33:31,200 --> 00:33:35,179
+bit later
+
+641
+00:33:35,179 --> 00:33:41,790
+all right so let's go back to our class
+
+642
+00:33:41,790 --> 00:33:43,860
+so the other thing you might want to
+
+643
+00:33:43,860 --> 00:33:47,700
+reach for the class for is lifecycle
+
+644
+00:33:47,700 --> 00:33:50,700
+methods so the most commonly use case
+
+645
+00:33:50,700 --> 00:33:52,440
+for lifecycle methods is you want to
+
+646
+00:33:52,440 --> 00:33:55,530
+perform some side effect such as firing
+
+647
+00:33:55,530 --> 00:33:57,990
+off request performing some kind of
+
+648
+00:33:57,990 --> 00:34:01,200
+imperative Dom mutation interfacing with
+
+649
+00:34:01,200 --> 00:34:03,390
+the browser api's so you might want to
+
+650
+00:34:03,390 --> 00:34:05,310
+do something like this and you can't do
+
+651
+00:34:05,310 --> 00:34:07,770
+during rendering because it's it's not
+
+652
+00:34:07,770 --> 00:34:10,399
+rendered yet so the way you do
+
+653
+00:34:10,399 --> 00:34:13,590
+side-effects and react is you declare a
+
+654
+00:34:13,590 --> 00:34:16,020
+life cycle method like component amount
+
+655
+00:34:16,020 --> 00:34:21,960
+and then let's say that if let me show
+
+656
+00:34:21,960 --> 00:34:23,820
+this so you see at the top of the screen
+
+657
+00:34:23,820 --> 00:34:27,270
+it says react up so there is actually a
+
+658
+00:34:27,270 --> 00:34:29,850
+browser API that lets us update this so
+
+659
+00:34:29,850 --> 00:34:33,630
+let's say we want the tab title to be
+
+660
+00:34:33,630 --> 00:34:36,480
+the name of the person and changed it as
+
+661
+00:34:36,480 --> 00:34:39,630
+I type and so to set it initially I'm
+
+662
+00:34:39,630 --> 00:34:41,490
+going there is a browser you got to do
+
+663
+00:34:41,490 --> 00:34:44,909
+this is documented title equals this
+
+664
+00:34:44,909 --> 00:34:48,540
+that state that name was space was this
+
+665
+00:34:48,540 --> 00:34:53,070
+the state that's her name so now we can
+
+666
+00:34:53,070 --> 00:34:57,390
+see it's as Mary Poppins but then if I
+
+667
+00:34:57,390 --> 00:35:00,930
+if I edit it it doesn't get
+
+668
+00:35:00,930 --> 00:35:02,910
+automatically updated because I also
+
+669
+00:35:02,910 --> 00:35:05,750
+need to implement component it update
+
+670
+00:35:05,750 --> 00:35:08,760
+for the for the side effects to be
+
+671
+00:35:08,760 --> 00:35:12,300
+consistent with what I rendered so I'm
+
+672
+00:35:12,300 --> 00:35:13,880
+going to declare a component it update
+
+673
+00:35:13,880 --> 00:35:21,090
+and just copy and paste this all right
+
+674
+00:35:21,090 --> 00:35:24,260
+so now says Mary Poppins but if I
+
+675
+00:35:24,260 --> 00:35:28,380
+started editing it the document title
+
+676
+00:35:28,380 --> 00:35:30,780
+updates and this is how we perform side
+
+677
+00:35:30,780 --> 00:35:39,460
+effects in a class
+
+678
+00:35:39,460 --> 00:35:45,650
+so how do we do this with hooks well the
+
+679
+00:35:45,650 --> 00:35:47,780
+ability to perform side effects is
+
+680
+00:35:47,780 --> 00:35:51,790
+another core feature of react components
+
+681
+00:35:51,790 --> 00:35:56,599
+so if we want to use an effect from our
+
+682
+00:35:56,599 --> 00:36:01,520
+component make an import use effect from
+
+683
+00:36:01,520 --> 00:36:07,580
+react and then we want to tell react
+
+684
+00:36:07,580 --> 00:36:09,920
+what to do after react has flushed our
+
+685
+00:36:09,920 --> 00:36:12,560
+components to the Dom so we pass a
+
+686
+00:36:12,560 --> 00:36:15,410
+function which is where we perform our
+
+687
+00:36:15,410 --> 00:36:17,930
+effect so I'm going to say document the
+
+688
+00:36:17,930 --> 00:36:21,430
+title equals name plus space plus
+
+689
+00:36:21,430 --> 00:36:28,970
+surname you can see it says Mary Poppins
+
+690
+00:36:28,970 --> 00:36:33,920
+here and if I start editing it actually
+
+691
+00:36:33,920 --> 00:36:35,589
+updates
+
+692
+00:36:35,589 --> 00:36:39,109
+so what default use effect runs both
+
+693
+00:36:39,109 --> 00:36:42,619
+after the initial render and after every
+
+694
+00:36:42,619 --> 00:36:45,470
+update so by default it is consistent
+
+695
+00:36:45,470 --> 00:36:48,800
+with what he rendered and you can opt
+
+696
+00:36:48,800 --> 00:36:50,780
+out of this behavior if like for
+
+697
+00:36:50,780 --> 00:36:52,670
+performance reasons and/or if you have
+
+698
+00:36:52,670 --> 00:36:56,359
+special logic and reinstall after me
+
+699
+00:36:56,359 --> 00:37:01,730
+will touch a little bit on this so let's
+
+700
+00:37:01,730 --> 00:37:07,520
+compare DG approaches so in the in the
+
+701
+00:37:07,520 --> 00:37:09,710
+class we divide method we divide the
+
+702
+00:37:09,710 --> 00:37:12,680
+logic based on lifecycle method names so
+
+703
+00:37:12,680 --> 00:37:14,030
+this is why we have component amount
+
+704
+00:37:14,030 --> 00:37:15,619
+component it update they fire at
+
+705
+00:37:15,619 --> 00:37:18,380
+different times and we sometimes repeat
+
+706
+00:37:18,380 --> 00:37:20,270
+some logic between them we could extract
+
+707
+00:37:20,270 --> 00:37:22,339
+it to a function but still we would have
+
+708
+00:37:22,339 --> 00:37:24,710
+to call it in two places and remember to
+
+709
+00:37:24,710 --> 00:37:28,190
+keep it consistent and with with the
+
+710
+00:37:28,190 --> 00:37:31,430
+effect hook the effects are consistent
+
+711
+00:37:31,430 --> 00:37:33,470
+by default although there is a way to
+
+712
+00:37:33,470 --> 00:37:37,160
+opt out of that and not is that in the
+
+713
+00:37:37,160 --> 00:37:39,170
+class we need to access this that state
+
+714
+00:37:39,170 --> 00:37:41,180
+so there needs to be a special API to do
+
+715
+00:37:41,180 --> 00:37:44,390
+this but in the effect example we
+
+716
+00:37:44,390 --> 00:37:45,890
+actually don't need a special API to
+
+717
+00:37:45,890 --> 00:37:47,860
+access the state
+
+718
+00:37:47,860 --> 00:37:50,290
+variable because it's already in the
+
+719
+00:37:50,290 --> 00:37:52,270
+scope of the function it is declared
+
+720
+00:37:52,270 --> 00:37:55,090
+right above and this is why the effect
+
+721
+00:37:55,090 --> 00:37:58,600
+is declared inside the component rather
+
+722
+00:37:58,600 --> 00:38:01,210
+than the rather than outside because
+
+723
+00:38:01,210 --> 00:38:03,520
+this gives us access to state variables
+
+724
+00:38:03,520 --> 00:38:06,340
+ability to set them and anything else
+
+725
+00:38:06,340 --> 00:38:08,950
+like the current context value for
+
+726
+00:38:08,950 --> 00:38:20,200
+example or any of these contexts all
+
+727
+00:38:20,200 --> 00:38:21,940
+right so let's go back to the familiar
+
+728
+00:38:21,940 --> 00:38:26,110
+class example another thing you might
+
+729
+00:38:26,110 --> 00:38:28,000
+want to use life cycle methods for in a
+
+730
+00:38:28,000 --> 00:38:31,570
+class is subscriptions so maybe you want
+
+731
+00:38:31,570 --> 00:38:33,370
+to subscribe to some kind of browser API
+
+732
+00:38:33,370 --> 00:38:35,860
+and it gives you some value for example
+
+733
+00:38:35,860 --> 00:38:39,070
+the window size and you want to update
+
+734
+00:38:39,070 --> 00:38:41,320
+the state in response to changes to this
+
+735
+00:38:41,320 --> 00:38:44,260
+value and so the way we could do this in
+
+736
+00:38:44,260 --> 00:38:47,620
+a class let's say that we want to that
+
+737
+00:38:47,620 --> 00:38:50,410
+we want to monitor the window width so
+
+738
+00:38:50,410 --> 00:38:54,430
+I'm going to put with interstate this
+
+739
+00:38:54,430 --> 00:38:59,380
+window in there with browser API and I
+
+740
+00:38:59,380 --> 00:39:02,800
+want to render it let me copy and paste
+
+741
+00:39:02,800 --> 00:39:11,620
+this so this is gonna say width and I'm
+
+742
+00:39:11,620 --> 00:39:13,570
+going to render it here it is that state
+
+743
+00:39:13,570 --> 00:39:17,410
+that width this is the width of the
+
+744
+00:39:17,410 --> 00:39:21,680
+window not with of Mary Poppins
+
+745
+00:39:21,680 --> 00:39:26,480
+and I'm going to add a I'm going to add
+
+746
+00:39:26,480 --> 00:39:28,400
+in event listener so we need to actually
+
+747
+00:39:28,400 --> 00:39:31,910
+listen to changes in the width so at
+
+748
+00:39:31,910 --> 00:39:36,490
+window that event add event listener
+
+749
+00:39:36,490 --> 00:39:39,380
+I'll I'm going to listen to the resize
+
+750
+00:39:39,380 --> 00:39:44,569
+event handle resize and I need to
+
+751
+00:39:44,569 --> 00:39:47,150
+declare this event and so this is where
+
+752
+00:39:47,150 --> 00:39:51,170
+we're going to update the with state to
+
+753
+00:39:51,170 --> 00:39:55,970
+be window that inner width and we need
+
+754
+00:39:55,970 --> 00:40:06,049
+to bind it and and I also need to
+
+755
+00:40:06,049 --> 00:40:08,089
+unsubscribe so I don't want a memory
+
+756
+00:40:08,089 --> 00:40:10,400
+leak with like keeping these
+
+757
+00:40:10,400 --> 00:40:11,960
+subscriptions I want to unsubscribe from
+
+758
+00:40:11,960 --> 00:40:14,420
+this event so the way we do this in a
+
+759
+00:40:14,420 --> 00:40:16,700
+class is we create another life cycle
+
+760
+00:40:16,700 --> 00:40:20,470
+method called component will unmount and
+
+761
+00:40:20,470 --> 00:40:22,849
+I'm going to copy and paste this logic
+
+762
+00:40:22,849 --> 00:40:25,599
+here except this will be a remove event
+
+763
+00:40:25,599 --> 00:40:29,119
+listener so we set up in the event
+
+764
+00:40:29,119 --> 00:40:30,740
+listener and we remove the event
+
+765
+00:40:30,740 --> 00:40:32,690
+listener and we can verify that this
+
+766
+00:40:32,690 --> 00:40:35,299
+actually works by dragging this you see
+
+767
+00:40:35,299 --> 00:40:40,849
+the width is changing so it works so
+
+768
+00:40:40,849 --> 00:40:42,740
+let's see how could how we could do this
+
+769
+00:40:42,740 --> 00:40:54,950
+with hooks so conceptually listening to
+
+770
+00:40:54,950 --> 00:40:57,529
+the window width has nothing to do with
+
+771
+00:40:57,529 --> 00:41:01,099
+setting the document title so that's why
+
+772
+00:41:01,099 --> 00:41:03,140
+we're not gonna put it in that effect
+
+773
+00:41:03,140 --> 00:41:05,150
+it's conceptually completely separate
+
+774
+00:41:05,150 --> 00:41:07,880
+effect and just like we could use state
+
+775
+00:41:07,880 --> 00:41:10,430
+more than once to declare multiple state
+
+776
+00:41:10,430 --> 00:41:13,400
+variables we can use effect more than
+
+777
+00:41:13,400 --> 00:41:17,950
+once to perform different side effects
+
+778
+00:41:17,950 --> 00:41:21,380
+so I want to subscribe to window add
+
+779
+00:41:21,380 --> 00:41:29,079
+event listener resize handle resize and
+
+780
+00:41:29,079 --> 00:41:32,539
+I'm gonna need to keep some state for
+
+781
+00:41:32,539 --> 00:41:33,950
+the current width
+
+782
+00:41:33,950 --> 00:41:35,960
+so I'm actually going to declare another
+
+783
+00:41:35,960 --> 00:41:41,150
+state variable so I'll say with and sat
+
+784
+00:41:41,150 --> 00:41:47,210
+with we get them by using state with
+
+785
+00:41:47,210 --> 00:41:51,490
+window inner with as the initial valium
+
+786
+00:41:51,490 --> 00:41:56,270
+and now in my handle resize function
+
+787
+00:41:56,270 --> 00:41:57,950
+I'll just declare it here because it
+
+788
+00:41:57,950 --> 00:42:01,309
+isn't used anywhere else and it's going
+
+789
+00:42:01,309 --> 00:42:08,000
+to set with tree to the current with I
+
+790
+00:42:08,000 --> 00:42:10,280
+mean I need to render it so I'll copy
+
+791
+00:42:10,280 --> 00:42:18,400
+and paste this row I'm gonna say width
+
+792
+00:42:18,400 --> 00:42:22,730
+and finally I need to clean up after
+
+793
+00:42:22,730 --> 00:42:25,880
+this effect so I need to specify how to
+
+794
+00:42:25,880 --> 00:42:29,690
+clean up and again conceptually cleaning
+
+795
+00:42:29,690 --> 00:42:32,599
+up is part of this effect so this effect
+
+796
+00:42:32,599 --> 00:42:36,760
+has a cleaner place and the order you
+
+797
+00:42:36,760 --> 00:42:39,890
+the way you can specify it is that any
+
+798
+00:42:39,890 --> 00:42:45,369
+effect can optionally return a function
+
+799
+00:42:45,369 --> 00:42:49,790
+and if it does return the function then
+
+800
+00:42:49,790 --> 00:42:51,859
+react will call this function to clean
+
+801
+00:42:51,859 --> 00:42:54,650
+up after the effect so this is where we
+
+802
+00:42:54,650 --> 00:43:01,740
+unsubscribe
+
+803
+00:43:01,740 --> 00:43:03,690
+okay let's just verify that this
+
+804
+00:43:03,690 --> 00:43:21,810
+actually works yay so let's compare the
+
+805
+00:43:21,810 --> 00:43:26,460
+two approaches on the Left we have a
+
+806
+00:43:26,460 --> 00:43:30,510
+familiar class component nothing
+
+807
+00:43:30,510 --> 00:43:33,359
+surprising there we we have some side
+
+808
+00:43:33,359 --> 00:43:36,540
+effects some related logic is split
+
+809
+00:43:36,540 --> 00:43:39,180
+apart so we can see that document title
+
+810
+00:43:39,180 --> 00:43:41,010
+has been set here but it's also being
+
+811
+00:43:41,010 --> 00:43:43,500
+set here and then we subscribe to an
+
+812
+00:43:43,500 --> 00:43:44,430
+effect here
+
+813
+00:43:44,430 --> 00:43:47,040
+sorry subscribe to the event here but we
+
+814
+00:43:47,040 --> 00:43:49,470
+unsubscribe here so these things need to
+
+815
+00:43:49,470 --> 00:43:52,530
+be in sync with each other and then this
+
+816
+00:43:52,530 --> 00:43:55,080
+method contains two unrelated methods
+
+817
+00:43:55,080 --> 00:43:58,770
+two unrelated lines so that me in the in
+
+818
+00:43:58,770 --> 00:44:00,510
+feature make it a bit difficult to test
+
+819
+00:44:00,510 --> 00:44:04,859
+them in isolation but it looks very
+
+820
+00:44:04,859 --> 00:44:10,170
+familiar so that's this nice so this
+
+821
+00:44:10,170 --> 00:44:12,480
+code probably looks less familiar but
+
+822
+00:44:12,480 --> 00:44:13,859
+let's take another look at what's going
+
+823
+00:44:13,859 --> 00:44:17,970
+on here in with hooks we separate code
+
+824
+00:44:17,970 --> 00:44:20,130
+not based on the life cycle method name
+
+825
+00:44:20,130 --> 00:44:23,520
+but based on what the code is doing so
+
+826
+00:44:23,520 --> 00:44:25,500
+we can see that there is one effect
+
+827
+00:44:25,500 --> 00:44:28,109
+which is we updated document title
+
+828
+00:44:28,109 --> 00:44:29,910
+that's one thing this component can do
+
+829
+00:44:29,910 --> 00:44:33,180
+and then there is another effect which
+
+830
+00:44:33,180 --> 00:44:36,119
+is subscribing tree to the window resize
+
+831
+00:44:36,119 --> 00:44:38,430
+event and update in the state when it
+
+832
+00:44:38,430 --> 00:44:42,690
+changes and this effect has a cleanup
+
+833
+00:44:42,690 --> 00:44:44,820
+phase which means that when it's time to
+
+834
+00:44:44,820 --> 00:44:47,369
+remove this effect react removes it and
+
+835
+00:44:47,369 --> 00:44:50,550
+avoids the memory leaks and if you've
+
+836
+00:44:50,550 --> 00:44:52,740
+been carefully watching you might notice
+
+837
+00:44:52,740 --> 00:44:54,930
+that since effect run after every render
+
+838
+00:44:54,930 --> 00:44:57,420
+we're just gonna keep resub scribing so
+
+839
+00:44:57,420 --> 00:44:59,970
+there is a way to optimize this so
+
+840
+00:44:59,970 --> 00:45:02,640
+default is to be consistent which is
+
+841
+00:45:02,640 --> 00:45:04,410
+important if you for example use some
+
+842
+00:45:04,410 --> 00:45:07,859
+prop here I need to resupply tea from
+
+843
+00:45:07,859 --> 00:45:10,170
+props or something similar but there is
+
+844
+00:45:10,170 --> 00:45:12,180
+a way to optimize it and opt out of this
+
+845
+00:45:12,180 --> 00:45:14,070
+behavior and Brian in the
+
+846
+00:45:14,070 --> 00:45:26,550
+stock will mention how to do it alright
+
+847
+00:45:26,550 --> 00:45:30,840
+so there is one more thing that I want
+
+848
+00:45:30,840 --> 00:45:34,650
+to show here so this component is
+
+849
+00:45:34,650 --> 00:45:38,430
+getting pretty large and it's fine so we
+
+850
+00:45:38,430 --> 00:45:40,590
+expect that since you now can do more in
+
+851
+00:45:40,590 --> 00:45:43,200
+function components they will get larger
+
+852
+00:45:43,200 --> 00:45:47,670
+and that's totally okay but you might
+
+853
+00:45:47,670 --> 00:45:49,770
+want to reuse some of that logic in
+
+854
+00:45:49,770 --> 00:45:52,440
+other components or extract it or test
+
+855
+00:45:52,440 --> 00:45:55,860
+it separately what's interesting though
+
+856
+00:45:55,860 --> 00:45:59,460
+is that hope calls they are just
+
+857
+00:45:59,460 --> 00:46:04,470
+function calls and components they are
+
+858
+00:46:04,470 --> 00:46:07,740
+just functions so how do you share your
+
+859
+00:46:07,740 --> 00:46:11,370
+logic between two functions you extract
+
+860
+00:46:11,370 --> 00:46:14,310
+it to a different function that's what
+
+861
+00:46:14,310 --> 00:46:17,040
+I'm going to do you're going to copy and
+
+862
+00:46:17,040 --> 00:46:21,870
+paste this and I'm going to create a new
+
+863
+00:46:21,870 --> 00:46:28,710
+function called use window with and I'll
+
+864
+00:46:28,710 --> 00:46:32,040
+just paste it here and so we need the
+
+865
+00:46:32,040 --> 00:46:34,170
+width in our component in order to
+
+866
+00:46:34,170 --> 00:46:38,370
+render it so I need to return it from
+
+867
+00:46:38,370 --> 00:46:42,710
+this function which is the current width
+
+868
+00:46:42,710 --> 00:46:49,230
+and then I can go back up and I can say
+
+869
+00:46:49,230 --> 00:46:59,460
+Const width equals use window width
+
+870
+00:46:59,460 --> 00:47:01,190
+[Applause]
+
+871
+00:47:01,190 --> 00:47:07,900
+[Music]
+
+872
+00:47:07,900 --> 00:47:14,840
+so what is this function we didn't do
+
+873
+00:47:14,840 --> 00:47:16,880
+anything special we just extracted the
+
+874
+00:47:16,880 --> 00:47:20,119
+function but there is a convention here
+
+875
+00:47:20,119 --> 00:47:23,780
+so we are calling this function a custom
+
+876
+00:47:23,780 --> 00:47:28,430
+hook and by convention custom hook names
+
+877
+00:47:28,430 --> 00:47:32,090
+always start with use and so there are
+
+878
+00:47:32,090 --> 00:47:34,040
+two reasons for this we're now going to
+
+879
+00:47:34,040 --> 00:47:36,710
+like read your function name or to
+
+880
+00:47:36,710 --> 00:47:39,410
+string it or anything like this but it
+
+881
+00:47:39,410 --> 00:47:41,360
+is an important convention because first
+
+882
+00:47:41,360 --> 00:47:44,119
+of all this lets us lint automatically
+
+883
+00:47:44,119 --> 00:47:46,730
+for violation of the first rule that I
+
+884
+00:47:46,730 --> 00:47:49,160
+described about : hooks unconditionally
+
+885
+00:47:49,160 --> 00:47:51,650
+so if we didn't know if something is a
+
+886
+00:47:51,650 --> 00:47:53,210
+hook then we wouldn't be able to do that
+
+887
+00:47:53,210 --> 00:47:57,020
+and another reason is that if you just
+
+888
+00:47:57,020 --> 00:47:59,540
+look at the component code you kind of
+
+889
+00:47:59,540 --> 00:48:01,040
+want to know if some function can have
+
+890
+00:48:01,040 --> 00:48:03,290
+some state inside of it so it's
+
+891
+00:48:03,290 --> 00:48:05,570
+important that there is a convention is
+
+892
+00:48:05,570 --> 00:48:08,030
+he okay use something it means that it's
+
+893
+00:48:08,030 --> 00:48:11,690
+potentially stateful and here with gives
+
+894
+00:48:11,690 --> 00:48:14,510
+us the current bits and subscribes us to
+
+895
+00:48:14,510 --> 00:48:23,840
+updates through it so if we wanted to we
+
+896
+00:48:23,840 --> 00:48:26,060
+could even go further it's probably not
+
+897
+00:48:26,060 --> 00:48:28,280
+necessary in this example but I just
+
+898
+00:48:28,280 --> 00:48:30,500
+want to give you like a sense of water
+
+899
+00:48:30,500 --> 00:48:34,010
+you could do so let's say like maybe
+
+900
+00:48:34,010 --> 00:48:35,750
+setting the document title was a bit
+
+901
+00:48:35,750 --> 00:48:37,640
+more complicated and you wanted to like
+
+902
+00:48:37,640 --> 00:48:40,910
+extract it or test it separately so I
+
+903
+00:48:40,910 --> 00:48:44,210
+could just copy and paste this and I
+
+904
+00:48:44,210 --> 00:48:46,400
+could write a new custom hook I'm gonna
+
+905
+00:48:46,400 --> 00:48:53,270
+call this one use document title and so
+
+906
+00:48:53,270 --> 00:48:55,580
+the name and surname don't really make
+
+907
+00:48:55,580 --> 00:48:58,070
+sense in the Scopes context we just want
+
+908
+00:48:58,070 --> 00:49:00,260
+to call this title and this is going to
+
+909
+00:49:00,260 --> 00:49:02,420
+be an argument so custom hooks are
+
+910
+00:49:02,420 --> 00:49:04,460
+JavaScript functions so they can take
+
+911
+00:49:04,460 --> 00:49:07,250
+arguments and return values or not
+
+912
+00:49:07,250 --> 00:49:10,520
+return so it is going to take title as
+
+913
+00:49:10,520 --> 00:49:13,250
+an argument and now in my component I
+
+914
+00:49:13,250 --> 00:49:17,960
+can say use document title name plus
+
+915
+00:49:17,960 --> 00:49:19,630
+surname
+
+916
+00:49:19,630 --> 00:49:23,240
+in fact I could go even further so in
+
+917
+00:49:23,240 --> 00:49:25,520
+this case it's totally unnecessary but
+
+918
+00:49:25,520 --> 00:49:28,160
+again maybe our inputs were more
+
+919
+00:49:28,160 --> 00:49:30,079
+complicated maybe we were tracking
+
+920
+00:49:30,079 --> 00:49:31,970
+whether the input was focused and
+
+921
+00:49:31,970 --> 00:49:33,550
+blurred whether it has been validated
+
+922
+00:49:33,550 --> 00:49:36,500
+submitted and so on so maybe we had some
+
+923
+00:49:36,500 --> 00:49:38,420
+more logic there we wanted to pull it
+
+924
+00:49:38,420 --> 00:49:40,820
+out of our components and reduce
+
+925
+00:49:40,820 --> 00:49:42,770
+duplication and there is already some
+
+926
+00:49:42,770 --> 00:49:44,869
+duplication so we have this like almost
+
+927
+00:49:44,869 --> 00:49:48,680
+identical event handlers so what if we
+
+928
+00:49:48,680 --> 00:49:50,420
+could just I'm going to delete one of
+
+929
+00:49:50,420 --> 00:49:53,960
+them and extract the other one I'm going
+
+930
+00:49:53,960 --> 00:49:55,790
+to create a new hook that I'm going to
+
+931
+00:49:55,790 --> 00:50:01,670
+call use form input so this is my change
+
+932
+00:50:01,670 --> 00:50:04,640
+handler now I'll also copy and paste
+
+933
+00:50:04,640 --> 00:50:09,710
+this declaration so this defines the
+
+934
+00:50:09,710 --> 00:50:13,190
+state for this input and so it's no
+
+935
+00:50:13,190 --> 00:50:15,710
+longer name and set name I'll just color
+
+936
+00:50:15,710 --> 00:50:19,820
+generically Valley and set value it's
+
+937
+00:50:19,820 --> 00:50:22,280
+going to take the initial value as an
+
+938
+00:50:22,280 --> 00:50:26,780
+argument and this is just going to be a
+
+939
+00:50:26,780 --> 00:50:33,349
+handle change and this will set value so
+
+940
+00:50:33,349 --> 00:50:36,020
+what do we want to get in order to use
+
+941
+00:50:36,020 --> 00:50:38,359
+this user input and our component we
+
+942
+00:50:38,359 --> 00:50:40,579
+want to get the current value and a
+
+943
+00:50:40,579 --> 00:50:42,560
+change candor these are the things that
+
+944
+00:50:42,560 --> 00:50:45,710
+we attach to the input so let's just
+
+945
+00:50:45,710 --> 00:50:50,050
+return them return value and unchanged
+
+946
+00:50:50,050 --> 00:50:57,560
+handle change so now if we go back up we
+
+947
+00:50:57,560 --> 00:51:02,829
+can say name equals use form input meri
+
+948
+00:51:02,829 --> 00:51:05,300
+the name is going to be an object with
+
+949
+00:51:05,300 --> 00:51:09,020
+valley and non change fields and surname
+
+950
+00:51:09,020 --> 00:51:16,700
+is use form input Poppins so this is now
+
+951
+00:51:16,700 --> 00:51:18,920
+going to be named at Valley and surnamed
+
+952
+00:51:18,920 --> 00:51:21,109
+at Valley because this is where the
+
+953
+00:51:21,109 --> 00:51:24,530
+string is and so now I can remove this
+
+954
+00:51:24,530 --> 00:51:30,920
+and I can spread over the name object
+
+955
+00:51:30,920 --> 00:51:35,880
+someone is laughing alright let's just
+
+956
+00:51:35,880 --> 00:51:39,780
+verify it and break it yeah it works so
+
+957
+00:51:39,780 --> 00:51:41,820
+each time we poll a hook its state is
+
+958
+00:51:41,820 --> 00:51:44,700
+completely isolated and this is because
+
+959
+00:51:44,700 --> 00:51:46,860
+we just rely on the order of who calls
+
+960
+00:51:46,860 --> 00:51:49,110
+and not on names or anything so you can
+
+961
+00:51:49,110 --> 00:51:51,210
+call the same hook multiple times each
+
+962
+00:51:51,210 --> 00:51:56,760
+call will get its own local state so
+
+963
+00:51:56,760 --> 00:51:59,310
+let's compare the three approaches for
+
+964
+00:51:59,310 --> 00:52:09,540
+the last time so on the Left we have a
+
+965
+00:52:09,540 --> 00:52:11,820
+familiar class component it has some
+
+966
+00:52:11,820 --> 00:52:15,420
+some state in an object bind some
+
+967
+00:52:15,420 --> 00:52:18,630
+methods has some logic spread across
+
+968
+00:52:18,630 --> 00:52:20,880
+different life cycle methods it has a
+
+969
+00:52:20,880 --> 00:52:26,340
+bunch of event handlers uses uses
+
+970
+00:52:26,340 --> 00:52:28,260
+something things from the context and
+
+971
+00:52:28,260 --> 00:52:35,130
+render stuff pretty familiar and on the
+
+972
+00:52:35,130 --> 00:52:37,170
+right pane this may not look like the
+
+973
+00:52:37,170 --> 00:52:40,950
+react components were used to but it
+
+974
+00:52:40,950 --> 00:52:43,590
+kind of makes sense even if you don't
+
+975
+00:52:43,590 --> 00:52:45,090
+know how these functions are implemented
+
+976
+00:52:45,090 --> 00:52:48,200
+you can see okay it uses to form inputs
+
+977
+00:52:48,200 --> 00:52:50,580
+uses some context to get theme and
+
+978
+00:52:50,580 --> 00:52:53,280
+locale it uses the window width and
+
+979
+00:52:53,280 --> 00:52:57,060
+document title and it renders a bunch of
+
+980
+00:52:57,060 --> 00:53:00,180
+stuff and if we want to we can scroll
+
+981
+00:53:00,180 --> 00:53:02,490
+further and we can see okay so this is
+
+982
+00:53:02,490 --> 00:53:05,280
+how the input works this is how setting
+
+983
+00:53:05,280 --> 00:53:08,160
+the document title works this is how the
+
+984
+00:53:08,160 --> 00:53:11,340
+window with suppression works or maybe
+
+985
+00:53:11,340 --> 00:53:13,740
+this could be an NPM package and you
+
+986
+00:53:13,740 --> 00:53:16,290
+don't actually need to know that all we
+
+987
+00:53:16,290 --> 00:53:18,330
+could pull it back into a component or
+
+988
+00:53:18,330 --> 00:53:20,730
+copy and paste between components so
+
+989
+00:53:20,730 --> 00:53:23,880
+hooks give you custom hooks give you the
+
+990
+00:53:23,880 --> 00:53:25,440
+flexibility to create your own
+
+991
+00:53:25,440 --> 00:53:28,530
+abstractions that are not they do not
+
+992
+00:53:28,530 --> 00:53:31,920
+inflate your react componentry and avoid
+
+993
+00:53:31,920 --> 00:53:38,540
+the wrapper hell
+
+994
+00:53:38,540 --> 00:53:40,430
+[Applause]
+
+995
+00:53:40,430 --> 00:53:45,830
+[Music]
+
+996
+00:53:45,830 --> 00:53:47,569
+[Applause]
+
+997
+00:53:47,569 --> 00:53:51,450
+and importantly these are not two
+
+998
+00:53:51,450 --> 00:53:53,309
+separate applications so this is
+
+999
+00:53:53,309 --> 00:53:56,460
+actually one application so I have this
+
+1000
+00:53:56,460 --> 00:53:58,410
+window open just to demonstrate that
+
+1001
+00:53:58,410 --> 00:54:01,470
+classes can work side by side with hooks
+
+1002
+00:54:01,470 --> 00:54:04,440
+and while hooks represent our vision for
+
+1003
+00:54:04,440 --> 00:54:08,400
+the future of react we don't want to
+
+1004
+00:54:08,400 --> 00:54:11,609
+make breaking changes like this so we
+
+1005
+00:54:11,609 --> 00:54:17,130
+need to keep classes working let's go
+
+1006
+00:54:17,130 --> 00:54:26,009
+back to you the slides all right now
+
+1007
+00:54:26,009 --> 00:54:30,310
+this is a slider you can actually tweet
+
+1008
+00:54:30,310 --> 00:54:33,310
+we present the Hookes proposal to you
+
+1009
+00:54:33,310 --> 00:54:34,480
+today
+
+1010
+00:54:34,480 --> 00:54:37,330
+Hookes led to use all react features
+
+1011
+00:54:37,330 --> 00:54:40,570
+without having to write a class they do
+
+1012
+00:54:40,570 --> 00:54:43,420
+not deprecated classes but you have the
+
+1013
+00:54:43,420 --> 00:54:45,610
+option to not have to write them we
+
+1014
+00:54:45,610 --> 00:54:48,070
+intend to cover all use cases for
+
+1015
+00:54:48,070 --> 00:54:50,890
+classes with hooks as soon as possible
+
+1016
+00:54:50,890 --> 00:54:53,140
+there are a few that are missing but
+
+1017
+00:54:53,140 --> 00:54:56,500
+we're working on them and hooks lets you
+
+1018
+00:54:56,500 --> 00:54:58,960
+reuse stateful logic extracted out of
+
+1019
+00:54:58,960 --> 00:55:02,050
+components tested separately reuse it
+
+1020
+00:55:02,050 --> 00:55:03,670
+between different components without
+
+1021
+00:55:03,670 --> 00:55:06,670
+introducing the wrapper hell and again
+
+1022
+00:55:06,670 --> 00:55:08,380
+importantly it's not a breaking change
+
+1023
+00:55:08,380 --> 00:55:11,820
+completely backwards compatible strictly
+
+1024
+00:55:11,820 --> 00:55:16,060
+addition additive and you can find the
+
+1025
+00:55:16,060 --> 00:55:18,520
+we wrote the documentation for hooks so
+
+1026
+00:55:18,520 --> 00:55:23,340
+you can find it at this year around and
+
+1027
+00:55:23,340 --> 00:55:27,160
+we want to hear from you the react
+
+1028
+00:55:27,160 --> 00:55:28,990
+immune to you when I hear what you think
+
+1029
+00:55:28,990 --> 00:55:31,600
+about hooks whether you like them or not
+
+1030
+00:55:31,600 --> 00:55:34,240
+and we realize that it's pretty hard to
+
+1031
+00:55:34,240 --> 00:55:35,890
+give feedback without actually trying
+
+1032
+00:55:35,890 --> 00:55:40,920
+them so we built them and we released
+
+1033
+00:55:40,920 --> 00:55:45,820
+sixty sixty and seven alpha it's not a
+
+1034
+00:55:45,820 --> 00:55:48,580
+major release it's a minor release but
+
+1035
+00:55:48,580 --> 00:55:50,550
+in alpha where you can try hooks and
+
+1036
+00:55:50,550 --> 00:55:54,520
+we've been trying them in production at
+
+1037
+00:55:54,520 --> 00:55:57,430
+Facebook for about a month so we don't
+
+1038
+00:55:57,430 --> 00:56:00,730
+expect major bugs there but the api's
+
+1039
+00:56:00,730 --> 00:56:04,390
+themselves may change together with your
+
+1040
+00:56:04,390 --> 00:56:08,140
+feedback and I asked you not to rewrite
+
+1041
+00:56:08,140 --> 00:56:10,150
+anything like not to rewrite their whole
+
+1042
+00:56:10,150 --> 00:56:14,380
+apps and hooks because first of all it's
+
+1043
+00:56:14,380 --> 00:56:17,220
+it's a proposal and second because
+
+1044
+00:56:17,220 --> 00:56:20,320
+personally I I find that it takes a bit
+
+1045
+00:56:20,320 --> 00:56:22,060
+of a mind shift to start thinking in
+
+1046
+00:56:22,060 --> 00:56:25,180
+hooks and it might be a bit confusing if
+
+1047
+00:56:25,180 --> 00:56:27,130
+you try to just take a class component
+
+1048
+00:56:27,130 --> 00:56:30,850
+and convert it but I do encourage you to
+
+1049
+00:56:30,850 --> 00:56:32,530
+try using hooks in some of the newer
+
+1050
+00:56:32,530 --> 00:56:34,930
+code that you write in and let us know
+
+1051
+00:56:34,930 --> 00:56:39,270
+what you think so
+
+1052
+00:56:39,270 --> 00:56:40,130
+thank you
+
+1053
+00:56:40,130 --> 00:56:44,470
+[Music]
+
+1054
+00:56:44,470 --> 00:56:45,970
+[Applause]
+
+1055
+00:56:45,970 --> 00:56:49,700
+so in our view hooks represent our
+
+1056
+00:56:49,700 --> 00:56:54,620
+vision for the future of reactive but I
+
+1057
+00:56:54,620 --> 00:56:58,460
+think they also represent the way we
+
+1058
+00:56:58,460 --> 00:57:02,360
+move react forward and that is we don't
+
+1059
+00:57:02,360 --> 00:57:07,010
+do big rewrite we want the new patterns
+
+1060
+00:57:07,010 --> 00:57:10,610
+that we like better to coexist with the
+
+1061
+00:57:10,610 --> 00:57:13,640
+old patterns so that we can have gradual
+
+1062
+00:57:13,640 --> 00:57:16,760
+migration and adoption just like you can
+
+1063
+00:57:16,760 --> 00:57:21,710
+gradually adopt react itself and this is
+
+1064
+00:57:21,710 --> 00:57:24,170
+almost the end of my talk I want to end
+
+1065
+00:57:24,170 --> 00:57:35,510
+it on a personal note so I started
+
+1066
+00:57:35,510 --> 00:57:40,810
+learning react about four years ago and
+
+1067
+00:57:40,810 --> 00:57:44,800
+one of my first questions was why JSX
+
+1068
+00:57:44,800 --> 00:57:49,340
+but my second one of the next questions
+
+1069
+00:57:49,340 --> 00:57:52,550
+was I can figure out what does the logo
+
+1070
+00:57:52,550 --> 00:57:56,000
+have to do with react so the project is
+
+1071
+00:57:56,000 --> 00:57:59,480
+not called Adam it's not a physics
+
+1072
+00:57:59,480 --> 00:58:01,430
+engine
+
+1073
+00:58:01,430 --> 00:58:04,490
+so one interpretation is that it's kind
+
+1074
+00:58:04,490 --> 00:58:05,450
+of upon on
+
+1075
+00:58:05,450 --> 00:58:08,150
+reactions so atoms participate in
+
+1076
+00:58:08,150 --> 00:58:11,960
+chemical reactions reactions react but
+
+1077
+00:58:11,960 --> 00:58:13,910
+it's not a flame with react actually
+
+1078
+00:58:13,910 --> 00:58:16,220
+Gotti I found a different interpretation
+
+1079
+00:58:16,220 --> 00:58:21,590
+that made more sense to me and the way I
+
+1080
+00:58:21,590 --> 00:58:23,800
+think about it
+
+1081
+00:58:23,800 --> 00:58:26,750
+we know that physical matter consists of
+
+1082
+00:58:26,750 --> 00:58:30,830
+atoms and we've learned that it's the
+
+1083
+00:58:30,830 --> 00:58:32,570
+types of these atoms and their
+
+1084
+00:58:32,570 --> 00:58:35,420
+properties that determine how the
+
+1085
+00:58:35,420 --> 00:58:38,980
+physical matter looks and behaves and
+
+1086
+00:58:38,980 --> 00:58:41,420
+react has taught me something similar
+
+1087
+00:58:41,420 --> 00:58:44,150
+that you can take a user interface and
+
+1088
+00:58:44,150 --> 00:58:46,940
+you can split it into these independent
+
+1089
+00:58:46,940 --> 00:58:50,300
+units called components and it's the
+
+1090
+00:58:50,300 --> 00:58:52,820
+types and properties of these components
+
+1091
+00:58:52,820 --> 00:58:55,820
+that can describe how the user interface
+
+1092
+00:58:55,820 --> 00:58:59,110
+looks and behaves
+
+1093
+00:58:59,110 --> 00:59:02,090
+what's ironic though is that the word
+
+1094
+00:59:02,090 --> 00:59:07,400
+Adam it literally means indivisible so
+
+1095
+00:59:07,400 --> 00:59:09,380
+when scientists just discovered Adam for
+
+1096
+00:59:09,380 --> 00:59:10,910
+the first time they thought this is the
+
+1097
+00:59:10,910 --> 00:59:14,510
+smallest thing we're gonna find but
+
+1098
+00:59:14,510 --> 00:59:17,540
+later they discovered an electron which
+
+1099
+00:59:17,540 --> 00:59:19,660
+is a smaller particle inside the atom
+
+1100
+00:59:19,660 --> 00:59:22,400
+and it turned out it actually electrons
+
+1101
+00:59:22,400 --> 00:59:27,590
+explain a lot about how atoms work and I
+
+1102
+00:59:27,590 --> 00:59:29,800
+kind of feel the same way about hooks I
+
+1103
+00:59:29,800 --> 00:59:33,820
+don't feel like hooks are a new feature
+
+1104
+00:59:33,820 --> 00:59:37,190
+rather I feel that hooks provide me with
+
+1105
+00:59:37,190 --> 00:59:39,650
+access to react features that I already
+
+1106
+00:59:39,650 --> 00:59:42,350
+know such as state and context and life
+
+1107
+00:59:42,350 --> 00:59:50,120
+cycle and I feel like hooks are a more
+
+1108
+00:59:50,120 --> 00:59:53,110
+direct representation of react and that
+
+1109
+00:59:53,110 --> 00:59:56,600
+they really explain how a component
+
+1110
+00:59:56,600 --> 01:00:00,050
+works inside and I feel like they've
+
+1111
+01:00:00,050 --> 01:00:02,570
+been hiding in plain sight for four
+
+1112
+01:00:02,570 --> 01:00:05,750
+years and in fact if you look at the
+
+1113
+01:00:05,750 --> 01:00:08,480
+react go go you can see those electron
+
+1114
+01:00:08,480 --> 01:00:11,330
+orbits there so maybe hooks have been
+
+1115
+01:00:11,330 --> 01:00:15,420
+there all along thank you
+
+1116
+01:00:15,420 --> 01:00:21,260
+[Music]
+
+1117
+01:00:21,260 --> 01:00:28,440
+[Applause]
+
+1118
+01:00:28,440 --> 01:00:31,090
+damn thank you so much Sophie thank you
+
+1119
+01:00:31,090 --> 01:00:34,090
+as well a couple years ago one of the
+
+1120
+01:00:34,090 --> 01:00:35,470
+things we said at the original react
+
+1121
+01:00:35,470 --> 01:00:37,300
+Kampf was that we we felt like we found
+
+1122
+01:00:37,300 --> 01:00:39,730
+a better model for our the front end of
+
+1123
+01:00:39,730 --> 01:00:41,410
+our applications and that the atomic
+
+1124
+01:00:41,410 --> 01:00:43,570
+unit it used to be you know you had
+
+1125
+01:00:43,570 --> 01:00:44,980
+views and you had models and controllers
+
+1126
+01:00:44,980 --> 01:00:46,360
+and we thought that the component was a
+
+1127
+01:00:46,360 --> 01:00:49,450
+better kind of primitive for that and I
+
+1128
+01:00:49,450 --> 01:00:51,820
+think we're really excited that we hope
+
+1129
+01:00:51,820 --> 01:00:53,380
+that hooks will make our applications
+
+1130
+01:00:53,380 --> 01:00:55,650
+even more maintainable going forward our
+
+1131
+01:00:55,650 --> 01:00:58,360
+next presenter if you use a router in
+
+1132
+01:00:58,360 --> 01:01:00,940
+your react application he is almost
+
+1133
+01:01:00,940 --> 01:01:02,500
+certainly either partially or completely
+
+1134
+01:01:02,500 --> 01:01:05,800
+responsible for that probably needs no
+
+1135
+01:01:05,800 --> 01:01:08,050
+further introduction welcome Ryan
+
+1136
+01:01:08,050 --> 01:01:09,190
+Florence
+
+1137
+01:01:09,190 --> 01:01:11,320
+[Applause]
+
+1138
+01:01:11,320 --> 01:01:13,130
+[Music]
+
+1139
+01:01:13,130 --> 01:01:17,250
+[Applause]
+
+1140
+01:01:17,250 --> 01:01:19,090
+I'm having the same technical
+
+1141
+01:01:19,090 --> 01:01:22,000
+difficulties dan did something good
+
+1142
+01:01:22,000 --> 01:01:30,010
+company are you feeling a little bit
+
+1143
+01:01:30,010 --> 01:01:33,060
+like when you first saw JSX
+
+1144
+01:01:33,060 --> 01:01:35,830
+better okay
+
+1145
+01:01:35,830 --> 01:01:37,570
+I was I was honestly not quite sure how
+
+1146
+01:01:37,570 --> 01:01:42,040
+people were going to respond to it so my
+
+1147
+01:01:42,040 --> 01:01:46,530
+talk is 90% cleaner with react hooks I
+
+1148
+01:01:46,530 --> 01:01:49,540
+used you might know me from react router
+
+1149
+01:01:49,540 --> 01:01:52,750
+I used to work at react training but now
+
+1150
+01:01:52,750 --> 01:01:56,500
+I'm running reached at Tech where I'm
+
+1151
+01:01:56,500 --> 01:02:00,670
+trying to make react accessible for the
+
+1152
+01:02:00,670 --> 01:02:03,430
+developers and their users so I've got
+
+1153
+01:02:03,430 --> 01:02:05,260
+open source their workshops online
+
+1154
+01:02:05,260 --> 01:02:08,050
+courses and stuff take a look and then
+
+1155
+01:02:08,050 --> 01:02:10,900
+also give me a follow on on twitter dan
+
+1156
+01:02:10,900 --> 01:02:13,780
+just said don't rewrite your apps in
+
+1157
+01:02:13,780 --> 01:02:20,720
+hooks I think you should
+
+1158
+01:02:20,720 --> 01:02:22,890
+we're just gonna we're just gonna dig in
+
+1159
+01:02:22,890 --> 01:02:24,690
+we're gonna do a bunch of code here and
+
+1160
+01:02:24,690 --> 01:02:27,210
+see how hooks feel in a little bit more
+
+1161
+01:02:27,210 --> 01:02:31,110
+real-world use case so this is this is
+
+1162
+01:02:31,110 --> 01:02:34,440
+kind of this is the state of react today
+
+1163
+01:02:34,440 --> 01:02:36,000
+right we got these render props and they
+
+1164
+01:02:36,000 --> 01:02:39,060
+get all nested I've loved these things
+
+1165
+01:02:39,060 --> 01:02:42,030
+since I saw them at react Europe when
+
+1166
+01:02:42,030 --> 01:02:45,600
+Cheng Liu showed us react motion but I
+
+1167
+01:02:45,600 --> 01:02:48,690
+have not loved the syntax disaster is
+
+1168
+01:02:48,690 --> 01:02:50,910
+what I started calling this render props
+
+1169
+01:02:50,910 --> 01:02:53,810
+big trade-off is that syntax disaster
+
+1170
+01:02:53,810 --> 01:02:56,610
+Dan and Sophie covered really well a lot
+
+1171
+01:02:56,610 --> 01:02:58,890
+of the problems that hooks solve with
+
+1172
+01:02:58,890 --> 01:03:00,210
+this so I won't go into any more detail
+
+1173
+01:03:00,210 --> 01:03:03,090
+except one other thing is something
+
+1174
+01:03:03,090 --> 01:03:04,200
+that's always bothered me about these
+
+1175
+01:03:04,200 --> 01:03:05,460
+render props is it gives a false
+
+1176
+01:03:05,460 --> 01:03:08,190
+hierarchy here I've got two media
+
+1177
+01:03:08,190 --> 01:03:09,390
+listeners where I'm listening to the
+
+1178
+01:03:09,390 --> 01:03:12,480
+media query and so I can see if this
+
+1179
+01:03:12,480 --> 01:03:17,520
+thing matches that those two queries and
+
+1180
+01:03:17,520 --> 01:03:19,290
+it looks like there's a hierarchy here
+
+1181
+01:03:19,290 --> 01:03:22,470
+but there's actually not so let's let's
+
+1182
+01:03:22,470 --> 01:03:24,840
+see how this code feels when we switch
+
+1183
+01:03:24,840 --> 01:03:27,360
+it over to hooks here's how it's all
+
+1184
+01:03:27,360 --> 01:03:30,480
+implemented we've got some initial state
+
+1185
+01:03:30,480 --> 01:03:34,370
+here we set up when the component mounts
+
+1186
+01:03:34,370 --> 01:03:37,130
+we do a quick check here because between
+
+1187
+01:03:37,130 --> 01:03:39,180
+initialization or a construction and
+
+1188
+01:03:39,180 --> 01:03:42,060
+mounting our screen size could have
+
+1189
+01:03:42,060 --> 01:03:44,100
+changed especially with suspense coming
+
+1190
+01:03:44,100 --> 01:03:46,980
+so we set some state just in case it
+
+1191
+01:03:46,980 --> 01:03:49,710
+changed create a listener add the
+
+1192
+01:03:49,710 --> 01:03:52,470
+listener and then we add removed
+
+1193
+01:03:52,470 --> 01:03:56,910
+listener to our component instance then
+
+1194
+01:03:56,910 --> 01:04:00,120
+we've got a component did update we do a
+
+1195
+01:04:00,120 --> 01:04:01,650
+little dip here because if our query
+
+1196
+01:04:01,650 --> 01:04:04,080
+changes we want to reset up this
+
+1197
+01:04:04,080 --> 01:04:05,940
+listener Reese absque Ribe to it and we
+
+1198
+01:04:05,940 --> 01:04:08,220
+need to clean it up as well and then
+
+1199
+01:04:08,220 --> 01:04:09,750
+when we unmount we clean it all up and
+
+1200
+01:04:09,750 --> 01:04:12,570
+of course we yield out that state or
+
+1201
+01:04:12,570 --> 01:04:14,790
+call back with that state with the
+
+1202
+01:04:14,790 --> 01:04:17,840
+render prop so let's come to the app and
+
+1203
+01:04:17,840 --> 01:04:22,760
+and switch this up instead let's say
+
+1204
+01:04:22,760 --> 01:04:26,130
+yeah I'm gonna use let there haven't
+
+1205
+01:04:26,130 --> 01:04:27,990
+been enough like semicolon conversations
+
+1206
+01:04:27,990 --> 01:04:30,370
+lately so I figured
+
+1207
+01:04:30,370 --> 01:04:32,620
+we can start some more of those kinds of
+
+1208
+01:04:32,620 --> 01:04:35,740
+conversations and my screen size is kind
+
+1209
+01:04:35,740 --> 01:04:38,230
+of small and I'm getting old and typing
+
+1210
+01:04:38,230 --> 01:04:40,360
+five characters is you know I'm pushing
+
+1211
+01:04:40,360 --> 01:04:43,300
+I'm getting close to 40 I'd rather just
+
+1212
+01:04:43,300 --> 01:04:47,620
+type three characters but anyway we're
+
+1213
+01:04:47,620 --> 01:04:52,660
+going to use media here let's grab this
+
+1214
+01:04:52,660 --> 01:04:56,110
+out drop it in there and then we're
+
+1215
+01:04:56,110 --> 01:04:59,580
+gonna have a large same thing use media
+
+1216
+01:04:59,580 --> 01:05:03,700
+grab this put it up here I got some
+
+1217
+01:05:03,700 --> 01:05:06,490
+extra quotes now and then we just get to
+
+1218
+01:05:06,490 --> 01:05:12,100
+delete stuff yeah so many little Woo's
+
+1219
+01:05:12,100 --> 01:05:16,080
+out there everyone is pumped about this
+
+1220
+01:05:16,080 --> 01:05:18,970
+let's go let's go implement it so let's
+
+1221
+01:05:18,970 --> 01:05:22,480
+make use media work so we're going to
+
+1222
+01:05:22,480 --> 01:05:27,130
+say function use media and we get the
+
+1223
+01:05:27,130 --> 01:05:30,580
+query in as an argument and then up top
+
+1224
+01:05:30,580 --> 01:05:32,890
+we're going to have our we're gonna have
+
+1225
+01:05:32,890 --> 01:05:34,360
+our state so we're just gonna slide all
+
+1226
+01:05:34,360 --> 01:05:37,240
+this code around and see where it moves
+
+1227
+01:05:37,240 --> 01:05:40,150
+so our state comes in like this and then
+
+1228
+01:05:40,150 --> 01:05:44,800
+we'll say let matches equal use state
+
+1229
+01:05:44,800 --> 01:05:48,960
+and we put in that initial state there
+
+1230
+01:05:48,960 --> 01:05:51,880
+and of course we need that second part
+
+1231
+01:05:51,880 --> 01:05:54,940
+of the return of set matches so that's
+
+1232
+01:05:54,940 --> 01:05:57,280
+why our state goes component did mount
+
+1233
+01:05:57,280 --> 01:06:00,190
+we just call setup so there's really
+
+1234
+01:06:00,190 --> 01:06:03,760
+nothing to do there but we will use an
+
+1235
+01:06:03,760 --> 01:06:06,580
+effect here you can think of use effect
+
+1236
+01:06:06,580 --> 01:06:11,230
+as component did mount and a few other
+
+1237
+01:06:11,230 --> 01:06:13,030
+things but for now just component did
+
+1238
+01:06:13,030 --> 01:06:16,450
+now so when we mount we grab all of this
+
+1239
+01:06:16,450 --> 01:06:18,490
+stuff and run it so we're going to move
+
+1240
+01:06:18,490 --> 01:06:24,310
+all of that into the effect and in here
+
+1241
+01:06:24,310 --> 01:06:26,590
+we're no longer reading this dot props
+
+1242
+01:06:26,590 --> 01:06:28,330
+like query SEM it's that one as well
+
+1243
+01:06:28,330 --> 01:06:30,460
+we're actually just reading an argument
+
+1244
+01:06:30,460 --> 01:06:32,860
+that comes into a function it's funny
+
+1245
+01:06:32,860 --> 01:06:34,090
+because we've said that about react for
+
+1246
+01:06:34,090 --> 01:06:35,740
+a long time right think of props like
+
+1247
+01:06:35,740 --> 01:06:38,290
+arguments to a function or what the
+
+1248
+01:06:38,290 --> 01:06:41,160
+hooked it is an argument to a function
+
+1249
+01:06:41,160 --> 01:06:43,869
+we're not going to read from this state
+
+1250
+01:06:43,869 --> 01:06:45,210
+matches we're just gonna read from
+
+1251
+01:06:45,210 --> 01:06:47,259
+matches cuz we already got it right up
+
+1252
+01:06:47,259 --> 01:06:47,650
+here
+
+1253
+01:06:47,650 --> 01:06:49,779
+and then we're not gonna call set state
+
+1254
+01:06:49,779 --> 01:06:52,119
+we're going to call actually let's reuse
+
+1255
+01:06:52,119 --> 01:06:59,640
+as much code as possible set matches
+
+1256
+01:06:59,640 --> 01:07:02,140
+it's important to be efficient no matter
+
+1257
+01:07:02,140 --> 01:07:05,049
+what task you're doing don't want to
+
+1258
+01:07:05,049 --> 01:07:08,890
+waste CPU cycles up here and we've got
+
+1259
+01:07:08,890 --> 01:07:11,170
+our listener we don't call set state
+
+1260
+01:07:11,170 --> 01:07:16,529
+let's try that again set matches I
+
+1261
+01:07:16,529 --> 01:07:21,609
+practiced last night doing that and then
+
+1262
+01:07:21,609 --> 01:07:25,240
+we add the listener and this this not
+
+1263
+01:07:25,240 --> 01:07:28,539
+just this but this this is kind of
+
+1264
+01:07:28,539 --> 01:07:30,339
+difficult as we've seen you all know
+
+1265
+01:07:30,339 --> 01:07:31,630
+that so I don't need to spend any time
+
+1266
+01:07:31,630 --> 01:07:33,460
+talking about that so with a hook
+
+1267
+01:07:33,460 --> 01:07:35,980
+instead of having to track this this
+
+1268
+01:07:35,980 --> 01:07:39,220
+function across our instance we just get
+
+1269
+01:07:39,220 --> 01:07:41,799
+to hand that over to react so you know
+
+1270
+01:07:41,799 --> 01:07:43,749
+what I don't care when that's supposed
+
+1271
+01:07:43,749 --> 01:07:46,349
+to be cleaned up you figure that out
+
+1272
+01:07:46,349 --> 01:07:49,119
+okay so now we've got our component did
+
+1273
+01:07:49,119 --> 01:07:51,999
+mount in their component did update so
+
+1274
+01:07:51,999 --> 01:07:55,150
+this is interesting when we update we
+
+1275
+01:07:55,150 --> 01:07:59,170
+dip the prop and see if we should remove
+
+1276
+01:07:59,170 --> 01:08:04,359
+the listener and then setup again do we
+
+1277
+01:08:04,359 --> 01:08:13,020
+get like previous
+
+1278
+01:08:13,020 --> 01:08:21,690
+previous art now where do I do it
+
+1279
+01:08:21,690 --> 01:08:24,880
+there's a second argument here the
+
+1280
+01:08:24,880 --> 01:08:28,089
+second argument we tell react what stuff
+
+1281
+01:08:28,089 --> 01:08:28,600
+matters
+
+1282
+01:08:28,600 --> 01:08:32,920
+about this hook so I just tell it well
+
+1283
+01:08:32,920 --> 01:08:36,220
+that's almost it i say hey the query
+
+1284
+01:08:36,220 --> 01:08:38,970
+matters here
+
+1285
+01:08:38,970 --> 01:08:40,660
+some of you were looking at this
+
+1286
+01:08:40,660 --> 01:08:45,550
+thinking I liked hooks until now this is
+
+1287
+01:08:45,550 --> 01:08:46,859
+the moment
+
+1288
+01:08:46,859 --> 01:08:49,300
+no wonder Dan didn't want to cover that
+
+1289
+01:08:49,300 --> 01:08:52,660
+part well let Ryan do it he bombed
+
+1290
+01:08:52,660 --> 01:08:56,940
+reactor alley so he can all right so
+
+1291
+01:08:56,940 --> 01:08:59,950
+this is a whole lot like component did
+
+1292
+01:08:59,950 --> 01:09:04,810
+update as well so react is gonna do that
+
+1293
+01:09:04,810 --> 01:09:06,940
+diff for us so before you get too grumpy
+
+1294
+01:09:06,940 --> 01:09:08,589
+about this API you know and you're
+
+1295
+01:09:08,589 --> 01:09:09,670
+probably thinking like oh I don't they
+
+1296
+01:09:09,670 --> 01:09:12,670
+passed the arguments back into us
+
+1297
+01:09:12,670 --> 01:09:14,140
+don't don't think of it that way don't
+
+1298
+01:09:14,140 --> 01:09:15,760
+think of it as these are arguments that
+
+1299
+01:09:15,760 --> 01:09:18,580
+I used in here think about a div and if
+
+1300
+01:09:18,580 --> 01:09:20,410
+you put will do the innerhtml
+
+1301
+01:09:20,410 --> 01:09:24,250
+maybe we did we put the inner or the
+
+1302
+01:09:24,250 --> 01:09:27,040
+query as the HTML of the div we don't
+
+1303
+01:09:27,040 --> 01:09:29,050
+think about this but react is diffing
+
+1304
+01:09:29,050 --> 01:09:31,270
+that query I mean not really it dips the
+
+1305
+01:09:31,270 --> 01:09:32,470
+react elements and it does the
+
+1306
+01:09:32,470 --> 01:09:35,050
+reconciliation but conceptually we can
+
+1307
+01:09:35,050 --> 01:09:37,359
+think react looks at that Korean goes oh
+
+1308
+01:09:37,359 --> 01:09:39,580
+that's different now I'm going to go do
+
+1309
+01:09:39,580 --> 01:09:44,140
+some Dom node or a Dom node I guess it's
+
+1310
+01:09:44,140 --> 01:09:48,130
+the the Twitter egg and we could change
+
+1311
+01:09:48,130 --> 01:09:50,410
+the inner HTML to something new right
+
+1312
+01:09:50,410 --> 01:09:52,690
+it's gonna go do an effect based on when
+
+1313
+01:09:52,690 --> 01:09:54,640
+that query changes so don't don't get
+
+1314
+01:09:54,640 --> 01:09:57,340
+too grumpy about this thing we're just
+
+1315
+01:09:57,340 --> 01:09:59,650
+we're just letting react do it now I
+
+1316
+01:09:59,650 --> 01:10:02,470
+mean we had to dip it anyway and I can't
+
+1317
+01:10:02,470 --> 01:10:03,880
+tell you how many bugs there are in my
+
+1318
+01:10:03,880 --> 01:10:05,740
+workshops where people forget to diff
+
+1319
+01:10:05,740 --> 01:10:07,720
+the prog in component did update and
+
+1320
+01:10:07,720 --> 01:10:10,570
+then set things up again so react is now
+
+1321
+01:10:10,570 --> 01:10:14,560
+going to handle this diff for us and it
+
+1322
+01:10:14,560 --> 01:10:16,810
+will actually remove the listener for us
+
+1323
+01:10:16,810 --> 01:10:19,780
+and then it will also set everything
+
+1324
+01:10:19,780 --> 01:10:27,460
+back up goodbye component did update
+
+1325
+01:10:27,460 --> 01:10:30,739
+all right component will unmount well
+
+1326
+01:10:30,739 --> 01:10:32,770
+yeah also if the core you changes will
+
+1327
+01:10:32,770 --> 01:10:35,659
+unsubscribe and if the component unmount
+
+1328
+01:10:35,659 --> 01:10:39,380
+it'll do that so all that's left is our
+
+1329
+01:10:39,380 --> 01:10:51,500
+return and then we return matches let's
+
+1330
+01:10:51,500 --> 01:10:56,449
+save it double check our work looks like
+
+1331
+01:10:56,449 --> 01:10:58,010
+it works
+
+1332
+01:10:58,010 --> 01:11:06,510
+[Applause]
+
+1333
+01:11:06,510 --> 01:11:16,810
+90% cleaner let's see I mean even like
+
+1334
+01:11:16,810 --> 01:11:19,870
+I've got prettier set to like 52 columns
+
+1335
+01:11:19,870 --> 01:11:22,210
+or something like that and it just it's
+
+1336
+01:11:22,210 --> 01:11:23,320
+just kind of like you look at this thing
+
+1337
+01:11:23,320 --> 01:11:25,930
+Ike's close your eyes if this makes you
+
+1338
+01:11:25,930 --> 01:11:30,220
+dizzy and now it's all just I'm in so
+
+1339
+01:11:30,220 --> 01:11:31,390
+cleaned up I don't really like talking
+
+1340
+01:11:31,390 --> 01:11:33,940
+about clean code I like code that works
+
+1341
+01:11:33,940 --> 01:11:36,310
+I don't usually care how clean it is but
+
+1342
+01:11:36,310 --> 01:11:38,170
+I love it when you get an abstraction
+
+1343
+01:11:38,170 --> 01:11:40,810
+that actually helps you write code that
+
+1344
+01:11:40,810 --> 01:11:43,120
+you don't sort of feel bad about when
+
+1345
+01:11:43,120 --> 01:11:47,650
+you deploy it I'm gonna I'm gonna put
+
+1346
+01:11:47,650 --> 01:11:50,410
+this back to the to the old way so we'll
+
+1347
+01:11:50,410 --> 01:11:51,850
+look at it again later
+
+1348
+01:11:51,850 --> 01:11:53,110
+let's look in a little bit more
+
+1349
+01:11:53,110 --> 01:11:55,180
+real-world example and what better way
+
+1350
+01:11:55,180 --> 01:11:57,370
+to talk about the real world than to
+
+1351
+01:11:57,370 --> 01:12:00,130
+look at pictures of the galaxy actually
+
+1352
+01:12:00,130 --> 01:12:01,450
+it's not our galaxy these are these are
+
+1353
+01:12:01,450 --> 01:12:05,080
+pictures from the Hubble Space Telescope
+
+1354
+01:12:05,080 --> 01:12:07,000
+we're gonna build a carousel so I went
+
+1355
+01:12:07,000 --> 01:12:10,450
+and did some research on how to build an
+
+1356
+01:12:10,450 --> 01:12:13,240
+accessible carousel for people using the
+
+1357
+01:12:13,240 --> 01:12:16,120
+mouse screen readers keyboard navigation
+
+1358
+01:12:16,120 --> 01:12:17,500
+and all that kind of stuff so we're
+
+1359
+01:12:17,500 --> 01:12:20,140
+gonna we're gonna do full-blown carousel
+
+1360
+01:12:20,140 --> 01:12:22,690
+here we're not going to do any half
+
+1361
+01:12:22,690 --> 01:12:30,440
+stuff or show Mary Poppins window width
+
+1362
+01:12:30,440 --> 01:12:31,820
+that's a little creepy if you're
+
+1363
+01:12:31,820 --> 01:12:38,090
+tracking that Dan okay so here is here's
+
+1364
+01:12:38,090 --> 01:12:43,390
+our app let me bump up the font a bit
+
+1365
+01:12:43,390 --> 01:12:46,070
+I've got a current index if I switch
+
+1366
+01:12:46,070 --> 01:12:48,280
+this index you'll notice that the slide
+
+1367
+01:12:48,280 --> 01:12:52,430
+changes back there we've got some the
+
+1368
+01:12:52,430 --> 01:12:54,710
+slide nav is right there here are the
+
+1369
+01:12:54,710 --> 01:12:57,290
+slide controls this bar down here is
+
+1370
+01:12:57,290 --> 01:12:58,520
+actually a progress bar we're gonna
+
+1371
+01:12:58,520 --> 01:13:00,740
+animate this thing that's what we know
+
+1372
+01:13:00,740 --> 01:13:02,990
+when the next slide is coming and then
+
+1373
+01:13:02,990 --> 01:13:05,360
+when we click these we're also going to
+
+1374
+01:13:05,360 --> 01:13:06,830
+manage focus so we're going to move
+
+1375
+01:13:06,830 --> 01:13:08,450
+focus from the button that we just
+
+1376
+01:13:08,450 --> 01:13:10,430
+clicked to the actual slides so that
+
+1377
+01:13:10,430 --> 01:13:12,260
+someone using a screen reader will be
+
+1378
+01:13:12,260 --> 01:13:14,810
+able to read the text inside the slide
+
+1379
+01:13:14,810 --> 01:13:16,520
+they don't want to just change something
+
+1380
+01:13:16,520 --> 01:13:19,760
+and then not read it so let's let's
+
+1381
+01:13:19,760 --> 01:13:22,220
+bring this thing to life so we're going
+
+1382
+01:13:22,220 --> 01:13:28,220
+to use state here and then we're gonna
+
+1383
+01:13:28,220 --> 01:13:33,320
+have our set current index so this is a
+
+1384
+01:13:33,320 --> 01:13:35,540
+lot like object D structuring it's kind
+
+1385
+01:13:35,540 --> 01:13:37,970
+of new for some people a radies
+
+1386
+01:13:37,970 --> 01:13:40,460
+structuring is in some other language
+
+1387
+01:13:40,460 --> 01:13:41,660
+that's in Ruby that's where I first
+
+1388
+01:13:41,660 --> 01:13:44,030
+learned D structuring but yeah it's just
+
+1389
+01:13:44,030 --> 01:13:45,830
+like object destruction but it's arrays
+
+1390
+01:13:45,830 --> 01:13:47,600
+and it's actually been around longer
+
+1391
+01:13:47,600 --> 01:13:49,610
+than object D structuring and Java is
+
+1392
+01:13:49,610 --> 01:13:50,930
+good
+
+1393
+01:13:50,930 --> 01:13:54,110
+so let's what should we do let's do the
+
+1394
+01:13:54,110 --> 01:13:55,940
+list of the forward and back buttons
+
+1395
+01:13:55,940 --> 01:14:00,230
+first so I'm going to come down here to
+
+1396
+01:14:00,230 --> 01:14:04,610
+our controls play/pause gonna have a
+
+1397
+01:14:04,610 --> 01:14:08,570
+space or gif to have a good app I told
+
+1398
+01:14:08,570 --> 01:14:10,760
+you I was old half of you don't know
+
+1399
+01:14:10,760 --> 01:14:17,030
+what that is but those that do okay what
+
+1400
+01:14:17,030 --> 01:14:18,620
+do we want to do want to say set current
+
+1401
+01:14:18,620 --> 01:14:22,550
+index we're going to go backwards so we
+
+1402
+01:14:22,550 --> 01:14:25,400
+need to do we're going to do current
+
+1403
+01:14:25,400 --> 01:14:28,160
+index minus 1 but we want to cycle
+
+1404
+01:14:28,160 --> 01:14:30,980
+through if we get to the first one we're
+
+1405
+01:14:30,980 --> 01:14:32,210
+going to do a little bit of computer
+
+1406
+01:14:32,210 --> 01:14:38,600
+science here
+
+1407
+01:14:38,600 --> 01:14:43,590
+got from stackoverflow don't trust this
+
+1408
+01:14:43,590 --> 01:14:51,360
+code you you sometimes like you look at
+
+1409
+01:14:51,360 --> 01:14:52,890
+Kodiak that's kind of weird how they did
+
+1410
+01:14:52,890 --> 01:14:55,920
+this but I mean Ryan wrote it so I bet
+
+1411
+01:14:55,920 --> 01:14:57,540
+he knows what he's doing with it
+
+1412
+01:14:57,540 --> 01:15:00,630
+nope so I encourage more comments like
+
+1413
+01:15:00,630 --> 01:15:04,470
+that and then down here what do we do we
+
+1414
+01:15:04,470 --> 01:15:06,720
+say on click we're gonna set current
+
+1415
+01:15:06,720 --> 01:15:09,090
+index here as well but this one's a
+
+1416
+01:15:09,090 --> 01:15:10,230
+little bit easier so we're gonna do
+
+1417
+01:15:10,230 --> 01:15:12,450
+current index plus 1 and then modulus
+
+1418
+01:15:12,450 --> 01:15:14,430
+slice that length so again this is just
+
+1419
+01:15:14,430 --> 01:15:16,950
+so that it'll cycle through let's save
+
+1420
+01:15:16,950 --> 01:15:22,880
+it come over here cool
+
+1421
+01:15:22,880 --> 01:15:25,410
+what should we do next
+
+1422
+01:15:25,410 --> 01:15:28,200
+these slideshows usually automatically
+
+1423
+01:15:28,200 --> 01:15:32,700
+play right so we're not going to be what
+
+1424
+01:15:32,700 --> 01:15:33,810
+I want to do we want to have like an
+
+1425
+01:15:33,810 --> 01:15:35,670
+interval or a set timeout or something
+
+1426
+01:15:35,670 --> 01:15:36,960
+right
+
+1427
+01:15:36,960 --> 01:15:42,480
+but we're going to use effect if we want
+
+1428
+01:15:42,480 --> 01:15:45,360
+to put a clock on this page then that's
+
+1429
+01:15:45,360 --> 01:15:46,500
+an effect that's something we would have
+
+1430
+01:15:46,500 --> 01:15:48,420
+done in component did metal so instead
+
+1431
+01:15:48,420 --> 01:15:50,730
+we do it and use effect here and we will
+
+1432
+01:15:50,730 --> 01:15:54,870
+set timeout I've got a slide duration
+
+1433
+01:15:54,870 --> 01:15:57,630
+already out there and once again we're
+
+1434
+01:15:57,630 --> 01:16:00,510
+going to set current index to our new
+
+1435
+01:16:00,510 --> 01:16:03,270
+index plus 1 I love computer science so
+
+1436
+01:16:03,270 --> 01:16:09,720
+much ok let's save it it's about 3
+
+1437
+01:16:09,720 --> 01:16:16,520
+seconds all right pretty cool
+
+1438
+01:16:16,520 --> 01:16:19,260
+play pause let's let's get the let's get
+
+1439
+01:16:19,260 --> 01:16:20,610
+the play button working we're getting
+
+1440
+01:16:20,610 --> 01:16:23,150
+some more states will say is playing I
+
+1441
+01:16:23,150 --> 01:16:27,330
+mean that could work is play 9 and set
+
+1442
+01:16:27,330 --> 01:16:31,380
+is playing will use some state
+
+1443
+01:16:31,380 --> 01:16:35,100
+we're not playing yet let's come down to
+
+1444
+01:16:35,100 --> 01:16:37,950
+our controls here's playing pause so
+
+1445
+01:16:37,950 --> 01:16:41,340
+I'll say is playing so if we're playing
+
+1446
+01:16:41,340 --> 01:16:44,040
+then let's render the pause button so
+
+1447
+01:16:44,040 --> 01:16:47,630
+when we pause we set is playing
+
+1448
+01:16:47,630 --> 01:16:52,690
+and then when we play we set is playing
+
+1449
+01:16:52,690 --> 01:17:02,350
+to true
+
+1450
+01:17:02,350 --> 01:17:11,250
+wait a sec I said false if is playing
+
+1451
+01:17:11,250 --> 01:17:16,360
+then set timeout it's important like Dan
+
+1452
+01:17:16,360 --> 01:17:17,440
+was talking about you don't do this
+
+1453
+01:17:17,440 --> 01:17:19,630
+outside those effects need to be there
+
+1454
+01:17:19,630 --> 01:17:21,970
+all the time the way to think about that
+
+1455
+01:17:21,970 --> 01:17:25,060
+is you actually really really love hooks
+
+1456
+01:17:25,060 --> 01:17:31,000
+in fact you love them unconditionally
+
+1457
+01:17:31,000 --> 01:17:38,040
+[Applause]
+
+1458
+01:17:38,040 --> 01:17:40,210
+that just that just came to me during
+
+1459
+01:17:40,210 --> 01:17:41,740
+Dan's talk and I'm really glad that
+
+1460
+01:17:41,740 --> 01:17:45,790
+landed hmm I was actually Jared Palmer
+
+1461
+01:17:45,790 --> 01:17:48,430
+told me to get a Captain Hook outfit and
+
+1462
+01:17:48,430 --> 01:17:50,650
+like come up here I'd be like I'm gonna
+
+1463
+01:17:50,650 --> 01:17:52,890
+show you how to program with hooks and
+
+1464
+01:17:52,890 --> 01:17:55,210
+for 30 minutes try to type on my
+
+1465
+01:17:55,210 --> 01:17:59,380
+keyboard then we almost went to the
+
+1466
+01:17:59,380 --> 01:18:00,940
+strip to go get one but that one might
+
+1467
+01:18:00,940 --> 01:18:03,960
+have not been safe for work so we didn't
+
+1468
+01:18:03,960 --> 01:18:10,600
+okay so I am I'm gonna save this so it's
+
+1469
+01:18:10,600 --> 01:18:13,300
+not playing one two three okay now I'm
+
+1470
+01:18:13,300 --> 01:18:15,910
+gonna click the play button one two
+
+1471
+01:18:15,910 --> 01:18:22,210
+three cool I'm gonna click the pause
+
+1472
+01:18:22,210 --> 01:18:27,220
+button I don't know if I when did i
+
+1473
+01:18:27,220 --> 01:18:31,630
+click that so I'm gonna play again okay
+
+1474
+01:18:31,630 --> 01:18:39,100
+now I'm gonna pause so I should stop
+
+1475
+01:18:39,100 --> 01:18:46,869
+play
+
+1476
+01:18:46,869 --> 01:18:57,320
+is is dance still in here I mean I've
+
+1477
+01:18:57,320 --> 01:18:59,030
+only been using these for like ten
+
+1478
+01:18:59,030 --> 01:18:59,510
+minutes
+
+1479
+01:18:59,510 --> 01:19:06,889
+so clear my time out return what all
+
+1480
+01:19:06,889 --> 01:19:07,489
+right here we go
+
+1481
+01:19:07,489 --> 01:19:11,300
+sorry that was staged I want to see if
+
+1482
+01:19:11,300 --> 01:19:14,300
+Dan would actually come up and I know
+
+1483
+01:19:14,300 --> 01:19:15,979
+everyone on the react team is like when
+
+1484
+01:19:15,979 --> 01:19:17,719
+is he gonna pass the second argument to
+
+1485
+01:19:17,719 --> 01:19:20,630
+use effect okay so this this is working
+
+1486
+01:19:20,630 --> 01:19:22,369
+right now but it's it's got all sorts of
+
+1487
+01:19:22,369 --> 01:19:25,219
+problems this is my favorite one so it's
+
+1488
+01:19:25,219 --> 01:19:27,289
+playing and then I click click click
+
+1489
+01:19:27,289 --> 01:19:36,380
+click click click then I'll stop I'll
+
+1490
+01:19:36,380 --> 01:19:40,760
+get one more and now it's done so we've
+
+1491
+01:19:40,760 --> 01:19:42,170
+got to let react know it's got to do
+
+1492
+01:19:42,170 --> 01:19:45,559
+that component did update diff and it's
+
+1493
+01:19:45,559 --> 01:19:48,139
+got to we need to clear this time out
+
+1494
+01:19:48,139 --> 01:19:49,639
+because when I'm when I'm playing and
+
+1495
+01:19:49,639 --> 01:19:52,130
+then I hit pause there's that last
+
+1496
+01:19:52,130 --> 01:19:54,530
+timeout that's still there that hasn't
+
+1497
+01:19:54,530 --> 01:19:55,999
+been cleaned up so that's why we get
+
+1498
+01:19:55,999 --> 01:19:58,789
+that one extra in there so what we need
+
+1499
+01:19:58,789 --> 01:20:03,380
+to do is a first tell react that uh oh
+
+1500
+01:20:03,380 --> 01:20:05,179
+sorry and then the other bug where the
+
+1501
+01:20:05,179 --> 01:20:06,949
+click click click happens is I click
+
+1502
+01:20:06,949 --> 01:20:09,139
+next next next and the timeout doesn't
+
+1503
+01:20:09,139 --> 01:20:10,489
+get cleared and I end up setting
+
+1504
+01:20:10,489 --> 01:20:12,829
+multiple timeouts because the current
+
+1505
+01:20:12,829 --> 01:20:14,630
+index changes and so I get a re render
+
+1506
+01:20:14,630 --> 01:20:16,369
+on every single one so I get a set
+
+1507
+01:20:16,369 --> 01:20:18,949
+timeout on every single one of those so
+
+1508
+01:20:18,949 --> 01:20:20,269
+I'll come in here and I'll tell it if
+
+1509
+01:20:20,269 --> 01:20:24,019
+the current index changes or if is
+
+1510
+01:20:24,019 --> 01:20:27,469
+playing changes then I want you to clean
+
+1511
+01:20:27,469 --> 01:20:33,099
+up my mess so we'll let our timeout
+
+1512
+01:20:33,099 --> 01:20:37,960
+equal that and then we can clear timeout
+
+1513
+01:20:37,960 --> 01:20:42,860
+right there so now as that state changes
+
+1514
+01:20:42,860 --> 01:20:46,130
+over time react knows when when to clean
+
+1515
+01:20:46,130 --> 01:20:49,030
+stuff up so we got one transition I
+
+1516
+01:20:49,030 --> 01:20:54,199
+pause it and then it should be done and
+
+1517
+01:20:54,199 --> 01:20:56,929
+again don't get grumpy
+
+1518
+01:20:56,929 --> 01:21:00,679
+this arguments fine it's just like it's
+
+1519
+01:21:00,679 --> 01:21:04,099
+just like this is playing react is
+
+1520
+01:21:04,099 --> 01:21:06,650
+already doing dips for you it's already
+
+1521
+01:21:06,650 --> 01:21:09,289
+doing that in the reconciler but we're
+
+1522
+01:21:09,289 --> 01:21:10,789
+not rendering elements here so this
+
+1523
+01:21:10,789 --> 01:21:12,829
+stuff can't participate in that kind of
+
+1524
+01:21:12,829 --> 01:21:14,869
+a diff and so when we drop this stuff in
+
+1525
+01:21:14,869 --> 01:21:16,249
+here we're saying okay plug this
+
+1526
+01:21:16,249 --> 01:21:17,989
+affecting to the Reckling reconciler
+
+1527
+01:21:17,989 --> 01:21:20,630
+based on these things just like our just
+
+1528
+01:21:20,630 --> 01:21:26,749
+like our elements the owners I emphasize
+
+1529
+01:21:26,749 --> 01:21:31,340
+that as I was so grumpy about these okay
+
+1530
+01:21:31,340 --> 01:21:33,409
+what's next this progress part let's do
+
+1531
+01:21:33,409 --> 01:21:36,469
+the progress bar this thing is really
+
+1532
+01:21:36,469 --> 01:21:39,769
+fun so down here we've got a progress
+
+1533
+01:21:39,769 --> 01:21:43,699
+bar and we're gonna animate if we're
+
+1534
+01:21:43,699 --> 01:21:46,429
+playing so let's go up to the progress
+
+1535
+01:21:46,429 --> 01:21:47,689
+bar let's see how it works so we've just
+
+1536
+01:21:47,689 --> 01:21:50,209
+got this value here and watch it's gonna
+
+1537
+01:21:50,209 --> 01:21:53,059
+bump up to 75% now we can put it back
+
+1538
+01:21:53,059 --> 01:21:56,929
+down to 50% and then we could also just
+
+1539
+01:21:56,929 --> 01:22:07,340
+use progress and
+
+1540
+01:22:07,340 --> 01:22:10,410
+yeah I mean you know you're not sure if
+
+1541
+01:22:10,410 --> 01:22:11,730
+you want to clap could you have no idea
+
+1542
+01:22:11,730 --> 01:22:17,870
+how it works I think I like it
+
+1543
+01:22:17,870 --> 01:22:20,460
+this is not built-in to react this is
+
+1544
+01:22:20,460 --> 01:22:24,510
+this is my own custom hood isn't that so
+
+1545
+01:22:24,510 --> 01:22:26,790
+cool though it's like I had just a
+
+1546
+01:22:26,790 --> 01:22:31,140
+singular value or a static value and to
+
+1547
+01:22:31,140 --> 01:22:33,660
+refactor to something stateful is just a
+
+1548
+01:22:33,660 --> 01:22:37,590
+function call like it's it's still kind
+
+1549
+01:22:37,590 --> 01:22:39,870
+of blowing my mind I haven't gotten
+
+1550
+01:22:39,870 --> 01:22:41,340
+bored with react I've been teaching it
+
+1551
+01:22:41,340 --> 01:22:42,720
+at workshops for three and a half years
+
+1552
+01:22:42,720 --> 01:22:44,910
+thousands of people maybe a hundred
+
+1553
+01:22:44,910 --> 01:22:47,370
+workshops and I still don't get bored
+
+1554
+01:22:47,370 --> 01:22:50,100
+with it and now there's this stuff and
+
+1555
+01:22:50,100 --> 01:22:53,580
+I'm like a little bit hyper when I talk
+
+1556
+01:22:53,580 --> 01:22:54,930
+about it and I'll tell you what the last
+
+1557
+01:22:54,930 --> 01:22:56,850
+workshops or the last couple weeks have
+
+1558
+01:22:56,850 --> 01:22:59,310
+been impossible to keep my mouth shut
+
+1559
+01:22:59,310 --> 01:23:00,840
+there are a couple people here who are
+
+1560
+01:23:00,840 --> 01:23:03,540
+at some of them and yeah it was I'm like
+
+1561
+01:23:03,540 --> 01:23:04,980
+yeah I know a render props are kind of
+
+1562
+01:23:04,980 --> 01:23:06,570
+weird hire de components are kind of
+
+1563
+01:23:06,570 --> 01:23:12,500
+weird but just wait two weeks
+
+1564
+01:23:12,500 --> 01:23:15,120
+I got a survey result back that was like
+
+1565
+01:23:15,120 --> 01:23:17,340
+I want my money back everything's
+
+1566
+01:23:17,340 --> 01:23:18,900
+changing in two weeks and I was like
+
+1567
+01:23:18,900 --> 01:23:21,329
+okay
+
+1568
+01:23:21,329 --> 01:23:23,639
+like maybe I should not tell them
+
+1569
+01:23:23,639 --> 01:23:29,340
+anything at all it's actually not that
+
+1570
+01:23:29,340 --> 01:23:37,739
+great look didn't reset okay so how do
+
+1571
+01:23:37,739 --> 01:23:40,320
+we get these these effects to reset we
+
+1572
+01:23:40,320 --> 01:23:41,550
+just talked about it's that second
+
+1573
+01:23:41,550 --> 01:23:43,020
+argument right so that react can diff
+
+1574
+01:23:43,020 --> 01:23:46,619
+and change it so our progress bar down
+
+1575
+01:23:46,619 --> 01:23:49,800
+here only knows about time and animate
+
+1576
+01:23:49,800 --> 01:23:53,550
+and then our use progress let's go look
+
+1577
+01:23:53,550 --> 01:23:56,989
+at it
+
+1578
+01:23:56,989 --> 01:23:58,800
+don't worry too much well it's going on
+
+1579
+01:23:58,800 --> 01:23:59,400
+here there's just some
+
+1580
+01:23:59,400 --> 01:24:01,679
+requestanimationframe and calculating
+
+1581
+01:24:01,679 --> 01:24:05,280
+time stamps but it it will reset if anim
+
+1582
+01:24:05,280 --> 01:24:09,630
+and time change I don't want to have to
+
+1583
+01:24:09,630 --> 01:24:16,590
+tell my progress bar all about current
+
+1584
+01:24:16,590 --> 01:24:19,469
+index and is playing if I could pass
+
+1585
+01:24:19,469 --> 01:24:21,179
+that stuff in and then it could pass
+
+1586
+01:24:21,179 --> 01:24:22,949
+that stuff to use progress then it could
+
+1587
+01:24:22,949 --> 01:24:24,630
+pass that to the argument there but
+
+1588
+01:24:24,630 --> 01:24:27,239
+react already has a built-in way with
+
+1589
+01:24:27,239 --> 01:24:29,130
+our elements to reset state whether
+
+1590
+01:24:29,130 --> 01:24:31,349
+you're using hooks or you're using a
+
+1591
+01:24:31,349 --> 01:24:36,420
+class component it's the key so you need
+
+1592
+01:24:36,420 --> 01:24:38,639
+to say if the current index or is
+
+1593
+01:24:38,639 --> 01:24:40,889
+playing changes I want a different
+
+1594
+01:24:40,889 --> 01:24:43,920
+instance of a progress bar and then the
+
+1595
+01:24:43,920 --> 01:24:46,980
+state inside of the hook I mean it
+
+1596
+01:24:46,980 --> 01:24:48,510
+doesn't get reset the thing just goes
+
+1597
+01:24:48,510 --> 01:24:49,770
+away and then you get a brand new one
+
+1598
+01:24:49,770 --> 01:24:52,020
+but you can think about it as this will
+
+1599
+01:24:52,020 --> 01:24:53,909
+reset the state of the progress bar
+
+1600
+01:24:53,909 --> 01:24:56,190
+whenever those two pieces of state
+
+1601
+01:24:56,190 --> 01:25:02,210
+change cool
+
+1602
+01:25:02,210 --> 01:25:05,579
+and now I want to read about the Eagle
+
+1603
+01:25:05,579 --> 01:25:08,310
+Nebula hey I want to read the Eagle
+
+1604
+01:25:08,310 --> 01:25:10,940
+Nebula pillars are bathed in put hey
+
+1605
+01:25:10,940 --> 01:25:13,829
+they ultraviolet light from a grouping
+
+1606
+01:25:13,829 --> 01:25:14,610
+of young
+
+1607
+01:25:14,610 --> 01:25:19,530
+oh my charge me crazy on websites when
+
+1608
+01:25:19,530 --> 01:25:21,389
+like they actually have a carousel that
+
+1609
+01:25:21,389 --> 01:25:23,670
+you actually care about and then it just
+
+1610
+01:25:23,670 --> 01:25:28,110
+keeps on going so how can we fix that
+
+1611
+01:25:28,110 --> 01:25:29,880
+when we click next or previous we could
+
+1612
+01:25:29,880 --> 01:25:34,590
+say set is playing false right and then
+
+1613
+01:25:34,590 --> 01:25:36,380
+we could do the same thing up here on
+
+1614
+01:25:36,380 --> 01:25:42,659
+here set is playing false but the more
+
+1615
+01:25:42,659 --> 01:25:45,210
+state we get in these components you
+
+1616
+01:25:45,210 --> 01:25:48,030
+kind of end up with with this and that's
+
+1617
+01:25:48,030 --> 01:25:52,380
+that's fine but maybe you'd rather do
+
+1618
+01:25:52,380 --> 01:25:54,030
+something a little bit more conventional
+
+1619
+01:25:54,030 --> 01:25:56,909
+where maybe you've got some state to
+
+1620
+01:25:56,909 --> 01:25:59,190
+talk about and maybe you would like to
+
+1621
+01:25:59,190 --> 01:26:02,040
+co-locate all of the management of that
+
+1622
+01:26:02,040 --> 01:26:05,000
+state with something like I don't know
+
+1623
+01:26:05,000 --> 01:26:07,920
+dispatch and to do that maybe you would
+
+1624
+01:26:07,920 --> 01:26:15,710
+like to use a reducer this is actually
+
+1625
+01:26:15,710 --> 01:26:18,869
+built in to react hooks so it comes
+
+1626
+01:26:18,869 --> 01:26:21,690
+comes straight from react we pass it
+
+1627
+01:26:21,690 --> 01:26:24,329
+some initial state so the kering index
+
+1628
+01:26:24,329 --> 01:26:29,630
+is 0 we pass it is playing faults and
+
+1629
+01:26:29,630 --> 01:26:32,250
+then in here I'm just gonna I'm just
+
+1630
+01:26:32,250 --> 01:26:33,780
+gonna write the reducer as quick as I
+
+1631
+01:26:33,780 --> 01:26:34,889
+can
+
+1632
+01:26:34,889 --> 01:26:36,329
+I'm really bad at switch statements
+
+1633
+01:26:36,329 --> 01:26:38,040
+though I didn't use them until Redux
+
+1634
+01:26:38,040 --> 01:26:40,860
+came around I'm still not sure how I
+
+1635
+01:26:40,860 --> 01:26:43,849
+feel about switch statements but uh I
+
+1636
+01:26:43,849 --> 01:26:46,500
+can finally write them without having to
+
+1637
+01:26:46,500 --> 01:26:49,770
+stackoverflow it so we've got case
+
+1638
+01:26:49,770 --> 01:26:52,290
+progress and we've got case next and
+
+1639
+01:26:52,290 --> 01:26:54,650
+these these basically do the same thing
+
+1640
+01:26:54,650 --> 01:26:57,780
+so I'm going to return all my state and
+
+1641
+01:26:57,780 --> 01:27:00,090
+then I'll say is playing if I'm
+
+1642
+01:27:00,090 --> 01:27:01,920
+progressing from slide to slide I want
+
+1643
+01:27:01,920 --> 01:27:04,349
+to keep playing and so I'll say is
+
+1644
+01:27:04,349 --> 01:27:11,970
+playing is action type if I could type
+
+1645
+01:27:11,970 --> 01:27:14,170
+it's progress so it'll keep on playing
+
+1646
+01:27:14,170 --> 01:27:15,580
+but if I click next it won't be playing
+
+1647
+01:27:15,580 --> 01:27:17,590
+anymore and then I'll do the current
+
+1648
+01:27:17,590 --> 01:27:24,490
+index yes or computer science almost
+
+1649
+01:27:24,490 --> 01:27:25,750
+forgot what to do at the end there and
+
+1650
+01:27:25,750 --> 01:27:28,630
+then okay so that's what are we yelling
+
+1651
+01:27:28,630 --> 01:27:31,290
+about we're gonna default case alright
+
+1652
+01:27:31,290 --> 01:27:36,270
+default turn our state I so got next and
+
+1653
+01:27:36,270 --> 01:27:40,530
+progress let's copy this and do previous
+
+1654
+01:27:40,530 --> 01:27:45,970
+and oops we're going to subtract from
+
+1655
+01:27:45,970 --> 01:27:50,110
+their slides length and then is playing
+
+1656
+01:27:50,110 --> 01:27:54,100
+is false and then what else we got we've
+
+1657
+01:27:54,100 --> 01:28:00,280
+got case play so when we play I want to
+
+1658
+01:28:00,280 --> 01:28:03,070
+say is playing true and then we've got
+
+1659
+01:28:03,070 --> 01:28:08,710
+pause and it's playing false one two
+
+1660
+01:28:08,710 --> 01:28:11,410
+three four five alright so that is all
+
+1661
+01:28:11,410 --> 01:28:14,610
+of them I'm gonna delete this stuff and
+
+1662
+01:28:14,610 --> 01:28:18,850
+then we're gonna have some some
+
+1663
+01:28:18,850 --> 01:28:22,210
+disasters right here so let's let's fix
+
+1664
+01:28:22,210 --> 01:28:26,710
+all of these bugs and what else we got
+
+1665
+01:28:26,710 --> 01:28:29,280
+if is playing so what state is playing
+
+1666
+01:28:29,280 --> 01:28:33,280
+almost so we're not gonna set current
+
+1667
+01:28:33,280 --> 01:28:35,550
+index here we're going to dispatch
+
+1668
+01:28:35,550 --> 01:28:41,830
+progress and then down here more putting
+
+1669
+01:28:41,830 --> 01:28:45,820
+state on there what else you got
+
+1670
+01:28:45,820 --> 01:28:50,260
+yes lint what else you got stay current
+
+1671
+01:28:50,260 --> 01:28:56,220
+index we're getting close
+
+1672
+01:28:56,220 --> 01:28:59,580
+we don't set his playing we dispatch a
+
+1673
+01:28:59,580 --> 01:29:06,520
+tight play and then down here same thing
+
+1674
+01:29:06,520 --> 01:29:09,760
+oops this one should be paused I heard
+
+1675
+01:29:09,760 --> 01:29:12,180
+somebody grumble over here thank you
+
+1676
+01:29:12,180 --> 01:29:14,050
+whenever you hear the grumble looks like
+
+1677
+01:29:14,050 --> 01:29:16,210
+you did something wrong but you don't
+
+1678
+01:29:16,210 --> 01:29:19,450
+know what they said just just get
+
+1679
+01:29:19,450 --> 01:29:22,930
+nervous so previous slide won't do all
+
+1680
+01:29:22,930 --> 01:29:24,020
+that anymore we're just dis
+
+1681
+01:29:24,020 --> 01:29:29,420
+batch type is a previous same thing here
+
+1682
+01:29:29,420 --> 01:29:31,160
+we don't have to do that those two
+
+1683
+01:29:31,160 --> 01:29:32,450
+things we just got to say what we're
+
+1684
+01:29:32,450 --> 01:29:36,380
+doing go to next
+
+1685
+01:29:36,380 --> 01:29:40,220
+a couple more bits here not Sophie bits
+
+1686
+01:29:40,220 --> 01:29:49,240
+these are Ryan bits and I got one fan
+
+1687
+01:29:49,240 --> 01:29:51,440
+and then this already covered this
+
+1688
+01:29:51,440 --> 01:29:52,700
+that's a for the screen reader to know
+
+1689
+01:29:52,700 --> 01:29:54,260
+that something's happening okay
+
+1690
+01:29:54,260 --> 01:29:57,380
+as a slight happy try not to make you
+
+1691
+01:29:57,380 --> 01:30:00,620
+dizzy sliding up here I think it's I
+
+1692
+01:30:00,620 --> 01:30:07,810
+think it's happy let's save that
+
+1693
+01:30:07,810 --> 01:30:25,790
+yeah throw this stuff on context you can
+
+1694
+01:30:25,790 --> 01:30:28,280
+fill in the rest of that statement
+
+1695
+01:30:28,280 --> 01:30:33,360
+sorry mark I wrote a blog post called
+
+1696
+01:30:33,360 --> 01:30:37,199
+this suspense is killing redux I might
+
+1697
+01:30:37,199 --> 01:30:39,030
+write another one called Redux gets the
+
+1698
+01:30:39,030 --> 01:30:47,219
+hook but no I I love I love reducers
+
+1699
+01:30:47,219 --> 01:30:48,659
+from redux I love thinking about my
+
+1700
+01:30:48,659 --> 01:30:50,250
+state on one thing I don't think we
+
+1701
+01:30:50,250 --> 01:30:51,840
+talked enough about colocation in the
+
+1702
+01:30:51,840 --> 01:30:54,570
+community and we're seeing it now dan
+
+1703
+01:30:54,570 --> 01:30:56,460
+talked a whole lot about it where we
+
+1704
+01:30:56,460 --> 01:31:00,300
+used to have this kind of stuff spread
+
+1705
+01:31:00,300 --> 01:31:02,369
+all over the place in a component but we
+
+1706
+01:31:02,369 --> 01:31:03,630
+kind of felt like oh but it's all in a
+
+1707
+01:31:03,630 --> 01:31:05,849
+components so it's co-located but we
+
+1708
+01:31:05,849 --> 01:31:06,960
+didn't realize that if we looked a
+
+1709
+01:31:06,960 --> 01:31:08,099
+little bit closer
+
+1710
+01:31:08,099 --> 01:31:11,010
+we had logic spread across our component
+
+1711
+01:31:11,010 --> 01:31:14,040
+and that stuff wasn't co-located so
+
+1712
+01:31:14,040 --> 01:31:16,050
+hooks led us co-locate these effects
+
+1713
+01:31:16,050 --> 01:31:19,380
+colo-colo Kedar state and use reducer it
+
+1714
+01:31:19,380 --> 01:31:22,409
+lets us co-locate the changes to the
+
+1715
+01:31:22,409 --> 01:31:26,460
+state in this component we're almost
+
+1716
+01:31:26,460 --> 01:31:29,190
+done let's uh let's get these things to
+
+1717
+01:31:29,190 --> 01:31:30,929
+work and manage some focus so I'm gonna
+
+1718
+01:31:30,929 --> 01:31:33,389
+come down to those actually that's what
+
+1719
+01:31:33,389 --> 01:31:34,619
+we have a reducer we can actually think
+
+1720
+01:31:34,619 --> 01:31:36,300
+about our app and a little bit higher
+
+1721
+01:31:36,300 --> 01:31:39,389
+level so we could say which would call
+
+1722
+01:31:39,389 --> 01:31:42,179
+this one I'll call it go to because I'm
+
+1723
+01:31:42,179 --> 01:31:44,040
+old enough to know that that's a thing
+
+1724
+01:31:44,040 --> 01:31:46,260
+but young enough to not know what it
+
+1725
+01:31:46,260 --> 01:31:50,699
+really was will have a current index and
+
+1726
+01:31:50,699 --> 01:31:54,869
+that will be on action dot index and so
+
+1727
+01:31:54,869 --> 01:31:57,000
+then we'll come down to our slide nav
+
+1728
+01:31:57,000 --> 01:31:58,469
+here it is
+
+1729
+01:31:58,469 --> 01:32:03,090
+and we'll say on click let's dispatch
+
+1730
+01:32:03,090 --> 01:32:11,400
+type go to index and use my keyboard now
+
+1731
+01:32:11,400 --> 01:32:14,639
+notice the down down here how it's it's
+
+1732
+01:32:14,639 --> 01:32:17,429
+highlighted so I'm using my keyboard to
+
+1733
+01:32:17,429 --> 01:32:20,280
+navigate around and so what we actually
+
+1734
+01:32:20,280 --> 01:32:22,280
+want to do here for a screen reader is
+
+1735
+01:32:22,280 --> 01:32:25,139
+and a keyboard user maybe this slide has
+
+1736
+01:32:25,139 --> 01:32:26,880
+a form in it or something
+
+1737
+01:32:26,880 --> 01:32:28,739
+we actually want to move the focus up to
+
+1738
+01:32:28,739 --> 01:32:32,010
+that element and so we'll know that we
+
+1739
+01:32:32,010 --> 01:32:34,710
+did it right if this isn't doesn't have
+
+1740
+01:32:34,710 --> 01:32:37,020
+that extra circle around it now I got to
+
+1741
+01:32:37,020 --> 01:32:39,540
+say here I've been using hooks a little
+
+1742
+01:32:39,540 --> 01:32:40,720
+bit longer than
+
+1743
+01:32:40,720 --> 01:32:44,610
+the duration of this talk but not much
+
+1744
+01:32:44,610 --> 01:32:47,440
+so I'm not sure what the right way to
+
+1745
+01:32:47,440 --> 01:32:49,870
+model this focus management is with
+
+1746
+01:32:49,870 --> 01:32:53,350
+hooks yet and so don't don't think like
+
+1747
+01:32:53,350 --> 01:32:54,550
+oh wow this is cool that's I'm going to
+
+1748
+01:32:54,550 --> 01:32:56,170
+do it in my apps I think I think we'll
+
+1749
+01:32:56,170 --> 01:32:57,340
+eventually figure out a better way to do
+
+1750
+01:32:57,340 --> 01:33:00,220
+it but for now this is this is just kind
+
+1751
+01:33:00,220 --> 01:33:01,270
+of the first thing that's come to my
+
+1752
+01:33:01,270 --> 01:33:04,150
+mind so I'm gonna have some extra state
+
+1753
+01:33:04,150 --> 01:33:07,600
+here and call it take focus and then in
+
+1754
+01:33:07,600 --> 01:33:10,090
+each one of these actions I'm going to
+
+1755
+01:33:10,090 --> 01:33:17,440
+say take focus faults and then all of
+
+1756
+01:33:17,440 --> 01:33:19,600
+them except for go-to and this one I'm
+
+1757
+01:33:19,600 --> 01:33:22,480
+going to say true so I want to take
+
+1758
+01:33:22,480 --> 01:33:24,700
+focus when we're going to something
+
+1759
+01:33:24,700 --> 01:33:30,100
+specifically and then down here words
+
+1760
+01:33:30,100 --> 01:33:31,720
+are sliding that are our slides
+
+1761
+01:33:31,720 --> 01:33:35,830
+so our slide we can pass in state take
+
+1762
+01:33:35,830 --> 01:33:42,030
+focus and now let's go up to our slide
+
+1763
+01:33:42,030 --> 01:33:44,320
+sorry a little bit of bouncing around so
+
+1764
+01:33:44,320 --> 01:33:46,150
+here's the slide it gets that prop it
+
+1765
+01:33:46,150 --> 01:33:49,150
+also knows if it's the current slide we
+
+1766
+01:33:49,150 --> 01:33:52,750
+throw Tanner Bendix on there so that we
+
+1767
+01:33:52,750 --> 01:33:54,760
+can actually focus it and to focus an
+
+1768
+01:33:54,760 --> 01:33:57,870
+element we need a ref
+
+1769
+01:33:57,870 --> 01:34:00,190
+hmm so with everything we've seen this
+
+1770
+01:34:00,190 --> 01:34:01,960
+morning where do you think we can get a
+
+1771
+01:34:01,960 --> 01:34:05,290
+ref from if we need to use a ref how
+
+1772
+01:34:05,290 --> 01:34:13,110
+might we use a ref yep
+
+1773
+01:34:13,110 --> 01:34:18,720
+and then if we need to focus we use
+
+1774
+01:34:18,720 --> 01:34:23,870
+effect and we want to change the focus
+
+1775
+01:34:23,870 --> 01:34:27,510
+depending on if we're current and if we
+
+1776
+01:34:27,510 --> 01:34:29,940
+should take focus and I'll say if we're
+
+1777
+01:34:29,940 --> 01:34:33,540
+current and we should take focus ref
+
+1778
+01:34:33,540 --> 01:34:42,520
+current focus
+
+1779
+01:34:42,520 --> 01:34:46,030
+notice the circle moves off of there
+
+1780
+01:34:46,030 --> 01:34:47,510
+there we go
+
+1781
+01:34:47,510 --> 01:34:50,090
+[Applause]
+
+1782
+01:34:50,090 --> 01:34:51,940
+[Music]
+
+1783
+01:34:51,940 --> 01:34:56,640
+[Applause]
+
+1784
+01:34:56,640 --> 01:34:59,470
+ninety percent cleaner react thank you
+
+1785
+01:34:59,470 --> 01:35:00,520
+very much
+
+1786
+01:35:00,520 --> 01:35:01,100
+[Applause]
+
+1787
+01:35:01,100 --> 01:35:03,670
+[Music]
+
+1788
+01:35:03,670 --> 01:35:12,160
+[Applause]
+
+1789
+01:35:12,160 --> 01:35:14,780
+Ryan thank you so much I like how you
+
+1790
+01:35:14,780 --> 01:35:16,940
+snuck in - new - new hooks in there -
+
+1791
+01:35:16,940 --> 01:35:19,280
+introduce to everybody we're gonna take
+
+1792
+01:35:19,280 --> 01:35:20,930
+a short break about 20 minutes be back
+
+1793
+01:35:20,930 --> 01:35:23,330
+in here at 11:00 we'll commence with the
+
+1794
+01:35:23,330 --> 01:35:25,160
+the talks but for now I'll have some
+
+1795
+01:35:25,160 --> 01:35:26,360
+coffee if you need to use the restroom
+
+1796
+01:35:26,360 --> 01:35:30,070
+that's good - thank you
+
