@@ -1,22 +1,22 @@
 1
 00:00:00,350 --> 00:00:06,470
-good morning everyone whoo good morning
+Good morning, everyone. Whoo! Good morning. 
 
 2
 00:00:06,470 --> 00:00:11,400
-welcome to React Conf 2018 my name is
+Welcome to React Conf 2018. My name is
 
 3
 00:00:11,400 --> 00:00:13,139
-Tom Occhino I'm the engineering director
+Tom Occhino. I'm the engineering director
 
 4
 00:00:13,139 --> 00:00:15,420
-of the react group at Facebook I'm
+of the React Group at Facebook. I'm
 
 5
 00:00:15,420 --> 00:00:16,560
-really excited to be here I'm actually
+really excited to be here. I'm actually
 
 6
 00:00:16,560 --> 00:00:18,750
@@ -28,63 +28,63 @@ all over the country and actually all
 
 8
 00:00:20,039 --> 00:00:22,529
-over the world and I know joining us on
+over the world. And I know joining us on
 
 9
 00:00:22,529 --> 00:00:23,670
-the live stream we have people from all
+the live stream, we have people from all
 
 10
 00:00:23,670 --> 00:00:25,410
-over the place so thank you for being
+over the place. So thank you for being
 
 11
 00:00:25,410 --> 00:00:27,180
-here with us before we get started just
+here with us. Before we get started just
 
 12
 00:00:27,180 --> 00:00:29,550
-a couple of quick logistics if you
+a couple of quick logistics. If you
 
 13
 00:00:29,550 --> 00:00:30,960
-haven't read the code of conduct yet
+haven't read the Code of Conduct yet,
 
 14
 00:00:30,960 --> 00:00:33,600
-please do so it's posted by registration
+please do so. It's posted by registration.
 
 15
 00:00:33,600 --> 00:00:36,390
-it's posted on the website follow it if
+It's posted on the website. Follow it. If
 
 16
 00:00:36,390 --> 00:00:38,790
-you have any issues please reach out to
+you have any issues, please reach out to
 
 17
 00:00:38,790 --> 00:00:40,680
-me or anyone on the staff the staff is
+me or anyone on the staff. The staff is
 
 18
 00:00:40,680 --> 00:00:44,160
-all wearing purple shirts we got a great
+all wearing purple shirts. Uh, we got a great
 
 19
 00:00:44,160 --> 00:00:45,870
-lineup of talks they're gonna be in this
+lineup of talks. They're gonna be in this
 
 20
 00:00:45,870 --> 00:00:49,680
-room today and tomorrow but if you need
+room today and tomorrow. But if you need
 
 21
 00:00:49,680 --> 00:00:52,590
-anything else if you need to just get
+anything else if, uh, if you need to just get
 
 22
 00:00:52,590 --> 00:00:55,079
-away if you need to make a phone call we
+away, if you need to make a phone call, we
 
 23
 00:00:55,079 --> 00:00:56,579
@@ -92,11 +92,11 @@ have room set up actually directly
 
 24
 00:00:56,579 --> 00:00:58,649
-behind me the breakfast room is
+behind me. The breakfast room is
 
 25
 00:00:58,649 --> 00:01:01,680
-available and in the hallway here we're
+available. And in the hallway here, we're
 
 26
 00:01:01,680 --> 00:01:03,570
@@ -104,35 +104,35 @@ gonna have the fiber arts circle
 
 27
 00:01:03,570 --> 00:01:05,880
-knitting tract with Jen lucre so check
+knitting track with Jen Lucas, so check
 
 28
 00:01:05,880 --> 00:01:07,710
-that out as well if you want to get away
+that out as well. If you want to get away
 
 29
 00:01:07,710 --> 00:01:10,710
-from the talks lastly there's gonna be
+from the talks. Uh, lastly there's gonna be, uh,
 
 30
 00:01:10,710 --> 00:01:12,390
-more updates throughout the day we'll
+more updates throughout the day, we'll
 
 31
 00:01:12,390 --> 00:01:17,490
-have lunch at noon but before the rest
+have lunch at noon. But before the rest
 
 32
 00:01:17,490 --> 00:01:20,340
-of the the talks here I just wanted to
+of the the talks here, I just wanted to
 
 33
 00:01:20,340 --> 00:01:23,030
-give a big thank you to the organizers
+give a big thank you to the organizers. Uh,
 
 34
 00:01:23,030 --> 00:01:25,680
-putting this on is a lot of work we were
+putting this on is a lot of work. We were
 
 35
 00:01:25,680 --> 00:01:26,820
@@ -144,31 +144,31 @@ be able to put it on this year because
 
 37
 00:01:28,110 --> 00:01:30,270
-it is so much work but we found the
+it is so much work. But we found the
 
 38
 00:01:30,270 --> 00:01:33,270
-organizers of reactor rally ng-conf
+organizers of React Rally, ng-conf
 
 39
 00:01:33,270 --> 00:01:37,710
-jameson matt and and joe and then zero
+Jamieson, uh, Matt and and Joe and then zero
 
 40
 00:01:37,710 --> 00:01:39,530
-slope events really helped us get this
+slope events really helped us get this, uh,
 
 41
 00:01:39,530 --> 00:01:41,460
-put together this year and i'm really
+put together this year. And I'm really
 
 42
 00:01:41,460 --> 00:01:42,899
-really happy that we were able to do it
+really happy that we were able to do it.
 
 43
 00:01:42,899 --> 00:01:45,540
-thank you all for being here the first
+Thank you all for being here. The first
 
 44
 00:01:45,540 --> 00:01:47,640
@@ -176,11 +176,11 @@ talk is is our keynote talk with Sophie
 
 45
 00:01:47,640 --> 00:01:50,189
-Alpert and Dan Abramov we're all really
+Alpert and Dan Abramov. Uh, we're all really
 
 46
 00:01:50,189 --> 00:01:51,659
-looking forward to this I'm gonna invite
+looking forward to this. I'm gonna invite
 
 47
 00:01:51,659 --> 00:01:54,090
@@ -188,7 +188,7 @@ Sophie up first to kick things off for
 
 48
 00:01:54,090 --> 00:01:57,050
-us thanks
+us, thanks.
 
 49
 00:01:57,050 --> 00:02:05,060
