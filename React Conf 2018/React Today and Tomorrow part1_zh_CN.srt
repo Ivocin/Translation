@@ -1,1135 +1,1135 @@
 1
 00:00:00,350 --> 00:00:06,470
-Good morning, everyone. Whoo! Good morning. 
+各位早上好。 Whoo! 早上好。
 
 2
 00:00:06,470 --> 00:00:11,400
-Welcome to React Conf 2018. My name is
+欢迎来到 React Conf 2018。 我叫
 
 3
 00:00:11,400 --> 00:00:13,139
-Tom Occhino. I'm the engineering director
+Tom Occhino。 我是 Facebook React 小组的
 
 4
 00:00:13,139 --> 00:00:15,420
-of the React Group at Facebook. I'm
+技术总监。 真的非常
 
 5
 00:00:15,420 --> 00:00:16,560
-really excited to be here. I'm actually
+激动来到这里。 我实际上真的
 
 6
 00:00:16,560 --> 00:00:18,750
-really excited to talk to people from
+非常激动能够和
 
 7
 00:00:18,750 --> 00:00:20,039
-all over the country and actually all
+全国的人，乃至全世界的人
 
 8
 00:00:20,039 --> 00:00:22,529
-over the world. And I know joining us on
+对话。而且我知道
 
 9
 00:00:22,529 --> 00:00:23,670
-the live stream, we have people from all
+还有在观看网络直播的各位, 我们拥有来自
 
 10
 00:00:23,670 --> 00:00:25,410
-over the place. So thank you for being
+世界各地的观众。 非常感谢你们的
 
 11
 00:00:25,410 --> 00:00:27,180
-here with us. Before we get started just
+到来。在开始之前，请允许我讲一些
 
 12
 00:00:27,180 --> 00:00:29,550
-a couple of quick logistics. If you
+简单的后勤安排。 如果你
 
 13
 00:00:29,550 --> 00:00:30,960
-haven't read the Code of Conduct yet,
+还没有阅读大会的行为规范，
 
 14
 00:00:30,960 --> 00:00:33,600
-please do so. It's posted by registration.
+请阅读一下。 行为准则发布在了登记处，
 
 15
 00:00:33,600 --> 00:00:36,390
-It's posted on the website. Follow it. If
+和我们大会的网站上。请准守行为准则。 如果
 
 16
 00:00:36,390 --> 00:00:38,790
-you have any issues, please reach out to
+你有任何问题，请举手示意我
 
 17
 00:00:38,790 --> 00:00:40,680
-me or anyone on the staff. The staff is
+或任何工作人员。 工作人员
 
 18
 00:00:40,680 --> 00:00:44,160
-all wearing purple shirts. Uh, we got a great
+全部穿着紫色衬衫。 我们的演讲
 
 19
 00:00:44,160 --> 00:00:45,870
-lineup of talks. They're gonna be in this
+阵容非常强大。在这里今明
 
 20
 00:00:45,870 --> 00:00:49,680
-room today and tomorrow. But if you need
+两天会为你带来精彩的演讲。但如果你需要
 
 21
 00:00:49,680 --> 00:00:52,590
-anything else if, uh, if you need to just get
+其他，呃， 如果你需要
 
 22
 00:00:52,590 --> 00:00:55,079
-away, if you need to make a phone call, we
+离开，如果你需要接打电话，请到
 
 23
 00:00:55,079 --> 00:00:56,579
-have room set up actually directly
+我身后的
 
 24
 00:00:56,579 --> 00:00:58,649
-behind me. The breakfast room is
+房间。早餐厅
 
 25
 00:00:58,649 --> 00:01:01,680
-available. And in the hallway here, we're
+已经开放了。在走廊里，可以看到
 
 26
 00:01:01,680 --> 00:01:03,570
-gonna have the fiber arts circle
+Jen Lucas 的纤维艺术
 
 27
 00:01:03,570 --> 00:01:05,880
-knitting track with Jen Lucas, so check
+圆形针织物展览, 有时间
 
 28
 00:01:05,880 --> 00:01:07,710
-that out as well. If you want to get away
+可以去看看。如果你想离开。
 
 29
 00:01:07,710 --> 00:01:10,710
-from the talks. Uh, lastly there's gonna be, uh,
+呃，今天会有
 
 30
 00:01:10,710 --> 00:01:12,390
-more updates throughout the day, we'll
+更多的内容, 我们会在中午
 
 31
 00:01:12,390 --> 00:01:17,490
-have lunch at noon. But before the rest
+进行午餐。 在演讲开始
 
 32
 00:01:17,490 --> 00:01:20,340
-of the the talks here, I just wanted to
+之前, 我想
 
 33
 00:01:20,340 --> 00:01:23,030
-give a big thank you to the organizers. Uh,
+对大会的组织者表示衷心的感谢。
 
 34
 00:01:23,030 --> 00:01:25,680
-putting this on is a lot of work. We were
+组织这场大会的工作量非常大。我们之前有点担心
 
 35
 00:01:25,680 --> 00:01:26,820
-a little worried that we weren't gonna
+我们今年可能没有办法
 
 36
 00:01:26,820 --> 00:01:28,110
-be able to put it on this year because
+完成这项工作，因为
 
 37
 00:01:28,110 --> 00:01:30,270
-it is so much work. But we found the
+工作量实在是太大了。 但是我们的大会
 
 38
 00:01:30,270 --> 00:01:33,270
-organizers of React Rally, ng-conf
+组织者：React Rally, ng-conf
 
 39
 00:01:33,270 --> 00:01:37,710
-Jamieson, uh, Matt and and Joe and then Zero
+Jamieson, Matt, Joe 还有 Zero
 
 40
 00:01:37,710 --> 00:01:39,530
-Slope Events really helped us get this, uh,
+Slope Events 帮助我们
 
 41
 00:01:39,530 --> 00:01:41,460
-put together this year. And I'm really
+完成了今年大会的筹备。 我真的
 
 42
 00:01:41,460 --> 00:01:42,899
-really happy that we were able to do it.
+非常开心我们做到了。
 
 43
 00:01:42,899 --> 00:01:45,540
-Thank you all for being here. The first
+非常感谢你们的到来。 第一个
 
 44
 00:01:45,540 --> 00:01:47,640
-talk is is our keynote talk with Sophie
+演讲是我们的主题演讲，演讲者是 Sophie
 
 45
 00:01:47,640 --> 00:01:50,189
-Alpert and Dan Abramov. Uh, we're all really
+Alpert 和 Dan Abramov。 我们真的
 
 46
 00:01:50,189 --> 00:01:51,659
-looking forward to this. I'm gonna invite
+非常期待。 下面允许我有请
 
 47
 00:01:51,659 --> 00:01:54,090
-Sophie up first to kick things off for
+Sophie 给我们带来开场演讲，
 
 48
 00:01:54,090 --> 00:01:57,050
-us, thanks.
+谢谢。
 
 49
 00:01:57,050 --> 00:02:05,060
-[Applause]
+[掌声]
 
 50
 00:02:05,060 --> 00:02:12,120
-Good morning. see ... ya ... there ... Uh, hello everyone,
+早上好。大家好，
 
 51
 00:02:12,120 --> 00:02:14,670
-welcome to React Conf. I'm really excited
+欢迎来到 React 大会。今天来到这里我感到
 
 52
 00:02:14,670 --> 00:02:16,410
-to be here. I'm really excited for the
+非常激动。我非常激动
 
 53
 00:02:16,410 --> 00:02:19,080
-stuff that we have to announce, uh, for you
+本周可以给你们
 
 54
 00:02:19,080 --> 00:02:22,310
-this week. Um, my name is Sophie Alpert at
+做开场演讲。我是 Sophie Alpert，个人主页是
 
 55
 00:02:22,310 --> 00:02:24,720
-sophiebits on the Internet.
+sophiebits。
 
 56
 00:02:24,720 --> 00:02:26,870
-I manage the react core team at Facebook.
+我是 Facebook React 核心小组的经理。
 
 57
 00:02:26,870 --> 00:02:30,270
-By any better that you use React is
+你们正在使用的 React 
 
 58
 00:02:30,270 --> 00:02:30,990
-doing great.
+做的很好。
 
 59
 00:02:30,990 --> 00:02:32,850
-Our npm downloads are up 70%
+我们在 npm 的下载量一年内增加了
 
 60
 00:02:32,850 --> 00:02:35,760
-year-over-year. The Chrome Dev Tools
+70 %。 React Dev Tools 在 Chrome 开发者工具
 
 61
 00:02:35,760 --> 00:02:37,890
-extension for React Dev Tools has been
+扩展程序的安装量
 
 62
 00:02:37,890 --> 00:02:39,450
-installed by one and a quarter million
+达到了 125 万。
 
 63
 00:02:39,450 --> 00:02:42,270
-developers. And I can show you this list
+这是使用 React 的
 
 64
 00:02:42,270 --> 00:02:44,730
-of companies that's using React. Although
+公司列表。此时此刻，
 
 65
 00:02:44,730 --> 00:02:46,140
-at this point, it's so long, it's kind of
+这个列表以及非常长了，我们很难
 
 66
 00:02:46,140 --> 00:02:47,670
-hard to tell how much it changes each
+说清每年使用 React 的公司的变化。
 
 67
 00:02:47,670 --> 00:02:51,930
-year. For another point of data, we can
+我们来看另一组数据，我们来看看
 
 68
 00:02:51,930 --> 00:02:53,970
-look at Google Trends, which shows web
+Google 趋势, 它可以反映出网络搜索的
 
 69
 00:02:53,970 --> 00:02:56,010
-search traffic. So it searches for react
+流量。可以看到，React 的搜索量
 
 70
 00:02:56,010 --> 00:02:58,230
-continue to go up. Hopefully that means
+一直在增加。 希望这个数据表示
 
 71
 00:02:58,230 --> 00:02:59,970
-more people are using React not that
+有更多的人在使用 React，而不是
 
 72
 00:02:59,970 --> 00:03:04,170
-it's getting more confusing. [Laughing] Um, but, uh, for a
+React 变得更加令人困惑了。 [笑声] 嗯，为了
 
 73
 00:03:04,170 --> 00:03:06,630
-point of comparison, we can look at, um,
+做比较，我们比较了 jQuery 的
 
 74
 00:03:06,630 --> 00:03:10,200
-jQuery which we have just passed for the
+搜索量，我们的搜索量刚刚在历史上首次
 
 75
 00:03:10,200 --> 00:03:15,820
-first time in history. [Cheer & Applause] 
+超越了 jQuery。[欢呼和掌声] 
 
 76
 00:03:15,820 --> 00:03:19,160
-But this also shows that we have a lot
+但这也表明，我们仍然有很多
 
 77
 00:03:19,160 --> 00:03:21,740
-more room to grow. Um, I was procrastinating
+成长的空间。呃，我在写这个演讲时
 
 78
 00:03:21,740 --> 00:03:24,290
-when I was writing this talk. So I was
+被耽搁了一会儿。 因为我比较
 
 79
 00:03:24,290 --> 00:03:26,330
-curious to see what else react is more
+好奇 React 还比什么更
 
 80
 00:03:26,330 --> 00:03:29,770
-popular than. Oops. [Laughing]
+流行。 哎呀。 [笑声]
 
 81
 00:03:29,770 --> 00:03:35,690
-Spoiled my joke. Um, but React is more
+当我开了个玩笑。嗯，我发现 React
 
 82
 00:03:35,690 --> 00:03:37,580
-popular ,I found out, than renewable
+比可再生能源
 
 83
 00:03:37,580 --> 00:03:40,820
-energy. [Laughing] It's also more popular than
+更流行。 [笑声] React 也比
 
 84
 00:03:40,820 --> 00:03:43,400
-orange juice. [Laughing] Just think about how common
+橙汁更流行。 [笑声] 想想橙汁是多么
 
 85
 00:03:43,400 --> 00:03:45,350
-orange juice is ,right. And not only that
+常用啊，是吧。而且 React 比
 
 86
 00:03:45,350 --> 00:03:47,360
-it's more popular than renewable energy
+可再生能源和橙汁加在一起
 
 87
 00:03:47,360 --> 00:03:50,060
-and orange juice put together. So I think
+更流行。所以我认为
 
 88
 00:03:50,060 --> 00:03:53,180
-we have a lot to be proud of. But, um, but
+我们有理由非常自豪。 但是
 
 89
 00:03:53,180 --> 00:03:56,480
-enough about these numbers, uh, what I really
+除了这些数字，我今天真正想要讲的
 
 90
 00:03:56,480 --> 00:03:59,900
-like to talk about today is our mission
+是 React 的
 
 91
 00:03:59,900 --> 00:04:02,240
-with React.
+使命。
 
 92
 00:04:02,240 --> 00:04:04,010
-Um, ever since React was released in 2013,
+呃，自从 2013 年 React 发布以来，
 
 93
 00:04:04,010 --> 00:04:05,450
-our overarching goal,
+我们首要的目标，
 
 94
 00:04:05,450 --> 00:04:08,480
-our primary mission has been to make it
+主要的使命就是：让开发者更容易地构建
 
 95
 00:04:08,480 --> 00:04:11,750
-easier to build great UIs. And so when
+好的 UI。所以当我们
 
 96
 00:04:11,750 --> 00:04:14,120
-we're adding new features, we always try
+想要增加新的特性时，我们通常都是
 
 97
 00:04:14,120 --> 00:04:15,620
-to be very deliberate. We want to
+要经过深思熟虑。当我们决定是否增加新的 API 时，
 
 98
 00:04:15,620 --> 00:04:16,970
-consider a bunch of things when deciding
+我们需要考虑非常多的事情。
 
 99
 00:04:16,970 --> 00:04:19,520
-whether to add a new API. If it makes it
+如果增加新的 API 能够
 
 100
 00:04:19,520 --> 00:04:20,989
-possible to do something you couldn't do
+让你做到一些以前做不到的事情。
 
 101
 00:04:20,989 --> 00:04:23,480
-before. If it can dramatically simplify
+如果可以显著简化
 
 102
 00:04:23,480 --> 00:04:25,940
-the code around react in your components
+组件里的代码
 
 103
 00:04:25,940 --> 00:04:27,470
-and libraries so that you all have less
+和类库，让你的工作量
 
 104
 00:04:27,470 --> 00:04:29,540
-work to do and users have less code to
+减小，用户下载更少的代码，
 
 105
 00:04:29,540 --> 00:04:32,120
-download, that's a win. Or if it helps
+那新增 API 就是有价值的。或者如果新增 API 能够帮助
 
 106
 00:04:32,120 --> 00:04:33,950
-encourage best practices like code
+我们完成代码分割的
 
 107
 00:04:33,950 --> 00:04:35,450
-splitting,  if we make it easier to code
+最佳实践，如果能够更容易地将你 app 里面的代码
 
 108
 00:04:35,450 --> 00:04:37,730
-split your app into multiple bundles, 
+分割成多个包， 
 
 109
 00:04:37,730 --> 00:04:39,919
-then our hope is that your apps will end
+我们希望你的 app 最终可以
 
 110
 00:04:39,919 --> 00:04:41,720
-up being faster. So that's why we add
+运行更快。这也是我们两周之前
 
 111
 00:04:41,720 --> 00:04:43,430
-things like React.lazy which we
+宣布增加像 React.lazy 这样的
 
 112
 00:04:43,430 --> 00:04:44,870
-announced two days ago. You might have
+API 的原因。 你们可能已经
 
 113
 00:04:44,870 --> 00:04:48,200
-seen it. But thinking about this mission,
+注意到了。 但想想 React 的使命，
 
 114
 00:04:48,200 --> 00:04:50,300
-make it easier to great ... to build great
+让开发者更容易地构建好的
 
 115
 00:04:50,300 --> 00:04:50,960
-UIs.
+UI。
 
 116
 00:04:50,960 --> 00:04:52,640
-There are a lot of different ways that
+我们有很多方法来
 
 117
 00:04:52,640 --> 00:04:55,730
-we approach this. One way we do this is
+实现这个目标。 其中一点是
 
 118
 00:04:55,730 --> 00:04:58,000
-trying to simplify things that are hard.
+我们尝试简化复杂的东西。
 
 119
 00:04:58,000 --> 00:05:01,220
-If you saw Dan Abramov's talk from
+如果你看了 Dan Abramov 在冰岛的
 
 120
 00:05:01,220 --> 00:05:03,500
-JS Conf Iceland, then you saw a sneak
+JS Conf 上的演讲，你可以抢先
 
 121
 00:05:03,500 --> 00:05:06,440
-peek at "Suspense",  which is our idea about
+看到 "Suspense",  "Suspense" 是我们
 
 122
 00:05:06,440 --> 00:05:08,810
-how to dramatically simplify what's
+用来显著简化
 
 123
 00:05:08,810 --> 00:05:10,850
-required to do data fetching, code
+数据获取请求、代码
 
 124
 00:05:10,850 --> 00:05:13,940
-splitting and any kind of async data
+分割和异步数据
 
 125
 00:05:13,940 --> 00:05:17,210
-dependencies in your app. Now another way
+依赖的问题。 另外一个我们尝试
 
 126
 00:05:17,210 --> 00:05:19,730
-we try to improve React is by focusing
+去提升 React 的方式
 
 127
 00:05:19,730 --> 00:05:22,520
-on performance. If your app runs faster,
+就是性能。如果你的 app 运行速度更快，
 
 128
 00:05:22,520 --> 00:05:24,530
-your users are going to enjoy using it
+你的用户就会更原意使用它。
 
 129
 00:05:24,530 --> 00:05:26,310
-more. Conversely, if your
+相反的，如果你的
 
 130
 00:05:26,310 --> 00:05:28,889
-app is laggy, if your app is junky,  then
+app 反映很慢，速度卡顿，那
 
 131
 00:05:28,889 --> 00:05:30,210
-there your users aren't gonna have a
+你的用户肯定不会有很好的
 
 132
 00:05:30,210 --> 00:05:32,880
-great time. So we try to spend time on
+体验。因此我们尝试让
 
 133
 00:05:32,880 --> 00:05:35,190
-making React itself faster, because if
+React 本身运行的更快，如果
 
 134
 00:05:35,190 --> 00:05:37,230
-React is faster out of the box, you all
+React 开箱就很快，那么你们
 
 135
 00:05:37,230 --> 00:05:38,880
-need to spend less time optimizing your
+就会省下优化你自己代码的时间。
 
 136
 00:05:38,880 --> 00:05:41,970
-own code. One recent performance related
+最近和性能提升有关的内容，
 
 137
 00:05:41,970 --> 00:05:43,830
-effort that Dan also talked about in
+Dan 也在冰岛的大会上
 
 138
 00:05:43,830 --> 00:05:46,310
-Iceland, as what we call "Time Slicing".
+提到了，我们称其为 "Time Slicing"。
 
 139
 00:05:46,310 --> 00:05:49,470
-Uh, this is going to let you make sure that
+"Time Slicing" 可以让你确保
 
 140
 00:05:49,470 --> 00:05:51,270
-the most important renders in your app
+你 app 里面最重要的渲染
 
 141
 00:05:51,270 --> 00:05:53,340
-are processed first, in order to unblock
+会最先执行，为了解除主线程的
 
 142
 00:05:53,340 --> 00:05:55,080
-the main thread and make your apps
+阻塞，并且能让你的 app 运行地
 
 143
 00:05:55,080 --> 00:05:58,530
-faster. And a third angle that we
+更快速。 第三种方式是
 
 144
 00:05:58,530 --> 00:06:00,419
-approach our mission from is Developer
+使用开发者工具
 
 145
 00:06:00,419 --> 00:06:03,180
-tooling to help you debug and understand
+帮助你 debug ，进而更了解
 
 146
 00:06:03,180 --> 00:06:04,980
-your app. From the start,
+你的 app。一开始，
 
 147
 00:06:04,980 --> 00:06:07,050
-React has included developer friendly
+React 就包含了对开发者友好的
 
 148
 00:06:07,050 --> 00:06:09,990
-warnings to help, uh, point out problems
+警告来帮助开发者指出问题，
 
 149
 00:06:09,990 --> 00:06:11,580
-before you might otherwise notice them.
+以防开发者没有注意到这些问题。
 
 150
 00:06:11,580 --> 00:06:13,200
-And we've had the React Dev Tools
+而且我们的 React Dev Tools
 
 151
 00:06:13,200 --> 00:06:15,120
-extension which lets you inspect and
+扩展程序能够让你检查、
 
 152
 00:06:15,120 --> 00:06:17,580
-debug your component trees. And in react
+debug 你的组件树。 在 React
 
 153
 00:06:17,580 --> 00:06:20,340
-16.5, we introduced a new Profiler. It's a
+16.5，我们引入了一个叫 Profiler 的新特性。它是
 
 154
 00:06:20,340 --> 00:06:24,660
-second ... (I don't know what's up with this
+第二个 ... （我不知道这个遥控器出了什么问题
 
 155
 00:06:24,660 --> 00:06:27,210
-clicker)... A second tab their, profiler tab 
+）... 图上的第二个标签栏就是 profiler 标签栏， 
 
 156
 00:06:27,210 --> 00:06:28,740
-that helps you understand what's
+它能够帮助我们了解到
 
 157
 00:06:28,740 --> 00:06:32,690
-happening in your app and optimize it. So
+你 app 中到底发生了什么，然后更好地优化它。所以
 
 158
 00:06:32,690 --> 00:06:35,580
-Suspense, Time Slicing and the Profiler
+Suspense, Time Slicing 和 Profiler
 
 159
 00:06:35,580 --> 00:06:37,770
-are three of the new features that we've
+这三个新特性是我们
 
 160
 00:06:37,770 --> 00:06:39,990
-been working on over the last year. We're
+去年一直在做的事情。 我们
 
 161
 00:06:39,990 --> 00:06:41,250
-really excited to tell you more about
+真的想多说一些关于这三个特性的
 
 162
 00:06:41,250 --> 00:06:43,169
-them. But that's actually not what I'm
+内容。但是这些并不是我今天在这里想要
 
 163
 00:06:43,169 --> 00:06:44,729
-here to talk about. You're gonna have to
+讲的。大家可以等到明天，
 
 164
 00:06:44,729 --> 00:06:46,169
-wait till Andrew and Brian's talk
+Andrew 和 Brian 会在明天早上
 
 165
 00:06:46,169 --> 00:06:47,729
-tomorrow morning to hear about that.
+给大家带来关于这个内容的演讲。
 
 166
 00:06:47,729 --> 00:06:50,850
-Today I want to take a step back and
+现在我想退一步，
 
 167
 00:06:50,850 --> 00:06:52,080
-focus on something else.
+我们来关注一些其他的问题。
 
 168
 00:06:52,080 --> 00:06:55,470
-What I like to ask is what in React
+我想问的是，现在 React 还有什么
 
 169
 00:06:55,470 --> 00:06:58,560
-still sucks. And I have three problems
+糟糕的地方。我总结出了三个问题，And I have three problems
 
 170
 00:06:58,560 --> 00:07:01,410
-that I would like to talk through. The
+在这里想和大家来讨论。
 
 171
 00:07:01,410 --> 00:07:03,990
-first one is reusing logic between
+第一个问题就是多组件间的逻辑复用
 
 172
 00:07:03,990 --> 00:07:07,320
-multiple components. In React our main
+问题。在 React 中我们主要使用
 
 173
 00:07:07,320 --> 00:07:09,030
-building block for our applications is a
+组件来构建我们的应用，
 
 174
 00:07:09,030 --> 00:07:10,710
-component, and components form the
+组件主要有
 
 175
 00:07:10,710 --> 00:07:13,350
-foundation of the two main patterns for
+两种主要的模式
 
 176
 00:07:13,350 --> 00:07:15,030
-sharing code in React apps between
+来复用代码：
 
 177
 00:07:15,030 --> 00:07:16,500
-components which are Higher-order
+它们是高阶组件（higher-order）
 
 178
 00:07:16,500 --> 00:07:19,560
-components and Render props. Both of
+和渲染属性（render props)。这两种
 
 179
 00:07:19,560 --> 00:07:21,120
-these patterns are great for some cases,
+模式对于某些场景来说是很好的，
 
 180
 00:07:21,120 --> 00:07:22,979
-but they also come with a significant
+但是它们也造成了一个极大的
 
 181
 00:07:22,979 --> 00:07:25,380
-downside. You need to restructure your
+缺点。在更加复杂的场景中，
 
 182
 00:07:25,380 --> 00:07:26,970
-app anytime you want to pull one of
+你必须将他们抽离出来去
 
 183
 00:07:26,970 --> 00:07:29,250
-these in in more complicated examples.
+重构你的 app。
 
 184
 00:07:29,250 --> 00:07:31,610
-This leads to what I call wrapper hell.
+这会导致一个问题，我称之为”包装地狱“（wrapper hell）。
 
 185
 00:07:31,610 --> 00:07:33,930
-Uh, most of us have seen component trees
+嗯，我们经常会看到
 
 186
 00:07:33,930 --> 00:07:37,479
-that look something like this. [Screaming & Laughing]
+像这样的组件树。 [尖叫和笑声]
 
 187
 00:07:37,479 --> 00:07:41,749
-And the the nesting you end up with
+而且这种嵌套会造成
 
 188
 00:07:41,749 --> 00:07:43,519
-makes it difficult to follow the data
+跟踪 app 数据流的困难。
 
 189
 00:07:43,519 --> 00:07:45,259
-flow through the app. It would be really
+如果
 
 190
 00:07:45,259 --> 00:07:47,239
-nice if there was some way to reuse this
+能够复用这类
 
 191
 00:07:47,239 --> 00:07:48,949
-sort of stateful logic without needing
+有状态的逻辑，而不需要
 
 192
 00:07:48,949 --> 00:07:51,759
-to change the component hierarchy, right.
+修改组件的层级，那肯定是很好的方法，对吧。
 
 193
 00:07:51,759 --> 00:07:53,899
-The second problem I would like to talk
+第二个我像讲的问题是
 
 194
 00:07:53,899 --> 00:07:57,080
-about is giant components whose logic is
+庞大的组件，它的逻辑
 
 195
 00:07:57,080 --> 00:07:59,179
-just sort of a tangled mess. When you
+杂乱无章。 我们来看看一个
 
 196
 00:07:59,179 --> 00:08:00,739
-look at a thousand line React component
+上千行代码的 React 组件，
 
 197
 00:08:00,739 --> 00:08:03,379
-chances are the logic is going to be
+我们会发现逻辑
 
 198
 00:08:03,379 --> 00:08:04,369
-split across a lot of different
+分散到了许多不同的
 
 199
 00:08:04,369 --> 00:08:06,080
-lifecycle methods in a way that's pretty
+生命周期函数中，这样
 
 200
 00:08:06,080 --> 00:08:08,239
-difficult to follow. Let's look at an
+非常难以跟踪。我们来看一个
 
 201
 00:08:08,239 --> 00:08:10,459
-example. Let's say we have a class
+例子。这里又一个 class
 
 202
 00:08:10,459 --> 00:08:12,589
-component, and in its component did mount
+component，在它的 did mount
 
 203
 00:08:12,589 --> 00:08:14,119
-method it does a few different things: it
+方法，它做了几件事：它
 
 204
 00:08:14,119 --> 00:08:15,919
-subscribes to a datastore, it sends off a
+订阅到了一个数据存储中，然后发送了一个
 
 205
 00:08:15,919 --> 00:08:17,739
-network requests and it starts a timer.
+网络请求，最后开启了一个定时器。
 
 206
 00:08:17,739 --> 00:08:20,989
-Well, if we look at the component will
+那么，如果我们来看组件的 will
 
 207
 00:08:20,989 --> 00:08:23,029
-unmount method, then we're going to see
+unmount 方法，我们会看到
 
 208
 00:08:23,029 --> 00:08:24,679
-basically the exact three opposite
+基本完全相反的
 
 209
 00:08:24,679 --> 00:08:26,179
-things: it needs to unsubscribe from the
+代码：首先需要取消存储的订阅，
 
 210
 00:08:26,179 --> 00:08:28,189
-store, it needs to cancel that network
+然后取消网络请求，
 
 211
 00:08:28,189 --> 00:08:29,869
-request and it needs to stop the timers.
+最后停止定时器。
 
 212
 00:08:29,869 --> 00:08:31,879
-And when it comes to implementing
+当我们要实现
 
 213
 00:08:31,879 --> 00:08:34,039
-component did update, the logic tends to
+组件的 did update 方法, 里面的逻辑会
 
 214
 00:08:34,039 --> 00:08:35,329
-get even trickier because you need to
+更加的 tricky。因为你需要
 
 215
 00:08:35,329 --> 00:08:38,089
-compare the old and new props and (ur, and
+比较新旧的属性
 
 216
 00:08:38,089 --> 00:08:41,360
-and) also mirror it again the same tasks
+然后再一次重复和其他生命周期函数内部
 
 217
 00:08:41,360 --> 00:08:43,099
-that you have in your other lifecycle
+相同的任务逻辑。
 
 218
 00:08:43,099 --> 00:08:49,189
-methods. Uh, in this example, each call here
+呃，在这个例子里，每个请求都是
 
 219
 00:08:49,189 --> 00:08:50,720
-is just one line so this is actually a
+只有一行，所以说这个例子实际上比
 
 220
 00:08:50,720 --> 00:08:52,100
-lot simpler than what you normally see
+你平时看到的组件要
 
 221
 00:08:52,100 --> 00:08:53,990
-in your components. In real-world
+简单的多。在真实组件中，
 
 222
 00:08:53,990 --> 00:08:55,730
-components you often end up with an even
+逻辑往往会更加错综复杂，
 
 223
 00:08:55,730 --> 00:08:58,100
-more tangled mess, because each (ur, each)
+因为每个
 
 224
 00:08:58,100 --> 00:08:59,899
-individual task has to be split across
+独立的任务分散到了 individual task has to be split across
 
 225
 00:08:59,899 --> 00:09:02,240
-different lifecycle methods, that makes
+不同的生命周期函数中，这样
 
 226
 00:09:02,240 --> 00:09:04,279
-it hard to tell if, for instance, you
+会造成困难，举个例子，当你 unmounting 组件时，
 
 227
 00:09:04,279 --> 00:09:06,170
-forgot to clean up one of the resources
+你可能会
 
 228
 00:09:06,170 --> 00:09:07,639
-when you're unmounting your component.
+忘记清除资源。
 
 229
 00:09:07,639 --> 00:09:08,810
-It's pretty hard to see that from the
+这非常难以从代码中找到
 
 230
 00:09:08,810 --> 00:09:13,540
-code. And the third thing that sucks is
+问题。 第三个糟糕的事情是
 
 231
 00:09:13,540 --> 00:09:17,180
-the class, ur, understanding classes in
+class。理解 JavaScript 里的 classes
 
 232
 00:09:17,180 --> 00:09:18,620
-JavaScript can be pretty tricky, and
+会相当 tricky，而且现在
 
 233
 00:09:18,620 --> 00:09:22,220
-today we require you to use class
+我们要求你们使用 class 组件，
 
 234
 00:09:22,220 --> 00:09:24,680
-components in order to access state and
+为了能够使用 state 和
 
 235
 00:09:24,680 --> 00:09:27,019
-lifecycles. If you've ever taken a
+生命周期。如果你用过
 
 236
 00:09:27,019 --> 00:09:28,880
-function component and converted it to a
+function 组件，而且将其转为了
 
 237
 00:09:28,880 --> 00:09:30,800
-class to add some state, you know that
+class 组件，增加了一些 state，你就会知道
 
 238
 00:09:30,800 --> 00:09:31,910
-there's a fair amount of boilerplate
+需要有大量的样本文件
 
 239
 00:09:31,910 --> 00:09:35,089
-that's required in order to just define
+作用仅仅是用来定义一个
 
 240
 00:09:35,089 --> 00:09:37,850
-a class component. Most beginners and
+class 组件。大多数初学者和
 
 241
 00:09:37,850 --> 00:09:40,660
-many experienced devs also tell us that
+很多有经验的开发者也都跟我们抱怨过
 
 242
 00:09:40,660 --> 00:09:43,819
-the way binding and this work in classes
+在 class 里面的绑定和转化工作
 
 243
 00:09:43,819 --> 00:09:46,160
-is pretty confusing. It's annoying to
+相当令人困惑。 我们有必要来
 
 244
 00:09:46,160 --> 00:09:48,050
-have to think about. A nd we also
+考虑这个问题。而且我们经常听说
 
 245
 00:09:48,050 --> 00:09:49,550
-frequently hear that people don't
+大家并不是
 
 246
 00:09:49,550 --> 00:09:50,089
-exactly
+非常清楚
 
 247
 00:09:50,089 --> 00:09:51,589
-know when to use function components
+什么时候使用 function 组件，
 
 248
 00:09:51,589 --> 00:09:52,970
-partly because there's always this fear
+一部分原因是他们总会担心
 
 249
 00:09:52,970 --> 00:09:54,740
-that you're gonna have to convert it to
+早晚需要将这个组件转化为
 
 250
 00:09:54,740 --> 00:09:56,870
-a class later anyway. And so you're like
+class 组件。所以你们可能会困惑，
 
 251
 00:09:56,870 --> 00:10:00,079
-should I ,should I do it now? I don't know.
+我现在是否应该这么做？我不知道。
 
 252
 00:10:00,079 --> 00:10:02,870
-And so I claim classes are hard for
+所以我说 classes 对于人类来说
 
 253
 00:10:02,870 --> 00:10:07,309
-humans,  uh, but it's not just humans,  I claim
+是很难的，但是不是对于人类而言是这样，我也断言
 
 254
 00:10:07,309 --> 00:10:09,819
-the classes are also hard for machines.
+classes 对于机器而言也是很难的。
 
 255
 00:10:09,819 --> 00:10:11,899
-If you ever looked at a minified 
+如果你看过压缩后的
 
 256
 00:10:11,899 --> 00:10:13,550
-component file, you'll see that all the
+组件文件，可以看到所有的
 
 257
 00:10:13,550 --> 00:10:16,699
-method names are still unminified. And that if
+方法名没有被压缩。而且如果
 
 258
 00:10:16,699 --> 00:10:18,170
-you have a method that's completely
+你有一个完全没有使用的方法，
 
 259
 00:10:18,170 --> 00:10:19,759
-unused, it doesn't get stripped out.
+它也没有被剔除出去。
 
 260
 00:10:19,759 --> 00:10:21,709
-That's because it's hard to tell at
+这是因为在编译时
 
 261
 00:10:21,709 --> 00:10:22,339
-compile time
+很难准确判断
 
 262
 00:10:22,339 --> 00:10:25,029
-exactly how all the methods fit together.
+方法是否被使用。
 
 263
 00:10:25,029 --> 00:10:27,620
-We also found that classes make it
+我们还发现 classes 使得
 
 264
 00:10:27,620 --> 00:10:29,269
-difficult for us to implement hot
+可靠的热加载变得困难。
 
 265
 00:10:29,269 --> 00:10:32,899
-reloading reliably. And finally when we
+最后当我们
 
 266
 00:10:32,899 --> 00:10:34,730
-were prototyping an optimizing compiler
+设计一个优化的编译器原型来
 
 267
 00:10:34,730 --> 00:10:36,800
-to improve the performance of React
+提升 React 组件性能时，
 
 268
 00:10:36,800 --> 00:10:39,319
-components, we found that classes can
+我们发现 class 组件
 
 269
 00:10:39,319 --> 00:10:41,329
-encourage some patterns that make it a
+的一些模式使得
 
 270
 00:10:41,329 --> 00:10:46,009
-lot harder for compilers to optimize.  So
+编译器优化变得更难。所以，
 
 271
 00:10:46,009 --> 00:10:47,420
-here are the three problems that we have:
+我们现在有三个问题：
 
 272
 00:10:47,420 --> 00:10:52,300
-reusing logic, giant components, and (ur, and)
+逻辑复用、庞大的组件和
 
 273
 00:10:52,300 --> 00:10:55,399
-classes. So reusing logic because you
+classes。逻辑复用的问题会导致你
 
 274
 00:10:55,399 --> 00:10:56,769
-often end up with this wrapper hell.
+经常遇到“包裹地狱“。
 
 275
 00:10:56,769 --> 00:10:59,240
-Giant components because you have the
+庞大组件的原因是由于
 
 276
 00:10:59,240 --> 00:11:01,129
-logic split across different lifecycles.
+逻辑分散到了不同的生命周期中。
 
 277
 00:11:01,129 --> 00:11:04,220
-And classes which are difficult for both
+而令人困惑的 classes 无论对于人类还是机器来说
 
 278
 00:11:04,220 --> 00:11:07,459
-humans and machines. So we think we have
+都是个难题。 我们认为我们有了一个
 
 279
 00:11:07,459 --> 00:11:09,529
-a solution that can help with all three
+能够解决以上三个问题的解决方案。
 
 280
 00:11:09,529 --> 00:11:11,449
-of these. We're really excited to share
+我们特别像把这个方案分享给大家。
 
 281
 00:11:11,449 --> 00:11:13,639
-it with you to tell you more about it. I
+请允许我请出
 
 282
 00:11:13,639 --> 00:11:16,290
-want to welcome up Dan Abramov.
+Dan Abramov 为我们带来接下来的演讲。
 
 283
 00:11:16,290 --> 00:11:26,080
-[Applause]
+[掌声]
 
 284
 00:11:26,080 --> 00:11:27,820
-[Applause]
+[掌声]
