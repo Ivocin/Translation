@@ -1,0 +1,1135 @@
+1
+00:00:00,350 --> 00:00:06,470
+Good morning, everyone. Whoo! Good morning. 
+
+2
+00:00:06,470 --> 00:00:11,400
+Welcome to React Conf 2018. My name is
+
+3
+00:00:11,400 --> 00:00:13,139
+Tom Occhino. I'm the engineering director
+
+4
+00:00:13,139 --> 00:00:15,420
+of the React Group at Facebook. I'm
+
+5
+00:00:15,420 --> 00:00:16,560
+really excited to be here. I'm actually
+
+6
+00:00:16,560 --> 00:00:18,750
+really excited to talk to people from
+
+7
+00:00:18,750 --> 00:00:20,039
+all over the country and actually all
+
+8
+00:00:20,039 --> 00:00:22,529
+over the world. And I know joining us on
+
+9
+00:00:22,529 --> 00:00:23,670
+the live stream, we have people from all
+
+10
+00:00:23,670 --> 00:00:25,410
+over the place. So thank you for being
+
+11
+00:00:25,410 --> 00:00:27,180
+here with us. Before we get started just
+
+12
+00:00:27,180 --> 00:00:29,550
+a couple of quick logistics. If you
+
+13
+00:00:29,550 --> 00:00:30,960
+haven't read the Code of Conduct yet,
+
+14
+00:00:30,960 --> 00:00:33,600
+please do so. It's posted by registration.
+
+15
+00:00:33,600 --> 00:00:36,390
+It's posted on the website. Follow it. If
+
+16
+00:00:36,390 --> 00:00:38,790
+you have any issues, please reach out to
+
+17
+00:00:38,790 --> 00:00:40,680
+me or anyone on the staff. The staff is
+
+18
+00:00:40,680 --> 00:00:44,160
+all wearing purple shirts. Uh, we got a great
+
+19
+00:00:44,160 --> 00:00:45,870
+lineup of talks. They're gonna be in this
+
+20
+00:00:45,870 --> 00:00:49,680
+room today and tomorrow. But if you need
+
+21
+00:00:49,680 --> 00:00:52,590
+anything else if, uh, if you need to just get
+
+22
+00:00:52,590 --> 00:00:55,079
+away, if you need to make a phone call, we
+
+23
+00:00:55,079 --> 00:00:56,579
+have room set up actually directly
+
+24
+00:00:56,579 --> 00:00:58,649
+behind me. The breakfast room is
+
+25
+00:00:58,649 --> 00:01:01,680
+available. And in the hallway here, we're
+
+26
+00:01:01,680 --> 00:01:03,570
+gonna have the fiber arts circle
+
+27
+00:01:03,570 --> 00:01:05,880
+knitting track with Jen Lucas, so check
+
+28
+00:01:05,880 --> 00:01:07,710
+that out as well. If you want to get away
+
+29
+00:01:07,710 --> 00:01:10,710
+from the talks. Uh, lastly there's gonna be, uh,
+
+30
+00:01:10,710 --> 00:01:12,390
+more updates throughout the day, we'll
+
+31
+00:01:12,390 --> 00:01:17,490
+have lunch at noon. But before the rest
+
+32
+00:01:17,490 --> 00:01:20,340
+of the the talks here, I just wanted to
+
+33
+00:01:20,340 --> 00:01:23,030
+give a big thank you to the organizers. Uh,
+
+34
+00:01:23,030 --> 00:01:25,680
+putting this on is a lot of work. We were
+
+35
+00:01:25,680 --> 00:01:26,820
+a little worried that we weren't gonna
+
+36
+00:01:26,820 --> 00:01:28,110
+be able to put it on this year because
+
+37
+00:01:28,110 --> 00:01:30,270
+it is so much work. But we found the
+
+38
+00:01:30,270 --> 00:01:33,270
+organizers of React Rally, ng-conf
+
+39
+00:01:33,270 --> 00:01:37,710
+Jamieson, uh, Matt and and Joe and then Zero
+
+40
+00:01:37,710 --> 00:01:39,530
+Slope Events really helped us get this, uh,
+
+41
+00:01:39,530 --> 00:01:41,460
+put together this year. And I'm really
+
+42
+00:01:41,460 --> 00:01:42,899
+really happy that we were able to do it.
+
+43
+00:01:42,899 --> 00:01:45,540
+Thank you all for being here. The first
+
+44
+00:01:45,540 --> 00:01:47,640
+talk is is our keynote talk with Sophie
+
+45
+00:01:47,640 --> 00:01:50,189
+Alpert and Dan Abramov. Uh, we're all really
+
+46
+00:01:50,189 --> 00:01:51,659
+looking forward to this. I'm gonna invite
+
+47
+00:01:51,659 --> 00:01:54,090
+Sophie up first to kick things off for
+
+48
+00:01:54,090 --> 00:01:57,050
+us, thanks.
+
+49
+00:01:57,050 --> 00:02:05,060
+[Applause]
+
+50
+00:02:05,060 --> 00:02:12,120
+Good morning. see ... ya ... there ... Uh, hello everyone,
+
+51
+00:02:12,120 --> 00:02:14,670
+welcome to React Conf. I'm really excited
+
+52
+00:02:14,670 --> 00:02:16,410
+to be here. I'm really excited for the
+
+53
+00:02:16,410 --> 00:02:19,080
+stuff that we have to announce, uh, for you
+
+54
+00:02:19,080 --> 00:02:22,310
+this week. Um, my name is Sophie Alpert at
+
+55
+00:02:22,310 --> 00:02:24,720
+sophiebits on the Internet.
+
+56
+00:02:24,720 --> 00:02:26,870
+I manage the react core team at Facebook.
+
+57
+00:02:26,870 --> 00:02:30,270
+By any better that you use React is
+
+58
+00:02:30,270 --> 00:02:30,990
+doing great.
+
+59
+00:02:30,990 --> 00:02:32,850
+Our npm downloads are up 70%
+
+60
+00:02:32,850 --> 00:02:35,760
+year-over-year. The Chrome Dev Tools
+
+61
+00:02:35,760 --> 00:02:37,890
+extension for React Dev Tools has been
+
+62
+00:02:37,890 --> 00:02:39,450
+installed by one and a quarter million
+
+63
+00:02:39,450 --> 00:02:42,270
+developers. And I can show you this list
+
+64
+00:02:42,270 --> 00:02:44,730
+of companies that's using React. Although
+
+65
+00:02:44,730 --> 00:02:46,140
+at this point, it's so long, it's kind of
+
+66
+00:02:46,140 --> 00:02:47,670
+hard to tell how much it changes each
+
+67
+00:02:47,670 --> 00:02:51,930
+year. For another point of data, we can
+
+68
+00:02:51,930 --> 00:02:53,970
+look at Google Trends, which shows web
+
+69
+00:02:53,970 --> 00:02:56,010
+search traffic. So it searches for react
+
+70
+00:02:56,010 --> 00:02:58,230
+continue to go up. Hopefully that means
+
+71
+00:02:58,230 --> 00:02:59,970
+more people are using React not that
+
+72
+00:02:59,970 --> 00:03:04,170
+it's getting more confusing. [Laughing] Um, but, uh, for a
+
+73
+00:03:04,170 --> 00:03:06,630
+point of comparison, we can look at, um,
+
+74
+00:03:06,630 --> 00:03:10,200
+jQuery which we have just passed for the
+
+75
+00:03:10,200 --> 00:03:15,820
+first time in history. [Cheer & Applause] 
+
+76
+00:03:15,820 --> 00:03:19,160
+But this also shows that we have a lot
+
+77
+00:03:19,160 --> 00:03:21,740
+more room to grow. Um, I was procrastinating
+
+78
+00:03:21,740 --> 00:03:24,290
+when I was writing this talk. So I was
+
+79
+00:03:24,290 --> 00:03:26,330
+curious to see what else react is more
+
+80
+00:03:26,330 --> 00:03:29,770
+popular than. Oops. [Laughing]
+
+81
+00:03:29,770 --> 00:03:35,690
+Spoiled my joke. Um, but React is more
+
+82
+00:03:35,690 --> 00:03:37,580
+popular ,I found out, than renewable
+
+83
+00:03:37,580 --> 00:03:40,820
+energy. [Laughing] It's also more popular than
+
+84
+00:03:40,820 --> 00:03:43,400
+orange juice. [Laughing] Just think about how common
+
+85
+00:03:43,400 --> 00:03:45,350
+orange juice is ,right. And not only that
+
+86
+00:03:45,350 --> 00:03:47,360
+it's more popular than renewable energy
+
+87
+00:03:47,360 --> 00:03:50,060
+and orange juice put together. So I think
+
+88
+00:03:50,060 --> 00:03:53,180
+we have a lot to be proud of. But, um, but
+
+89
+00:03:53,180 --> 00:03:56,480
+enough about these numbers, uh, what I really
+
+90
+00:03:56,480 --> 00:03:59,900
+like to talk about today is our mission
+
+91
+00:03:59,900 --> 00:04:02,240
+with React.
+
+92
+00:04:02,240 --> 00:04:04,010
+Um, ever since React was released in 2013,
+
+93
+00:04:04,010 --> 00:04:05,450
+our overarching goal,
+
+94
+00:04:05,450 --> 00:04:08,480
+our primary mission has been to make it
+
+95
+00:04:08,480 --> 00:04:11,750
+easier to build great UIs. And so when
+
+96
+00:04:11,750 --> 00:04:14,120
+we're adding new features, we always try
+
+97
+00:04:14,120 --> 00:04:15,620
+to be very deliberate. We want to
+
+98
+00:04:15,620 --> 00:04:16,970
+consider a bunch of things when deciding
+
+99
+00:04:16,970 --> 00:04:19,520
+whether to add a new API. If it makes it
+
+100
+00:04:19,520 --> 00:04:20,989
+possible to do something you couldn't do
+
+101
+00:04:20,989 --> 00:04:23,480
+before. If it can dramatically simplify
+
+102
+00:04:23,480 --> 00:04:25,940
+the code around react in your components
+
+103
+00:04:25,940 --> 00:04:27,470
+and libraries so that you all have less
+
+104
+00:04:27,470 --> 00:04:29,540
+work to do and users have less code to
+
+105
+00:04:29,540 --> 00:04:32,120
+download, that's a win. Or if it helps
+
+106
+00:04:32,120 --> 00:04:33,950
+encourage best practices like code
+
+107
+00:04:33,950 --> 00:04:35,450
+splitting,  if we make it easier to code
+
+108
+00:04:35,450 --> 00:04:37,730
+split your app into multiple bundles, 
+
+109
+00:04:37,730 --> 00:04:39,919
+then our hope is that your apps will end
+
+110
+00:04:39,919 --> 00:04:41,720
+up being faster. So that's why we add
+
+111
+00:04:41,720 --> 00:04:43,430
+things like React.lazy which we
+
+112
+00:04:43,430 --> 00:04:44,870
+announced two days ago. You might have
+
+113
+00:04:44,870 --> 00:04:48,200
+seen it. But thinking about this mission,
+
+114
+00:04:48,200 --> 00:04:50,300
+make it easier to great ... to build great
+
+115
+00:04:50,300 --> 00:04:50,960
+UIs.
+
+116
+00:04:50,960 --> 00:04:52,640
+There are a lot of different ways that
+
+117
+00:04:52,640 --> 00:04:55,730
+we approach this. One way we do this is
+
+118
+00:04:55,730 --> 00:04:58,000
+trying to simplify things that are hard.
+
+119
+00:04:58,000 --> 00:05:01,220
+If you saw Dan Abramov's talk from
+
+120
+00:05:01,220 --> 00:05:03,500
+JS Conf Iceland, then you saw a sneak
+
+121
+00:05:03,500 --> 00:05:06,440
+peek at "Suspense",  which is our idea about
+
+122
+00:05:06,440 --> 00:05:08,810
+how to dramatically simplify what's
+
+123
+00:05:08,810 --> 00:05:10,850
+required to do data fetching, code
+
+124
+00:05:10,850 --> 00:05:13,940
+splitting and any kind of async data
+
+125
+00:05:13,940 --> 00:05:17,210
+dependencies in your app. Now another way
+
+126
+00:05:17,210 --> 00:05:19,730
+we try to improve React is by focusing
+
+127
+00:05:19,730 --> 00:05:22,520
+on performance. If your app runs faster,
+
+128
+00:05:22,520 --> 00:05:24,530
+your users are going to enjoy using it
+
+129
+00:05:24,530 --> 00:05:26,310
+more. Conversely, if your
+
+130
+00:05:26,310 --> 00:05:28,889
+app is laggy, if your app is junky,  then
+
+131
+00:05:28,889 --> 00:05:30,210
+there your users aren't gonna have a
+
+132
+00:05:30,210 --> 00:05:32,880
+great time. So we try to spend time on
+
+133
+00:05:32,880 --> 00:05:35,190
+making React itself faster, because if
+
+134
+00:05:35,190 --> 00:05:37,230
+React is faster out of the box, you all
+
+135
+00:05:37,230 --> 00:05:38,880
+need to spend less time optimizing your
+
+136
+00:05:38,880 --> 00:05:41,970
+own code. One recent performance related
+
+137
+00:05:41,970 --> 00:05:43,830
+effort that Dan also talked about in
+
+138
+00:05:43,830 --> 00:05:46,310
+Iceland, as what we call "Time Slicing".
+
+139
+00:05:46,310 --> 00:05:49,470
+Uh, this is going to let you make sure that
+
+140
+00:05:49,470 --> 00:05:51,270
+the most important renders in your app
+
+141
+00:05:51,270 --> 00:05:53,340
+are processed first, in order to unblock
+
+142
+00:05:53,340 --> 00:05:55,080
+the main thread and make your apps
+
+143
+00:05:55,080 --> 00:05:58,530
+faster. And a third angle that we
+
+144
+00:05:58,530 --> 00:06:00,419
+approach our mission from is Developer
+
+145
+00:06:00,419 --> 00:06:03,180
+tooling to help you debug and understand
+
+146
+00:06:03,180 --> 00:06:04,980
+your app. From the start,
+
+147
+00:06:04,980 --> 00:06:07,050
+React has included developer friendly
+
+148
+00:06:07,050 --> 00:06:09,990
+warnings to help, uh, point out problems
+
+149
+00:06:09,990 --> 00:06:11,580
+before you might otherwise notice them.
+
+150
+00:06:11,580 --> 00:06:13,200
+And we've had the React Dev Tools
+
+151
+00:06:13,200 --> 00:06:15,120
+extension which lets you inspect and
+
+152
+00:06:15,120 --> 00:06:17,580
+debug your component trees. And in react
+
+153
+00:06:17,580 --> 00:06:20,340
+16.5, we introduced a new Profiler. It's a
+
+154
+00:06:20,340 --> 00:06:24,660
+second ... (I don't know what's up with this
+
+155
+00:06:24,660 --> 00:06:27,210
+clicker)... A second tab their, profiler tab 
+
+156
+00:06:27,210 --> 00:06:28,740
+that helps you understand what's
+
+157
+00:06:28,740 --> 00:06:32,690
+happening in your app and optimize it. So
+
+158
+00:06:32,690 --> 00:06:35,580
+Suspense, Time Slicing and the Profiler
+
+159
+00:06:35,580 --> 00:06:37,770
+are three of the new features that we've
+
+160
+00:06:37,770 --> 00:06:39,990
+been working on over the last year. We're
+
+161
+00:06:39,990 --> 00:06:41,250
+really excited to tell you more about
+
+162
+00:06:41,250 --> 00:06:43,169
+them. But that's actually not what I'm
+
+163
+00:06:43,169 --> 00:06:44,729
+here to talk about. You're gonna have to
+
+164
+00:06:44,729 --> 00:06:46,169
+wait till Andrew and Brian's talk
+
+165
+00:06:46,169 --> 00:06:47,729
+tomorrow morning to hear about that.
+
+166
+00:06:47,729 --> 00:06:50,850
+Today I want to take a step back and
+
+167
+00:06:50,850 --> 00:06:52,080
+focus on something else.
+
+168
+00:06:52,080 --> 00:06:55,470
+What I like to ask is what in React
+
+169
+00:06:55,470 --> 00:06:58,560
+still sucks. And I have three problems
+
+170
+00:06:58,560 --> 00:07:01,410
+that I would like to talk through. The
+
+171
+00:07:01,410 --> 00:07:03,990
+first one is reusing logic between
+
+172
+00:07:03,990 --> 00:07:07,320
+multiple components. In React our main
+
+173
+00:07:07,320 --> 00:07:09,030
+building block for our applications is a
+
+174
+00:07:09,030 --> 00:07:10,710
+component, and components form the
+
+175
+00:07:10,710 --> 00:07:13,350
+foundation of the two main patterns for
+
+176
+00:07:13,350 --> 00:07:15,030
+sharing code in React apps between
+
+177
+00:07:15,030 --> 00:07:16,500
+components which are Higher-order
+
+178
+00:07:16,500 --> 00:07:19,560
+components and Render props. Both of
+
+179
+00:07:19,560 --> 00:07:21,120
+these patterns are great for some cases,
+
+180
+00:07:21,120 --> 00:07:22,979
+but they also come with a significant
+
+181
+00:07:22,979 --> 00:07:25,380
+downside. You need to restructure your
+
+182
+00:07:25,380 --> 00:07:26,970
+app anytime you want to pull one of
+
+183
+00:07:26,970 --> 00:07:29,250
+these in in more complicated examples.
+
+184
+00:07:29,250 --> 00:07:31,610
+This leads to what I call wrapper hell.
+
+185
+00:07:31,610 --> 00:07:33,930
+Uh, most of us have seen component trees
+
+186
+00:07:33,930 --> 00:07:37,479
+that look something like this. [Screaming & Laughing]
+
+187
+00:07:37,479 --> 00:07:41,749
+And the the nesting you end up with
+
+188
+00:07:41,749 --> 00:07:43,519
+makes it difficult to follow the data
+
+189
+00:07:43,519 --> 00:07:45,259
+flow through the app. It would be really
+
+190
+00:07:45,259 --> 00:07:47,239
+nice if there was some way to reuse this
+
+191
+00:07:47,239 --> 00:07:48,949
+sort of stateful logic without needing
+
+192
+00:07:48,949 --> 00:07:51,759
+to change the component hierarchy, right.
+
+193
+00:07:51,759 --> 00:07:53,899
+The second problem I would like to talk
+
+194
+00:07:53,899 --> 00:07:57,080
+about is giant components whose logic is
+
+195
+00:07:57,080 --> 00:07:59,179
+just sort of a tangled mess. When you
+
+196
+00:07:59,179 --> 00:08:00,739
+look at a thousand line React component
+
+197
+00:08:00,739 --> 00:08:03,379
+chances are the logic is going to be
+
+198
+00:08:03,379 --> 00:08:04,369
+split across a lot of different
+
+199
+00:08:04,369 --> 00:08:06,080
+lifecycle methods in a way that's pretty
+
+200
+00:08:06,080 --> 00:08:08,239
+difficult to follow. Let's look at an
+
+201
+00:08:08,239 --> 00:08:10,459
+example. Let's say we have a class
+
+202
+00:08:10,459 --> 00:08:12,589
+component, and in its component did mount
+
+203
+00:08:12,589 --> 00:08:14,119
+method it does a few different things: it
+
+204
+00:08:14,119 --> 00:08:15,919
+subscribes to a datastore, it sends off a
+
+205
+00:08:15,919 --> 00:08:17,739
+network requests and it starts a timer.
+
+206
+00:08:17,739 --> 00:08:20,989
+Well, if we look at the component will
+
+207
+00:08:20,989 --> 00:08:23,029
+unmount method, then we're going to see
+
+208
+00:08:23,029 --> 00:08:24,679
+basically the exact three opposite
+
+209
+00:08:24,679 --> 00:08:26,179
+things: it needs to unsubscribe from the
+
+210
+00:08:26,179 --> 00:08:28,189
+store, it needs to cancel that network
+
+211
+00:08:28,189 --> 00:08:29,869
+request and it needs to stop the timers.
+
+212
+00:08:29,869 --> 00:08:31,879
+And when it comes to implementing
+
+213
+00:08:31,879 --> 00:08:34,039
+component did update, the logic tends to
+
+214
+00:08:34,039 --> 00:08:35,329
+get even trickier because you need to
+
+215
+00:08:35,329 --> 00:08:38,089
+compare the old and new props and (ur, and
+
+216
+00:08:38,089 --> 00:08:41,360
+and) also mirror it again the same tasks
+
+217
+00:08:41,360 --> 00:08:43,099
+that you have in your other lifecycle
+
+218
+00:08:43,099 --> 00:08:49,189
+methods. Uh, in this example, each call here
+
+219
+00:08:49,189 --> 00:08:50,720
+is just one line so this is actually a
+
+220
+00:08:50,720 --> 00:08:52,100
+lot simpler than what you normally see
+
+221
+00:08:52,100 --> 00:08:53,990
+in your components. In real-world
+
+222
+00:08:53,990 --> 00:08:55,730
+components you often end up with an even
+
+223
+00:08:55,730 --> 00:08:58,100
+more tangled mess, because each (ur, each)
+
+224
+00:08:58,100 --> 00:08:59,899
+individual task has to be split across
+
+225
+00:08:59,899 --> 00:09:02,240
+different lifecycle methods, that makes
+
+226
+00:09:02,240 --> 00:09:04,279
+it hard to tell if, for instance, you
+
+227
+00:09:04,279 --> 00:09:06,170
+forgot to clean up one of the resources
+
+228
+00:09:06,170 --> 00:09:07,639
+when you're unmounting your component.
+
+229
+00:09:07,639 --> 00:09:08,810
+It's pretty hard to see that from the
+
+230
+00:09:08,810 --> 00:09:13,540
+code. And the third thing that sucks is
+
+231
+00:09:13,540 --> 00:09:17,180
+the class, ur, understanding classes in
+
+232
+00:09:17,180 --> 00:09:18,620
+JavaScript can be pretty tricky, and
+
+233
+00:09:18,620 --> 00:09:22,220
+today we require you to use class
+
+234
+00:09:22,220 --> 00:09:24,680
+components in order to access state and
+
+235
+00:09:24,680 --> 00:09:27,019
+lifecycles. If you've ever taken a
+
+236
+00:09:27,019 --> 00:09:28,880
+function component and converted it to a
+
+237
+00:09:28,880 --> 00:09:30,800
+class to add some state, you know that
+
+238
+00:09:30,800 --> 00:09:31,910
+there's a fair amount of boilerplate
+
+239
+00:09:31,910 --> 00:09:35,089
+that's required in order to just define
+
+240
+00:09:35,089 --> 00:09:37,850
+a class component. Most beginners and
+
+241
+00:09:37,850 --> 00:09:40,660
+many experienced devs also tell us that
+
+242
+00:09:40,660 --> 00:09:43,819
+the way binding and this work in classes
+
+243
+00:09:43,819 --> 00:09:46,160
+is pretty confusing. It's annoying to
+
+244
+00:09:46,160 --> 00:09:48,050
+have to think about. A nd we also
+
+245
+00:09:48,050 --> 00:09:49,550
+frequently hear that people don't
+
+246
+00:09:49,550 --> 00:09:50,089
+exactly
+
+247
+00:09:50,089 --> 00:09:51,589
+know when to use function components
+
+248
+00:09:51,589 --> 00:09:52,970
+partly because there's always this fear
+
+249
+00:09:52,970 --> 00:09:54,740
+that you're gonna have to convert it to
+
+250
+00:09:54,740 --> 00:09:56,870
+a class later anyway. And so you're like
+
+251
+00:09:56,870 --> 00:10:00,079
+should I ,should I do it now? I don't know.
+
+252
+00:10:00,079 --> 00:10:02,870
+And so I claim classes are hard for
+
+253
+00:10:02,870 --> 00:10:07,309
+humans,  uh, but it's not just humans,  I claim
+
+254
+00:10:07,309 --> 00:10:09,819
+the classes are also hard for machines.
+
+255
+00:10:09,819 --> 00:10:11,899
+If you ever looked at a minified 
+
+256
+00:10:11,899 --> 00:10:13,550
+component file, you'll see that all the
+
+257
+00:10:13,550 --> 00:10:16,699
+method names are still unminified. And that if
+
+258
+00:10:16,699 --> 00:10:18,170
+you have a method that's completely
+
+259
+00:10:18,170 --> 00:10:19,759
+unused, it doesn't get stripped out.
+
+260
+00:10:19,759 --> 00:10:21,709
+That's because it's hard to tell at
+
+261
+00:10:21,709 --> 00:10:22,339
+compile time
+
+262
+00:10:22,339 --> 00:10:25,029
+exactly how all the methods fit together.
+
+263
+00:10:25,029 --> 00:10:27,620
+We also found that classes make it
+
+264
+00:10:27,620 --> 00:10:29,269
+difficult for us to implement hot
+
+265
+00:10:29,269 --> 00:10:32,899
+reloading reliably. And finally when we
+
+266
+00:10:32,899 --> 00:10:34,730
+were prototyping an optimizing compiler
+
+267
+00:10:34,730 --> 00:10:36,800
+to improve the performance of React
+
+268
+00:10:36,800 --> 00:10:39,319
+components, we found that classes can
+
+269
+00:10:39,319 --> 00:10:41,329
+encourage some patterns that make it a
+
+270
+00:10:41,329 --> 00:10:46,009
+lot harder for compilers to optimize.  So
+
+271
+00:10:46,009 --> 00:10:47,420
+here are the three problems that we have:
+
+272
+00:10:47,420 --> 00:10:52,300
+reusing logic, giant components, and (ur, and)
+
+273
+00:10:52,300 --> 00:10:55,399
+classes. So reusing logic because you
+
+274
+00:10:55,399 --> 00:10:56,769
+often end up with this wrapper hell.
+
+275
+00:10:56,769 --> 00:10:59,240
+Giant components because you have the
+
+276
+00:10:59,240 --> 00:11:01,129
+logic split across different lifecycles.
+
+277
+00:11:01,129 --> 00:11:04,220
+And classes which are difficult for both
+
+278
+00:11:04,220 --> 00:11:07,459
+humans and machines. So we think we have
+
+279
+00:11:07,459 --> 00:11:09,529
+a solution that can help with all three
+
+280
+00:11:09,529 --> 00:11:11,449
+of these. We're really excited to share
+
+281
+00:11:11,449 --> 00:11:13,639
+it with you to tell you more about it. I
+
+282
+00:11:13,639 --> 00:11:16,290
+want to welcome up Dan Abramov.
+
+283
+00:11:16,290 --> 00:11:26,080
+[Applause]
+
+284
+00:11:26,080 --> 00:11:27,820
+[Applause]
