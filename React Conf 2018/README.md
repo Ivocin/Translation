@@ -17,3 +17,6 @@
 中文翻译字幕：[React Today and Tomorrow part1_zh_CN.srt](https://github.com/Ivocin/Traslation/blob/master/React%20Conf%202018/React%20Today%20and%20Tomorrow%20part1_zh_CN.srt)
 
 keynote 内容整理（英文）：[React Today and Tomorrow - Part I.md](https://github.com/Ivocin/Traslation/blob/master/React%20Conf%202018/React%20Today%20and%20Tomorrow%20-%20Part%20I.md)
+
+keynote 内容整理（中文）：[React 的今天和明天——第一部分. md](https://github.com/Ivocin/Traslation/blob/master/React%20Conf%202018/React%E7%9A%84%E4%BB%8A%E5%A4%A9%E5%92%8C%E6%98%8E%E5%A4%A9%E2%80%94%E2%80%94%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86.md)
+
