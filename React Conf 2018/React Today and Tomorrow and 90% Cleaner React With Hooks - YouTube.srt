@@ -152,11 +152,11 @@ organizers of React Rally, ng-conf
 
 39
 00:01:33,270 --> 00:01:37,710
-Jamieson, uh, Matt and and Joe and then zero
+Jamieson, uh, Matt and and Joe and then Zero
 
 40
 00:01:37,710 --> 00:01:39,530
-slope events really helped us get this, uh,
+Slope Events really helped us get this, uh,
 
 41
 00:01:39,530 --> 00:01:41,460
@@ -196,51 +196,51 @@ us, thanks.
 
 50
 00:02:05,060 --> 00:02:12,120
-good morning see ya there hello everyone
+Good morning. see ... ya ... there ... Uh, hello everyone,
 
 51
 00:02:12,120 --> 00:02:14,670
-welcome to react calm I'm really excited
+welcome to React Conf. I'm really excited
 
 52
 00:02:14,670 --> 00:02:16,410
-to be here I'm really excited for the
+to be here. I'm really excited for the
 
 53
 00:02:16,410 --> 00:02:19,080
-stuff that we have to announce for you
+stuff that we have to announce, uh, for you
 
 54
 00:02:19,080 --> 00:02:22,310
-this week my name is Sophie Alpert I
+this week. Um, my name is Sophie Alpert at
 
 55
 00:02:22,310 --> 00:02:24,720
-Sophie bits on the Internet
+sophiebits on the Internet.
 
 56
 00:02:24,720 --> 00:02:26,870
-I manage the react core team at Facebook
+I manage the react core team at Facebook.
 
 57
 00:02:26,870 --> 00:02:30,270
-by any better that you use react is
+By any better that you use React is
 
 58
 00:02:30,270 --> 00:02:30,990
-doing great
+doing great.
 
 59
 00:02:30,990 --> 00:02:32,850
-our npm downloads are up 70%
+Our npm downloads are up 70%
 
 60
 00:02:32,850 --> 00:02:35,760
-year-over-year the chrome dev tools
+year-over-year. The Chrome Dev Tools
 
 61
 00:02:35,760 --> 00:02:37,890
-extension for react dev tools has been
+extension for React Dev Tools has been
 
 62
 00:02:37,890 --> 00:02:39,450
@@ -248,15 +248,15 @@ installed by one and a quarter million
 
 63
 00:02:39,450 --> 00:02:42,270
-developers and I can show you this list
+developers. And I can show you this list
 
 64
 00:02:42,270 --> 00:02:44,730
-of companies it's using react although
+of companies that's using React. Although
 
 65
 00:02:44,730 --> 00:02:46,140
-at this point it's so long it's kind of
+at this point, it's so long, it's kind of
 
 66
 00:02:46,140 --> 00:02:47,670
@@ -264,31 +264,31 @@ hard to tell how much it changes each
 
 67
 00:02:47,670 --> 00:02:51,930
-year for another point of data we can
+year. For another point of data, we can
 
 68
 00:02:51,930 --> 00:02:53,970
-look at Google Trends which shows web
+look at Google Trends, which shows web
 
 69
 00:02:53,970 --> 00:02:56,010
-search traffic so it searches for react
+search traffic. So it searches for react
 
 70
 00:02:56,010 --> 00:02:58,230
-continue to go up hopefully that means
+continue to go up. Hopefully that means
 
 71
 00:02:58,230 --> 00:02:59,970
-more people are using react not that
+more people are using React not that
 
 72
 00:02:59,970 --> 00:03:04,170
-it's getting more confusing but for a
+it's getting more confusing. [Laughing] Um, but, uh, for a
 
 73
 00:03:04,170 --> 00:03:06,630
-point of comparison we can look at a
+point of comparison, we can look at, um,
 
 74
 00:03:06,630 --> 00:03:10,200
@@ -296,19 +296,19 @@ jQuery which we have just passed for the
 
 75
 00:03:10,200 --> 00:03:15,820
-first time in history
+first time in history. [Cheer & Applause] 
 
 76
 00:03:15,820 --> 00:03:19,160
-but this also shows that we have a lot
+But this also shows that we have a lot
 
 77
 00:03:19,160 --> 00:03:21,740
-more room to grow I was procrastinating
+more room to grow. Um, I was procrastinating
 
 78
 00:03:21,740 --> 00:03:24,290
-when I was writing this talk so I was
+when I was writing this talk. So I was
 
 79
 00:03:24,290 --> 00:03:26,330
@@ -316,27 +316,27 @@ curious to see what else react is more
 
 80
 00:03:26,330 --> 00:03:29,770
-popular than whoops
+popular than. Oops. [Laughing]
 
 81
 00:03:29,770 --> 00:03:35,690
-spoiled my joke but react is more
+Spoiled my joke. Um, but React is more
 
 82
 00:03:35,690 --> 00:03:37,580
-popular I found out than renewable
+popular ,I found out, than renewable
 
 83
 00:03:37,580 --> 00:03:40,820
-energy it's also more popular than
+energy. [Laughing] It's also more popular than
 
 84
 00:03:40,820 --> 00:03:43,400
-orange juice just think about how common
+orange juice. [Laughing] Just think about how common
 
 85
 00:03:43,400 --> 00:03:45,350
-orange juice is right and not only that
+orange juice is ,right. And not only that
 
 86
 00:03:45,350 --> 00:03:47,360
@@ -344,15 +344,15 @@ it's more popular than renewable energy
 
 87
 00:03:47,360 --> 00:03:50,060
-and orange juice put together so I think
+and orange juice put together. So I think
 
 88
 00:03:50,060 --> 00:03:53,180
-we have a lot to be proud of but but
+we have a lot to be proud of. But, um, but
 
 89
 00:03:53,180 --> 00:03:56,480
-enough about these numbers what I really
+enough about these numbers, uh, what I really
 
 90
 00:03:56,480 --> 00:03:59,900
@@ -360,15 +360,15 @@ like to talk about today is our mission
 
 91
 00:03:59,900 --> 00:04:02,240
-would react
+with React.
 
 92
 00:04:02,240 --> 00:04:04,010
-ever since react was released in 2013
+Um, ever since React was released in 2013,
 
 93
 00:04:04,010 --> 00:04:05,450
-our overarching goal
+our overarching goal,
 
 94
 00:04:05,450 --> 00:04:08,480
@@ -376,15 +376,15 @@ our primary mission has been to make it
 
 95
 00:04:08,480 --> 00:04:11,750
-easier to build great UIs and so when
+easier to build great UIs. And so when
 
 96
 00:04:11,750 --> 00:04:14,120
-we're adding new features we always try
+we're adding new features, we always try
 
 97
 00:04:14,120 --> 00:04:15,620
-to be very deliberate we want to
+to be very deliberate. We want to
 
 98
 00:04:15,620 --> 00:04:16,970
@@ -392,7 +392,7 @@ consider a bunch of things when deciding
 
 99
 00:04:16,970 --> 00:04:19,520
-whether to add a new API if it makes it
+whether to add a new API. If it makes it
 
 100
 00:04:19,520 --> 00:04:20,989
@@ -400,7 +400,7 @@ possible to do something you couldn't do
 
 101
 00:04:20,989 --> 00:04:23,480
-before if it can dramatically simplify
+before. If it can dramatically simplify
 
 102
 00:04:23,480 --> 00:04:25,940
@@ -416,7 +416,7 @@ work to do and users have less code to
 
 105
 00:04:29,540 --> 00:04:32,120
-download that's a win or if it helps
+download, that's a win. Or if it helps
 
 106
 00:04:32,120 --> 00:04:33,950
@@ -424,11 +424,11 @@ encourage best practices like code
 
 107
 00:04:33,950 --> 00:04:35,450
-splitting if we make it easier to code
+splitting,  if we make it easier to code
 
 108
 00:04:35,450 --> 00:04:37,730
-split your app into multiple bundles
+split your app into multiple bundles, 
 
 109
 00:04:37,730 --> 00:04:39,919
@@ -436,31 +436,31 @@ then our hope is that your apps will end
 
 110
 00:04:39,919 --> 00:04:41,720
-up being faster so that's why we add
+up being faster. So that's why we add
 
 111
 00:04:41,720 --> 00:04:43,430
-things like react dot lazy which we
+things like React.lazy which we
 
 112
 00:04:43,430 --> 00:04:44,870
-announced two days ago you might have
+announced two days ago. You might have
 
 113
 00:04:44,870 --> 00:04:48,200
-seen it but thinking about this mission
+seen it. But thinking about this mission,
 
 114
 00:04:48,200 --> 00:04:50,300
-make it easier to great to build great
+make it easier to great ... to build great
 
 115
 00:04:50,300 --> 00:04:50,960
-UIs
+UIs.
 
 116
 00:04:50,960 --> 00:04:52,640
-there are a lot of different ways that
+There are a lot of different ways that
 
 117
 00:04:52,640 --> 00:04:55,730
