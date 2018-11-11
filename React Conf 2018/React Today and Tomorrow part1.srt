@@ -220,7 +220,7 @@ sophiebits on the Internet.
 
 56
 00:02:24,720 --> 00:02:26,870
-I manage the react core team at Facebook.
+I manage the React core team at Facebook.
 
 57
 00:02:26,870 --> 00:02:30,270
@@ -272,7 +272,7 @@ look at Google Trends, which shows web
 
 69
 00:02:53,970 --> 00:02:56,010
-search traffic. So it searches for react
+search traffic. So it searches for React
 
 70
 00:02:56,010 --> 00:02:58,230
@@ -312,7 +312,7 @@ when I was writing this talk. So I was
 
 79
 00:03:24,290 --> 00:03:26,330
-curious to see what else react is more
+curious to see what else React is more
 
 80
 00:03:26,330 --> 00:03:29,770
@@ -404,7 +404,7 @@ before. If it can dramatically simplify
 
 102
 00:04:23,480 --> 00:04:25,940
-the code around react in your components
+the code around React in your components
 
 103
 00:04:25,940 --> 00:04:27,470
@@ -604,7 +604,7 @@ extension which lets you inspect and
 
 152
 00:06:15,120 --> 00:06:17,580
-debug your component trees. And in react
+debug your component trees. And in React
 
 153
 00:06:17,580 --> 00:06:20,340
@@ -972,7 +972,7 @@ is pretty confusing. It's annoying to
 
 244
 00:09:46,160 --> 00:09:48,050
-have to think about. A nd we also
+have to think about. And we also
 
 245
 00:09:48,050 --> 00:09:49,550
