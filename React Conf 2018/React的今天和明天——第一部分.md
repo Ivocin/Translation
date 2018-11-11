@@ -7,83 +7,86 @@
 
 
 
-# React Today and Tomorrow - Part I
+# React 的今天和明天 —— 第一部分
 
-Good morning. see ... ya ... there ... Uh, hello everyone, welcome to React Conf. I'm really excited to be here. I'm really excited for the stuff that we have to announce, uh, for you this week. 
+早上好。大家好，欢迎来到 React 大会。今天来到这里我感到非常激动。我非常激动本周可以给你们做开场演讲。
 
-Um, my name is Sophie Alpert at sophiebits on the Internet. I manage the React core team at Facebook.
+我是 Sophie Alpert，个人主页是 sophiebits。我是 Facebook 的 React 核心小组的经理。
 
-## React Today
+## React 的今天
 
-By any better that you use React is doing great. Our npm downloads are up 70% year-over-year. The Chrome Dev Tools extension for React Dev Tools has been installed by one and a quarter million developers. 
 
-And I can show you this list of companies that's using React. Although at this point, it's so long, it's kind of hard to tell how much it changes each year. 
+你们正在使用的 React 做的很好。我们在 npm 的下载量一年内增加了 70%。 React Dev Tools 在 Chrome 开发者工具扩展程序的安装量达到了 125 万。
 
-For another point of data, we can look at Google Trends, which shows web search traffic. So it searches for React continue to go up. Hopefully that means more people are using React not that it's getting more confusing. (Laughing) 
+这是使用 React 的公司列表。此时此刻，这个列表已经非常长了，我们很难说清每年使用 React 的公司的变化。
 
-Um, but, uh, for a point of comparison, we can look at, um, jQuery which we have just passed for the first time in history. (Cheer & Applause) But this also shows that we have a lot more room to grow. 
+我们来看另一组数据，我们来看看 Google 趋势, 它可以反映出网络搜索的流量。可以看到，React 的搜索量一直在增加。 希望这个数据表示有更多的人在使用 React，而不是 React 变得更加令人困惑了。（笑声）
 
-Um, I was procrastinating when I was writing this talk. So I was urious to see what else React is more popular than. Oops. (Laughing) Spoiled my joke. Um, but React is more popular ,I found out, than renewable energy. (Laughing) It's also more popular than orange juice. (Laughing) Just think about how common orange juice is, right. And not only that it's more popular than renewable energy and orange juice put together. So I think we have a lot to be proud of. 
+嗯，为了做比较，我们比较了 jQuery 的搜索量，我们的搜索量刚刚在历史上首次超越了 jQuery。（欢呼和掌声）但这也表明，我们仍然有很多成长的空间。
+
+我在写这个演讲时被耽搁了一会儿。 因为我比较好奇 React 还比什么更流行。 哎呀。（笑声）当我开了个玩笑。嗯，我发现 React 比可再生能源更流行。（笑声）React 也比橙汁更流行。（笑声）想想橙汁是多么常用啊，是吧。而且 React 比可再生能源和橙汁加在一起更流行。所以我认为我们有理由感到非常自豪。
+
 
 ## React's Mission
 
-But, um, but enough about these numbers, uh, what I really like to talk about today is our mission with React. Um, ever since React was released in 2013, our overarching goal, our primary mission has been to make it easier to build great UIs. And so when we're adding new features, we always try to be very deliberate. We want to consider a bunch of things when deciding whether to add a new API. If it makes it possible to do something you couldn't do before. If it can dramatically simplify the code around React in your components and libraries so that you all have less work to do and users have less code to download, that's a win. Or if it helps encourage best practices like code splitting, if we make it easier to code split your app into multiple bundles, then our hope is that your apps will end up being faster. So that's why we add things like React.lazy which we announced two days ago. You might have seen it. But thinking about this mission, make it easier to great ... to build great UIs.
+但是除了这些数字，我今天真正想要讲的是 React 的使命。呃，自从 2013 年 React 发布以来，我们首要的目标和主要的使命就是：让开发者更容易地构建好的 UI。所以当我们想要增加新的特性时，我们通常都是要经过深思熟虑。当我们决定是否增加新的 API 时，我们需要考虑非常多的事情。如果增加新的 API 能够让你做到一些以前做不到的事情；如果可以显著简化组件里的代码和类库，让你的工作量减小，用户下载更少的代码，那新增 API 就是有价值的。或者如果新增 API 能够帮助我们做到代码分割的最佳实践，如果能够更容易地将你 app 里面的代码分割成多个包，我们希望你的 app 最终可以运行更快。这也是我们两周之前宣布增加像 React.lazy 这样的API 的原因。 你们可能已经注意到了这个 API。 但想想 React 的使命，让开发者更容易地构建好的 UI。
 
-There are a lot of different ways that we approach this. One way we do this is trying to simplify things that are hard. If you saw Dan Abramov's talk from JS Conf Iceland, then you saw a sneak peek at "Suspense", which is our idea about how to dramatically simplify what's required to do data fetching, code splitting and any kind of async data dependencies in your app. 
+我们有很多方法来实现这个目标。 其中一点是我们尝试简化复杂的东西。如果你看了 Dan Abramov 在冰岛的 JS Conf 上的演讲，你可以抢先看到 "Suspense",  "Suspense" 是我们用来显著 简化 app 中获取数据请求、代码分割和异步数据依赖的问题。 
 
-Now another way we try to improve React is by focusing on performance. If your app runs faster, your users are going to enjoy using it more. Conversely, if your app is laggy, if your app is junky, then there your users aren't gonna have a great time. So we try to spend time on making React itself faster, because if React is faster out of the box, you all need to spend less time optimizing your own code. 
+另外一个我们尝试去提升 React 的方式就是提升性能。如果你的 app 运行速度更快，你的用户就会更原意使用它。相反的，如果你的 app 反应很慢，速度卡顿，那
+你的用户肯定不会有很好的体验。因此我们尝试让 React 本身运行的更快，如果 React 开箱就很快，那么你们就会省下很多优化你自己代码的时间。
 
-One recent performance related effort that Dan also talked about in Iceland, as what we call "Time Slicing". Uh, this is going to let you make sure that the most important renders in your app are processed first, in order to unblock the main thread and make your apps faster. 
+最近和提升性能有关的内容，Dan 也在冰岛的 JS Conf 上提到了，我们称其为 "Time Slicing"。"Time Slicing" 可以确保你 app 里面最重要的渲染会最先执行，解除主线程的阻塞，并且能让你的 app 运行地更快速。 
 
-And a third angle that we approach our mission from is Developer tooling to help you debug and understand your app. From the start, React has included developer friendly warnings to help, uh, point out problems before you might otherwise notice them.
+第三种方式是使用开发者工具帮助你 debug ，进而更了解你的 app。一开始，React 就包含了对开发者友好的警告来帮助开发者指出问题，以防开发者没有注意到这些问题。
 
-And we've had the React Dev Tools extension which lets you inspect and debug your component trees. And in React 16.5, we introduced a new Profiler. It's a second ... (I don't know what's up with this clicker) ... A second tab their, profiler tab that helps you understand what's happening in your app and optimize it. 
+而且我们的 React Dev Tools 扩展程序能够让你检查并且 debug 你的组件树。 在 React 16.5 版本，我们引入了一个叫 Profiler 的新特性。它是第二个 ... （我不知道这个遥控器出了什么问题）... 图上的第二个标签栏就是 profiler 标签栏， 它能够帮助我们了解到你的 app 中到底发生了什么，然后更好地优化它。
 
-So Suspense, Time Slicing and the Profiler are three of the new features that we've been working on over the last year. We're really excited to tell you more about them.But that's actually not what I'm here to talk about. You're gonna have to wait till Andrew and Brian's talk tomorrow morning to hear about that.
-
-## What in React still sucks
-
-Today I want to take a step back and focus on something else. What I like to ask is what in React still sucks. And I have three problems that I would like to talk through. 
-
-### Reusing logic
-
-The first one is reusing logic between multiple components. In React our main building block for our applications is a component, and components form the foundation of the two main patterns for sharing code in React apps between components which are higher-order components and render props. 
-
-Both of these patterns are great for some cases, but they also come with a significant downside. You need to restructure your app anytime you want to pull one of these in in more complicated examples. This leads to what I call wrapper hell.
-
-Uh, most of us have seen component trees that look something like this. (Screaming & Laughing)  And the the nesting you end up with makes it difficult to follow the data flow through the app. It would be really nice if there was some way to reuse this sort of stateful logic without needing to change the component hierarchy, right.
+所以 Suspense, Time Slicing 和 Profiler 这三个新特性是我们去年一直在做的事情。 我们真的想多说一些关于这三个特性的内容。但是这些并不是我今天在这里想要讲的。大家可以等到明天，Andrew 和 Brian 会在明天早上给大家带来关于这个内容的演讲。
 
 
-### Giant components
+## React 还存在什么糟糕的地方
 
-The second problem I would like to talk about is giant components whose logic is just sort of a tangled mess. When you look at a thousand line React component chances are the logic is going to be split across a lot of different lifecycle methods in a way that's pretty difficult to follow. 
+现在我想退一步，我们来关注一些其他的问题。我想问的是，现在 React 还有什么糟糕的地方。我总结出了三个问题，想在这里和大家讨论。
 
-Let's look at an example. Let's say we have a class component, and in its component did mount method it does a few different things: it subscribes to a datastore, it sends off a network requests and it starts a timer.
+### 逻辑复用
 
-Well, if we look at the component will unmount method, then we're going to see basically the exact three opposite
-things: it needs to unsubscribe from the store, it needs to cancel that network request and it needs to stop the timers.
+第一个问题就是多组件间的逻辑复用问题。在 React 中我们主要使用组件来构建我们的应用，组件主要有两种主要的模式来复用代码：它们是高阶组件（higher-order）和渲染属性（render props)。
 
-And when it comes to implementing component did update, the logic tends to get even trickier because you need to compare the old and new props and (ur, and and) also mirror it again the same tasks that you have in your other lifecycle methods. 
+这两种模式对于某些场景来说是很好的，但是它们也造成了一个极大的缺点。在更加复杂的场景中，你必须将他们抽离出来去重构你的 app。这会导致一个问题，我称之为”包装地狱“（wrapper hell）。
 
-Uh, in this example, each call here is just one line so this is actually a lot simpler than what you normally see in your components. In real-world components you often end up with an even more tangled mess, because each (ur, each) individual task has to be split across different lifecycle methods, that makes it hard to tell if, for instance, you forgot to clean up one of the resources when you're unmounting your component. It's pretty hard to see that from the code. 
+嗯，我们经常会看到像这样的组件树。（尖叫和笑声）而且这种嵌套会造成跟踪 app 数据流的困难。如果能够复用这类有状态的逻辑，而不需要修改组件的层级，那肯定是很好的方法，对吧。
 
-### Confusing Classes
+### 庞大的组件
 
-And the third thing that sucks is the class, ur, understanding classes in JavaScript can be pretty tricky, and today we require you to use class omponents in order to access state and lifecycles. 
+第二个我想讲的问题是庞大的组件，它的逻辑杂乱无章。 我们来看看一个上千行代码的 React 组件，我们会发现逻辑分散到了许多不同的生命周期函数中，这样非常难以跟踪。
 
-If you've ever taken a function component and converted it to a class to add some state, you know that there's a fair amount of boilerplate that's required in order to just define a class component. Most beginners and many experienced devs also tell us that the way binding and this work in classes is pretty confusing. It's annoying to
-have to think about.
+我们来看一个例子。这里有一个 class 组件，在它的 did mount 方法，它做了几件事：它订阅了一个数据存储中，然后发送了一个网络请求，最后开启了一个定时器。
 
-And we also frequently hear that people don't exactly know when to use function components partly because there's always this fear that you're gonna have to convert it to a class later anyway. And so you're like should I ,should I do it now? I don't know.
+那么，如果我们来看组件的 will unmount 方法，我们会看到基本完全相反的代码：首先需要取消存储的订阅，然后取消网络请求，最后停止定时器。
 
-And so I claim classes are hard for humans,  uh, but it's not just humans,  I claim the classes are also hard for machines. If you ever looked at a minified component file, you'll see that all the method names are still unminified. And that if you have a method that's completely unused, it doesn't get stripped out. That's because it's hard to tell at compile time exactly how all the methods fit together.
+当我们要实现组件的 did update 方法, 里面的逻辑会更加的 tricky。因为你需要比较新旧的属性，然后再一次重复和其他生命周期函数内部相同的任务逻辑。
 
-We also found that classes make it difficult for us to implement hot reloading reliably. And finally when we
-were prototyping an optimizing compiler to improve the performance of React components, we found that classes can
-encourage some patterns that make it a lot harder for compilers to optimize.
+呃，在这个例子里，每个请求都只有一行，所以说这个例子实际上比你平时看到的组件要简单的多。在真实组件中，逻辑往往会更加错综复杂，因为每个独立的任务分散到了
+不同的生命周期函数中，这样会造成困难，举个例子，当你 unmounting 组件时，你可能会忘记清除资源。这非常难以从代码中找到问题。 
 
-### Conclusion
+### 令人困惑的 Class
 
-So here are the three problems that we have: reusing logic, giant components, and (ur, and) classes. So reusing logic because you often end up with this wrapper hell. Giant components because you have the logic split across different lifecycles. And classes which are difficult for both humans and machines. 
+第三个糟糕的事情是 class。理解 JavaScript 里的 classes 会相当 tricky，而且为了能够使用 state 和生命周期，我们要求你们使用 class 组件才能做到。
 
-So we think we have a solution that can help with all three of these. We're really excited to share it with you to tell you more about it. I want to welcome up Dan Abramov.
+如果你用过 function 组件，并且将其转为了 class 组件，增加了一些 state，你就会知道需要有大量的样本文件，其作用仅仅是用来定义一个 class 组件。大多数初学者和很多有经验的开发者也都跟我们抱怨过在 class 里面的绑定和转化工作相当令人困惑。 我们有必要来考虑这个问题。
+
+而且我们经常听说大家并不是非常清楚什么时候使用 function 组件，有一部分原因是他们总会担心早晚需要将这个组件转化为 class 组件。所以你们可能会困惑，
+我现在是否应该这么做？我不知道。
+
+所以我说 class 对于人类来说是很难的，但是不是对于人类而言是这样，我也断言 class 对于机器而言也是很难的。如果你看过压缩后的组件文件，可以看到所有的
+方法名没有被压缩。而且如果你有一个完全没有使用的方法，它也没有被剔除出去。这是因为在编译时很难准确判断方法是否被使用。
+
+我们还发现 class 使得可靠的热加载变得困难。最后当我们设计一个优化的编译器原型来提升 React 组件性能时，我们发现 class 组件的一些模式使得编译器优化变得更加困难。
+
+### 总结
+
+所以，我们现在有三个问题：逻辑复用、庞大的组件和 class。逻辑复用的问题会导致你经常遇到“包装地狱“。庞大组件的原因是由于逻辑分散到了不同的生命周期中。
+而令人困惑的 class 无论对于人类还是机器来说都是个难题。 
+
+我们认为我们有了一个能够解决以上三个问题的解决方案。我们特别像把这个方案分享给大家。请允许我请出 Dan Abramov 为我们带来接下来的演讲。
