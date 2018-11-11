@@ -10,7 +10,7 @@
 
 Good morning. see ... ya ... there ... Uh, hello everyone, welcome to React Conf. I'm really excited to be here. I'm really excited for the stuff that we have to announce, uh, for you this week. 
 
-Um, my name is Sophie Alpert at sophiebits on the Internet.I manage the React core team at Facebook.
+Um, my name is Sophie Alpert at sophiebits on the Internet. I manage the React core team at Facebook.
 
 ## React Today
 
@@ -18,24 +18,21 @@ By any better that you use React is doing great. Our npm downloads are up 70% ye
 
 And I can show you this list of companies that's using React. Although at this point, it's so long, it's kind of hard to tell how much it changes each year. 
 
-For another point of data, we can look at Google Trends, which shows web search traffic. So it searches for React continue to go up. Hopefully that means more people are using React not that it's getting more confusing. 
-
-(Laughing) 
+For another point of data, we can look at Google Trends, which shows web search traffic. So it searches for React continue to go up. Hopefully that means more people are using React not that it's getting more confusing. (Laughing) 
 
 Um, but, uh, for a point of comparison, we can look at, um, jQuery which we have just passed for the first time in history. (Cheer & Applause) But this also shows that we have a lot more room to grow. 
 
-Um, I was procrastinating when I was writing this talk. So I was urious to see what else React is more popular than. Oops. (Laughing) Spoiled my joke. Um, but React is more popular ,I found out, than renewable energy. (Laughing)  It's also more popular than orange juice. (Laughing) Just think about how common orange juice is, right. And not only that it's more popular than renewable energy and orange juice put together. So I think we have a lot to be proud of. 
+Um, I was procrastinating when I was writing this talk. So I was urious to see what else React is more popular than. Oops. (Laughing) Spoiled my joke. Um, but React is more popular ,I found out, than renewable energy. (Laughing) It's also more popular than orange juice. (Laughing) Just think about how common orange juice is, right. And not only that it's more popular than renewable energy and orange juice put together. So I think we have a lot to be proud of. 
 
 ## React's Mission
 
-But, um, but enough about these numbers, uh, what I really like to talk about today is our mission with React. Um, ever since React was released in 2013, our overarching goal, our primary mission has been to make it easier to build great UIs. And so when we're adding new features, we always try to be very deliberate. We want to consider a bunch of things when deciding whether to add a new API. If it makes it possible to do something you couldn't do before. If it can dramatically simplify the code around React in your components and libraries so that you all have less work to do and users have less code to download, that's a win. Or if it helps encourage best practices like code splitting, if we make it easier to code split your app into multiple bundles, then our hope is that your apps will end up being faster. So that's why we add things like React.lazy which we announced two days ago. You might have
-seen it. But thinking about this mission, make it easier to great ... to build great UIs.
+But, um, but enough about these numbers, uh, what I really like to talk about today is our mission with React. Um, ever since React was released in 2013, our overarching goal, our primary mission has been to make it easier to build great UIs. And so when we're adding new features, we always try to be very deliberate. We want to consider a bunch of things when deciding whether to add a new API. If it makes it possible to do something you couldn't do before. If it can dramatically simplify the code around React in your components and libraries so that you all have less work to do and users have less code to download, that's a win. Or if it helps encourage best practices like code splitting, if we make it easier to code split your app into multiple bundles, then our hope is that your apps will end up being faster. So that's why we add things like React.lazy which we announced two days ago. You might have seen it. But thinking about this mission, make it easier to great ... to build great UIs.
 
 There are a lot of different ways that we approach this. One way we do this is trying to simplify things that are hard. If you saw Dan Abramov's talk from JS Conf Iceland, then you saw a sneak peek at "Suspense", which is our idea about how to dramatically simplify what's required to do data fetching, code splitting and any kind of async data dependencies in your app. 
 
 Now another way we try to improve React is by focusing on performance. If your app runs faster, your users are going to enjoy using it more. Conversely, if your app is laggy, if your app is junky, then there your users aren't gonna have a great time. So we try to spend time on making React itself faster, because if React is faster out of the box, you all need to spend less time optimizing your own code. 
 
-One recent performance related effort that Dan also talked about in Iceland, as what we call "Time Slicing".Uh, this is going to let you make sure that the most important renders in your app are processed first, in order to unblock the main thread and make your apps faster. 
+One recent performance related effort that Dan also talked about in Iceland, as what we call "Time Slicing". Uh, this is going to let you make sure that the most important renders in your app are processed first, in order to unblock the main thread and make your apps faster. 
 
 And a third angle that we approach our mission from is Developer tooling to help you debug and understand your app. From the start, React has included developer friendly warnings to help, uh, point out problems before you might otherwise notice them.
 
