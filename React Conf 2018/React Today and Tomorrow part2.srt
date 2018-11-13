@@ -1,14 +1,14 @@
 1
 00:00:04,000 --> 00:00:10,550
-hi my name is Dan I work on the react
+Hi. Ah, my name is Dan, I work on the React
 
 2
 00:00:10,550 --> 00:00:13,759
-team and this is my first time in three
+Team and this is my first time in React
 
 3
 00:00:13,759 --> 00:00:28,160
-homes and so Sophie talked about these
+Conf. [Applause] And so Sophie talked about these
 
 4
 00:00:28,160 --> 00:00:30,740
@@ -16,7 +16,7 @@ problems that I think most of you have
 
 5
 00:00:30,740 --> 00:00:34,280
-encountered in react development and of
+encountered in React development. And of
 
 6
 00:00:34,280 --> 00:00:35,629
@@ -28,23 +28,23 @@ one by one so we could try to solve them
 
 8
 00:00:38,509 --> 00:00:41,840
-in isolation but it seems like solving
+in isolation. But it seems like solving
 
 9
 00:00:41,840 --> 00:00:44,829
-one of them makes some other one worse
+one of them makes some other one worse.
 
 10
 00:00:44,829 --> 00:00:48,199
-so for example if we try to solve the
+So for example, if we try to solve the
 
 11
 00:00:48,199 --> 00:00:51,079
-rapper hell by putting more logic into
+wrapper hell by putting more logic into
 
 12
 00:00:51,079 --> 00:00:53,780
-components themselves then our
+components themselves, then our
 
 13
 00:00:53,780 --> 00:00:55,879
@@ -52,7 +52,7 @@ components become larger and harder to
 
 14
 00:00:55,879 --> 00:00:58,879
-refactor and then on the other hand if
+refactor. And then on the other hand, if
 
 15
 00:00:58,879 --> 00:01:01,910
@@ -60,7 +60,7 @@ we try to split the components apart
 
 16
 00:01:01,910 --> 00:01:06,019
-into smaller pieces and reuse those then
+into smaller pieces and reuse those, then
 
 17
 00:01:06,019 --> 00:01:07,550
@@ -68,11 +68,11 @@ we end up with more nests than in the
 
 18
 00:01:07,550 --> 00:01:09,139
-component tree and we get the rapper
+component tree and we get the wrapper
 
 19
 00:01:09,139 --> 00:01:13,519
-hell again and finally in either case we
+hell again. And finally in either case we
 
 20
 00:01:13,519 --> 00:01:15,499
@@ -80,7 +80,7 @@ have all the confusion that comes with
 
 21
 00:01:15,499 --> 00:01:18,230
-the classes so we think that this is
+the classes. So we think that this is
 
 22
 00:01:18,230 --> 00:01:19,910
@@ -88,19 +88,19 @@ because these are not three separate
 
 23
 00:01:19,910 --> 00:01:23,660
-problems we think that this is these are
+problems. We think that this is, ah, these are
 
 24
 00:01:23,660 --> 00:01:27,470
-three symptoms of one problem and the
+three symptoms of one problem. And the
 
 25
 00:01:27,470 --> 00:01:29,749
-problem is that react does not provide a
+problem is that React does not provide a
 
 26
 00:01:29,749 --> 00:01:34,850
-simpler smaller lightweight primitive to
+simpler, smaller, lightweight primitive to
 
 27
 00:01:34,850 --> 00:01:37,670
@@ -108,27 +108,27 @@ add state or lifecycle than a class
 
 28
 00:01:37,670 --> 00:01:41,360
-component and so once you add a class
+component. And so once you add a class
 
 29
 00:01:41,360 --> 00:01:44,420
-component you can split it up further
+component, you can split it up further
 
 30
 00:01:44,420 --> 00:01:48,190
-without introducing the rapper helm and
+without introducing the wrapper hell. And
 
 31
 00:01:48,190 --> 00:01:51,889
-in fact it's not a new problem so if you
+in fact it's not a new problem. So if you
 
 32
 00:01:51,889 --> 00:01:54,530
-use react for like more than a couple of
+use React for like more than a couple of
 
 33
 00:01:54,530 --> 00:01:57,050
-years you might remember then when react
+years, you might remember then when React
 
 34
 00:01:57,050 --> 00:01:59,329
@@ -136,11 +136,11 @@ came out it actually included a solution
 
 35
 00:01:59,329 --> 00:02:03,110
-to this problem it was make sense so
+to this problem. Ah, it was mixins. So
 
 36
 00:02:03,110 --> 00:02:06,499
-mix-ins allows you to reuse some methods
+mixins allow you to reuse some methods
 
 37
 00:02:06,499 --> 00:02:08,060
@@ -148,47 +148,47 @@ between classes and this way you
 
 38
 00:02:08,060 --> 00:02:10,610
-wouldn't have all these rappers so
+wouldn't have all these wrappers. So
 
 39
 00:02:10,610 --> 00:02:16,790
-should we add mix ends back to react
+should we add mixins back to React? [Yeah ... No...]
 
 40
 00:02:16,790 --> 00:02:20,310
-that's right no no we're not gonna do
+That's right, no no, we're not gonna do
 
 41
 00:02:20,310 --> 00:02:23,040
-that I mean the codes usually make sense
+that. Ah, I mean the codes using mixins
 
 42
 00:02:23,040 --> 00:02:25,230
-the rounds it's not like it's not broken
+the rounds, it's not like, it's not broken.
 
 43
 00:02:25,230 --> 00:02:27,600
-but we don't encourage using mix-ins and
+But we don't encourage using mixins in
 
 44
 00:02:27,600 --> 00:02:29,880
-react and if you curious why there is a
+React. And if you curious why there is a
 
 45
 00:02:29,880 --> 00:02:32,910
-blog post that we wrote code called
+blog post, uh, that we wrote code called
 
 46
 00:02:32,910 --> 00:02:35,040
-mix-ins considered harmful on the react
+"Mixins Considered Harmful" on the React
 
 47
 00:02:35,040 --> 00:02:38,910
-log where we explain that we think in
+Blog, where we explain that we think in
 
 48
 00:02:38,910 --> 00:02:42,420
-our experience the problems that mix-ins
+our experience, the problems that mixins
 
 49
 00:02:42,420 --> 00:02:45,000
@@ -196,11 +196,11 @@ create are worse than the problems that
 
 50
 00:02:45,000 --> 00:02:47,790
-they solve so that's why we don't
+they solve. Ah, so that's why we don't
 
 51
 00:02:47,790 --> 00:02:51,870
-encourage using mix-ins so perhaps we
+encourage using mixins. So perhaps we
 
 52
 00:02:51,870 --> 00:02:53,310
@@ -208,15 +208,15 @@ could just can't solve this problem
 
 53
 00:02:53,310 --> 00:02:55,860
-maybe its inherent to the react
+maybe its inherent to the React
 
 54
 00:02:55,860 --> 00:02:57,780
-component model maybe we should just
+component model. Maybe we should just
 
 55
 00:02:57,780 --> 00:03:10,470
-accept it oh maybe in there is a perhaps
+accept it. [Laughing] Or maybe in there is a, perhaps
 
 56
 00:03:10,470 --> 00:03:12,510
@@ -228,11 +228,11 @@ our components that doesn't suffer from
 
 58
 00:03:15,720 --> 00:03:19,200
-either of these problems and that's what
+either of these problems. And that's what
 
 59
 00:03:19,200 --> 00:03:22,680
-I'm going to talk about today but before
+I'm going to talk about today. But before
 
 60
 00:03:22,680 --> 00:03:24,840
@@ -244,15 +244,15 @@ the way we approach making changes and
 
 62
 00:03:27,960 --> 00:03:31,200
-additions to react which is a year ago
+additions to React which is a year ago
 
 63
 00:03:31,200 --> 00:03:34,290
-we set up an RFC process so RFC stands
+we set up an RFC process, so RFC stands
 
 64
 00:03:34,290 --> 00:03:36,840
-for request for comments and it means
+for request for comments, and it means
 
 65
 00:03:36,840 --> 00:03:38,880
@@ -264,7 +264,7 @@ somebody else wants to make a
 
 67
 00:03:40,680 --> 00:03:43,620
-substantial change or addition to react
+substantial change or addition to React,
 
 68
 00:03:43,620 --> 00:03:46,830
@@ -276,15 +276,15 @@ detail in the motivation and the
 
 70
 00:03:49,260 --> 00:03:51,660
-detailed design of how this will work
+detailed design of how this will work.
 
 71
 00:03:51,660 --> 00:03:56,250
-and so that's what we're going to do
+And so that's what we're going to do.
 
 72
 00:03:56,250 --> 00:03:59,520
-we're excited to announce that we are
+We're excited to announce that we are
 
 73
 00:03:59,520 --> 00:04:02,040
@@ -292,7 +292,7 @@ ready to present a proposal for how we
 
 74
 00:04:02,040 --> 00:04:05,520
-can solve these three problems
+can solve these three problems.
 
 75
 00:04:05,520 --> 00:04:09,420
