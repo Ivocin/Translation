@@ -10,7 +10,7 @@
 
 由于视频过长，将其拆分为三个部分翻译
 
-### 第一部分为主持人 Tom Occhino 开场和 Sophie Alpert 的开场演讲：
+### 第一部分为主持人 [Tom Occhino](https://twitter.com/tomocchino) 开场和 [Sophie Alpert](https://twitter.com/sophiebits) 的开场演讲：
 
 英文字幕：[React Today and Tomorrow part1.srt](https://github.com/Ivocin/Traslation/blob/master/React%20Conf%202018/React%20Today%20and%20Tomorrow%20part1.srt)
 
@@ -22,8 +22,14 @@ keynote 内容整理（中文）：[React 的今天和明天——第一部分. 
 
 中英双语字幕视频(已完成）： [React Today And Tomorrow Part I —— 中英双语字幕](http://www.iqiyi.com/w_19s383ms9d.html)
 
-### 第二部分为 Dan Abramov 的演讲，正式提案 React Hooks：
+
+### 第二部分为 [Dan Abramov](https://twitter.com/dan_abramov) 的演讲，正式提案 React Hooks：
 
 英文字幕（未完成）：[React Today and Tomorrow part2.srt](https://github.com/Ivocin/Traslation/blob/master/React%20Conf%202018/React%20Today%20and%20Tomorrow%20part2.srt)
 
 keynote 内容整理（英文）(整理中)：[React Today and Tomorrow - Part II.md](https://github.com/Ivocin/Traslation/blob/master/React%20Conf%202018/React%20Today%20and%20Tomorrow%20-%20Part%20II.md)
+
+
+### 第三部分为 [Ryan Florence](https://twitter.com/ryanflorence) 的演讲 —— 90% Cleaner React with Hooks ：
+
+TODO
