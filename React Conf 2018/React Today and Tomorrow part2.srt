@@ -424,7 +424,7 @@ name to be editable. So how do you do it
 
 107
 00:06:47,340 --> 00:06:49,560
-in React normally. Well, like if we want
+in React normally? Well, like if we want
 
 108
 00:06:49,560 --> 00:06:52,200
@@ -464,7 +464,7 @@ syntax. So constructor props, super props.
 
 117
 00:07:20,840 --> 00:07:25,670
-this the state, going to initialize, ur,
+This the state, going to initialize, ur,
 
 118
 00:07:25,670 --> 00:07:30,960
@@ -680,11 +680,11 @@ somewhere. So where do I get them from?
 
 171
 00:10:35,220 --> 00:10:40,050
-From react local state. So how do I use
+From React local state. So how do I use
 
 172
 00:10:40,050 --> 00:10:42,370
-react local state from a function
+React local state from a function
 
 173
 00:10:42,370 --> 00:10:46,960
