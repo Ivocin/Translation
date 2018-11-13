@@ -296,7 +296,7 @@ can solve these three problems.
 
 75
 00:04:05,520 --> 00:04:09,420
-and importantly this proposal does not
+And importantly this proposal does not
 
 76
 00:04:09,420 --> 00:04:11,820
@@ -304,15 +304,15 @@ have breaking changes or deprecations in
 
 77
 00:04:11,820 --> 00:04:15,990
-it it is strictly additive it is opt-in
+it. It is strictly additive, it is opt-in, 
 
 78
 00:04:15,990 --> 00:04:20,790
-and it adds some new api's which happens
-
+and it adds some new APIs which happens
+ 
 79
 00:04:20,790 --> 00:04:23,610
-when they try to solve problems and we
+when they try to solve problems. And we
 
 80
 00:04:23,610 --> 00:04:25,709
@@ -320,35 +320,35 @@ would love to hear your feedback on this
 
 81
 00:04:25,709 --> 00:04:28,620
-proposal which is why we're we're going
+proposal which is why we're, ur, we're going
 
 82
 00:04:28,620 --> 00:04:31,440
-to publish it today and we thought about
+to publish it today. And we thought about
 
 83
 00:04:31,440 --> 00:04:33,510
-many ways we could share this proposal
+many ways we could share this proposal,
 
 84
 00:04:33,510 --> 00:04:35,370
-so maybe we just like right off in there
+so maybe we just like write off in there ...
 
 85
 00:04:35,370 --> 00:04:39,240
-write up an RFC and post it but since we
+write up an RFC and post it. Um, but since we
 
 86
 00:04:39,240 --> 00:04:41,700
-were going to run react Kampf anyway we
+were going to run React Conf anyway, we
 
 87
 00:04:41,700 --> 00:04:45,650
-just decided to to show it here and
+just decided to, ah, just show it here. And
 
 88
 00:04:45,650 --> 00:04:49,710
-we're going to demo
+we're going to demo.
 
 89
 00:04:49,710 --> 00:04:59,479
@@ -356,75 +356,75 @@ we're going to demo
 
 90
 00:04:59,479 --> 00:05:06,929
-don't worry Damaris the displays sorry
+It already mirrors the displays. Sorry,
 
 91
 00:05:06,929 --> 00:05:19,670
-technical glitch
+technical glitch.
 
 92
 00:05:19,670 --> 00:05:22,280
-can somebody who understands projectors
+Ur, can somebody who understands projectors
 
 93
 00:05:22,280 --> 00:05:33,250
-help me can I make it mirror my desktop
+help me. [Laughing] Ur, can I make it mirror my desktop?
 
 94
 00:05:33,250 --> 00:05:41,290
-please
+Please.
 
 95
 00:05:41,290 --> 00:05:46,970
-yeah
+(I can do it) Yeah. [Laughing]
 
 96
 00:05:46,970 --> 00:05:50,370
-okay but it doesn't show on the screen I
+Okay but it doesn't show on the screen, I
 
 97
 00:05:50,370 --> 00:05:53,980
-don't see anything
+don't see anything. [Laughing]
 
 98
 00:05:53,980 --> 00:06:08,390
-that's that's the problem that I had
+That's, that's the problem that I had.  [Applause]
 
 99
 00:06:08,390 --> 00:06:17,180
-okay disaster averted
+Okay, disaster averted. [Laughing]
 
 100
 00:06:17,180 --> 00:06:22,020
-alright um let me check the font size a
+Alright, um, let me check the font size a
 
 101
 00:06:22,020 --> 00:06:27,960
-little bit you see it fell all right
+little bit. Do you see this file? [Yeah] All right.
 
 102
 00:06:27,960 --> 00:06:34,140
-so here is a simple react component that
+So, ah, here is a simple React component, ah, that
 
 103
 00:06:34,140 --> 00:06:36,840
-just it is a row this is just some
+just it is a row, this is just some
 
 104
 00:06:36,840 --> 00:06:39,870
-styling and it it renders a person's
+styling, and it it renders a person's
 
 105
 00:06:39,870 --> 00:06:43,170
-name and so let's say that we want this
+name. And so let's say that we want this
 
 106
 00:06:43,170 --> 00:06:47,340
-name to be editable so how do you do it
+name to be editable. So how do you do it
 
 107
 00:06:47,340 --> 00:06:49,560
-in react normally well like if we want
+in React normally. Well, like if we want
 
 108
 00:06:49,560 --> 00:06:52,200
@@ -432,27 +432,27 @@ to add an input there we need to return
 
 109
 00:06:52,200 --> 00:06:54,630
-this component into a class add some
+this component into a class, add some
 
 110
 00:06:54,630 --> 00:06:56,400
-local state to it and let that state
+local state to it, and let that state
 
 111
 00:06:56,400 --> 00:06:58,740
-drive the input so that's exactly what
+drive the input. So that's exactly what
 
 112
 00:06:58,740 --> 00:07:01,190
-I'm going to do that's what we do today
+I'm going to do, uh, that's what we do today.
 
 113
 00:07:01,190 --> 00:07:05,390
-so I'm gonna do the expert default class
+So I'm gonna do the export default class
 
 114
 00:07:05,390 --> 00:07:12,720
-greeting extense react component and so
+Greeding extends React component. And so
 
 115
 00:07:12,720 --> 00:07:14,910
@@ -460,47 +460,47 @@ I'm going to use only stable JavaScript
 
 116
 00:07:14,910 --> 00:07:20,840
-syntax so constructor props super props
+syntax. So constructor props, super props.
 
 117
 00:07:20,840 --> 00:07:25,670
-there is the state going to initialize
+this the state, going to initialize, ur,
 
 118
 00:07:25,670 --> 00:07:30,960
-name to Mary here and I'm going to
+name to Mary here. And I'm going to
 
 119
 00:07:30,960 --> 00:07:34,320
-declare a random method and copy and
+declare a render method and copy and
 
 120
 00:07:34,320 --> 00:07:41,950
-paste this
+paste this.
 
 121
 00:07:41,950 --> 00:07:44,680
-sorry
+Sorry.
 
 122
 00:07:44,680 --> 00:07:48,040
-okay and so I want this to be instead of
+Okay. And so I want this to be instead of
 
 123
 00:07:48,040 --> 00:07:49,450
-just rendering the name I want the
+just rendering the name, I want this
 
 124
 00:07:49,450 --> 00:07:51,400
-surrender and input so I'm replacing
+render an input. So I'm replacing
 
 125
 00:07:51,400 --> 00:07:56,320
-this by an input and the value of the
+this by an input, and the value of the
 
 126
 00:07:56,320 --> 00:08:00,450
-input is this that state that name and
+input is this that state that name. And
 
 127
 00:08:00,450 --> 00:08:03,160
@@ -508,51 +508,51 @@ if I make a change I want to call this
 
 128
 00:08:03,160 --> 00:08:06,910
-dot handle name change that's going to
+dot handleNameChange that's going to
 
 129
 00:08:06,910 --> 00:08:10,570
-be my change color and I'm going to
+be my change caller. And I'm going to
 
 130
 00:08:10,570 --> 00:08:13,330
-declare it here when the name changes we
+declare it here, when the name changes we
 
 131
 00:08:13,330 --> 00:08:16,660
-call says state like we normally do and
+call setState like we normally do. And
 
 132
 00:08:16,660 --> 00:08:19,900
-we set the name to eat at target dot
+we set the name to e dot target dot
 
 133
 00:08:19,900 --> 00:08:26,440
-value right so now if I edit the okay so
+value. Right. So now if I edit the ... [TypeError In Page] Okay so
 
 134
 00:08:26,440 --> 00:08:33,070
-I I need to bind sorry I need to find
+I I need to bind ... [Laughing] Sorry I need to bind
 
 135
 00:08:33,070 --> 00:08:36,940
-the events on there okay so now I can
+the events on there. Okay so now I can
 
 136
 00:08:36,940 --> 00:08:40,390
-actually edit it and it works so a
+actually edit it and it works. So a
 
 137
 00:08:40,390 --> 00:08:43,450
-familiar class component is if you work
+familiar class component is, uh, if you work
 
 138
 00:08:43,450 --> 00:08:45,280
-with reactive properly right a lot of
+with React probably right a lot of
 
 139
 00:08:45,280 --> 00:08:52,060
-those but let's take a step back what if
+those. But let's take a step back. What if
 
 140
 00:08:52,060 --> 00:08:55,300
@@ -560,91 +560,91 @@ we didn't have to write a class when we
 
 141
 00:08:55,300 --> 00:08:58,420
-wanted to use state so I'm not sure how
+wanted to use state. So I'm not sure how
 
 142
-00:08:54,420 --> 00:08:56,1000
-that's gonna work but I'll just start
+00:08:54,420 --> 00:08:56,999
+that's gonna work. But I'll just start
 
 143
-00:08:56,1000 --> 00:08:58,560
-with what I know I want to render an
+00:08:56,999 --> 00:08:58,560
+with what I know, I want to render an
 
 144
 00:09:02,560 --> 00:09:06,390
-input so I'm gonna put an input here and
+input. So I'm gonna put an input here. And
 
 145
 00:09:06,390 --> 00:09:08,979
-the input has a valley and that Valley
+the input has a value and that value
 
 146
 00:09:08,979 --> 00:09:11,469
-is the current name so I'll just pass
+is the current name, so I'll just pass
 
 147
 00:09:11,469 --> 00:09:14,710
-name I don't know where to get name from
+name. I don't know where to get name from.
 
 148
 00:09:14,710 --> 00:09:18,359
-so it doesn't come from props
+So it doesn't come from props, uh,
 
 149
 00:09:18,359 --> 00:09:22,410
-I'll just declare it and I don't know
+I'll just declare it, and I don't know,
 
 150
 00:09:22,410 --> 00:09:26,200
-I'll fill it in later it's gonna have a
+I'll fill it in later. Uh, it's gonna have a
 
 151
 00:09:26,200 --> 00:09:27,790
-change down there as well so I'm going
+change caller there as well, so I'm going
 
 152
 00:09:27,790 --> 00:09:33,089
-to declare unchanged handle name change
+to declare onChanged handleNameChange.
 
 153
 00:09:33,089 --> 00:09:38,229
-and I'm adding a function here takes an
+And I'm adding a function here takes an
 
 154
 00:09:38,229 --> 00:09:42,160
-event and then here I want to tell react
+event. And then here I want to tell React
 
 155
 00:09:42,160 --> 00:09:45,430
-to set the name to something but again
+to set the name to something, but again
 
 156
 00:09:45,430 --> 00:09:47,200
 I'm not sure how to do that from a
 
 157
-00:09:43,200 --> 00:09:44,1000
-functional component so I'll just call
+00:09:43,200 --> 00:09:44,999
+functional component. So I'll just call
 
 158
-00:09:44,1000 --> 00:09:47,280
-something called set name
+00:09:44,999 --> 00:09:47,280
+something called setName.
 
 159
 00:09:51,280 --> 00:09:57,010
-with the current input value and I'll
+With the current input value. And I'll
 
 160
 00:09:57,010 --> 00:10:06,570
-just declare it here
+just declare it here.
 
 161
 00:10:06,570 --> 00:10:09,040
-all right so these two things they're
+All right, so these two things they're
 
 162
 00:10:09,040 --> 00:10:11,080
-closely related right so one of them is
+closely related, right. So one of them is
 
 163
 00:10:11,080 --> 00:10:13,630
@@ -656,19 +656,19 @@ variable and the other is a function
 
 165
 00:10:17,440 --> 00:10:20,700
-that lets us set the name state variable
+that lets us set the name state variable.
 
 166
 00:10:20,700 --> 00:10:22,930
-and so because these things are closely
+And so because these things are closely
 
 167
 00:10:22,930 --> 00:10:24,820
-related I'm actually going to put them
+related, I'm actually going to put them
 
 168
 00:10:24,820 --> 00:10:29,950
-together as a pair of valleys so I'm
+together as a pair of values. So I'm
 
 169
 00:10:29,950 --> 00:10:31,390
@@ -676,11 +676,11 @@ going to get them together from
 
 170
 00:10:31,390 --> 00:10:35,220
-somewhere so where do I get them from
+somewhere. So where do I get them from?
 
 171
 00:10:35,220 --> 00:10:40,050
-from react local state so how do I use
+From react local state. So how do I use
 
 172
 00:10:40,050 --> 00:10:42,370
@@ -688,23 +688,23 @@ react local state from a function
 
 173
 00:10:42,370 --> 00:10:46,960
-component well what if I could just use
+component? Well, what if I could just use
 
 174
 00:10:46,960 --> 00:10:53,940
-state
+state.
 
 175
 00:10:53,940 --> 00:11:01,230
-and past the initial state to specify it
+And past the initial state to specify it.
 
 176
 00:11:01,230 --> 00:11:08,010
-let's see if this works yeah it works
+Let's see if this works. Yeah, it works.
 
 177
 00:11:08,010 --> 00:11:17,310
-[Applause]
+[Applause & Cheers]
 
 178
 00:11:17,310 --> 00:11:19,630
