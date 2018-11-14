@@ -22,6 +22,8 @@ keynote 内容整理（中文）：[React 的今天和明天——第一部分. 
 
 中英双语字幕视频(已完成）： [React Today And Tomorrow Part I —— 中英双语字幕](http://www.iqiyi.com/w_19s383ms9d.html)
 
+中文图文版： [[译] React 的今天和明天（图文版） —— 第一部分](https://juejin.im/post/5be90d825188254b0917f180)
+
 
 ### 第二部分为 [Dan Abramov](https://twitter.com/dan_abramov) 的演讲，正式提案 React Hooks：
 
