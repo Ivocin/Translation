@@ -53,6 +53,7 @@ So now if I edit the ... [TypeError In Page] Okay so I I need to bind ... [Laugh
 
 So a familiar class component is, uh, if you work with React probably right a lot of those. 
 
+### Can we use function component instead?
 
 But let's take a step back. What if we didn't have to write a class when we wanted to use state. So I'm not sure how that's gonna work. But I'll just start with what I know, I want to render an input. So I'm gonna put an input here. And the input has a value and that value is the current name, so I'll just pass name. I don't know where to get name from. So it doesn't come from props, uh, I'll just declare it, and I don't know, I'll fill it in later. 
 
@@ -61,7 +62,7 @@ just declare it here.
 
 All right, so these two things they're closely related, right. So one of them is the current value of the name state variable and the other is a function that lets us set the name state variable. And so because these things are closely related, I'm actually going to put them together as a pair of values. 
 
-So I'm going to get them together from somewhere. So where do I get them from? From react local state. So how do I use react local state from a function component? Well, what if I could just use state. And past the initial state to specify it.
+So I'm going to get them together from somewhere. So where do I get them from? From React local state. So how do I use React local state from a function component? Well, what if I could just use state. And past the initial state to specify it.
 
 Let's see if this works. Yeah, it works.
 
