@@ -1,10 +1,10 @@
 # React Conf 2018 演讲内容翻译
 
-> 本项目是 React Conf 2018 相关演讲内容的翻译
+> 本项目是 React Conf 2018 相关演讲内容的翻译。首先视频内容特别好，在 React 官网关于 Hooks 的介绍上就有这段视频链接，但是由于原视频由于在油管上，拦截了绝大多数同学；第二点是字幕也是机器自动合成的，没有标点，还有一些错误。所以想把视频迁移到国内，精校英文字幕，然后进行翻译，整理成视频供大家观看。另外整理出文字版以及图文版，方便大家迅速了解视频内容，节省观看视频的时间。
 
 ## 视频 React Today and Tomorrow and 90% Cleaner React With Hooks 翻译
 
-源视频地址：[React Today and Tomorrow and 90% Cleaner React With Hooks](https://youtu.be/dpw9EHDh2bM)
+原视频地址：[React Today and Tomorrow and 90% Cleaner React With Hooks](https://youtu.be/dpw9EHDh2bM)
 
 源视频完整英文字幕精校版（未完成）：[React Today and Tomorrow and 90% Cleaner React With Hooks - YouTube.srt](https://github.com/Ivocin/Traslation/blob/master/React%20Conf%202018/React%20Today%20and%20Tomorrow%20and%2090%25%20Cleaner%20React%20With%20Hooks%20-%20YouTube.srt)
 
