@@ -67,3 +67,17 @@ So I'm going to get them together from somewhere. So where do I get them from? F
 Let's see if this works. Yeah, it works.
 
 [Applause & Cheers]
+
+So let's, let's compare the two approaches. So on the left we have a familiar class component. This state has to be an object. Uh, we bind some event handlers so that we can access. This inside the event handler for this dot setState. When we call setState it actually doesn't just set the state that merges, the state are the argument into the state object. And then when we want to access the state which is this dot state dot something. 
+
+So in the example on the right, we don't need to access this dot state dot something. Because the name state variable is already available in the function. It's just the variable. And similarly when we need to set the state, we don't need to access this dot something. Because the function that let us set the name is also available in the scope. So what is `useState` exactly? UseState is a hook. **A hook is a function provided by React that lets you hook into React features from your function components**. And `useState` is the first hook that we're going to take a look at today, but there are a few more. So we're going to see them later.
+
+### Add a second field "surName" in two ways
+
+All right, so let's go back to our familiar class example. So let's say we wanted to add a second field. For example, for a surname. So the way we normally do this is we add another key to the state. And we, uh, I'm going to copy and paste this row. It's gonna say surname now. It's going to render a surname, and handleSurnameChange. When I copy and paste this event handler, this will be surname. And I need to bind it. Okay, Mary Poppins. So we can see that it works. 
+
+Uh, so how do we do the same with hooks? So one thing we could do is we could make our state an object. As you can see that the state with hooks state doesn't have to be an object. It can be any primitive. We could make it an object if we wanted to, but we also don't have to. So conceptually surname is, uh, is not closely related to state, uh, to the name. So what we could do is we could declare a second state variable by calling the `useState` hook again. So I'll declare surname. I can give it any name, it's just the variable in my code. And `setSurname`. Calling `useState` and passing the initial state for that state variable 'Poppins'. So again I'm gonna copy and paste the row. Say surname, the value surname, `handleSurnameChange`. And when the user edits the surname, not sir name, we want to set the surname.
+
+Let's see if this works.Yay, it looks like it works. [Applause]
+
+So we can see that we can use hooks more than once in a component.

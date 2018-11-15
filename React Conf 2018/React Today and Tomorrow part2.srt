@@ -708,31 +708,31 @@ Let's see if this works. Yeah, it works.
 
 178
 00:11:17,310 --> 00:11:19,630
-so let's let's compare the two
+So let's, let's compare the two
 
 179
 00:11:19,630 --> 00:11:25,120
-approaches so on the Left we have a
+approaches. So on the left we have a
 
 180
 00:11:25,120 --> 00:11:27,700
-familiar class component this state has
+familiar class component. This state has
 
 181
 00:11:27,700 --> 00:11:31,180
-to be an object we bind some event
+to be an object. Uh, we bind some event
 
 182
 00:11:31,180 --> 00:11:33,160
-handlers so that we can access this
+handlers so that we can access. This
 
 183
 00:11:33,160 --> 00:11:36,099
-inside the event handler for this that's
+inside the event handler for this dot setState.
 
 184
 00:11:36,099 --> 00:11:39,160
-a state when we call says state it
+When we call setState it
 
 185
 00:11:39,160 --> 00:11:41,020
@@ -740,147 +740,147 @@ actually doesn't just set the state that
 
 186
 00:11:41,020 --> 00:11:44,620
-merges the state are the argument into
+merges, the state are the argument into
 
 187
 00:11:44,620 --> 00:11:47,050
-the state object and then when we want
+the state object. And then when we want
 
 188
 00:11:47,050 --> 00:11:49,120
-to access the state which it is that
+to access the state which is this dot
 
 189
 00:11:49,120 --> 00:11:52,359
-state and that's something so in the
+state dot something. So in the
 
 190
 00:11:52,359 --> 00:11:55,359
-example on the right we don't need to
+example on the right, we don't need to
 
 191
 00:11:55,359 --> 00:11:57,940
-access this that stayed at something
+access this dot state dot something.
 
 192
 00:11:57,940 --> 00:12:00,339
-because the name state variable is
+Because the name state variable is
 
 193
 00:12:00,339 --> 00:12:02,530
-already available in the function it's
+already available in the function. It's
 
 194
 00:12:02,530 --> 00:12:05,440
-just the variable and similarly when we
+just the variable. And similarly when we
 
 195
 00:12:05,440 --> 00:12:07,540
-need to set the state we don't need to
+need to set the state, we don't need to
 
 196
 00:12:07,540 --> 00:12:11,320
-access this that's something because the
+access this dot something. Because the
 
 197
 00:12:11,320 --> 00:12:13,450
-function that lets has said the name is
+function that let us set the name is
 
 198
 00:12:13,450 --> 00:12:19,270
-also available in the scope so what is
+also available in the scope. So what is
 
 199
 00:12:19,270 --> 00:12:25,560
-use state exactly your state is a hook a
+useState exactly? UseState is a hook. A
 
 200
 00:12:25,560 --> 00:12:29,200
-hook is a function provided by react
+hook is a function provided by React
 
 201
 00:12:29,200 --> 00:12:32,670
-that lets you hook into react features
+that lets you hook into React features
 
 202
-00:12:28,670 --> 00:12:32,1000
-from your function components and you
+00:12:28,670 --> 00:12:32,999
+from your function components. And
 
 203
-00:12:32,1000 --> 00:12:34,979
-state is the first hook that we're going
+00:12:32,999 --> 00:12:34,979
+useState is the first hook that we're going
 
 204
 00:12:38,979 --> 00:12:40,870
-to take a look at today but there are a
+to take a look at today, but there are a
 
 205
 00:12:40,870 --> 00:12:43,089
-few more so we're going to see them
+few more. So we're going to see them
 
 206
 00:12:43,089 --> 00:12:52,250
-later
+later.
 
 207
 00:12:52,250 --> 00:12:54,630
-all right so let's go back to our
+All right, so let's go back to our
 
 208
 00:12:54,630 --> 00:12:58,170
-Familia a class example so let's say we
+familiar class example. So let's say we
 
 209
 00:12:58,170 --> 00:13:01,050
-wanted to add a second field for example
+wanted to add a second field. For example,
 
 210
 00:13:01,050 --> 00:13:04,319
-for a surname so the way we normally do
+for a surname. So the way we normally do
 
 211
 00:13:04,319 --> 00:13:07,109
-this is we add another key to the state
+this is we add another key to the state.
 
 212
 00:13:07,109 --> 00:13:13,020
-and we I'm going to copy and paste this
+And we, uh, I'm going to copy and paste this
 
 213
 00:13:13,020 --> 00:13:18,569
-row it's gonna say surname now it's
+row. It's gonna say surname now. It's
 
 214
 00:13:18,569 --> 00:13:21,630
-going to render a surname and handle
+going to render a surname, and handleSurnameChange.
 
 215
 00:13:21,630 --> 00:13:24,989
-surname change when I copy and paste
+When I copy and paste
 
 216
 00:13:24,989 --> 00:13:30,260
-this event handler this will be surname
+this event handler, this will be surname.
 
 217
 00:13:30,260 --> 00:13:42,810
-and I need to bind it
+And I need to bind it.
 
 218
 00:13:42,810 --> 00:13:49,830
-okay MARY POPPINS so we can see that it
+Okay, Mary Poppins. So we can see that it
 
 219
 00:13:49,830 --> 00:13:54,180
-works so how do we do the same with
+works. Uh, so how do we do the same with
 
 220
 00:13:50,180 --> 00:13:55,1000
-hooks so one thing we could do is we
+hooks? So one thing we could do is we
 
 221
 00:13:55,1000 --> 00:13:58,489
-could make our state an object as you
+could make our state an object. As you
 
 222
 00:14:02,489 --> 00:14:05,310
@@ -888,23 +888,23 @@ can see that the state with hooks state
 
 223
 00:14:05,310 --> 00:14:06,989
-doesn't have to be an object it can be
+doesn't have to be an object. It can be
 
 224
 00:14:06,989 --> 00:14:09,090
-any primitive we could make it an object
+any primitive. We could make it an object
 
 225
 00:14:09,090 --> 00:14:11,460
-if we wanted to but we also don't have
+if we wanted to, but we also don't have
 
 226
 00:14:11,460 --> 00:14:15,300
-to so conceptually surname is is not
+to. So conceptually surname is, uh, is not
 
 227
 00:14:15,300 --> 00:14:19,320
-closely related to state to the name so
+closely related to state, uh, to the name. So
 
 228
 00:14:19,320 --> 00:14:21,150
@@ -912,23 +912,23 @@ what we could do is we could declare a
 
 229
 00:14:21,150 --> 00:14:24,780
-second state variable by calling the you
+second state variable by calling the
 
 230
 00:14:24,780 --> 00:14:26,719
-state hook again
+useState hook again.
 
 231
 00:14:26,719 --> 00:14:29,940
-so all declare surname I can give it any
+So I'll declare surname. I can give it any
 
 232
 00:14:29,940 --> 00:14:31,589
-name it's just the variable in my code
+name, it's just the variable in my code.
 
 233
 00:14:31,589 --> 00:14:37,050
-and sets her name callin you state and
+And setSurname. Calling useState and
 
 234
 00:14:37,050 --> 00:14:39,599
@@ -936,43 +936,43 @@ passing the initial state for that state
 
 235
 00:14:39,599 --> 00:14:41,510
-variable poppins
+variable 'Poppins'.
 
 236
 00:14:41,510 --> 00:14:43,800
-so again government gonna copy and paste
+So again I'm gonna copy and paste
 
 237
 00:14:43,800 --> 00:14:51,060
-the row say username the valet surname
+the row. Say surname, the value surname,
 
 238
 00:14:51,060 --> 00:14:55,680
-handle surname change and when the user
+handleSurnameChange. And when the user
 
 239
 00:14:55,680 --> 00:15:03,089
-edits the surname not sir name we want
+edits the surname, not sir name, we want
 
 240
 00:15:03,089 --> 00:15:07,920
-to set the surname
+to set the surname.
 
 241
 00:15:07,920 --> 00:15:14,300
-let's see if this works
+Let's see if this works.
 
 242
 00:15:14,300 --> 00:15:22,660
-yay it looks like it works
+Yay, it looks like it works. [Applause]
 
 243
 00:15:22,660 --> 00:15:26,630
-so we can see that we can use hooks more
+So we can see that we can use hooks more
 
 244
 00:15:26,630 --> 00:15:29,960
-than once in a component let's compare
+than once in a component. Let's compare
 
 245
 00:15:29,960 --> 00:15:34,400
