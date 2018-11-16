@@ -12,7 +12,7 @@ Hi. Ah, my name is Dan, I work on the React Team and this is my first time in Re
 
 ## Promblems Today
 
-And so Sophie talked about these problems that I think most of you have encountered in React development. And of course we could approach these problems one by one so we could try to solve them in isolation. But it seems like solving one of them makes some other one worse.
+And so Sophie talked about these problems that I think most of you have encountered in React development. And of course we could approach these problems one by one, so we could try to solve them in isolation. But it seems like solving one of them makes some other one worse.
 
 So for example, if we try to solve the wrapper hell by putting more logic into components themselves, then our components become larger and harder to refactor. And then on the other hand, if we try to split the components apart into smaller pieces and reuse those, then we end up with more nests than in the component tree and we get the wrapper hell again. And finally in either case we have all the confusion that comes with the classes. 
 
