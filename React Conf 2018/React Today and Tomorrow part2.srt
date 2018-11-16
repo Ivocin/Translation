@@ -604,7 +604,7 @@ change caller there as well, so I'm going
 
 152
 00:09:27,790 --> 00:09:33,089
-to declare onChanged handleNameChange.
+to declare onChange handleNameChange.
 
 153
 00:09:33,089 --> 00:09:38,229
@@ -623,11 +623,11 @@ to set the name to something, but again
 I'm not sure how to do that from a
 
 157
-00:09:43,200 --> 00:09:44,999
+00:09:47,200 --> 00:09:48,999
 functional component. So I'll just call
 
 158
-00:09:44,999 --> 00:09:47,280
+00:09:48,999 --> 00:09:51,280
 something called setName.
 
 159
