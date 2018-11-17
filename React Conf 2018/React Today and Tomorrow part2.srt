@@ -1104,11 +1104,11 @@ to be able to read some value. So we're
 
 277
 00:17:13,030 --> 00:17:17,410
-going to import theme context and local
+going to import ThemeContext and 
 
 278
 00:17:17,410 --> 00:17:19,989
-context which I already declared in
+LocalContext which I already declared in
 
 279
 00:17:19,989 --> 00:17:23,320
@@ -1132,11 +1132,11 @@ And it looks like this. So I'm going to
 
 284
 00:17:33,219 --> 00:17:36,729
-scroll down here. So we can choose theme
+scroll down here. So we can choose ThemeContext
 
 285
 00:17:36,729 --> 00:17:40,589
-context consumer that gives us the theme.
+Consumer that gives us the theme.
 
 286
 00:17:40,589 --> 00:17:43,420
@@ -1152,7 +1152,7 @@ inside the render prop. And I'm going to
 
 289
 00:17:55,450 --> 00:18:01,150
-use className equals "theme". All right,
+use className equals 'theme' . All right,
 
 290
 00:18:01,150 --> 00:18:04,280
@@ -1164,11 +1164,11 @@ And I also want to show the current
 
 292
 00:18:06,770 --> 00:18:09,739
-Language, so I'm going to use local
+language, so I'm going to use
 
 293
 00:18:09,739 --> 00:18:18,290
-context consumer. and it's going to
+LocalContext Consumer. And it's going to
 
 294
 00:18:18,290 --> 00:18:22,670
@@ -1196,7 +1196,7 @@ actually added a more convenient API for
 
 300
 00:18:41,780 --> 00:18:45,800
-accessing it even classes in 16.6. Ur, but
+accessing it in classes in 16.6. Ur, but
 
 301
 00:18:45,800 --> 00:18:47,900
@@ -1228,7 +1228,7 @@ to import my contexts. So this is gonna
 
 308
 00:19:10,760 --> 00:19:17,500
-be a ThemeContext, LocalContext. A nd
+be a ThemeContext, LocalContext. And
 
 309
 00:19:17,500 --> 00:19:20,660
@@ -1248,7 +1248,7 @@ ThemeContext. And to get the current
 
 313
 00:19:35,060 --> 00:19:39,410
-locale I can use context LocalContext
+locale I can use context LocalContext.
 
 314
 00:19:39,410 --> 00:19:42,560
@@ -1272,7 +1272,7 @@ can put it into my CSS className. And I
 
 319
 00:19:56,150 --> 00:20:05,270
-can add the bro first language, and I can
+can add the bro, that's language, and I can
 
 320
 00:20:05,270 --> 00:20:09,240
