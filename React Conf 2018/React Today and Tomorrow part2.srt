@@ -1108,7 +1108,7 @@ going to import ThemeContext and
 
 278
 00:17:17,410 --> 00:17:19,989
-LocalContext which I already declared in
+LocaleContext which I already declared in
 
 279
 00:17:19,989 --> 00:17:23,320
@@ -1168,7 +1168,7 @@ language, so I'm going to use
 
 293
 00:18:09,739 --> 00:18:18,290
-LocalContext Consumer. And it's going to
+LocaleContext Consumer. And it's going to
 
 294
 00:18:18,290 --> 00:18:22,670
@@ -1228,7 +1228,7 @@ to import my contexts. So this is gonna
 
 308
 00:19:10,760 --> 00:19:17,500
-be a ThemeContext, LocalContext. And
+be a ThemeContext, LocaleContext. And
 
 309
 00:19:17,500 --> 00:19:20,660
@@ -1248,7 +1248,7 @@ ThemeContext. And to get the current
 
 313
 00:19:35,060 --> 00:19:39,410
-locale I can use context LocalContext.
+locale I can use context LocaleContext.
 
 314
 00:19:39,410 --> 00:19:42,560
