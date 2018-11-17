@@ -803,11 +803,11 @@ hook is a function provided by React
 that lets you hook into React features
 
 202
-00:12:28,670 --> 00:12:32,999
+00:12:32,670 --> 00:12:34,999
 from your function components. And
 
 203
-00:12:32,999 --> 00:12:34,979
+00:12:34,999 --> 00:12:38,979
 useState is the first hook that we're going
 
 204
@@ -875,11 +875,11 @@ Okay, Mary Poppins. So we can see that it
 works. Uh, so how do we do the same with
 
 220
-00:13:50,180 --> 00:13:55,1000
+00:13:54,180 --> 00:13:59,999
 hooks? So one thing we could do is we
 
 221
-00:13:55,1000 --> 00:13:58,489
+00:13:59,999 --> 00:14:02,489
 could make our state an object. As you
 
 222
