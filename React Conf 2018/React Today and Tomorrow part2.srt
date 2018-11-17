@@ -500,7 +500,7 @@ this by an input, and the value of the
 
 126
 00:07:56,320 --> 00:08:00,450
-input is this that state that name. And
+input is this dot state dot name. And
 
 127
 00:08:00,450 --> 00:08:03,160
@@ -508,7 +508,7 @@ if I make a change I want to call this
 
 128
 00:08:03,160 --> 00:08:06,910
-dot handleNameChange that's going to
+dot handleNameChange, that's going to
 
 129
 00:08:06,910 --> 00:08:10,570
@@ -563,11 +563,11 @@ we didn't have to write a class when we
 wanted to use state. So I'm not sure how
 
 142
-00:08:54,420 --> 00:08:56,999
+00:08:58,420 --> 00:09:00,800
 that's gonna work. But I'll just start
 
 143
-00:08:56,999 --> 00:08:58,560
+00:09:00,800 --> 00:09:02,560
 with what I know, I want to render an
 
 144

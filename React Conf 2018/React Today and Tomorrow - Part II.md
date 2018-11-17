@@ -47,7 +47,7 @@ So, ah, here is a simple React component, ah, that just it is a row, this is jus
 
 So I'm gonna do the export default class Greeding extends React component. And so I'm going to use only stable JavaScript syntax. So constructor props, super props. This the state, going to initialize, ur, name to Mary here. And I'm going to declare a render method and copy and paste this. Sorry. Okay. 
 
-And so I want this to be instead of just rendering the name, I want this render an input. So I'm replacing this by an input, and the value of the input is this that state that name. And if I make a change I want to call this dot handleNameChange that's going to be my change caller. And I'm going to declare it here, when the name changes we call setState like we normally do. And we set the name to e dot target dot value. Right. 
+And so I want this to be instead of just rendering the name, I want this render an input. So I'm replacing this by an input, and the value of the input is this dot state dot name. And if I make a change I want to call this dot handleNameChange, that's going to be my change caller. And I'm going to declare it here, when the name changes we call setState like we normally do. And we set the name to e dot target dot value. Right. 
 
 So now if I edit the ... [TypeError In Page] Okay so I I need to bind ... [Laughing] Sorry I need to bind the events on there. Okay so now I can actually edit it and it works. 
 
