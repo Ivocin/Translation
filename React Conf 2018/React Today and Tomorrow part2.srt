@@ -976,63 +976,63 @@ than once in a component. Let's compare
 
 245
 00:15:29,960 --> 00:15:34,400
-the two approaches in more detail so on
+the two approaches in more detail. So on
 
 246
 00:15:34,400 --> 00:15:37,040
-the Left familiar class component state
+the left familiar class component state
 
 247
 00:15:37,040 --> 00:15:40,010
-is always an object has multiple fields
+is always an object, has multiple fields,
 
 248
 00:15:40,010 --> 00:15:42,620
-McCall says state will merge some
+may call setState will merge some
 
 249
 00:15:42,620 --> 00:15:45,770
-something into that object and then when
+something into that object. And then when
 
 250
 00:15:45,770 --> 00:15:47,510
-we want to access it we do this that
+we want to access it, we do this dot
 
 251
 00:15:47,510 --> 00:15:52,400
-state that something on the right in the
+state dot something. On the right in the
 
 252
 00:15:52,400 --> 00:15:55,760
-example using hooks we use the state
+example using hooks, we use the state
 
 253
 00:15:55,760 --> 00:15:59,990
-hook twice and that declares two state
+hook twice. And that declares two state
 
 254
 00:15:59,990 --> 00:16:03,830
-variables name and surname and whenever
+variables: name and surname. And whenever
 
 255
 00:16:03,830 --> 00:16:06,560
-we call set name or set surname
+we call setName or setSurname,
 
 256
 00:16:06,560 --> 00:16:08,750
-this tells react that it needs to
+this tells React that it needs to
 
 257
-00:16:04,750 --> 00:16:06,1000
-rerender this component just like if we
+00:16:08,750 --> 00:16:11,000
+rerender this component, just like if we
 
 258
-00:16:06,1000 --> 00:16:09,850
-called says state and so the next time
+00:16:11,000 --> 00:16:13,850
+called setState. And so the next time
 
 259
 00:16:13,850 --> 00:16:16,370
-reactor renders our components is going
+React renders our components is going
 
 260
 00:16:16,370 --> 00:16:19,580
@@ -1040,27 +1040,27 @@ to pass the current name and the current
 
 261
 00:16:19,580 --> 00:16:23,510
-surname to our component and then we can
+surname to our component. And then we can
 
 262
 00:16:23,510 --> 00:16:25,520
-use it directly without accessing these
+use it directly without accessing this
 
 263
 00:16:25,520 --> 00:16:36,400
-that state that something
+dot state dot something.
 
 264
 00:16:36,400 --> 00:16:39,640
-all right so let's go back to our class
+All right. So let's go back to our class
 
 265
 00:16:39,640 --> 00:16:43,510
-example what else what other features of
+example. What else, what other features of
 
 266
 00:16:43,510 --> 00:16:46,479
-reactor we know so another thing you
+React we know? So another thing you
 
 267
 00:16:46,479 --> 00:16:48,670
@@ -1068,15 +1068,15 @@ might want to do from a component is to
 
 268
 00:16:48,670 --> 00:16:52,570
-read context so context in case you're
+read context. So context, in case you're
 
 269
 00:16:52,570 --> 00:16:54,849
-not familiar it's like kind of like
+not familiar, it's like, ur, kind of like
 
 270
 00:16:54,849 --> 00:16:57,489
-global variables for a subtree so it's
+global variables for a subtree. So it's
 
 271
 00:16:57,489 --> 00:17:00,130
@@ -1088,7 +1088,7 @@ theme like visual theme or the current
 
 273
 00:17:02,859 --> 00:17:05,650
-language that the user is using and it's
+language that the user is using. And it's
 
 274
 00:17:05,650 --> 00:17:08,050
@@ -1100,7 +1100,7 @@ through props if you need all components
 
 276
 00:17:10,150 --> 00:17:13,030
-to be able to read some value so we're
+to be able to read some value. So we're
 
 277
 00:17:13,030 --> 00:17:17,410
@@ -1112,11 +1112,11 @@ context which I already declared in
 
 279
 00:17:19,989 --> 00:17:23,320
-another file and the API you've probably
+another file. And the API you've probably
 
 280
 00:17:23,320 --> 00:17:25,900
-most familiar with for consuming context
+most familiar with for consuming context,
 
 281
 00:17:25,900 --> 00:17:27,219
@@ -1124,71 +1124,71 @@ especially if you have to consume
 
 282
 00:17:27,219 --> 00:17:30,040
-multiple contexts is the render crop API
+multiple contexts, is the render prop API.
 
 283
 00:17:30,040 --> 00:17:33,219
-and it looks like this so I'm going to
+And it looks like this. So I'm going to
 
 284
 00:17:33,219 --> 00:17:36,729
-scroll down here so we can choose theme
+scroll down here. So we can choose theme
 
 285
 00:17:36,729 --> 00:17:40,589
-context consumer that gives us the theme
+context consumer that gives us the theme.
 
 286
 00:17:40,589 --> 00:17:43,420
-in my case it's just going to be a CSS
+In my case, it's just going to be a CSS
 
 287
 00:17:43,420 --> 00:17:50,109
-class so I copy this all this code
+class. So I copy this, all this code
 
 288
 00:17:50,109 --> 00:17:55,450
-inside the render prop and I'm going to
+inside the render prop. And I'm going to
 
 289
 00:17:55,450 --> 00:18:01,150
-use class name equals theme all right
+use className equals "theme". All right,
 
 290
 00:18:01,150 --> 00:18:04,280
-very old-timey
+very old-timey. [Laughing]
 
 291
 00:18:04,280 --> 00:18:06,770
-and I also want to show the current
+And I also want to show the current
 
 292
 00:18:06,770 --> 00:18:09,739
-language so I'm going to use local
+Language, so I'm going to use local
 
 293
 00:18:09,739 --> 00:18:18,290
-context consumer and it's going to
+context consumer. and it's going to
 
 294
 00:18:18,290 --> 00:18:22,670
-render another role so I will copy and
+render another row, so I will copy and
 
 295
 00:18:22,670 --> 00:18:27,969
-paste this role can say language
+paste this row, can say language.
 
 296
 00:18:27,969 --> 00:18:34,760
-language and render it here okay we can
+Language. And render it here. Okay, we can
 
 297
 00:18:34,760 --> 00:18:37,550
-see that context works and that's
+see that context works. And that's
 
 298
 00:18:37,550 --> 00:18:39,920
-probably normally consume context we
+probably normally consume context. We
 
 299
 00:18:39,920 --> 00:18:41,780
@@ -1196,7 +1196,7 @@ actually added a more convenient API for
 
 300
 00:18:41,780 --> 00:18:45,800
-accessing it even classes in 1606 but
+accessing it even classes in 16.6. Ur, but
 
 301
 00:18:45,800 --> 00:18:47,900
@@ -1204,31 +1204,31 @@ this is how you can see multiple
 
 302
 00:18:47,900 --> 00:18:53,479
-contexts so let's look at the at how we
+contexts. So let's look at the, at how we
 
 303
 00:18:53,479 --> 00:18:57,469
-could do this with hooks so as we said
+could do this with hooks. So as we said
 
 304
 00:18:57,469 --> 00:18:59,780
-that state is a fundamental feature of
+that, state is a fundamental feature of
 
 305
 00:18:59,780 --> 00:19:02,690
-react and this is why you can use state
+React and this is why you can use state.
 
 306
 00:19:02,690 --> 00:19:07,339
-and so if we want to use context I need
+And so if we want to use context, I need
 
 307
 00:19:07,339 --> 00:19:10,760
-to import my contexts so this is gonna
+to import my contexts. So this is gonna
 
 308
 00:19:10,760 --> 00:19:17,500
-be a themed context local context and
+be a ThemeContext, LocalContext. A nd
 
 309
 00:19:17,500 --> 00:19:20,660
@@ -1236,23 +1236,23 @@ now if I want to use context from my
 
 310
 00:19:20,660 --> 00:19:27,200
-component I can use context and then to
+component, I can use context. And then to
 
 311
 00:19:27,200 --> 00:19:31,239
-get the current theme I can use context
+get the current theme, I can use context
 
 312
 00:19:31,239 --> 00:19:35,060
-same context and to get the current
+ThemeContext. And to get the current
 
 313
 00:19:35,060 --> 00:19:39,410
-locale I can use context local context
+locale I can use context LocalContext
 
 314
 00:19:39,410 --> 00:19:42,560
-and this doesn't just read the context
+And this doesn't just read the context,
 
 315
 00:19:42,560 --> 00:19:44,719
@@ -1260,23 +1260,23 @@ it also subscribes the component to
 
 316
 00:19:44,719 --> 00:19:47,690
-updates to this context but it just
+updates to this context. But it just
 
 317
 00:19:47,690 --> 00:19:49,880
-gives me the current values so I can I
+gives me the current values, so I can, I
 
 318
 00:19:49,880 --> 00:19:56,150
-can put it into my CSS class name and I
+can put it into my CSS className. And I
 
 319
 00:19:56,150 --> 00:20:05,270
-can add the bro first language and I can
+can add the bro first language, and I can
 
 320
 00:20:05,270 --> 00:20:09,240
-put it here
+put it here.
 
 321
 00:20:09,240 --> 00:20:18,410
