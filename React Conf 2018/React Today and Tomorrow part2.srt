@@ -1284,11 +1284,11 @@ put it here.
 
 322
 00:20:18,410 --> 00:20:21,150
-All right,so let's,let's compare the two
+All right, so let's,let's compare the two
 
 323
 00:20:21,150 --> 00:20:25,170
-approaches.So this is the traditional
+approaches. So this is the traditional
 
 324
 00:20:25,170 --> 00:20:28,370
@@ -1300,7 +1300,7 @@ It is very explicit about what it's
 
 326
 00:20:31,140 --> 00:20:34,650
-doing.But it does get a little bit
+doing. But it does get a little bit
 
 327
 00:20:34,650 --> 00:20:38,430
@@ -1308,15 +1308,15 @@ nested and you encounter this not just
 
 328
 00:20:38,430 --> 00:20:39,930
-with context with,with any kind of
+with context with, with any kind of
 
 329
 00:20:39,930 --> 00:20:44,880
-render prop API.So with hooks,it
+render prop API. So with hooks,it
 
 330
 00:20:44,880 --> 00:20:49,500
-does the same thing.But it's flat.So we
+does the same thing. But it's flat.So we
 
 331
 00:20:49,500 --> 00:20:51,359
@@ -1336,7 +1336,7 @@ wondering at this point how can React
 
 335
 00:21:01,979 --> 00:21:04,739
-possibly know.For example I have this to
+possibly know. For example I have this to
 
 336
 00:21:04,739 --> 00:21:07,140
@@ -1348,7 +1348,7 @@ which state variable corresponds to
 
 338
 00:21:09,390 --> 00:21:13,770
-which you state call.And the answer is
+which you state call. And the answer is
 
 339
 00:21:13,770 --> 00:21:16,859
@@ -1380,7 +1380,7 @@ It has to be at the top level of your
 
 346
 00:21:36,690 --> 00:21:39,150
-component.So if I do something like,if
+component. So if I do something like,if
 
 347
 00:21:39,150 --> 00:21:43,380
@@ -1388,7 +1388,7 @@ props condition and then I call the use
 
 348
 00:21:43,380 --> 00:21:45,989
-state hook here.We actually have a
+state hook here. We actually have a
 
 349
 00:21:45,989 --> 00:21:49,020
@@ -1396,7 +1396,7 @@ linter plugin that is going to complain
 
 350
 00:21:49,020 --> 00:21:51,000
-that.This is not the correct way to use
+that. This is not the correct way to use
 
 351
 00:21:51,000 --> 00:21:55,050
@@ -1404,7 +1404,7 @@ hooks and we realize that this is an
 
 352
 00:21:55,050 --> 00:21:59,640
-unusual limitation,but it is pretty
+unusual limitation, but it is pretty
 
 353
 00:21:59,640 --> 00:22:02,190
@@ -1424,7 +1424,7 @@ bit later.
 
 357
 00:22:11,359 --> 00:22:17,970
-All right so let's go back to our class.
+All right, so let's go back to our class.
 
 358
 00:22:17,970 --> 00:22:20,040
@@ -1436,7 +1436,7 @@ reach for the class for is lifecycle
 
 360
 00:22:23,880 --> 00:22:26,880
-methods.So the most commonly use case
+methods. So the most commonly use case
 
 361
 00:22:26,880 --> 00:22:28,620
@@ -1456,7 +1456,7 @@ imperative Dom mutation interfacing with
 
 365
 00:22:37,380 --> 00:22:39,570
-the browser APIs.So you might want to
+the browser APIs. So you might want to
 
 366
 00:22:39,570 --> 00:22:41,490
@@ -1464,11 +1464,11 @@ do something like this and you can't do
 
 367
 00:22:41,490 --> 00:22:43,950
-during rendering,because it's,it's not
+during rendering, because it's, it's not
 
 368
 00:22:43,950 --> 00:22:46,579
-rendered yet.So the way you do
+rendered yet. So the way you do
 
 369
 00:22:46,579 --> 00:22:49,770
@@ -1480,19 +1480,19 @@ lifecycle method like component amount.
 
 371
 00:22:52,200 --> 00:22:58,140
-And then let's say that,if let me show
+And then let's say that, if, let me show
 
 372
 00:22:58,140 --> 00:23:00,000
-this,so you see at the top of the screen.
+this, so you see at the top of the screen.
 
 373
 00:23:00,000 --> 00:23:03,450
-It says react up.So there is actually a
+It says react up. So there is actually a
 
 374
 00:23:03,450 --> 00:23:06,030
-browser API that lets us update this.So
+browser API that lets us update this. So
 
 375
 00:23:06,030 --> 00:23:09,810
@@ -1504,11 +1504,11 @@ the name of the person and changed it as
 
 377
 00:23:12,660 --> 00:23:15,810
-I type.And so to set it initially I'm
+I type. And so to set it initially I'm
 
 378
 00:23:15,810 --> 00:23:17,670
-going there is a browser.You got to do
+going there is a browser. You got to do
 
 379
 00:23:17,670 --> 00:23:21,089
@@ -1520,19 +1520,19 @@ state name was space was this
 
 381
 00:23:24,720 --> 00:23:29,250
-state was her name.So now we can
+state was her name. So now we can
 
 382
 00:23:29,250 --> 00:23:33,570
-see it's as Mary Poppins.But then if I,
+see it's as Mary Poppins. But then if I,
 
 383
 00:23:33,570 --> 00:23:37,110
-if I edit it.It doesn't get
+if I edit it. It doesn't get
 
 384
 00:23:37,110 --> 00:23:39,090
-automatically updated,because I also
+automatically updated, because I also
 
 385
 00:23:39,090 --> 00:23:41,930
@@ -1540,11 +1540,11 @@ need to implement component it update.
 
 386
 00:23:41,930 --> 00:23:44,940
-For the for the side effects to be
+For the, for the side effects to be
 
 387
 00:23:44,940 --> 00:23:48,480
-consistent with what I rendered.So I'm
+consistent with what I rendered. So I'm
 
 388
 00:23:48,480 --> 00:23:50,060
@@ -1556,7 +1556,7 @@ and just copy and paste this.
 
 390
 00:23:57,150 --> 00:24:00,440
-All right,so now says Mary Poppins,but if I
+All right, so now says Mary Poppins, but if I
 
 391
 00:24:00,440 --> 00:24:04,560
@@ -1572,7 +1572,7 @@ effects in a class.
 
 394
 00:24:15,640 --> 00:24:21,830
-So how do we do this with hooks.Well the
+So how do we do this with hooks. Well the
 
 395
 00:24:21,830 --> 00:24:23,960
@@ -1592,7 +1592,7 @@ component make an import use effect from
 
 399
 00:24:37,700 --> 00:24:43,760
-React.And then we want to tell React
+React. And then we want to tell React
 
 400
 00:24:43,760 --> 00:24:46,100
@@ -1600,7 +1600,7 @@ what to do after React has flushed our
 
 401
 00:24:46,100 --> 00:24:48,740
-components to the Dom.So we pass a
+components to the Dom. So we pass a
 
 402
 00:24:48,740 --> 00:24:51,590
@@ -1608,7 +1608,7 @@ function which is where we perform our
 
 403
 00:24:51,590 --> 00:24:54,110
-effect.So I'm going to say document the
+effect. So I'm going to say document the
 
 404
 00:24:54,110 --> 00:24:57,610
@@ -1616,11 +1616,11 @@ title equals name plus space plus
 
 405
 00:24:57,610 --> 00:25:05,150
-surname.You can see it says Mary Poppins
+surname. You can see it says Mary Poppins
 
 406
 00:25:05,150 --> 00:25:10,100
-here.And if I start editing it actually
+here. And if I start editing it actually
 
 407
 00:25:10,100 --> 00:25:11,769
@@ -1636,11 +1636,11 @@ after the initial render and after every
 
 410
 00:25:18,799 --> 00:25:21,650
-update.So by default it is consistent
+update. So by default it is consistent
 
 411
 00:25:21,650 --> 00:25:24,980
-with what he rendered.And you can opt
+with what he rendered. And you can opt
 
 412
 00:25:24,980 --> 00:25:26,960
@@ -1648,7 +1648,7 @@ out of this behavior if like for
 
 413
 00:25:26,960 --> 00:25:28,850
-performance reasons and,or if you have
+performance reasons and, or if you have
 
 414
 00:25:28,850 --> 00:25:32,539
@@ -1656,11 +1656,11 @@ special logic and reinstall after me
 
 415
 00:25:32,539 --> 00:25:37,910
-will touch a little bit on this.So let's
+will touch a little bit on this. So let's
 
 416
 00:25:37,910 --> 00:25:43,700
-compare DG approaches.So in the,in the
+compare DG approaches. So in the,in the
 
 417
 00:25:43,700 --> 00:25:45,890
@@ -1668,7 +1668,7 @@ class we divide method we divide the
 
 418
 00:25:45,890 --> 00:25:48,860
-logic based on lifecycle method names.So
+logic based on lifecycle method names. So
 
 419
 00:25:48,860 --> 00:25:50,210
@@ -1680,7 +1680,7 @@ component it update they fire at
 
 421
 00:25:51,799 --> 00:25:54,560
-different times.And we sometimes repeat
+different times. And we sometimes repeat
 
 422
 00:25:54,560 --> 00:25:56,450
@@ -1696,7 +1696,7 @@ to call it in two places and remember to
 
 425
 00:26:00,890 --> 00:26:04,370
-keep it consistent.And with,with the
+keep it consistent. And with, with the
 
 426
 00:26:04,370 --> 00:26:07,610
@@ -1736,7 +1736,7 @@ variable because it's already in the
 
 435
 00:26:26,470 --> 00:26:28,450
-scope of the function.Tt is declared
+scope of the function. It is declared
 
 436
 00:26:28,450 --> 00:26:31,270
@@ -1748,7 +1748,7 @@ is declared inside the component rather
 
 438
 00:26:34,780 --> 00:26:37,390
-than the rather than outside.Because
+than the, rather than outside. Because
 
 439
 00:26:37,390 --> 00:26:39,700
@@ -1764,15 +1764,15 @@ like the current context value for
 
 442
 00:26:45,130 --> 00:26:56,380
-example,or any of these contexts. 
+example, or any of these contexts. 
 
 443
 00:26:56,380 --> 00:26:58,120
-all right so let's go back to the familiar
+All right, so let's go back to the familiar
 
 444
 00:26:58,120 --> 00:27:02,290
-class example another thing you might
+class example. Ur, another thing you might
 
 445
 00:27:02,290 --> 00:27:04,180
@@ -1780,7 +1780,7 @@ want to use life cycle methods for in a
 
 446
 00:27:04,180 --> 00:27:07,750
-class is subscriptions so maybe you want
+class is subscriptions. So maybe you want
 
 447
 00:27:07,750 --> 00:27:09,550
@@ -1788,7 +1788,7 @@ to subscribe to some kind of browser API
 
 448
 00:27:09,550 --> 00:27:12,040
-and it gives you some value for example
+and it gives you some value, for example
 
 449
 00:27:12,040 --> 00:27:15,250
@@ -1800,47 +1800,47 @@ the state in response to changes to this
 
 451
 00:27:17,500 --> 00:27:20,440
-value and so the way we could do this in
+value.And so the way we could do this in
 
 452
 00:27:20,440 --> 00:27:23,800
-a class let's say that we want to that
+a class let's say that we want to , ur, that
 
 453
 00:27:23,800 --> 00:27:26,590
-we want to monitor the window width so
+we want to monitor the window width. So
 
 454
 00:27:26,590 --> 00:27:30,610
-I'm going to put with interstate this
+I'm going to put with interstate. This
 
 455
 00:27:30,610 --> 00:27:35,560
-window in there with browser API and I
+window in there with browser API. And I
 
 456
 00:27:35,560 --> 00:27:38,980
-want to render it let me copy and paste
+want to render it. Ur, let me copy and paste
 
 457
 00:27:38,980 --> 00:27:47,800
-this so this is gonna say width and I'm
+this. So this is gonna say width. And I'm
 
 458
 00:27:47,800 --> 00:27:49,750
-going to render it here it is that state
+going to render it here. It is that state
 
 459
 00:27:49,750 --> 00:27:53,590
-that width this is the width of the
+that width. This is the width of the
 
 460
 00:27:53,590 --> 00:27:57,860
-window not with of Mary Poppins
+window, not with of Mary Poppins.
 
 461
 00:27:57,860 --> 00:28:02,660
-and I'm going to add a I'm going to add
+And I'm going to add a, ur, I'm going to add
 
 462
 00:28:02,660 --> 00:28:04,580
@@ -1848,23 +1848,23 @@ in event listener so we need to actually
 
 463
 00:28:04,580 --> 00:28:08,090
-listen to changes in the width so at
+listen to changes in the width. So at
 
 464
 00:28:08,090 --> 00:28:12,670
-window that event add event listener
+window that event add event listener.
 
 465
 00:28:12,670 --> 00:28:15,560
-I'll I'm going to listen to the resize
+I'm, I'm going to listen to the resize
 
 466
 00:28:15,560 --> 00:28:20,749
-event handle resize and I need to
+event, handle resize. And I need to
 
 467
 00:28:20,749 --> 00:28:23,330
-declare this event and so this is where
+declare this event. And so this is where
 
 468
 00:28:23,330 --> 00:28:27,350
@@ -1872,15 +1872,15 @@ we're going to update the with state to
 
 469
 00:28:27,350 --> 00:28:32,150
-be window that inner width and we need
+be window that inner width. And we need
 
 470
 00:28:32,150 --> 00:28:42,229
-to bind it and and I also need to
+to bind it. And, Ur, and I also need to
 
 471
 00:28:42,229 --> 00:28:44,269
-unsubscribe so I don't want a memory
+unsubscribe. So I don't want a memory
 
 472
 00:28:44,269 --> 00:28:46,580
@@ -1888,19 +1888,19 @@ leak with like keeping these
 
 473
 00:28:46,580 --> 00:28:48,140
-subscriptions I want to unsubscribe from
+subscriptions. I want to unsubscribe from
 
 474
 00:28:48,140 --> 00:28:50,600
-this event so the way we do this in a
+this event. So the way we do this in a
 
 475
 00:28:50,600 --> 00:28:52,880
-class is we create another life cycle
+class is we create another lifecycle
 
 476
 00:28:52,880 --> 00:28:56,650
-method called component will unmount and
+method called component will unmount. And
 
 477
 00:28:56,650 --> 00:28:59,029
@@ -1912,7 +1912,7 @@ here except this will be a remove event
 
 479
 00:29:01,779 --> 00:29:05,299
-listener so we set up in the event
+listener. So we set up in the event
 
 480
 00:29:05,299 --> 00:29:06,920
@@ -1920,15 +1920,15 @@ listener and we remove the event
 
 481
 00:29:06,920 --> 00:29:08,870
-listener and we can verify that this
+listener. And we can verify that this
 
 482
 00:29:08,870 --> 00:29:11,479
-actually works by dragging this you see
+actually works by dragging this. You see
 
 483
 00:29:11,479 --> 00:29:17,029
-the width is changing so it works so
+the width is changing. So it works. So
 
 484
 00:29:17,029 --> 00:29:18,920
@@ -1936,7 +1936,7 @@ let's see how could how we could do this
 
 485
 00:29:18,920 --> 00:29:31,130
-with hooks so conceptually listening to
+with hooks. So conceptually listening to
 
 486
 00:29:31,130 --> 00:29:33,709
@@ -1944,15 +1944,15 @@ the window width has nothing to do with
 
 487
 00:29:33,709 --> 00:29:37,279
-setting the document title so that's why
+setting the document title. So that's why
 
 488
 00:29:37,279 --> 00:29:39,320
-we're not gonna put it in that effect
+we're not gonna put it in that effect.
 
 489
 00:29:39,320 --> 00:29:41,330
-it's conceptually completely separate
+It's conceptually completely separate
 
 490
 00:29:41,330 --> 00:29:44,060
@@ -1964,19 +1964,19 @@ more than once to declare multiple state
 
 492
 00:29:46,610 --> 00:29:49,580
-variables we can use effect more than
+variables, we can use effect more than
 
 493
 00:29:49,580 --> 00:29:54,130
-once to perform different side effects
+once to perform different side effects.
 
 494
 00:29:54,130 --> 00:29:57,560
-so I want to subscribe to window add
+So I want to subscribe to window add
 
 495
 00:29:57,560 --> 00:30:05,259
-event listener resize handle resize and
+event listener, resize handle, resize. And
 
 496
 00:30:05,259 --> 00:30:08,719
@@ -1984,55 +1984,55 @@ I'm gonna need to keep some state for
 
 497
 00:30:08,719 --> 00:30:10,130
-the current width
+the current width.
 
 498
 00:30:10,130 --> 00:30:12,140
-so I'm actually going to declare another
+So I'm actually going to declare another
 
 499
 00:30:12,140 --> 00:30:17,330
-state variable so I'll say with and sat
+state variable. So I'll say , ur, with and set
 
 500
 00:30:17,330 --> 00:30:23,390
-with we get them by using state with
+with, we get them by using state with
 
 501
 00:30:23,390 --> 00:30:27,670
-window inner with as the initial valium
+window inner, with as the initial valium.
 
 502
 00:30:27,670 --> 00:30:32,450
-and now in my handle resize function
+And now in my handle resize function,
 
 503
 00:30:32,450 --> 00:30:34,130
-I'll just declare it here because it
+I'll just declare it here. Because it
 
 504
 00:30:34,130 --> 00:30:37,489
-isn't used anywhere else and it's going
+isn't used anywhere else. And it's going
 
 505
 00:30:37,489 --> 00:30:44,180
-to set with tree to the current with I
+to set with tree to the current with. I
 
 506
 00:30:44,180 --> 00:30:46,460
-mean I need to render it so I'll copy
+mean I need to render it. So I'll copy
 
 507
 00:30:46,460 --> 00:30:54,580
-and paste this row I'm gonna say width
+and paste this row I'm gonna say width.
 
 508
 00:30:54,580 --> 00:30:58,910
-and finally I need to clean up after
+And finally I need to clean up after
 
 509
 00:30:58,910 --> 00:31:02,060
-this effect so I need to specify how to
+this effect. So I need to specify how to
 
 510
 00:31:02,060 --> 00:31:05,870
@@ -2040,11 +2040,11 @@ clean up and again conceptually cleaning
 
 511
 00:31:05,870 --> 00:31:08,779
-up is part of this effect so this effect
+up is part of this effect. So this effect
 
 512
 00:31:08,779 --> 00:31:12,940
-has a cleaner place and the order you
+has a cleaner place and the order, you,
 
 513
 00:31:12,940 --> 00:31:16,070
@@ -2052,75 +2052,75 @@ the way you can specify it is that any
 
 514
 00:31:16,070 --> 00:31:21,549
-effect can optionally return a function
+effect can optionally return a function.
 
 515
 00:31:21,549 --> 00:31:25,970
-and if it does return the function then
+And if it does return the function then
 
 516
 00:31:25,970 --> 00:31:28,039
-react will call this function to clean
+React will call this function to clean
 
 517
 00:31:28,039 --> 00:31:30,830
-up after the effect so this is where we
+up after the effect. So this is where we
 
 518
 00:31:30,830 --> 00:31:37,920
-unsubscribe
+unsubscribe.
 
 519
 00:31:37,920 --> 00:31:39,870
-okay let's just verify that this
+Okay, let's just verify that this
 
 520
-00:31:39,870 --> 00:31:57,990
-actually works yay so let's compare the
+00:31:39,870 --> 00:31:49,000
+actually works. Yay. 
 
 521
-00:31:57,990 --> 00:32:02,640
-two approaches on the Left we have a
+00:31:56,220 --> 00:32:02,640
+So let's compare the two approaches. On the left, we have a
 
 522
 00:32:02,640 --> 00:32:06,690
-familiar class component nothing
+familiar class component, ur, nothing
 
 523
 00:32:06,690 --> 00:32:09,539
-surprising there we we have some side
+surprising there. We, we have some side
 
 524
 00:32:09,539 --> 00:32:12,720
-effects some related logic is split
+effects, some related logic is split
 
 525
 00:32:12,720 --> 00:32:15,360
-apart so we can see that document title
+apart. So we can see that document title
 
 526
 00:32:15,360 --> 00:32:17,190
-has been set here but it's also being
+has been set here. But it's also being
 
 527
 00:32:17,190 --> 00:32:19,680
-set here and then we subscribe to an
+set here. And then we subscribe to an
 
 528
 00:32:19,680 --> 00:32:20,610
-effect here
+effect here.
 
 529
 00:32:20,610 --> 00:32:23,220
-sorry subscribe to the event here but we
+Sorry, subscribe to the event here, but we
 
 530
 00:32:23,220 --> 00:32:25,650
-unsubscribe here so these things need to
+unsubscribe here. So these things need to
 
 531
 00:32:25,650 --> 00:32:28,710
-be in sync with each other and then this
+be in sync with each other. And then this
 
 532
 00:32:28,710 --> 00:32:31,260
@@ -2128,7 +2128,7 @@ method contains two unrelated methods
 
 533
 00:32:31,260 --> 00:32:34,950
-two unrelated lines so that me in the in
+two unrelated lines. So that me in the in
 
 534
 00:32:34,950 --> 00:32:36,690
@@ -2136,15 +2136,15 @@ feature make it a bit difficult to test
 
 535
 00:32:36,690 --> 00:32:41,039
-them in isolation but it looks very
+them in isolation. But it looks very
 
 536
 00:32:41,039 --> 00:32:46,350
-familiar so that's this nice so this
+familiar so that's, that's nice. So this
 
 537
 00:32:46,350 --> 00:32:48,660
-code probably looks less familiar but
+code probably looks less familiar. But
 
 538
 00:32:48,660 --> 00:32:50,039
@@ -2152,15 +2152,15 @@ let's take another look at what's going
 
 539
 00:32:50,039 --> 00:32:54,150
-on here in with hooks we separate code
+on here. Ur, in with hooks we separate code
 
 540
 00:32:54,150 --> 00:32:56,310
-not based on the life cycle method name
+not based on the lifecycle method name,
 
 541
 00:32:56,310 --> 00:32:59,700
-but based on what the code is doing so
+but based on what the code is doing. So
 
 542
 00:32:59,700 --> 00:33:01,680
@@ -2168,15 +2168,15 @@ we can see that there is one effect
 
 543
 00:33:01,680 --> 00:33:04,289
-which is we updated document title
+which is we updated document title.
 
 544
 00:33:04,289 --> 00:33:06,090
-that's one thing this component can do
+That's one thing, this component can do.
 
 545
 00:33:06,090 --> 00:33:09,360
-and then there is another effect which
+And then there is another effect which
 
 546
 00:33:09,360 --> 00:33:12,299
@@ -2188,7 +2188,7 @@ event and update in the state when it
 
 548
 00:33:14,610 --> 00:33:18,870
-changes and this effect has a cleanup
+changes. And, Ur, this effect has a cleanup
 
 549
 00:33:18,870 --> 00:33:21,000
@@ -2200,7 +2200,7 @@ remove this effect react removes it and
 
 551
 00:33:23,549 --> 00:33:26,730
-avoids the memory leaks and if you've
+avoids the memory leaks. And if you've
 
 552
 00:33:26,730 --> 00:33:28,920
@@ -2208,7 +2208,7 @@ been carefully watching you might notice
 
 553
 00:33:28,920 --> 00:33:31,110
-that since effect run after every render
+that since effect run after every render.
 
 554
 00:33:31,110 --> 00:33:33,600
@@ -2216,11 +2216,11 @@ we're just gonna keep resub scribing so
 
 555
 00:33:33,600 --> 00:33:36,150
-there is a way to optimize this so
+there is a way to optimize this. So
 
 556
 00:33:36,150 --> 00:33:38,820
-default is to be consistent which is
+default is to be consistent, ur, which is
 
 557
 00:33:38,820 --> 00:33:40,590
@@ -2228,11 +2228,11 @@ important if you for example use some
 
 558
 00:33:40,590 --> 00:33:44,039
-prop here I need to resupply tea from
+prop here, I need to resupply tea from
 
 559
 00:33:44,039 --> 00:33:46,350
-props or something similar but there is
+props or something similar. But there is
 
 560
 00:33:46,350 --> 00:33:48,360
@@ -2244,11 +2244,11 @@ behavior and Brian in the
 
 562
 00:33:50,250 --> 00:34:02,730
-stock will mention how to do it alright
+stock will mention how to do it. 
 
 563
 00:34:02,730 --> 00:34:07,020
-so there is one more thing that I want
+All right, so there is one more thing that I want
 
 564
 00:34:07,020 --> 00:34:10,830
