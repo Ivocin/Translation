@@ -12,7 +12,7 @@ Hi. Ah, my name is Dan, I work on the React Team and this is my first time in Re
 
 ## Promblems Today
 
-And so Sophie talked about these problems that I think most of you have encountered in React development. And of course we could approach these problems one by one so we could try to solve them in isolation. But it seems like solving one of them makes some other one worse.
+And so Sophie talked about these problems that I think most of you have encountered in React development. And of course we could approach these problems one by one, so we could try to solve them in isolation. But it seems like solving one of them makes some other one worse.
 
 So for example, if we try to solve the wrapper hell by putting more logic into components themselves, then our components become larger and harder to refactor. And then on the other hand, if we try to split the components apart into smaller pieces and reuse those, then we end up with more nests than in the component tree and we get the wrapper hell again. And finally in either case we have all the confusion that comes with the classes. 
 
@@ -47,7 +47,7 @@ So, ah, here is a simple React component, ah, that just it is a row, this is jus
 
 So I'm gonna do the export default class Greeding extends React component. And so I'm going to use only stable JavaScript syntax. So constructor props, super props. This the state, going to initialize, ur, name to Mary here. And I'm going to declare a render method and copy and paste this. Sorry. Okay. 
 
-And so I want this to be instead of just rendering the name, I want this render an input. So I'm replacing this by an input, and the value of the input is this that state that name. And if I make a change I want to call this dot handleNameChange that's going to be my change caller. And I'm going to declare it here, when the name changes we call setState like we normally do. And we set the name to e dot target dot value. Right. 
+And so I want this to be instead of just rendering the name, I want this render an input. So I'm replacing this by an input, and the value of the input is this dot state dot name. And if I make a change I want to call this dot handleNameChange, that's going to be my change caller. And I'm going to declare it here, when the name changes we call setState like we normally do. And we set the name to e dot target dot value. Right. 
 
 So now if I edit the ... [TypeError In Page] Okay so I I need to bind ... [Laughing] Sorry I need to bind the events on there. Okay so now I can actually edit it and it works. 
 
@@ -80,4 +80,18 @@ Uh, so how do we do the same with hooks? So one thing we could do is we could ma
 
 Let's see if this works.Yay, it looks like it works. [Applause]
 
-So we can see that we can use hooks more than once in a component.
+So we can see that we can use hooks more than once in a component. And that declares two state
+variables: name and surname. And whenever we call setName or setSurname, this tells React that it needs to rerender this component, just like if we called setState. And so the next time React renders our components is going to pass the current name and the current surname to our component. And then we can use it directly without accessing this dot state dot something.
+
+### Use React context in two ways
+
+All right. So let's go back to our class example. What else, what other features of React we know?So another thing you might want to do from a component is to read context. So context, in case you're not familiar, it's like, ur, kind of like global variables for a subtree. So it's useful for things like read the current theme like visual theme or the current language that the user is using. And it's useful to avoid passing everything through props if you need all components to be able to read some value. 
+
+So we're going to import ThemeContext and LocaleContext which I already declared in another file. And the API you've probably most familiar with for consuming context, especially if you have to consume multiple contexts, is the render prop API. And it looks like this. So I'm going to
+scroll down here. So we can choose ThemeContext Consumer that gives us the theme. In my case, it's just going to be a CSS class. So I copy this, all this code inside the render prop. And I'm going to use className equals "theme". All right, very old-timey. [Laughing]
+
+And I also want to show the current language, so I'm going to use LocaleContext Consumer. And it's going to render another row, so I will copy and paste this row, can say language. Language. And render it here. Okay, we can see that context works. 
+
+And that's probably normally consume context. We actually added a more convenient API for accessing it in classes in 16.6. Ur, but this is how you can see multiple contexts. So let's look at the, at how we could do this with hooks. 
+
+So as we said that, state is a fundamental feature of React and this is why you can use state. And so if we want to use context, I need to import my contexts. So this is gonna be a ThemeContext, LocaleContext. And now if I want to use context from my component, I can use context. And then to get the current theme, I can use context ThemeContext. And to get the current locale I can use context LocaleContext. And this doesn't just read the context, it also subscribes the component to updates to this context. But it just gives me the current values, so I can, I can put it into my CSS className. And I can add the bro, that's language, and I can put it here. [Applause]

@@ -24,7 +24,7 @@ course we could approach these problems
 
 7
 00:00:35,629 --> 00:00:38,509
-one by one so we could try to solve them
+one by one, so we could try to solve them
 
 8
 00:00:38,509 --> 00:00:41,840
@@ -500,7 +500,7 @@ this by an input, and the value of the
 
 126
 00:07:56,320 --> 00:08:00,450
-input is this that state that name. And
+input is this dot state dot name. And
 
 127
 00:08:00,450 --> 00:08:03,160
@@ -508,7 +508,7 @@ if I make a change I want to call this
 
 128
 00:08:03,160 --> 00:08:06,910
-dot handleNameChange that's going to
+dot handleNameChange, that's going to
 
 129
 00:08:06,910 --> 00:08:10,570
@@ -563,11 +563,11 @@ we didn't have to write a class when we
 wanted to use state. So I'm not sure how
 
 142
-00:08:54,420 --> 00:08:56,999
+00:08:58,420 --> 00:09:00,800
 that's gonna work. But I'll just start
 
 143
-00:08:56,999 --> 00:08:58,560
+00:09:00,800 --> 00:09:02,560
 with what I know, I want to render an
 
 144
@@ -803,11 +803,11 @@ hook is a function provided by React
 that lets you hook into React features
 
 202
-00:12:28,670 --> 00:12:32,999
+00:12:32,670 --> 00:12:34,999
 from your function components. And
 
 203
-00:12:32,999 --> 00:12:34,979
+00:12:34,999 --> 00:12:38,979
 useState is the first hook that we're going
 
 204
@@ -875,11 +875,11 @@ Okay, Mary Poppins. So we can see that it
 works. Uh, so how do we do the same with
 
 220
-00:13:50,180 --> 00:13:55,1000
+00:13:54,180 --> 00:13:59,999
 hooks? So one thing we could do is we
 
 221
-00:13:55,1000 --> 00:13:58,489
+00:13:59,999 --> 00:14:02,489
 could make our state an object. As you
 
 222
@@ -976,63 +976,63 @@ than once in a component. Let's compare
 
 245
 00:15:29,960 --> 00:15:34,400
-the two approaches in more detail so on
+the two approaches in more detail. So on
 
 246
 00:15:34,400 --> 00:15:37,040
-the Left familiar class component state
+the left familiar class component state
 
 247
 00:15:37,040 --> 00:15:40,010
-is always an object has multiple fields
+is always an object, has multiple fields,
 
 248
 00:15:40,010 --> 00:15:42,620
-McCall says state will merge some
+may call setState will merge some
 
 249
 00:15:42,620 --> 00:15:45,770
-something into that object and then when
+something into that object. And then when
 
 250
 00:15:45,770 --> 00:15:47,510
-we want to access it we do this that
+we want to access it, we do this dot
 
 251
 00:15:47,510 --> 00:15:52,400
-state that something on the right in the
+state dot something. On the right in the
 
 252
 00:15:52,400 --> 00:15:55,760
-example using hooks we use the state
+example using hooks, we use the state
 
 253
 00:15:55,760 --> 00:15:59,990
-hook twice and that declares two state
+hook twice. And that declares two state
 
 254
 00:15:59,990 --> 00:16:03,830
-variables name and surname and whenever
+variables: name and surname. And whenever
 
 255
 00:16:03,830 --> 00:16:06,560
-we call set name or set surname
+we call setName or setSurname,
 
 256
 00:16:06,560 --> 00:16:08,750
-this tells react that it needs to
+this tells React that it needs to
 
 257
-00:16:04,750 --> 00:16:06,1000
-rerender this component just like if we
+00:16:08,750 --> 00:16:11,000
+rerender this component, just like if we
 
 258
-00:16:06,1000 --> 00:16:09,850
-called says state and so the next time
+00:16:11,000 --> 00:16:13,850
+called setState. And so the next time
 
 259
 00:16:13,850 --> 00:16:16,370
-reactor renders our components is going
+React renders our components is going
 
 260
 00:16:16,370 --> 00:16:19,580
@@ -1040,27 +1040,27 @@ to pass the current name and the current
 
 261
 00:16:19,580 --> 00:16:23,510
-surname to our component and then we can
+surname to our component. And then we can
 
 262
 00:16:23,510 --> 00:16:25,520
-use it directly without accessing these
+use it directly without accessing this
 
 263
 00:16:25,520 --> 00:16:36,400
-that state that something
+dot state dot something.
 
 264
 00:16:36,400 --> 00:16:39,640
-all right so let's go back to our class
+All right. So let's go back to our class
 
 265
 00:16:39,640 --> 00:16:43,510
-example what else what other features of
+example. What else, what other features of
 
 266
 00:16:43,510 --> 00:16:46,479
-reactor we know so another thing you
+React we know? So another thing you
 
 267
 00:16:46,479 --> 00:16:48,670
@@ -1068,15 +1068,15 @@ might want to do from a component is to
 
 268
 00:16:48,670 --> 00:16:52,570
-read context so context in case you're
+read context. So context, in case you're
 
 269
 00:16:52,570 --> 00:16:54,849
-not familiar it's like kind of like
+not familiar, it's like, ur, kind of like
 
 270
 00:16:54,849 --> 00:16:57,489
-global variables for a subtree so it's
+global variables for a subtree. So it's
 
 271
 00:16:57,489 --> 00:17:00,130
@@ -1088,7 +1088,7 @@ theme like visual theme or the current
 
 273
 00:17:02,859 --> 00:17:05,650
-language that the user is using and it's
+language that the user is using. And it's
 
 274
 00:17:05,650 --> 00:17:08,050
@@ -1100,23 +1100,23 @@ through props if you need all components
 
 276
 00:17:10,150 --> 00:17:13,030
-to be able to read some value so we're
+to be able to read some value. So we're
 
 277
 00:17:13,030 --> 00:17:17,410
-going to import theme context and local
+going to import ThemeContext and 
 
 278
 00:17:17,410 --> 00:17:19,989
-context which I already declared in
+LocaleContext which I already declared in
 
 279
 00:17:19,989 --> 00:17:23,320
-another file and the API you've probably
+another file. And the API you've probably
 
 280
 00:17:23,320 --> 00:17:25,900
-most familiar with for consuming context
+most familiar with for consuming context,
 
 281
 00:17:25,900 --> 00:17:27,219
@@ -1124,71 +1124,71 @@ especially if you have to consume
 
 282
 00:17:27,219 --> 00:17:30,040
-multiple contexts is the render crop API
+multiple contexts, is the render prop API.
 
 283
 00:17:30,040 --> 00:17:33,219
-and it looks like this so I'm going to
+And it looks like this. So I'm going to
 
 284
 00:17:33,219 --> 00:17:36,729
-scroll down here so we can choose theme
+scroll down here. So we can choose ThemeContext
 
 285
 00:17:36,729 --> 00:17:40,589
-context consumer that gives us the theme
+Consumer that gives us the theme.
 
 286
 00:17:40,589 --> 00:17:43,420
-in my case it's just going to be a CSS
+In my case, it's just going to be a CSS
 
 287
 00:17:43,420 --> 00:17:50,109
-class so I copy this all this code
+class. So I copy this, all this code
 
 288
 00:17:50,109 --> 00:17:55,450
-inside the render prop and I'm going to
+inside the render prop. And I'm going to
 
 289
 00:17:55,450 --> 00:18:01,150
-use class name equals theme all right
+use className equals 'theme' . All right,
 
 290
 00:18:01,150 --> 00:18:04,280
-very old-timey
+very old-timey. [Laughing]
 
 291
 00:18:04,280 --> 00:18:06,770
-and I also want to show the current
+And I also want to show the current
 
 292
 00:18:06,770 --> 00:18:09,739
-language so I'm going to use local
+language, so I'm going to use
 
 293
 00:18:09,739 --> 00:18:18,290
-context consumer and it's going to
+LocaleContext Consumer. And it's going to
 
 294
 00:18:18,290 --> 00:18:22,670
-render another role so I will copy and
+render another row, so I will copy and
 
 295
 00:18:22,670 --> 00:18:27,969
-paste this role can say language
+paste this row, can say language.
 
 296
 00:18:27,969 --> 00:18:34,760
-language and render it here okay we can
+Language. And render it here. Okay, we can
 
 297
 00:18:34,760 --> 00:18:37,550
-see that context works and that's
+see that context works. And that's
 
 298
 00:18:37,550 --> 00:18:39,920
-probably normally consume context we
+probably normally consume context. We
 
 299
 00:18:39,920 --> 00:18:41,780
@@ -1196,7 +1196,7 @@ actually added a more convenient API for
 
 300
 00:18:41,780 --> 00:18:45,800
-accessing it even classes in 1606 but
+accessing it in classes in 16.6. Ur, but
 
 301
 00:18:45,800 --> 00:18:47,900
@@ -1204,31 +1204,31 @@ this is how you can see multiple
 
 302
 00:18:47,900 --> 00:18:53,479
-contexts so let's look at the at how we
+contexts. So let's look at the, at how we
 
 303
 00:18:53,479 --> 00:18:57,469
-could do this with hooks so as we said
+could do this with hooks. So as we said
 
 304
 00:18:57,469 --> 00:18:59,780
-that state is a fundamental feature of
+that, state is a fundamental feature of
 
 305
 00:18:59,780 --> 00:19:02,690
-react and this is why you can use state
+React and this is why you can use state.
 
 306
 00:19:02,690 --> 00:19:07,339
-and so if we want to use context I need
+And so if we want to use context, I need
 
 307
 00:19:07,339 --> 00:19:10,760
-to import my contexts so this is gonna
+to import my contexts. So this is gonna
 
 308
 00:19:10,760 --> 00:19:17,500
-be a themed context local context and
+be a ThemeContext, LocaleContext. And
 
 309
 00:19:17,500 --> 00:19:20,660
@@ -1236,23 +1236,23 @@ now if I want to use context from my
 
 310
 00:19:20,660 --> 00:19:27,200
-component I can use context and then to
+component, I can use context. And then to
 
 311
 00:19:27,200 --> 00:19:31,239
-get the current theme I can use context
+get the current theme, I can use context
 
 312
 00:19:31,239 --> 00:19:35,060
-same context and to get the current
+ThemeContext. And to get the current
 
 313
 00:19:35,060 --> 00:19:39,410
-locale I can use context local context
+locale I can use context LocaleContext.
 
 314
 00:19:39,410 --> 00:19:42,560
-and this doesn't just read the context
+And this doesn't just read the context,
 
 315
 00:19:42,560 --> 00:19:44,719
@@ -1260,23 +1260,23 @@ it also subscribes the component to
 
 316
 00:19:44,719 --> 00:19:47,690
-updates to this context but it just
+updates to this context. But it just
 
 317
 00:19:47,690 --> 00:19:49,880
-gives me the current values so I can I
+gives me the current values, so I can, I
 
 318
 00:19:49,880 --> 00:19:56,150
-can put it into my CSS class name and I
+can put it into my CSS className. And I
 
 319
 00:19:56,150 --> 00:20:05,270
-can add the bro first language and I can
+can add the bro, that's language, and I can
 
 320
 00:20:05,270 --> 00:20:09,240
-put it here
+put it here.
 
 321
 00:20:09,240 --> 00:20:18,410
@@ -2880,39 +2880,39 @@ make breaking changes like this so we
 
 721
 00:42:47,789 --> 00:42:53,310
-need to keep classes working let's go
+need to keep classes working. Let's go
 
 722
 00:42:53,310 --> 00:43:02,189
-back to you the slides all right now
+back to you the slides. All right, now
 
 723
 00:43:02,189 --> 00:43:06,490
-this is a slider you can actually tweet
+this is a slider you can actually tweet. [Laughing]
 
 724
 00:43:06,490 --> 00:43:09,490
-we present the Hookes proposal to you
+We present the Hooks proposal to you
 
 725
 00:43:09,490 --> 00:43:10,660
-today
+today.
 
 726
 00:43:10,660 --> 00:43:13,510
-Hookes led to use all react features
+Uh, hooks let us to use all React features
 
 727
 00:43:13,510 --> 00:43:16,750
-without having to write a class they do
+without having to write a class. They do
 
 728
 00:43:16,750 --> 00:43:19,600
-not deprecated classes but you have the
+not deprecated classes, but you have the
 
 729
 00:43:19,600 --> 00:43:21,790
-option to not have to write them we
+option to not have to write them. We
 
 730
 00:43:21,790 --> 00:43:24,250
@@ -2920,23 +2920,23 @@ intend to cover all use cases for
 
 731
 00:43:24,250 --> 00:43:27,070
-classes with hooks as soon as possible
+classes with hooks as soon as possible.
 
 732
 00:43:27,070 --> 00:43:29,320
-there are a few that are missing but
+There are a few that are missing, but
 
 733
 00:43:29,320 --> 00:43:32,680
-we're working on them and hooks lets you
+we're working on them. And hooks let you
 
 734
 00:43:32,680 --> 00:43:35,140
-reuse stateful logic extracted out of
+reuse stateful logic, extracted out of
 
 735
 00:43:35,140 --> 00:43:38,230
-components tested separately reuse it
+components, tested separately, reuse it
 
 736
 00:43:38,230 --> 00:43:39,850
@@ -2944,43 +2944,43 @@ between different components without
 
 737
 00:43:39,850 --> 00:43:42,850
-introducing the wrapper hell and again
+introducing the wrapper hell. And again
 
 738
 00:43:42,850 --> 00:43:44,560
-importantly it's not a breaking change
+importantly it's not a breaking change,
 
 739
 00:43:44,560 --> 00:43:48,000
-completely backwards compatible strictly
+completely backwards compatible, strictly
 
 740
 00:43:48,000 --> 00:43:52,240
-addition additive and you can find the
+addition ..., uh, additive. And you can find the,
 
 741
 00:43:52,240 --> 00:43:54,700
-we wrote the documentation for hooks so
+we wrote the documentation for hooks, so
 
 742
 00:43:54,700 --> 00:43:59,520
-you can find it at this year around and
+you can find it at this url. Um, and
 
 743
 00:43:59,520 --> 00:44:03,340
-we want to hear from you the react
+we want to hear from you, the React
 
 744
 00:44:03,340 --> 00:44:05,170
-immune to you when I hear what you think
+community wanna hear what you think
 
 745
 00:44:05,170 --> 00:44:07,780
-about hooks whether you like them or not
+about hooks. Um, whether you like them or not.
 
 746
 00:44:07,780 --> 00:44:10,420
-and we realize that it's pretty hard to
+And we realize that it's pretty hard to
 
 747
 00:44:10,420 --> 00:44:12,070
@@ -2988,19 +2988,19 @@ give feedback without actually trying
 
 748
 00:44:12,070 --> 00:44:17,100
-them so we built them and we released
+them. So we built them, and we released
 
 749
 00:44:17,100 --> 00:44:22,000
-sixty sixty and seven alpha it's not a
+sixty ..., um, sixteen seven alpha. It's not a
 
 750
 00:44:22,000 --> 00:44:24,760
-major release it's a minor release but
+major release, it's a minor release. But
 
 751
 00:44:24,760 --> 00:44:26,730
-in alpha where you can try hooks and
+in alpha where you can try hooks. And
 
 752
 00:44:26,730 --> 00:44:30,700
@@ -3008,11 +3008,11 @@ we've been trying them in production at
 
 753
 00:44:30,700 --> 00:44:33,610
-Facebook for about a month so we don't
+Facebook for about a month. So we don't
 
 754
 00:44:33,610 --> 00:44:36,910
-expect major bugs there but the api's
+expect major bugs there. But the APIs
 
 755
 00:44:36,910 --> 00:44:40,570
@@ -3020,7 +3020,7 @@ themselves may change together with your
 
 756
 00:44:40,570 --> 00:44:44,320
-feedback and I asked you not to rewrite
+feedback. And I asked you not to rewrite
 
 757
 00:44:44,320 --> 00:44:46,330
@@ -3028,15 +3028,15 @@ anything like not to rewrite their whole
 
 758
 00:44:46,330 --> 00:44:50,560
-apps and hooks because first of all it's
+apps with hooks. Because first of all it's,
 
 759
 00:44:50,560 --> 00:44:53,400
-it's a proposal and second because
+it's a proposal. And second because
 
 760
 00:44:53,400 --> 00:44:56,500
-personally I I find that it takes a bit
+personally I, I find that it takes a bit
 
 761
 00:44:56,500 --> 00:44:58,240
@@ -3044,7 +3044,7 @@ of a mind shift to start thinking in
 
 762
 00:44:58,240 --> 00:45:01,360
-hooks and it might be a bit confusing if
+hooks, and it might be a bit confusing if
 
 763
 00:45:01,360 --> 00:45:03,310
@@ -3052,7 +3052,7 @@ you try to just take a class component
 
 764
 00:45:03,310 --> 00:45:07,030
-and convert it but I do encourage you to
+and convert it. But I do encourage you to
 
 765
 00:45:07,030 --> 00:45:08,710
@@ -3064,15 +3064,15 @@ code that you write in and let us know
 
 767
 00:45:11,110 --> 00:45:15,450
-what you think so
+what you think. So,
 
 768
 00:45:15,450 --> 00:45:16,310
-thank you
+thank you.
 
 769
 00:45:16,310 --> 00:45:20,650
-[Music]
+[Applause]
 
 770
 00:45:20,650 --> 00:45:22,150
@@ -3080,11 +3080,11 @@ thank you
 
 771
 00:45:22,150 --> 00:45:25,880
-so in our view hooks represent our
+So in our view hooks represent our
 
 772
 00:45:25,880 --> 00:45:30,800
-vision for the future of reactive but I
+vision for the future of React. But I
 
 773
 00:45:30,800 --> 00:45:34,640
@@ -3092,11 +3092,11 @@ think they also represent the way we
 
 774
 00:45:34,640 --> 00:45:38,540
-move react forward and that is we don't
+move React forward. And that is we don't
 
 775
 00:45:38,540 --> 00:45:43,190
-do big rewrite we want the new patterns
+do big rewrite. Uh, we want the new patterns
 
 776
 00:45:43,190 --> 00:45:46,790
@@ -3104,7 +3104,7 @@ that we like better to coexist with the
 
 777
 00:45:46,790 --> 00:45:49,820
-old patterns so that we can have gradual
+old patterns, so that we can have gradual
 
 778
 00:45:49,820 --> 00:45:52,940
@@ -3112,27 +3112,27 @@ migration and adoption just like you can
 
 779
 00:45:52,940 --> 00:45:57,890
-gradually adopt react itself and this is
+gradually adopt React itself. And this is
 
 780
 00:45:57,890 --> 00:46:00,350
-almost the end of my talk I want to end
+almost the end of my talk. Uh, I want to end
 
 781
 00:46:00,350 --> 00:46:11,690
-it on a personal note so I started
+it on a personal note. So I started
 
 782
 00:46:11,690 --> 00:46:16,990
-learning react about four years ago and
+learning React about four years ago. And
 
 783
 00:46:16,990 --> 00:46:20,980
-one of my first questions was why JSX
+one of my first questions was why JSX.
 
 784
 00:46:20,980 --> 00:46:25,520
-but my second one of the next questions
+Uh, but my second one of the next questions
 
 785
 00:46:25,520 --> 00:46:28,730
@@ -3140,19 +3140,19 @@ was I can figure out what does the logo
 
 786
 00:46:28,730 --> 00:46:32,180
-have to do with react so the project is
+have to do with React. So the project is
 
 787
 00:46:32,180 --> 00:46:35,660
-not called Adam it's not a physics
+not called Atom, it's not a physics
 
 788
 00:46:35,660 --> 00:46:37,610
-engine
+engine.
 
 789
 00:46:37,610 --> 00:46:40,670
-so one interpretation is that it's kind
+Um, so one interpretation is that it's kind
 
 790
 00:46:40,670 --> 00:46:41,630
@@ -3160,27 +3160,27 @@ of upon on
 
 791
 00:46:41,630 --> 00:46:44,330
-reactions so atoms participate in
+reactions, so atoms participate in
 
 792
 00:46:44,330 --> 00:46:48,140
-chemical reactions reactions react but
+chemical reactions, reactions -> React. Um, but
 
 793
 00:46:48,140 --> 00:46:50,090
-it's not a flame with react actually
+it's not a claim with React actually
 
 794
 00:46:50,090 --> 00:46:52,400
-Gotti I found a different interpretation
+gotti, uh, I found a different interpretation
 
 795
 00:46:52,400 --> 00:46:57,770
-that made more sense to me and the way I
+that made more sense to me. And the way I
 
 796
 00:46:57,770 --> 00:46:59,980
-think about it
+think about it, uh,
 
 797
 00:46:59,980 --> 00:47:02,930
@@ -3188,7 +3188,7 @@ we know that physical matter consists of
 
 798
 00:47:02,930 --> 00:47:07,010
-atoms and we've learned that it's the
+atoms. And we've learned that it's the
 
 799
 00:47:07,010 --> 00:47:08,750
@@ -3200,11 +3200,11 @@ properties that determine how the
 
 801
 00:47:11,600 --> 00:47:15,160
-physical matter looks and behaves and
+physical matter looks and behaves. And
 
 802
 00:47:15,160 --> 00:47:17,600
-react has taught me something similar
+React has taught me something similar, 
 
 803
 00:47:17,600 --> 00:47:20,330
@@ -3216,7 +3216,7 @@ you can split it into these independent
 
 805
 00:47:23,120 --> 00:47:26,480
-units called components and it's the
+units called components, and it's the
 
 806
 00:47:26,480 --> 00:47:29,000
@@ -3228,71 +3228,71 @@ that can describe how the user interface
 
 808
 00:47:32,000 --> 00:47:35,290
-looks and behaves
+looks and behaves.
 
 809
 00:47:35,290 --> 00:47:38,270
-what's ironic though is that the word
+What's ironic though is that the word
 
 810
 00:47:38,270 --> 00:47:43,580
-Adam it literally means indivisible so
+'atom',  it literally means indivisible. So
 
 811
 00:47:43,580 --> 00:47:45,560
-when scientists just discovered Adam for
+when scientists just discovered atom for
 
 812
 00:47:45,560 --> 00:47:47,090
-the first time they thought this is the
+the first time, they thought this is the
 
 813
 00:47:47,090 --> 00:47:50,690
-smallest thing we're gonna find but
+smallest thing we're gonna find. But
 
 814
 00:47:50,690 --> 00:47:53,720
-later they discovered an electron which
+later they discovered an electron, which
 
 815
 00:47:53,720 --> 00:47:55,840
-is a smaller particle inside the atom
+is a smaller particle inside the atom.
 
 816
 00:47:55,840 --> 00:47:58,580
-and it turned out it actually electrons
+And it turned out it actually electrons
 
 817
 00:47:58,580 --> 00:48:03,770
-explain a lot about how atoms work and I
+explain a lot about how atoms work. And I
 
 818
 00:48:03,770 --> 00:48:05,980
-kind of feel the same way about hooks I
+kind of feel the same way about hooks. I
 
 819
 00:48:05,980 --> 00:48:10,000
-don't feel like hooks are a new feature
+don't feel like hooks are a new feature.
 
 820
 00:48:10,000 --> 00:48:13,370
-rather I feel that hooks provide me with
+Rather I feel that hooks provide me with
 
 821
 00:48:13,370 --> 00:48:15,830
-access to react features that I already
+access to React features that I already
 
 822
 00:48:15,830 --> 00:48:18,530
-know such as state and context and life
+know, such as state and context and lifecycle.
 
 823
 00:48:18,530 --> 00:48:26,300
-cycle and I feel like hooks are a more
+and I feel like hooks are a more
 
 824
 00:48:26,300 --> 00:48:29,290
-direct representation of react and that
+direct representation of React. And that
 
 825
 00:48:29,290 --> 00:48:32,780
@@ -3300,7 +3300,7 @@ they really explain how a component
 
 826
 00:48:32,780 --> 00:48:36,230
-works inside and I feel like they've
+works inside. And I feel like they've
 
 827
 00:48:36,230 --> 00:48:38,750
@@ -3308,23 +3308,23 @@ been hiding in plain sight for four
 
 828
 00:48:38,750 --> 00:48:41,930
-years and in fact if you look at the
+years. And in fact if you look at the
 
 829
 00:48:41,930 --> 00:48:44,660
-react go go you can see those electron
+React logo, you can see those electron
 
 830
 00:48:44,660 --> 00:48:47,510
-orbits there so maybe hooks have been
+orbits there. So maybe hooks have been
 
 831
 00:48:47,510 --> 00:48:51,600
-there all along thank you
+there all along.  Thank you.
 
 832
 00:48:51,600 --> 00:48:57,440
-[Music]
+[Applause]
 
 833
 00:48:57,440 --> 00:49:04,620
@@ -3332,8 +3332,8 @@ there all along thank you
 
 834
 00:49:04,620 --> 00:49:07,270
-damn thank you so much Sophie thank you
+Dan, thank you so much. Sophie thank you
 
 835
 00:49:07,270 --> 00:49:09,000
-as well
+as well.
