@@ -2708,35 +2708,35 @@ call the same hook multiple times each
 
 678
 00:40:27,390 --> 00:40:32,940
-call will get its own local state so
+call will get its own local state. So
 
 679
 00:40:32,940 --> 00:40:35,490
-let's compare the three approaches for
+let's compare the two approaches for
 
 680
 00:40:35,490 --> 00:40:45,720
-the last time so on the Left we have a
+the last time. Um, so on the left we have a
 
 681
 00:40:45,720 --> 00:40:48,000
-familiar class component it has some
+familiar class component, it has some,
 
 682
 00:40:48,000 --> 00:40:51,600
-some state in an object bind some
+some state in an object, bind some
 
 683
 00:40:51,600 --> 00:40:54,810
-methods has some logic spread across
+methods, has some logic spread across
 
 684
 00:40:54,810 --> 00:40:57,060
-different life cycle methods it has a
+different lifecycle methods as a
 
 685
 00:40:57,060 --> 00:41:02,520
-bunch of event handlers uses uses
+bunch of event handlers, uses, um, uses
 
 686
 00:41:02,520 --> 00:41:04,440
@@ -2744,27 +2744,27 @@ something things from the context and
 
 687
 00:41:04,440 --> 00:41:11,310
-render stuff pretty familiar and on the
+render stuff. Um, pretty familiar. A nd on the
 
 688
 00:41:11,310 --> 00:41:13,350
-right pane this may not look like the
+right pane, this may not look like the
 
 689
 00:41:13,350 --> 00:41:17,130
-react components were used to but it
+React components were used to. But it
 
 690
 00:41:17,130 --> 00:41:19,770
-kind of makes sense even if you don't
+kind of makes sense. Even if you don't
 
 691
 00:41:19,770 --> 00:41:21,270
-know how these functions are implemented
+know how these functions are implemented.
 
 692
 00:41:21,270 --> 00:41:24,380
-you can see okay it uses to form inputs
+You can see okay it uses to form inputs, 
 
 693
 00:41:24,380 --> 00:41:26,760
@@ -2772,39 +2772,39 @@ uses some context to get theme and
 
 694
 00:41:26,760 --> 00:41:29,460
-locale it uses the window width and
+locale, it uses the window width and
 
 695
 00:41:29,460 --> 00:41:33,240
-document title and it renders a bunch of
+document title, and it renders a bunch of
 
 696
 00:41:33,240 --> 00:41:36,360
-stuff and if we want to we can scroll
+stuff. And if we want to. We can scroll
 
 697
 00:41:36,360 --> 00:41:38,670
-further and we can see okay so this is
+further and we can see okay, so this is
 
 698
 00:41:38,670 --> 00:41:41,460
-how the input works this is how setting
+how the input works, this is how setting
 
 699
 00:41:41,460 --> 00:41:44,340
-the document title works this is how the
+the document title works, this is how the
 
 700
 00:41:44,340 --> 00:41:47,520
-window with suppression works or maybe
+window with suppression works. Or maybe
 
 701
 00:41:47,520 --> 00:41:49,920
-this could be an NPM package and you
+this could be an npm package and you
 
 702
 00:41:49,920 --> 00:41:52,470
-don't actually need to know that all we
+don't actually need to know that. All we
 
 703
 00:41:52,470 --> 00:41:54,510
@@ -2812,11 +2812,11 @@ could pull it back into a component or
 
 704
 00:41:54,510 --> 00:41:56,910
-copy and paste between components so
+copy and paste between components. S o
 
 705
 00:41:56,910 --> 00:42:00,060
-hooks give you custom hooks give you the
+hooks give you custom hooks, give you the
 
 706
 00:42:00,060 --> 00:42:01,620
@@ -2824,15 +2824,15 @@ flexibility to create your own
 
 707
 00:42:01,620 --> 00:42:04,710
-abstractions that are not they do not
+abstractions that are not ...  they do not
 
 708
 00:42:04,710 --> 00:42:08,100
-inflate your react componentry and avoid
+inflate your React component tree and avoid
 
 709
 00:42:08,100 --> 00:42:14,720
-the wrapper hell
+the wrapper hell.
 
 710
 00:42:14,720 --> 00:42:16,610
@@ -2840,7 +2840,7 @@ the wrapper hell
 
 711
 00:42:16,610 --> 00:42:22,010
-[Music]
+[Applause]
 
 712
 00:42:22,010 --> 00:42:23,749
@@ -2848,15 +2848,15 @@ the wrapper hell
 
 713
 00:42:23,749 --> 00:42:27,630
-and importantly these are not two
+And importantly these are not two
 
 714
 00:42:27,630 --> 00:42:29,489
-separate applications so this is
+separate applications. So this is
 
 715
 00:42:29,489 --> 00:42:32,640
-actually one application so I have this
+actually one application. So I have this
 
 716
 00:42:32,640 --> 00:42:34,590
@@ -2864,23 +2864,23 @@ window open just to demonstrate that
 
 717
 00:42:34,590 --> 00:42:37,650
-classes can work side by side with hooks
+classes can work side by side with hooks.
 
 718
 00:42:37,650 --> 00:42:40,620
-and while hooks represent our vision for
+And while hooks represent our vision for
 
 719
 00:42:40,620 --> 00:42:44,580
-the future of react we don't want to
+the future of React. Uh, we don't want to
 
 720
 00:42:44,580 --> 00:42:47,789
-make breaking changes like this so we
+make breaking changes like this. So we
 
 721
 00:42:47,789 --> 00:42:53,310
-need to keep classes working. Let's go
+need to keep classes working. Uh, let's go
 
 722
 00:42:53,310 --> 00:43:02,189
