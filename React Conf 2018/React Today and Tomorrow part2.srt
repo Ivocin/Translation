@@ -2248,15 +2248,15 @@ stock will mention how to do it alright
 
 563
 00:34:02,730 --> 00:34:07,020
-so there is one more thing that I want
+So there is one more thing that I want
 
 564
 00:34:07,020 --> 00:34:10,830
-to show here so this component is
+to show here. So this component is
 
 565
 00:34:10,830 --> 00:34:14,610
-getting pretty large and it's fine so we
+getting pretty large, and it's fine. So we
 
 566
 00:34:14,610 --> 00:34:16,770
@@ -2264,11 +2264,11 @@ expect that since you now can do more in
 
 567
 00:34:16,770 --> 00:34:19,380
-function components they will get larger
+function components, they will get larger
 
 568
 00:34:19,380 --> 00:34:23,850
-and that's totally okay but you might
+and that's totally okay. Um, but you might
 
 569
 00:34:23,850 --> 00:34:25,950
@@ -2280,43 +2280,43 @@ other components or extract it or test
 
 571
 00:34:28,620 --> 00:34:32,040
-it separately what's interesting though
+it separately. What's interesting though
 
 572
 00:34:32,040 --> 00:34:35,640
-is that hope calls they are just
+is that hooks calls uh, they are just
 
 573
 00:34:35,640 --> 00:34:40,650
-function calls and components they are
+function calls. And components they are
 
 574
 00:34:40,650 --> 00:34:43,920
-just functions so how do you share your
+just functions. So how do you share your
 
 575
 00:34:43,920 --> 00:34:47,550
-logic between two functions you extract
+logic between two functions? You extract
 
 576
 00:34:47,550 --> 00:34:50,490
-it to a different function that's what
+it to a different function. That's what
 
 577
 00:34:50,490 --> 00:34:53,220
-I'm going to do you're going to copy and
+I'm going to do. You're going to copy and
 
 578
 00:34:53,220 --> 00:34:58,050
-paste this and I'm going to create a new
+paste this. And I'm going to create a new
 
 579
 00:34:58,050 --> 00:35:04,890
-function called use window with and I'll
+function called useWindowWith and I'll
 
 580
 00:35:04,890 --> 00:35:08,220
-just paste it here and so we need the
+just paste it here. And so we need the
 
 581
 00:35:08,220 --> 00:35:10,350
@@ -2324,19 +2324,19 @@ width in our component in order to
 
 582
 00:35:10,350 --> 00:35:14,550
-render it so I need to return it from
+render it. So I need to return it from
 
 583
 00:35:14,550 --> 00:35:18,890
-this function which is the current width
+this function, which is the current width.
 
 584
 00:35:18,890 --> 00:35:25,410
-and then I can go back up and I can say
+And then I can go back up. And I can say
 
 585
 00:35:25,410 --> 00:35:35,640
-Const width equals use window width
+const width equals useWindowWidth.
 
 586
 00:35:35,640 --> 00:35:37,370
@@ -2344,35 +2344,35 @@ Const width equals use window width
 
 587
 00:35:37,370 --> 00:35:44,080
-[Music]
+[Cheers]
 
 588
 00:35:44,080 --> 00:35:51,020
-so what is this function we didn't do
+So what is this function? We didn't do
 
 589
 00:35:51,020 --> 00:35:53,060
-anything special we just extracted the
+anything special, we just extracted the
 
 590
 00:35:53,060 --> 00:35:56,299
-function but there is a convention here
+function. Uh, but there is a convention here.
 
 591
 00:35:56,299 --> 00:35:59,960
-so we are calling this function a custom
+So we are calling this function a custom
 
 592
 00:35:59,960 --> 00:36:04,610
-hook and by convention custom hook names
+hook. And by convention custom hook names
 
 593
 00:36:04,610 --> 00:36:08,270
-always start with use and so there are
+always start with use. And so there are
 
 594
 00:36:08,270 --> 00:36:10,220
-two reasons for this we're now going to
+two reasons for this. We're now going to
 
 595
 00:36:10,220 --> 00:36:12,890
@@ -2380,7 +2380,7 @@ like read your function name or to
 
 596
 00:36:12,890 --> 00:36:15,590
-string it or anything like this but it
+string it or anything like this. But it
 
 597
 00:36:15,590 --> 00:36:17,540
@@ -2388,7 +2388,7 @@ is an important convention because first
 
 598
 00:36:17,540 --> 00:36:20,299
-of all this lets us lint automatically
+of all, this lets us lint automatically
 
 599
 00:36:20,299 --> 00:36:22,910
@@ -2396,23 +2396,23 @@ for violation of the first rule that I
 
 600
 00:36:22,910 --> 00:36:25,340
-described about : hooks unconditionally
+described about hooks unconditionally.
 
 601
 00:36:25,340 --> 00:36:27,830
-so if we didn't know if something is a
+So if we didn't know if something is a
 
 602
 00:36:27,830 --> 00:36:29,390
-hook then we wouldn't be able to do that
+hook, then we wouldn't be able to do that.
 
 603
 00:36:29,390 --> 00:36:33,200
-and another reason is that if you just
+And another reason is that if you just
 
 604
 00:36:33,200 --> 00:36:35,720
-look at the component code you kind of
+look at the component code, you kind of
 
 605
 00:36:35,720 --> 00:36:37,220
@@ -2420,7 +2420,7 @@ want to know if some function can have
 
 606
 00:36:37,220 --> 00:36:39,470
-some state inside of it so it's
+some state inside of it. So it's
 
 607
 00:36:39,470 --> 00:36:41,750
@@ -2428,35 +2428,35 @@ important that there is a convention is
 
 608
 00:36:41,750 --> 00:36:44,210
-he okay use something it means that it's
+, okay, use something it means that it's
 
 609
 00:36:44,210 --> 00:36:47,870
-potentially stateful and here with gives
+potentially stateful. And here width gives
 
 610
 00:36:47,870 --> 00:36:50,690
-us the current bits and subscribes us to
+us the current width and subscribes us to
 
 611
 00:36:50,690 --> 00:37:00,020
-updates through it so if we wanted to we
+updates through it. So if we wanted to, we
 
 612
 00:37:00,020 --> 00:37:02,240
-could even go further it's probably not
+could even go further. It's probably not
 
 613
 00:37:02,240 --> 00:37:04,460
-necessary in this example but I just
+necessary in this example, but I just
 
 614
 00:37:04,460 --> 00:37:06,680
-want to give you like a sense of water
+want to give you like a sense of what
 
 615
 00:37:06,680 --> 00:37:10,190
-you could do so let's say like maybe
+you could do. Um, so let's say like maybe
 
 616
 00:37:10,190 --> 00:37:11,930
@@ -2468,19 +2468,19 @@ more complicated and you wanted to like
 
 618
 00:37:13,820 --> 00:37:17,090
-extract it or test it separately so I
+extract it or test it separately. So I
 
 619
 00:37:17,090 --> 00:37:20,390
-could just copy and paste this and I
+could just copy and paste this. and I
 
 620
 00:37:20,390 --> 00:37:22,580
-could write a new custom hook I'm gonna
+could write a new custom hook. I'm gonna
 
 621
 00:37:22,580 --> 00:37:29,450
-call this one use document title and so
+call this one. useDocumentTitle and so
 
 622
 00:37:29,450 --> 00:37:31,760
@@ -2488,19 +2488,19 @@ the name and surname don't really make
 
 623
 00:37:31,760 --> 00:37:34,250
-sense in the Scopes context we just want
+sense in the scope's context. We just want
 
 624
 00:37:34,250 --> 00:37:36,440
-to call this title and this is going to
+to call this title. And this is going to
 
 625
 00:37:36,440 --> 00:37:38,600
-be an argument so custom hooks are
+be an argument, so custom hooks are
 
 626
 00:37:38,600 --> 00:37:40,640
-JavaScript functions so they can take
+javaScript functions, so they can take
 
 627
 00:37:40,640 --> 00:37:43,430
@@ -2508,35 +2508,35 @@ arguments and return values or not
 
 628
 00:37:43,430 --> 00:37:46,700
-return so it is going to take title as
+return. So it is going to take title as
 
 629
 00:37:46,700 --> 00:37:49,430
-an argument and now in my component I
+an argument. And now in my component, I
 
 630
 00:37:49,430 --> 00:37:54,140
-can say use document title name plus
+can say useDocumentTitle, name plus
 
 631
 00:37:54,140 --> 00:37:55,810
-surname
+surname.
 
 632
 00:37:55,810 --> 00:37:59,420
-in fact I could go even further so in
+In fact, I could go even further. So in
 
 633
 00:37:59,420 --> 00:38:01,700
-this case it's totally unnecessary but
+this case it's totally unnecessary, but
 
 634
 00:38:01,700 --> 00:38:04,340
-again maybe our inputs were more
+again, maybe our inputs were more
 
 635
 00:38:04,340 --> 00:38:06,259
-complicated maybe we were tracking
+complicated, maybe we were tracking
 
 636
 00:38:06,259 --> 00:38:08,150
@@ -2544,11 +2544,11 @@ whether the input was focused and
 
 637
 00:38:08,150 --> 00:38:09,730
-blurred whether it has been validated
+blurred, whether it has been validated,
 
 638
 00:38:09,730 --> 00:38:12,680
-submitted and so on so maybe we had some
+submitted and so on. So maybe we had some
 
 639
 00:38:12,680 --> 00:38:14,600
@@ -2556,55 +2556,55 @@ more logic there we wanted to pull it
 
 640
 00:38:14,600 --> 00:38:17,000
-out of our components and reduce
+out of our components. Um, and reduce
 
 641
 00:38:17,000 --> 00:38:18,950
-duplication and there is already some
+duplication. And there is already some
 
 642
 00:38:18,950 --> 00:38:21,049
-duplication so we have this like almost
+duplication, so we have this like almost
 
 643
 00:38:21,049 --> 00:38:24,860
-identical event handlers so what if we
+identical event handlers. So what if we
 
 644
 00:38:24,860 --> 00:38:26,600
-could just I'm going to delete one of
+could just, um, I'm going to delete one of
 
 645
 00:38:26,600 --> 00:38:30,140
-them and extract the other one I'm going
+them and extract the other one. I'm going
 
 646
 00:38:30,140 --> 00:38:31,970
-to create a new hook that I'm going to
+to create a new hook, that I'm going to
 
 647
 00:38:31,970 --> 00:38:37,850
-call use form input so this is my change
+call useFormInput. So this is my change
 
 648
 00:38:37,850 --> 00:38:40,820
-handler now I'll also copy and paste
+handler. Now I'll also copy and paste
 
 649
 00:38:40,820 --> 00:38:45,890
-this declaration so this defines the
+this declaration. So this defines the
 
 650
 00:38:45,890 --> 00:38:49,370
-state for this input and so it's no
+state for this input. And so it's no
 
 651
 00:38:49,370 --> 00:38:51,890
-longer name and set name I'll just color
+longer name and setName. I'll just call
 
 652
 00:38:51,890 --> 00:38:56,000
-generically Valley and set value it's
+generically value and setValue. It's
 
 653
 00:38:56,000 --> 00:38:58,460
@@ -2612,11 +2612,11 @@ going to take the initial value as an
 
 654
 00:38:58,460 --> 00:39:02,960
-argument and this is just going to be a
+argument. And this is just going to be a
 
 655
 00:39:02,960 --> 00:39:09,529
-handle change and this will set value so
+handleChange, and this will setValue. So
 
 656
 00:39:09,529 --> 00:39:12,200
@@ -2624,87 +2624,87 @@ what do we want to get in order to use
 
 657
 00:39:12,200 --> 00:39:14,539
-this user input and our component we
+this, uh, use an input in our component? We
 
 658
 00:39:14,539 --> 00:39:16,759
-want to get the current value and a
+want to get the current value, and a
 
 659
 00:39:16,759 --> 00:39:18,740
-change candor these are the things that
+change handler. These are the things that
 
 660
 00:39:18,740 --> 00:39:21,890
-we attach to the input so let's just
+we attach to the input. So let's just
 
 661
 00:39:21,890 --> 00:39:26,230
-return them return value and unchanged
+return them. Um, return value and onChange
 
 662
 00:39:26,230 --> 00:39:33,740
-handle change so now if we go back up we
+handleChange. So now if we go back up, we
 
 663
 00:39:33,740 --> 00:39:39,009
-can say name equals use form input meri
+can say name equals useFormInput Mary.
 
 664
 00:39:39,009 --> 00:39:41,480
-the name is going to be an object with
+The name is going to be an object with
 
 665
 00:39:41,480 --> 00:39:45,200
-valley and non change fields and surname
+value and onChange fields. And surname
 
 666
 00:39:45,200 --> 00:39:52,880
-is use form input Poppins so this is now
+is useFormInput Poppins. So this is now
 
 667
 00:39:52,880 --> 00:39:55,100
-going to be named at Valley and surnamed
+going to be named dot value and surname
 
 668
 00:39:55,100 --> 00:39:57,289
-at Valley because this is where the
+dot value because this is where the
 
 669
 00:39:57,289 --> 00:40:00,710
-string is and so now I can remove this
+string is. And so now I can remove this,
 
 670
 00:40:00,710 --> 00:40:07,100
-and I can spread over the name object
+and I can spread over the name object.
 
 671
 00:40:07,100 --> 00:40:12,060
-someone is laughing alright let's just
+Someone is laughing. [Laughing] Alright. Let's just
 
 672
 00:40:12,060 --> 00:40:15,960
-verify it and break it yeah it works so
+verify it and break it, yeah it works. So
 
 673
 00:40:15,960 --> 00:40:18,000
-each time we poll a hook its state is
+each time we call a hook, its state is
 
 674
 00:40:18,000 --> 00:40:20,880
-completely isolated and this is because
+completely isolated. A nd this is because
 
 675
 00:40:20,880 --> 00:40:23,040
-we just rely on the order of who calls
+we just rely on the order of hook calls,
 
 676
 00:40:23,040 --> 00:40:25,290
-and not on names or anything so you can
+and not on names or anything. So you can
 
 677
 00:40:25,290 --> 00:40:27,390
-call the same hook multiple times each
+call the same hook multiple times. Each
 
 678
 00:40:27,390 --> 00:40:32,940
