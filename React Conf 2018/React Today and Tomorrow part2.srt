@@ -2880,39 +2880,39 @@ make breaking changes like this so we
 
 721
 00:42:47,789 --> 00:42:53,310
-need to keep classes working let's go
+need to keep classes working. Let's go
 
 722
 00:42:53,310 --> 00:43:02,189
-back to you the slides all right now
+back to you the slides. All right, now
 
 723
 00:43:02,189 --> 00:43:06,490
-this is a slider you can actually tweet
+this is a slider you can actually tweet. [Laughing]
 
 724
 00:43:06,490 --> 00:43:09,490
-we present the Hookes proposal to you
+We present the Hooks proposal to you
 
 725
 00:43:09,490 --> 00:43:10,660
-today
+today.
 
 726
 00:43:10,660 --> 00:43:13,510
-Hookes led to use all react features
+Uh, hooks let us to use all React features
 
 727
 00:43:13,510 --> 00:43:16,750
-without having to write a class they do
+without having to write a class. They do
 
 728
 00:43:16,750 --> 00:43:19,600
-not deprecated classes but you have the
+not deprecated classes, but you have the
 
 729
 00:43:19,600 --> 00:43:21,790
-option to not have to write them we
+option to not have to write them. We
 
 730
 00:43:21,790 --> 00:43:24,250
@@ -2920,23 +2920,23 @@ intend to cover all use cases for
 
 731
 00:43:24,250 --> 00:43:27,070
-classes with hooks as soon as possible
+classes with hooks as soon as possible.
 
 732
 00:43:27,070 --> 00:43:29,320
-there are a few that are missing but
+There are a few that are missing, but
 
 733
 00:43:29,320 --> 00:43:32,680
-we're working on them and hooks lets you
+we're working on them. And hooks let you
 
 734
 00:43:32,680 --> 00:43:35,140
-reuse stateful logic extracted out of
+reuse stateful logic, extracted out of
 
 735
 00:43:35,140 --> 00:43:38,230
-components tested separately reuse it
+components, tested separately, reuse it
 
 736
 00:43:38,230 --> 00:43:39,850
@@ -2944,43 +2944,43 @@ between different components without
 
 737
 00:43:39,850 --> 00:43:42,850
-introducing the wrapper hell and again
+introducing the wrapper hell. And again
 
 738
 00:43:42,850 --> 00:43:44,560
-importantly it's not a breaking change
+importantly it's not a breaking change,
 
 739
 00:43:44,560 --> 00:43:48,000
-completely backwards compatible strictly
+completely backwards compatible, strictly
 
 740
 00:43:48,000 --> 00:43:52,240
-addition additive and you can find the
+addition ..., uh, additive. And you can find the,
 
 741
 00:43:52,240 --> 00:43:54,700
-we wrote the documentation for hooks so
+we wrote the documentation for hooks, so
 
 742
 00:43:54,700 --> 00:43:59,520
-you can find it at this year around and
+you can find it at this url. Um, and
 
 743
 00:43:59,520 --> 00:44:03,340
-we want to hear from you the react
+we want to hear from you, the React
 
 744
 00:44:03,340 --> 00:44:05,170
-immune to you when I hear what you think
+community wanna hear what you think
 
 745
 00:44:05,170 --> 00:44:07,780
-about hooks whether you like them or not
+about hooks. Um, whether you like them or not.
 
 746
 00:44:07,780 --> 00:44:10,420
-and we realize that it's pretty hard to
+And we realize that it's pretty hard to
 
 747
 00:44:10,420 --> 00:44:12,070
@@ -2988,19 +2988,19 @@ give feedback without actually trying
 
 748
 00:44:12,070 --> 00:44:17,100
-them so we built them and we released
+them. So we built them, and we released
 
 749
 00:44:17,100 --> 00:44:22,000
-sixty sixty and seven alpha it's not a
+sixty ..., um, sixteen seven alpha. It's not a
 
 750
 00:44:22,000 --> 00:44:24,760
-major release it's a minor release but
+major release, it's a minor release. But
 
 751
 00:44:24,760 --> 00:44:26,730
-in alpha where you can try hooks and
+in alpha where you can try hooks. And
 
 752
 00:44:26,730 --> 00:44:30,700
@@ -3008,11 +3008,11 @@ we've been trying them in production at
 
 753
 00:44:30,700 --> 00:44:33,610
-Facebook for about a month so we don't
+Facebook for about a month. So we don't
 
 754
 00:44:33,610 --> 00:44:36,910
-expect major bugs there but the api's
+expect major bugs there. But the APIs
 
 755
 00:44:36,910 --> 00:44:40,570
@@ -3020,7 +3020,7 @@ themselves may change together with your
 
 756
 00:44:40,570 --> 00:44:44,320
-feedback and I asked you not to rewrite
+feedback. And I asked you not to rewrite
 
 757
 00:44:44,320 --> 00:44:46,330
@@ -3028,15 +3028,15 @@ anything like not to rewrite their whole
 
 758
 00:44:46,330 --> 00:44:50,560
-apps and hooks because first of all it's
+apps with hooks. Because first of all it's,
 
 759
 00:44:50,560 --> 00:44:53,400
-it's a proposal and second because
+it's a proposal. And second because
 
 760
 00:44:53,400 --> 00:44:56,500
-personally I I find that it takes a bit
+personally I, I find that it takes a bit
 
 761
 00:44:56,500 --> 00:44:58,240
@@ -3044,7 +3044,7 @@ of a mind shift to start thinking in
 
 762
 00:44:58,240 --> 00:45:01,360
-hooks and it might be a bit confusing if
+hooks, and it might be a bit confusing if
 
 763
 00:45:01,360 --> 00:45:03,310
@@ -3052,7 +3052,7 @@ you try to just take a class component
 
 764
 00:45:03,310 --> 00:45:07,030
-and convert it but I do encourage you to
+and convert it. But I do encourage you to
 
 765
 00:45:07,030 --> 00:45:08,710
@@ -3064,15 +3064,15 @@ code that you write in and let us know
 
 767
 00:45:11,110 --> 00:45:15,450
-what you think so
+what you think. So,
 
 768
 00:45:15,450 --> 00:45:16,310
-thank you
+thank you.
 
 769
 00:45:16,310 --> 00:45:20,650
-[Music]
+[Applause]
 
 770
 00:45:20,650 --> 00:45:22,150
