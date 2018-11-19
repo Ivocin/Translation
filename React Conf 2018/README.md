@@ -27,7 +27,9 @@ keynote 内容整理（中文）：[React 的今天和明天——第一部分. 
 
 ### 第二部分为 [Dan Abramov](https://twitter.com/dan_abramov) 的演讲，正式提案 React Hooks：
 
-英文字幕（校对中）：[React Today and Tomorrow part2.srt](https://github.com/Ivocin/Traslation/blob/master/React%20Conf%202018/React%20Today%20and%20Tomorrow%20part2.srt)
+英文字幕：[React Today and Tomorrow part2.srt](https://github.com/Ivocin/Traslation/blob/master/React%20Conf%202018/React%20Today%20and%20Tomorrow%20part2.srt)
+
+中文翻译字幕（翻译中）：[React Today and Tomorrow part2_zh_CN.srt](https://github.com/Ivocin/Traslation/blob/master/React%20Conf%202018/React%20Today%20and%20Tomorrow%20part2_zh_CN.srt)
 
 keynote 内容整理（英文）(整理中)：[React Today and Tomorrow - Part II.md](https://github.com/Ivocin/Traslation/blob/master/React%20Conf%202018/React%20Today%20and%20Tomorrow%20-%20Part%20II.md)
 
