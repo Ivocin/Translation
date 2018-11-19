@@ -396,7 +396,7 @@ Okay, disaster averted. [Laughing]
 
 100
 00:06:17,180 --> 00:06:22,020
-Alright, um, let me check the font size a
+All right, um, let me check the font size a
 
 101
 00:06:22,020 --> 00:06:27,960
@@ -1512,7 +1512,7 @@ going, uh, there is a browser API to do
 
 379
 00:23:17,670 --> 00:23:21,089
-this, is documented.title equals
+this, is document.title equals
 
 380
 00:23:21,089 --> 00:23:24,720
@@ -2680,7 +2680,7 @@ and I can spread over the name object.
 
 671
 00:40:07,100 --> 00:40:12,060
-Someone is laughing. [Laughing] Alright. Let's just
+Someone is laughing. [Laughing] All right. Let's just
 
 672
 00:40:12,060 --> 00:40:15,960
@@ -2736,7 +2736,7 @@ different lifecycle methods as a
 
 685
 00:40:57,060 --> 00:41:02,520
-bunch of event handlers, uses, um, uses
+bunch of event handlers, um, uses, um, uses
 
 686
 00:41:02,520 --> 00:41:04,440
@@ -2880,7 +2880,7 @@ make breaking changes like this. So we
 
 721
 00:42:47,789 --> 00:42:53,310
-need to keep classes working. Uh, let's go
+need to keep classes working. Ur, let's go
 
 722
 00:42:53,310 --> 00:43:02,189
@@ -3172,7 +3172,7 @@ it's not a claim with React actually
 
 794
 00:46:50,090 --> 00:46:52,400
-gotti, uh, I found a different interpretation
+got it, uh, I found a different interpretation
 
 795
 00:46:52,400 --> 00:46:57,770
@@ -3236,7 +3236,7 @@ What's ironic though is that the word
 
 810
 00:47:38,270 --> 00:47:43,580
-'atom',  it literally means indivisible. So
+'atom', it literally means indivisible. So
 
 811
 00:47:43,580 --> 00:47:45,560
@@ -3320,7 +3320,7 @@ orbits there. So maybe hooks have been
 
 831
 00:48:47,510 --> 00:48:51,600
-there all along.  Thank you.
+there all along. Thank you.
 
 832
 00:48:51,600 --> 00:48:57,440
