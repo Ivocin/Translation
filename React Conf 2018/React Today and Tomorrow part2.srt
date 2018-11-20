@@ -1536,7 +1536,7 @@ automatically updated, because I also
 
 385
 00:23:39,090 --> 00:23:41,930
-need to implement componentDitUpdate.
+need to implement componentDidUpdate.
 
 386
 00:23:41,930 --> 00:23:44,940
@@ -1548,7 +1548,7 @@ consistent with what I rendered. So I'm
 
 388
 00:23:48,480 --> 00:23:50,060
-going to declare componentDitUpdate,
+going to declare componentDidUpdate,
 
 389
 00:23:50,060 --> 00:23:57,150
