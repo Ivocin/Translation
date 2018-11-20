@@ -1676,7 +1676,7 @@ this is why we have componentDidMount,
 
 420
 00:25:50,210 --> 00:25:51,799
-componentDitUpdate, they fire at
+componentDidUpdate, they fire at
 
 421
 00:25:51,799 --> 00:25:54,560
