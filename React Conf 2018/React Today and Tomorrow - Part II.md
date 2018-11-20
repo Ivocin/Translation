@@ -10,15 +10,15 @@
 
 Hi. Ah, my name is Dan, I work on the React Team and this is my first time in React Conf. (Applause) 
 
-## Promblems Today
+## Problems Today
 
 And so Sophie talked about these problems that I think most of you have encountered in React development. And of course we could approach these problems one by one, so we could try to solve them in isolation. But it seems like solving one of them makes some other one worse.
 
-So for example, if we try to solve the wrapper hell by putting more logic into components themselves, then our components become larger and harder to refactor. And then on the other hand, if we try to split the components apart into smaller pieces and reuse those, then we end up with more nests than in the component tree and we get the wrapper hell again. And finally in either case we have all the confusion that comes with the classes. 
+So for example, if we try to solve the wrapper hell by putting more logic into components themselves, then our components become larger and harder to refactor. And then on the other hand, if we try to split the components apart into smaller pieces and reuse those, then we end up with more nests than in the component tree and we get the wrapper hell again. And finally, in either case, we have all the confusion that comes with the classes. 
 
 So we think that this is because these are not three separate problems. We think that this is, ah, these are three symptoms of one problem. And the problem is that React does not provide a simpler, smaller, lightweight primitive to add state or lifecycle than a class component. 
 
-And so once you add a class component, you can split it up further without introducing the wrapper hell. And in fact it's not a new problem. So if you use React for like more than a couple of years, you might remember then when React came out it actually included a solution to this problem. Ah, it was mixins. So mixins allow you to reuse some methods between classes and this way you wouldn't have all these wrappers. 
+And so once you add a class component, you can split it up further without introducing the wrapper hell. And in fact, it's not a new problem. So if you use React for like more than a couple of years, you might remember then when React came out it actually included a solution to this problem. Ah, it was mixins. So mixins allow you to reuse some methods between classes and this way you wouldn't have all these wrappers. 
 
 So should we add mixins back to React? (Yeah ... No...) That's right, no no, we're not gonna do that. Ah, I mean the codes using mixins the rounds, it's not like, it's not broken. But we don't encourage using mixins in React. And if you curious why there is a blog post, uh, that we wrote code called [*Mixins Considered Harmful*](https://reactjs.org/blog/2016/07/13/mixins-considered-harmful.html) on the React Blog, where we explain that we think in our experience, the problems that mixins create are worse than the problems that they solve. Ah, so that's why we don't encourage using mixins. 
 
@@ -45,7 +45,7 @@ It already mirrors the displays. Sorry, technical glitch. Ur, can somebody who u
 
 So, ah, here is a simple React component, ah, that just it is a row, this is just some styling, and it it renders a person's name. And so let's say that we want this name to be editable. So how do you do it in React normally? Well, like if we want to add an input there we need to return this component into a class, add some local state to it, and let that state drive the input. So that's exactly what I'm going to do, uh, that's what we do today.
 
-So I'm gonna do the export default class Greeding extends React component. And so I'm going to use only stable JavaScript syntax. So constructor props, super props. This the state, going to initialize, ur, name to Mary here. And I'm going to declare a render method and copy and paste this. Sorry. Okay. 
+So I'm gonna do the export default class Greeting extends React component. And so I'm going to use only stable JavaScript syntax. So constructor props, super props. This the state, going to initialize, ur, name to Mary here. And I'm going to declare a render method and copy and paste this. Sorry. Okay. 
 
 And so I want this to be instead of just rendering the name, I want this render an input. So I'm replacing this by an input, and the value of the input is `this.state.name`. And if I make a change I want to call `this.handleNameChange`, that's going to be my change caller. And I'm going to declare it here, when the name changes we call setState like we normally do. And we set the name to `e.target.value`. Right. 
 

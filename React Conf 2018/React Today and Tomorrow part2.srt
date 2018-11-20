@@ -452,7 +452,7 @@ So I'm gonna do the export default class
 
 114
 00:07:05,390 --> 00:07:12,720
-Greeding extends React component. And so
+Greeting extends React component. And so
 
 115
 00:07:12,720 --> 00:07:14,910
