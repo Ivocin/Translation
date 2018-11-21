@@ -1572,7 +1572,7 @@ effects in a class.
 
 394
 00:24:15,640 --> 00:24:21,830
-So how do we do this with hooks. Well the
+So how do we do this with hooks? Well the
 
 395
 00:24:21,830 --> 00:24:23,960
