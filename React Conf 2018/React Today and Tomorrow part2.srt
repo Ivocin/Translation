@@ -112,7 +112,7 @@ component. And so once you add a class
 
 29
 00:01:41,360 --> 00:01:44,420
-component, you can split it up further
+component, you can't split it up further
 
 30
 00:01:44,420 --> 00:01:48,190
