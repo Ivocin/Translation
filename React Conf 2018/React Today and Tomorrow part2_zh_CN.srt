@@ -356,343 +356,343 @@ request for comments，它意味着
 
 90
 00:04:59,479 --> 00:05:06,929
-It already mirrors the displays. Sorry,
+我的屏幕已经投在了显示器上。对不起，
 
 91
 00:05:06,929 --> 00:05:19,670
-technical glitch.
+有点技术故障。
 
 92
 00:05:19,670 --> 00:05:22,280
-Ur, can somebody who understands projectors
+呃，有谁会用这个投影仪，来
 
 93
 00:05:22,280 --> 00:05:33,250
-help me. [Laughing] Ur, can I make it mirror my desktop?
+帮帮我。[笑声] 呃，我能复制我的桌面吗？
 
 94
 00:05:33,250 --> 00:05:41,290
-Please.
+请。
 
 95
 00:05:41,290 --> 00:05:46,970
-(I can do it) Yeah. [Laughing]
+(我能) 是啊。 [笑声]
 
 96
 00:05:46,970 --> 00:05:50,370
-Okay but it doesn't show on the screen, I
+好的，但是屏幕上没有显示，我
 
 97
 00:05:50,370 --> 00:05:53,980
-don't see anything. [Laughing]
+什么都看不到。 [笑声]
 
 98
 00:05:53,980 --> 00:06:08,390
-That's, that's the problem that I had.  [Applause]
+这就是我现在的问题。 [掌声]
 
 99
 00:06:08,390 --> 00:06:17,180
-Okay, disaster averted. [Laughing]
+好的，灾难过去了。[笑声]
 
 100
 00:06:17,180 --> 00:06:22,020
-All right, um, let me check the font size a
+好的，嗯，让我来稍微调整下
 
 101
 00:06:22,020 --> 00:06:27,960
-little bit. Do you see this file? [Yeah] All right.
+文字大小。你们能看清吗？ [可以的。] 好的。
 
 102
 00:06:27,960 --> 00:06:34,140
-So, ah, here is a simple React component, ah, that
+那么，我们来看，这里是一个普通的 React 组件，
 
 103
 00:06:34,140 --> 00:06:36,840
-just it is a row, this is just some
+这是一个 Row 组件，这里有一些
 
 104
 00:06:36,840 --> 00:06:39,870
-styling, and it it renders a person's
+样式，然后渲染出一个
 
 105
 00:06:39,870 --> 00:06:43,170
-name. And so let's say that we want this
+人名。我们想要做的是
 
 106
 00:06:43,170 --> 00:06:47,340
-name to be editable. So how do you do it
+让这个名字可编辑。那么我们平时在 React 里
 
 107
 00:06:47,340 --> 00:06:49,560
-in React normally? Well, like if we want
+通常是怎么做的呢？我们需要
 
 108
 00:06:49,560 --> 00:06:52,200
-to add an input there we need to return
+在这里添加一个 input，需要将这些内容放到
 
 109
 00:06:52,200 --> 00:06:54,630
-this component into a class, add some
+class 里面返回，添加一些本地
 
 110
 00:06:54,630 --> 00:06:56,400
-local state to it, and let that state
+state，让 state 来
 
 111
 00:06:56,400 --> 00:06:58,740
-drive the input. So that's exactly what
+驱动 input。这也是我
 
 112
 00:06:58,740 --> 00:07:01,190
-I'm going to do, uh, that's what we do today.
+准备做的事情。这也是现今大家通常做的事情。
 
 113
 00:07:01,190 --> 00:07:05,390
-So I'm gonna do the export default class
+我要 export default class
 
 114
 00:07:05,390 --> 00:07:12,720
-Greeding extends React component. And so
+Greeding extends React component。我也
 
 115
 00:07:12,720 --> 00:07:14,910
-I'm going to use only stable javaScript
+只会在这里使用稳定的 javaScript
 
 116
 00:07:14,910 --> 00:07:20,840
-syntax. So constructor props, super props.
+语法。接下来是 constructor props, super props。
 
 117
 00:07:20,840 --> 00:07:25,670
-This the state, going to initialize, ur,
+在这里把 state 里的 name 初始化为
 
 118
 00:07:25,670 --> 00:07:30,960
-name to Mary here. And I'm going to
+Mary。接下来我要
 
 119
 00:07:30,960 --> 00:07:34,320
-declare a render method and copy and
+声明一个 render 函数，复制一下这段代码然后
 
 120
 00:07:34,320 --> 00:07:41,950
-paste this.
+粘贴到这里。
 
 121
 00:07:41,950 --> 00:07:44,680
-Sorry.
+对不起。
 
 122
 00:07:44,680 --> 00:07:48,040
-Okay. And so I want this to be instead of
+好的。我希望这里不再
 
 123
 00:07:48,040 --> 00:07:49,450
-just rendering the name, I want this
+仅仅渲染 name，我希望这里可以渲染一个
 
 124
 00:07:49,450 --> 00:07:51,400
-render an input. So I'm replacing
+input。我把这里替换为
 
 125
 00:07:51,400 --> 00:07:56,320
-this by an input, and the value of the
+一个 input，然后 input 的值设置为
 
 126
 00:07:56,320 --> 00:08:00,450
-input is this dot state dot name. And
+this.state.name。 然后
 
 127
 00:08:00,450 --> 00:08:03,160
-if I make a change I want to call this
+在 input 输入发生变化时，调用
 
 128
 00:08:03,160 --> 00:08:06,910
-dot handleNameChange, that's going to
+this.handleNameChange， 这是我的
 
 129
 00:08:06,910 --> 00:08:10,570
-be my change caller. And I'm going to
+change 回调函数。我把它
 
 130
 00:08:10,570 --> 00:08:13,330
-declare it here, when the name changes we
+声明在这里，当名字发生变化时，
 
 131
 00:08:13,330 --> 00:08:16,660
-call setState like we normally do. And
+像我们通常做的那样调用 setState 方法。然后
 
 132
 00:08:16,660 --> 00:08:19,900
-we set the name to e dot target dot
+将 name 设置为 e.target.value
 
 133
 00:08:19,900 --> 00:08:26,440
-value. Right. So now if I edit the ... [TypeError In Page] Okay so
+对吧。如果我编辑 ... [页面上报了 TypeError 的错误] 好吧，所以我
 
 134
 00:08:26,440 --> 00:08:33,070
-I, I need to bind ... [Laughing] Sorry I need to bind
+应该去绑定 ... [笑声] 对不起，我需要在这里绑定
 
 135
 00:08:33,070 --> 00:08:36,940
-the events on there. Okay so now I can
+events 事件。 好的，现在这样
 
 136
 00:08:36,940 --> 00:08:40,390
-actually edit it and it works. So a
+我们就可以编辑它了，运行正常。
 
 137
 00:08:40,390 --> 00:08:43,450
-familiar class component is, uh, if you work
+这个 class 组件我们应该非常熟悉了。你如果
 
 138
 00:08:43,450 --> 00:08:45,280
-with React probably right a lot of
+使用 React 开发可能会遇到很多类似的
 
 139
 00:08:45,280 --> 00:08:52,060
-those. But let's take a step back. What if
+代码。但让我们后退一步，如果
 
 140
 00:08:52,060 --> 00:08:55,300
-we didn't have to write a class when we
+想要使用 state 时，能否不必须使用
 
 141
 00:08:55,300 --> 00:08:58,420
-wanted to use state. So I'm not sure how
+class 组件？我不确定
 
 142
 00:08:58,420 --> 00:09:00,800
-that's gonna work. But I'll just start
+它如何运行。但是我就准备
 
 143
 00:09:00,800 --> 00:09:02,560
-with what I know, I want to render an
+跟据我的已知来进行，我需要渲染一个
 
 144
 00:09:02,560 --> 00:09:06,390
-input. So I'm gonna put an input here. And
+input。我在这里放入一个 input。
 
 145
 00:09:06,390 --> 00:09:08,979
-the input has a value and that value
+这个 input 的 value 的值为
 
 146
 00:09:08,979 --> 00:09:11,469
-is the current name, so I'll just pass
+当前的 name 的值，所以我就传入
 
 147
 00:09:11,469 --> 00:09:14,710
-name. I don't know where to get name from.
+name 值。我不知道从哪里获取 name。
 
 148
 00:09:14,710 --> 00:09:18,359
-So it doesn't come from props, uh,
+它不是从 props 里面来，嗯，
 
 149
 00:09:18,359 --> 00:09:22,410
-I'll just declare it, and I don't know,
+我就在这里声明，我不知道它的值，
 
 150
 00:09:22,410 --> 00:09:26,200
-I'll fill it in later. Uh, it's gonna have a
+之后我再填写这一块。呃，这里应该也有一个
 
 151
 00:09:26,200 --> 00:09:27,790
-change caller there as well, so I'm going
+change 回调函数，我在
 
 152
 00:09:27,790 --> 00:09:33,089
-to declare onChange handleNameChange.
+这里声明 onChange 函数 handleNameChange。
 
 153
 00:09:33,089 --> 00:09:38,229
-And I'm adding a function here takes an
+我在这里添加一个函数来
 
 154
 00:09:38,229 --> 00:09:42,160
-event. And then here I want to tell React
+处理事件。在这里我想要通知 React
 
 155
 00:09:42,160 --> 00:09:45,430
-to set the name to something, but again
+设置 name 值到某处，但又一次地，
 
 156
 00:09:45,430 --> 00:09:47,200
-I'm not sure how to do that from a
+我不确定在 functional 组件里如何实现
 
 157
 00:09:47,200 --> 00:09:48,999
-functional component. So I'll just call
+这个功能。因此我就直接调用
 
 158
 00:09:48,999 --> 00:09:51,280
-something called setName.
+一个叫做 setName 的方法。
 
 159
 00:09:51,280 --> 00:09:57,010
-With the current input value. And I'll
+使用当前的 input 的值。我把它
 
 160
 00:09:57,010 --> 00:10:06,570
-just declare it here.
+声明在这里。
 
 161
 00:10:06,570 --> 00:10:09,040
-All right, so these two things they're
+好吧，由于这两件事情
 
 162
 00:10:09,040 --> 00:10:11,080
-closely related, right. So one of them is
+是密切相关的，对吧。其中一个是 state 里
 
 163
 00:10:11,080 --> 00:10:13,630
-the current value of the name state
+name 变量的当前值，
 
 164
 00:10:13,630 --> 00:10:17,440
-variable and the other is a function
+而另一个是一个函数，
 
 165
 00:10:17,440 --> 00:10:20,700
-that lets us set the name state variable.
+该函数让我们去设置 state 里的 name 变量。
 
 166
 00:10:20,700 --> 00:10:22,930
-And so because these things are closely
+由于这两件事情
 
 167
 00:10:22,930 --> 00:10:24,820
-related, I'm actually going to put them
+非常相关，我将它们
 
 168
 00:10:24,820 --> 00:10:29,950
-together as a pair of values. So I'm
+合并到一起作为一对值。
 
 169
 00:10:29,950 --> 00:10:31,390
-going to get them together from
+我们从某处一同获取到
 
 170
 00:10:31,390 --> 00:10:35,220
-somewhere. So where do I get them from?
+它们的值。所以问题是我从哪里获取到它们？
 
 171
 00:10:35,220 --> 00:10:40,050
-From React local state. So how do I use
+答案是从 React 本地状态里面获取。 那么我如何
 
 172
 00:10:40,050 --> 00:10:42,370
-React local state from a function
+在 function 组件里面获取到 React 到本地状态呢？
 
 173
 00:10:42,370 --> 00:10:46,960
-component? Well, what if I could just use
+嗯，我直接使用 use state
 
 174
 00:10:46,960 --> 00:10:53,940
-state.
+会怎样。
 
 175
 00:10:53,940 --> 00:11:01,230
