@@ -968,319 +968,319 @@ surname 时，不是 sir name，我们
 
 243
 00:15:22,660 --> 00:15:26,630
-So we can see that we can use hooks more
+所以我们可以看到，我们可以在组件里
 
 244
 00:15:26,630 --> 00:15:29,960
-than once in a component. Let's compare
+使用多次 hook。 我们来更详细地比较
 
 245
 00:15:29,960 --> 00:15:34,400
-the two approaches in more detail. So on
+这两种方式。在
 
 246
 00:15:34,400 --> 00:15:37,040
-the left familiar class component state
+左侧我们熟悉的 class 组件里的 state
 
 247
 00:15:37,040 --> 00:15:40,010
-is always an object, has multiple fields,
+总是对象，具有多个字段，
 
 248
 00:15:40,010 --> 00:15:42,620
-may call setState will merge some
+需要调用 setState 函数将其中的
 
 249
 00:15:42,620 --> 00:15:45,770
-something into that object. And then when
+某些值合并进 state 对象中。当我们需要
 
 250
 00:15:45,770 --> 00:15:47,510
-we want to access it, we do this dot
+获取它时，需要调用
 
 251
 00:15:47,510 --> 00:15:52,400
-state dot something. On the right in the
+this.state.something。在右侧使用 hook 的
 
 252
 00:15:52,400 --> 00:15:55,760
-example using hooks, we use the state
+例子中，我们使用了
 
 253
 00:15:55,760 --> 00:15:59,990
-hook twice. And that declares two state
+两次 hook。而且声明了两个
 
 254
 00:15:59,990 --> 00:16:03,830
-variables: name and surname. And whenever
+变量：name 和 surname。而且每当
 
 255
 00:16:03,830 --> 00:16:06,560
-we call setName or setSurname,
+我们调用 setName 或 setSurname，
 
 256
 00:16:06,560 --> 00:16:08,750
-this tells React that it needs to
+这时 React 会接到需要
 
 257
 00:16:08,750 --> 00:16:11,000
-rerender this component, just like if we
+重新渲染该组件的通知，就和
 
 258
 00:16:11,000 --> 00:16:13,850
-called setState. And so the next time
+调用 setState 一样。所以下一次
 
 259
 00:16:13,850 --> 00:16:16,370
-React renders our components is going
+React 渲染组件会
 
 260
 00:16:16,370 --> 00:16:19,580
-to pass the current name and the current
+将当前的 name 和
 
 261
 00:16:19,580 --> 00:16:23,510
-surname to our component. And then we can
+surname 传递给组件。而且我们可以
 
 262
 00:16:23,510 --> 00:16:25,520
-use it directly without accessing this
+直接使用这些 state 变量，不需要调用
 
 263
 00:16:25,520 --> 00:16:36,400
-dot state dot something.
+this.state.something。
 
 264
 00:16:36,400 --> 00:16:39,640
-All right. So let's go back to our class
+好的。我们再回到我们的 class 组件的
 
 265
 00:16:39,640 --> 00:16:43,510
-example. What else, what other features of
+例子。有没我们知道的其他的
 
 266
 00:16:43,510 --> 00:16:46,479
-React we know? So another thing you
+React 特性呢？那么另外一个你可能
 
 267
 00:16:46,479 --> 00:16:48,670
-might want to do from a component is to
+希望在组件里面做的事情就是
 
 268
 00:16:48,670 --> 00:16:52,570
-read context. So context, in case you're
+读取 context。 那么 context，有可能
 
 269
 00:16:52,570 --> 00:16:54,849
-not familiar, it's like, ur, kind of like
+你不熟悉，它就像一种
 
 270
 00:16:54,849 --> 00:16:57,489
-global variables for a subtree. So it's
+为了子树准备的全局变量。它
 
 271
 00:16:57,489 --> 00:17:00,130
-useful for things like read the current
+在读取当前
 
 272
 00:17:00,130 --> 00:17:02,859
-theme like visual theme or the current
+主题或者是当前
 
 273
 00:17:02,859 --> 00:17:05,650
-language that the user is using. And it's
+用户正在使用的语言很有用。它可以
 
 274
 00:17:05,650 --> 00:17:08,050
-useful to avoid passing everything
+有效避免总是
 
 275
 00:17:08,050 --> 00:17:10,150
-through props if you need all components
+通过 props 传值，当所有组件需要
 
 276
 00:17:10,150 --> 00:17:13,030
-to be able to read some value. So we're
+都需要读取一些相同变量的时候。所以我们
 
 277
 00:17:13,030 --> 00:17:17,410
-going to import ThemeContext and 
+将要导入 ThemeContext 和
 
 278
 00:17:17,410 --> 00:17:19,989
-LocaleContext which I already declared in
+LocaleContext，这两个 context 我已经在
 
 279
 00:17:19,989 --> 00:17:23,320
-another file. And the API you've probably
+另一个文件里定义好了。你可能
 
 280
 00:17:23,320 --> 00:17:25,900
-most familiar with for consuming context,
+最熟悉的用来消费 context，
 
 281
 00:17:25,900 --> 00:17:27,219
-especially if you have to consume
+尤其是消费多个
 
 282
 00:17:27,219 --> 00:17:30,040
-multiple contexts, is the render prop API.
+context 的 API 就是 render prop API。
 
 283
 00:17:30,040 --> 00:17:33,219
-And it looks like this. So I'm going to
+就像这样写。我往下滚动
 
 284
 00:17:33,219 --> 00:17:36,729
-scroll down here. So we can choose ThemeContext
+到这里。我们使用 ThemeContext
 
 285
 00:17:36,729 --> 00:17:40,589
-Consumer that gives us the theme.
+Consumer 获得主题。
 
 286
 00:17:40,589 --> 00:17:43,420
-In my case, it's just going to be a CSS
+在我的例子里，主题就是个简单的
 
 287
 00:17:43,420 --> 00:17:50,109
-class. So I copy this, all this code
+样式。我把这段代码复制，将其全部放入
 
 288
 00:17:50,109 --> 00:17:55,450
-inside the render prop. And I'm going to
+render prop 内部。将
 
 289
 00:17:55,450 --> 00:18:01,150
-use className equals 'theme' . All right,
+className 赋值为 'theme'。好的，
 
 290
 00:18:01,150 --> 00:18:04,280
-very old-timey. [Laughing]
+非常老旧的样式。[笑声]
 
 291
 00:18:04,280 --> 00:18:06,770
-And I also want to show the current
+我也想展示当前的
 
 292
 00:18:06,770 --> 00:18:09,739
-language, so I'm going to use
+语言，因此我将要使用
 
 293
 00:18:09,739 --> 00:18:18,290
-LocaleContext Consumer. And it's going to
+LocaleContext Consumer。我们再来渲染
 
 294
 00:18:18,290 --> 00:18:22,670
-render another row, so I will copy and
+另一行，把这行代码复制
 
 295
 00:18:22,670 --> 00:18:27,969
-paste this row, can say language.
+粘贴到这里，改成 language。
 
 296
 00:18:27,969 --> 00:18:34,760
-Language. And render it here. Okay, we can
+Language。在这里渲染。好的，我们能够看到
 
 297
 00:18:34,760 --> 00:18:37,550
-see that context works. And that's
+context 运行了。这也许是
 
 298
 00:18:37,550 --> 00:18:39,920
-probably normally consume context. We
+最普通的消费 context 情况了。我们
 
 299
 00:18:39,920 --> 00:18:41,780
-actually added a more convenient API for
+实际上在 React 16.6 版本上增加了一个更加方便的 API
 
 300
 00:18:41,780 --> 00:18:45,800
-accessing it in classes in 16.6. Ur, but
+来获取它。呃，但是
 
 301
 00:18:45,800 --> 00:18:47,900
-this is how you can see multiple
+这就是你们常见的多
 
 302
 00:18:47,900 --> 00:18:53,479
-contexts. So let's look at the, at how we
+context 的情形。那么我们看一下
 
 303
 00:18:53,479 --> 00:18:57,469
-could do this with hooks. So as we said
+如何使用 hook 实现相同的功能。就像我们所
 
 304
 00:18:57,469 --> 00:18:59,780
-that, state is a fundamental feature of
+说，state 是 React
 
 305
 00:18:59,780 --> 00:19:02,690
-React and this is why you can use state.
+的基础特性，所以我们可以使用 useState 来获取 state。
 
 306
 00:19:02,690 --> 00:19:07,339
-And so if we want to use context, I need
+那么如果我们想要使用 context，我需要导入
 
 307
 00:19:07,339 --> 00:19:10,760
-to import my contexts. So this is gonna
+我的 contexts。这里导入
 
 308
 00:19:10,760 --> 00:19:17,500
-be a ThemeContext, LocaleContext. And
+ThemeContext 和 LocaleContext。
 
 309
 00:19:17,500 --> 00:19:20,660
-now if I want to use context from my
+现在如果我想在我组件里使用
 
 310
 00:19:20,660 --> 00:19:27,200
-component, I can use context. And then to
+context,我可以使用 useContext。然后为了
 
 311
 00:19:27,200 --> 00:19:31,239
-get the current theme, I can use context
+获取当前的主题，我可以使用 context
 
 312
 00:19:31,239 --> 00:19:35,060
-ThemeContext. And to get the current
+ThemeContext。为了获取当前的
 
 313
 00:19:35,060 --> 00:19:39,410
-locale I can use context LocaleContext.
+语言，我可以使用 context LocaleContext。
 
 314
 00:19:39,410 --> 00:19:42,560
-And this doesn't just read the context,
+这里 useContext 不只是读取了 context，
 
 315
 00:19:42,560 --> 00:19:44,719
-it also subscribes the component to
+它也订阅了该组件，当 context 发生变化，
 
 316
 00:19:44,719 --> 00:19:47,690
-updates to this context. But it just
+组件随之更新。但现在 useContext 就
 
 317
 00:19:47,690 --> 00:19:49,880
-gives me the current values, so I can, I
+给出了 ThemeContext 的当前值 theme，所以我可以
 
 318
 00:19:49,880 --> 00:19:56,150
-can put it into my CSS className. And I
+将其赋给 className。然后我来添加一个
 
 319
 00:19:56,150 --> 00:20:05,270
-can add the bro, that's language, and I can
+兄弟节点，label 改为 Language， 把 locale 放到
 
 320
 00:20:05,270 --> 00:20:09,240
-put it here.
+这里。
 
 321
 00:20:09,240 --> 00:20:18,410
-[Applause]
+[掌声]
 
 322
 00:20:18,410 --> 00:20:21,150
