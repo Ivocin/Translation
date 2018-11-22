@@ -708,263 +708,263 @@ name 变量的当前值，
 
 178
 00:11:17,310 --> 00:11:19,630
-So let's, let's compare the two
+那么我们来比较一下这两种
 
 179
 00:11:19,630 --> 00:11:25,120
-approaches. So on the left we have a
+方式。在左侧是我们熟悉的
 
 180
 00:11:25,120 --> 00:11:27,700
-familiar class component. This state has
+class 组件。这里 state 必须
 
 181
 00:11:27,700 --> 00:11:31,180
-to be an object. Uh, we bind some event
+是一个对象。嗯，我们绑定一些事件
 
 182
 00:11:31,180 --> 00:11:33,160
-handlers so that we can access. This
+处理函数以便调用。在
 
 183
 00:11:33,160 --> 00:11:36,099
-inside the event handler for this dot setState.
+事件处理函数里面使用了 this.setState 方法。
 
 184
 00:11:36,099 --> 00:11:39,160
-When we call setState it
+当我们调用 setState 方法时，
 
 185
 00:11:39,160 --> 00:11:41,020
-actually doesn't just set the state that
+实际上并没有直接将值设置到 state 里面，
 
 186
 00:11:41,020 --> 00:11:44,620
-merges, the state are the argument into
+state 作为参数传入
 
 187
 00:11:44,620 --> 00:11:47,050
-the state object. And then when we want
+state 对象里。而当我想要获取
 
 188
 00:11:47,050 --> 00:11:49,120
-to access the state which is this dot
+state 时，我们需要调用
 
 189
 00:11:49,120 --> 00:11:52,359
-state dot something. So in the
+this.state.something。那么我们再来
 
 190
 00:11:52,359 --> 00:11:55,359
-example on the right, we don't need to
+看右侧的例子：我们不需要使用
 
 191
 00:11:55,359 --> 00:11:57,940
-access this dot state dot something.
+this.state.something 来获取 state。
 
 192
 00:11:57,940 --> 00:12:00,339
-Because the name state variable is
+因为 state 里的 name 变量
 
 193
 00:12:00,339 --> 00:12:02,530
-already available in the function. It's
+在函数里已经可用。它就是
 
 194
 00:12:02,530 --> 00:12:05,440
-just the variable. And similarly when we
+一个变量。同样的，当我们
 
 195
 00:12:05,440 --> 00:12:07,540
-need to set the state, we don't need to
+需要设置 state 时，我们不需要
 
 196
 00:12:07,540 --> 00:12:11,320
-access this dot something. Because the
+使用 this.something。因为
 
 197
 00:12:11,320 --> 00:12:13,450
-function that let us set the name is
+函数也可以让我们在其作用域内
 
 198
 00:12:13,450 --> 00:12:19,270
-also available in the scope. So what is
+设置 name 的值。那么
 
 199
 00:12:19,270 --> 00:12:25,560
-useState exactly? UseState is a hook. A
+useState 到底是什么呢？ UseState 是一个 hook。
 
 200
 00:12:25,560 --> 00:12:29,200
-hook is a function provided by React
+Hook 是一个 React 提供的函数，
 
 201
 00:12:29,200 --> 00:12:32,670
-that lets you hook into React features
+它可以让你在 function 组件中“钩” 到
 
 202
 00:12:32,670 --> 00:12:34,999
-from your function components. And
+一些 React 特性。
 
 203
 00:12:34,999 --> 00:12:38,979
-useState is the first hook that we're going
+而 useState 是我们今天讲到的第一个
 
 204
 00:12:38,979 --> 00:12:40,870
-to take a look at today, but there are a
+hook，后面还有
 
 205
 00:12:40,870 --> 00:12:43,089
-few more. So we're going to see them
+一些更多的 hook。我们会在后面
 
 206
 00:12:43,089 --> 00:12:52,250
-later.
+看到它们。
 
 207
 00:12:52,250 --> 00:12:54,630
-All right, so let's go back to our
+好的，让我们回到我们
 
 208
 00:12:54,630 --> 00:12:58,170
-familiar class example. So let's say we
+熟悉的 class 例子。我们接下来想要
 
 209
 00:12:58,170 --> 00:13:01,050
-wanted to add a second field. For example,
+添加第二个区域。比如，
 
 210
 00:13:01,050 --> 00:13:04,319
-for a surname. So the way we normally do
+添加一个姓氏的区域。那么我们通常的做法是
 
 211
 00:13:04,319 --> 00:13:07,109
-this is we add another key to the state.
+在 state 添加一个新 key。
 
 212
 00:13:07,109 --> 00:13:13,020
-And we, uh, I'm going to copy and paste this
+我把这行复制然后粘贴到这里。
 
 213
 00:13:13,020 --> 00:13:18,569
-row. It's gonna say surname now. It's
+这里改成 surname。在
 
 214
 00:13:18,569 --> 00:13:21,630
-going to render a surname, and handleSurnameChange.
+这里渲染，这里是 surname 和 handleSurnameChange。
 
 215
 00:13:21,630 --> 00:13:24,989
-When I copy and paste
+我再来复制
 
 216
 00:13:24,989 --> 00:13:30,260
-this event handler, this will be surname.
+这个事件处理函数，把这里改成 surname。
 
 217
 00:13:30,260 --> 00:13:42,810
-And I need to bind it.
+别忘了绑定这个函数。
 
 218
 00:13:42,810 --> 00:13:49,830
-Okay, Mary Poppins. So we can see that it
+好的，Mary Poppins 显示出来里，我们可以看到
 
 219
 00:13:49,830 --> 00:13:54,180
-works. Uh, so how do we do the same with
+程序运行正常。那么我们如何使用 hook 来实现相同的
 
 220
 00:13:54,180 --> 00:13:59,999
-hooks? So one thing we could do is we
+功能呢？我们需要做的一件事情是把我们的 state
 
 221
 00:13:59,999 --> 00:14:02,489
-could make our state an object. As you
+改为一个对象。可以看到，
 
 222
 00:14:02,489 --> 00:14:05,310
-can see that the state with hooks state
+使用 hook 的 state 并不强制其类型
 
 223
 00:14:05,310 --> 00:14:06,989
-doesn't have to be an object. It can be
+必须为对象。它可以是任何原生
 
 224
 00:14:06,989 --> 00:14:09,090
-any primitive. We could make it an object
+类型。我们可以在需要的时候把它
 
 225
 00:14:09,090 --> 00:14:11,460
-if we wanted to, but we also don't have
+变为对象，但是我们不用必须这么做。
 
 226
 00:14:11,460 --> 00:14:15,300
-to. So conceptually surname is, uh, is not
+从概念上讲，surname 和
 
 227
 00:14:15,300 --> 00:14:19,320
-closely related to state, uh, to the name. So
+name 关系不大。所以
 
 228
 00:14:19,320 --> 00:14:21,150
-what we could do is we could declare a
+我们需要做的是，再次调用 useState hook 来
 
 229
 00:14:21,150 --> 00:14:24,780
-second state variable by calling the
+声明第二个 state
 
 230
 00:14:24,780 --> 00:14:26,719
-useState hook again.
+变量。
 
 231
 00:14:26,719 --> 00:14:29,940
-So I'll declare surname. I can give it any
+在这里我声明 surname，当然我可以给它起
 
 232
 00:14:29,940 --> 00:14:31,589
-name, it's just the variable in my code.
+任何名字，因为它就是我程序里的一个变量。
 
 233
 00:14:31,589 --> 00:14:37,050
-And setSurname. Calling useState and
+再来设置 setSurname。调用 useState，
 
 234
 00:14:37,050 --> 00:14:39,599
-passing the initial state for that state
+传入 state 初始
 
 235
 00:14:39,599 --> 00:14:41,510
-variable 'Poppins'.
+变量 'Poppins'。
 
 236
 00:14:41,510 --> 00:14:43,800
-So again I'm gonna copy and paste
+我再一次复制和粘贴
 
 237
 00:14:43,800 --> 00:14:51,060
-the row. Say surname, the value surname,
+这个 Row 片段。改为 surname，值改为 surname，
 
 238
 00:14:51,060 --> 00:14:55,680
-handleSurnameChange. And when the user
+onchange 事件改为 handleSurnameChange。 当用户编辑
 
 239
 00:14:55,680 --> 00:15:03,089
-edits the surname, not sir name, we want
+surname 时，不是 sir name，我们
 
 240
 00:15:03,089 --> 00:15:07,920
-to set the surname.
+希望能够修改 surname 的值。
 
 241
 00:15:07,920 --> 00:15:14,300
-Let's see if this works.
+我们来看看能否正常运行。
 
 242
 00:15:14,300 --> 00:15:22,660
-Yay, it looks like it works. [Applause]
+耶，运行正常。 [掌声]
 
 243
 00:15:22,660 --> 00:15:26,630
