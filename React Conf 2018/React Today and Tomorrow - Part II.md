@@ -20,7 +20,7 @@ So we think that this is because these are not three separate problems. We think
 
 And so once you add a class component, you can't split it up further without introducing the wrapper hell. And in fact, it's not a new problem. So if you use React for like more than a couple of years, you might remember then when React came out it actually included a solution to this problem. Ah, it was mixins. So mixins allow you to reuse some methods between classes and this way you wouldn't have all these wrappers. 
 
-So should we add mixins back to React? (Yeah ... No...) That's right, no no, we're not gonna do that. Ah, I mean the codes using mixins the rounds, it's not like, it's not broken. But we don't encourage using mixins in React. And if you curious why there is a blog post, uh, that we wrote code called [*Mixins Considered Harmful*](https://reactjs.org/blog/2016/07/13/mixins-considered-harmful.html) on the React Blog, where we explain that we think in our experience, the problems that mixins create are worse than the problems that they solve. Ah, so that's why we don't encourage using mixins. 
+So should we add mixins back to React? (Yeah ... No...) That's right, no no, we're not gonna do that. Ah, I mean the codes using mixins the rounds, it's not like, it's not broken. But we don't encourage using mixins in React. And if you curious why, there is a blog post, uh, that we wrote code called [*Mixins Considered Harmful*](https://reactjs.org/blog/2016/07/13/mixins-considered-harmful.html) on the React Blog, where we explain that we think in our experience, the problems that mixins create are worse than the problems that they solve. Ah, so that's why we don't encourage using mixins. 
 
 ## We have a proposal
 

@@ -172,7 +172,7 @@ But we don't encourage using mixins in
 
 44
 00:02:27,600 --> 00:02:29,880
-React. And if you curious why there is a
+React. And if you curious why, there is a
 
 45
 00:02:29,880 --> 00:02:32,910
