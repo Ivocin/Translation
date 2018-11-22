@@ -1,358 +1,358 @@
 1
 00:00:04,000 --> 00:00:10,550
-Hi. Ah, my name is Dan, I work on the React
+嗨。我的名字是 Dan。我在 React
 
 2
 00:00:10,550 --> 00:00:13,759
-Team and this is my first time in React
+Team 工作，这是我第一次参加 React
 
 3
 00:00:13,759 --> 00:00:28,160
-Conf. [Applause] And so Sophie talked about these
+大会。 [掌声] 刚才 Sophie 讲述了这三个
 
 4
 00:00:28,160 --> 00:00:30,740
-problems that I think most of you have
+问题，我想大多数的开发者在 React
 
 5
 00:00:30,740 --> 00:00:34,280
-encountered in React development. And of
+开发过程中都会遇到这些问题。当然，
 
 6
 00:00:34,280 --> 00:00:35,629
-course we could approach these problems
+我们可以逐一来解决
 
 7
 00:00:35,629 --> 00:00:38,509
-one by one, so we could try to solve them
+这些问题。我们可以尝试独立地去  one by one, so we could try to solve them
 
 8
 00:00:38,509 --> 00:00:41,840
-in isolation. But it seems like solving
+解决这些问题。但是实际上解决其中一个问题
 
 9
 00:00:41,840 --> 00:00:44,829
-one of them makes some other one worse.
+可能会使其他问题更加严重。
 
 10
 00:00:44,829 --> 00:00:48,199
-So for example, if we try to solve the
+比如我们尝试去解决
 
 11
 00:00:48,199 --> 00:00:51,079
-wrapper hell by putting more logic into
+“包装地狱”的问题，将更多的逻辑放到
 
 12
 00:00:51,079 --> 00:00:53,780
-components themselves, then our
+组件里面，那么我们的
 
 13
 00:00:53,780 --> 00:00:55,879
-components become larger and harder to
+组件会变得更大，而且更难以
 
 14
 00:00:55,879 --> 00:00:58,879
-refactor. And then on the other hand, if
+重构。另一个方面，如果
 
 15
 00:00:58,879 --> 00:01:01,910
-we try to split the components apart
+我们尝试将组件拆分为
 
 16
 00:01:01,910 --> 00:01:06,019
-into smaller pieces and reuse those, then
+更小的片段，方便重用，那么
 
 17
 00:01:06,019 --> 00:01:07,550
-we end up with more nests than in the
+我们的组件树的嵌套更多了，
 
 18
 00:01:07,550 --> 00:01:09,139
-component tree and we get the wrapper
+而且又会以
 
 19
 00:01:09,139 --> 00:01:13,519
-hell again. And finally in either case we
+“包装地狱” 收场。最后，无论那种情况，
 
 20
 00:01:13,519 --> 00:01:15,499
-have all the confusion that comes with
+使用 class 都会让人产生
 
 21
 00:01:15,499 --> 00:01:18,230
-the classes. So we think that this is
+困惑。所以我们认为造成这种情况是因为
 
 22
 00:01:18,230 --> 00:01:19,910
-because these are not three separate
+这不是三个独立的
 
 23
 00:01:19,910 --> 00:01:23,660
-problems. We think that this is, ah, these are
+问题。我们认为，这是一个问题的
 
 24
 00:01:23,660 --> 00:01:27,470
-three symptoms of one problem. And the
+三个症状。问题在于
 
 25
 00:01:27,470 --> 00:01:29,749
-problem is that React does not provide a
+React 没有原生提供一个比 class 组件更
 
 26
 00:01:29,749 --> 00:01:34,850
-simpler, smaller, lightweight primitive to
+简单，更小型，更轻量级的方式来
 
 27
 00:01:34,850 --> 00:01:37,670
-add state or lifecycle than a class
+添加 state 或 生命周期。
 
 28
 00:01:37,670 --> 00:01:41,360
-component. And so once you add a class
+而且一旦你使用了 class
 
 29
 00:01:41,360 --> 00:01:44,420
-component, you can split it up further
+组件，你没有办法在不造成“包装地狱”的情况下,
 
 30
 00:01:44,420 --> 00:01:48,190
-without introducing the wrapper hell. And
+进一步拆分它。事实上，
 
 31
 00:01:48,190 --> 00:01:51,889
-in fact it's not a new problem. So if you
+这并不是一个新问题。如果你
 
 32
 00:01:51,889 --> 00:01:54,530
-use React for like more than a couple of
+已经使用了 React 几年，
 
 33
 00:01:54,530 --> 00:01:57,050
-years, you might remember then when React
+你也许还记得在 React
 
 34
 00:01:57,050 --> 00:01:59,329
-came out it actually included a solution
+刚出来的时候，事实上已经包含了一个解决  came out it actually included a solution
 
 35
 00:01:59,329 --> 00:02:03,110
-to this problem. Ah, it was mixins. So
+方案。嗯，这个解决方案就是 mixins。
 
 36
 00:02:03,110 --> 00:02:06,499
-mixins allow you to reuse some methods
+Mixins 能够让你在 class 之间复用
 
 37
 00:02:06,499 --> 00:02:08,060
-between classes and this way you
+方法，通过这种方法可以
 
 38
 00:02:08,060 --> 00:02:10,610
-wouldn't have all these wrappers. So
+减少嵌套。所以我们要在
 
 39
 00:02:10,610 --> 00:02:16,790
-should we add mixins back to React? [Yeah ... No...]
+React 里面重新添加 mixins 吗？ [对 ... 不...]
 
 40
 00:02:16,790 --> 00:02:20,310
-That's right, no no, we're not gonna do
+对了，不，不，我们不会添加 mixins。
 
 41
 00:02:20,310 --> 00:02:23,040
-that. Ah, I mean the codes using mixins
+啊，我的意思是之前使用
 
 42
 00:02:23,040 --> 00:02:25,230
-the rounds, it's not like, it's not broken.
+mixins 的代码并不是无法使用了。
 
 43
 00:02:25,230 --> 00:02:27,600
-But we don't encourage using mixins in
+但是我们不再推荐在 React 里使用 mixins。
 
 44
 00:02:27,600 --> 00:02:29,880
-React. And if you curious why there is a
+如果你好奇我们这么做的原因，可以在 React Blog 里面
 
 45
 00:02:29,880 --> 00:02:32,910
-blog post, uh, that we wrote code called
+查看我们之前写的一篇文章，题目是
 
 46
 00:02:32,910 --> 00:02:35,040
-"Mixins Considered Harmful" on the React
+《 Mixins 是有害的》。
 
 47
 00:02:35,040 --> 00:02:38,910
-Blog, where we explain that we think in
+在文章中，根据我们的  Blog, where we explain that we think in
 
 48
 00:02:38,910 --> 00:02:42,420
-our experience, the problems that mixins
+实验结果，我们发现 mixins 带来的问题
 
 49
 00:02:42,420 --> 00:02:45,000
-create are worse than the problems that
+远比它解决的问题
 
 50
 00:02:45,000 --> 00:02:47,790
-they solve. Ah, so that's why we don't
+多。因此，我们不推荐大家
 
 51
 00:02:47,790 --> 00:02:51,870
-encourage using mixins. So perhaps we
+使用 mixins。那么也许
 
 52
 00:02:51,870 --> 00:02:53,310
-could just can't solve this problem
+我们解决不了这个问题了，
 
 53
 00:02:53,310 --> 00:02:55,860
-maybe its inherent to the React
+因为这是 React 组件模型固有的
 
 54
 00:02:55,860 --> 00:02:57,780
-component model. Maybe we should just
+问题。也许我们不得不
 
 55
 00:02:57,780 --> 00:03:10,470
-accept it. [Laughing] Or maybe in there is a, perhaps
+选择接受现实。 [笑声] 或者也许
 
 56
 00:03:10,470 --> 00:03:12,510
-there is a different way we could write
+有另外一种书写组件的
 
 57
 00:03:12,510 --> 00:03:15,720
-our components that doesn't suffer from
+形式，可以避免
 
 58
 00:03:15,720 --> 00:03:19,200
-either of these problems. And that's what
+这些问题。这也就是今天
 
 59
 00:03:19,200 --> 00:03:22,680
-I'm going to talk about today. But before
+我将要分享的内容。但是在
 
 60
 00:03:22,680 --> 00:03:24,840
-I start I want to touch a little bit on
+开始分享我们在 React 的
 
 61
 00:03:24,840 --> 00:03:27,960
-the way we approach making changes and
+改动和新特性之前，我想先讲讲
 
 62
 00:03:27,960 --> 00:03:31,200
-additions to React which is a year ago
+一年前我们建立的
 
 63
 00:03:31,200 --> 00:03:34,290
-we set up an RFC process, so RFC stands
+RFC 流程，RFC 表示
 
 64
 00:03:34,290 --> 00:03:36,840
-for request for comments, and it means
+request for comments，它意味着
 
 65
 00:03:36,840 --> 00:03:38,880
-that whenever we want to make or
+无论是我们还是其他人
 
 66
 00:03:38,880 --> 00:03:40,680
-somebody else wants to make a
+想要对 React 做出
 
 67
 00:03:40,680 --> 00:03:43,620
-substantial change or addition to React,
+大量变化或者添加新特性时,
 
 68
 00:03:43,620 --> 00:03:46,830
-they need to write up a proposal with
+都需要撰写一个提案，提案里面
 
 69
 00:03:46,830 --> 00:03:49,260
-detail in the motivation and the
+需要包含动机的详情和
 
 70
 00:03:49,260 --> 00:03:51,660
-detailed design of how this will work.
+该提案如何工作的详细设计。
 
 71
 00:03:51,660 --> 00:03:56,250
-And so that's what we're going to do.
+这正是我们要做的事情。
 
 72
 00:03:56,250 --> 00:03:59,520
-We're excited to announce that we are
+我们非常兴奋地宣布：我们已经
 
 73
 00:03:59,520 --> 00:04:02,040
-ready to present a proposal for how we
+准备好了一个提案
 
 74
 00:04:02,040 --> 00:04:05,520
-can solve these three problems.
+来解决这三个问题。
 
 75
 00:04:05,520 --> 00:04:09,420
-And importantly this proposal does not
+重要的是，本提案没有
 
 76
 00:04:09,420 --> 00:04:11,820
-have breaking changes or deprecations in
+不兼容的变化，也没有弃用任何功能。
 
 77
 00:04:11,820 --> 00:04:15,990
-it. It is strictly additive, it is opt-in, 
+本提案是严格添加性的、可选择的
 
 78
 00:04:15,990 --> 00:04:20,790
-and it adds some new APIs which happens
+而且增加了一些新的 APIs 来
  
 79
 00:04:20,790 --> 00:04:23,610
-when they try to solve problems. And we
+帮助我们解决这些问题。并且我们
 
 80
 00:04:23,610 --> 00:04:25,709
-would love to hear your feedback on this
+希望听到你们对本提案的反馈，
 
 81
 00:04:25,709 --> 00:04:28,620
-proposal which is why we're, ur, we're going
+这也是为什么我们在今天发表本提案
 
 82
 00:04:28,620 --> 00:04:31,440
-to publish it today. And we thought about
+的原因。我们想过很多
 
 83
 00:04:31,440 --> 00:04:33,510
-many ways we could share this proposal,
+发表本提案的方式，
 
 84
 00:04:33,510 --> 00:04:35,370
-so maybe we just like write off in there ...
+也许我们可以写好提案后，
 
 85
 00:04:35,370 --> 00:04:39,240
-write up an RFC and post it. Um, but since we
+提出一个 RFC 然后放在那里。 但是既然
 
 86
 00:04:39,240 --> 00:04:41,700
-were going to run React Conf anyway, we
+我们总是要召开 React 大会，我们决定
 
 87
 00:04:41,700 --> 00:04:45,650
-just decided to, ah, just show it here. And
+在本次大会上发表这个提案。那么，
 
 88
 00:04:45,650 --> 00:04:49,710
-we're going to demo.
+接下来进入 Demo 环节。
 
 89
 00:04:49,710 --> 00:04:59,479
-[Applause]
+[掌声]
 
 90
 00:04:59,479 --> 00:05:06,929
