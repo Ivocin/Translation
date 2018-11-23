@@ -2248,467 +2248,467 @@ talk will mention how to do it.
 
 563
 00:34:02,730 --> 00:34:07,020
-All right, so there is one more thing that I want
+好的，我在这里还想要演示
 
 564
 00:34:07,020 --> 00:34:10,830
-to show here. So this component is
+另外一件事。现在组件已经
 
 565
 00:34:10,830 --> 00:34:14,610
-getting pretty large, and it's fine. So we
+非常庞大了，这也没有太大的问题。我们考虑到
 
 566
 00:34:14,610 --> 00:34:16,770
-expect that since you now can do more in
+在 function 组件中你们有可能
 
 567
 00:34:16,770 --> 00:34:19,380
-function components, they will get larger
+做更多的事情，组件会变得更大，
 
 568
 00:34:19,380 --> 00:34:23,850
-and that's totally okay. Um, but you might
+但也完全没有问题。嗯，但是你有可能
 
 569
 00:34:23,850 --> 00:34:25,950
-want to reuse some of that logic in
+想要复用其他组件里面到一些逻辑，
 
 570
 00:34:25,950 --> 00:34:28,620
-other components or extract it or test
+或者是想要将公用的逻辑抽取出来，或者是想要
 
 571
 00:34:28,620 --> 00:34:32,040
-it separately. What's interesting though
+分别测试。有趣的是，
 
 572
 00:34:32,040 --> 00:34:35,640
-is that hooks calls uh, they are just
+hook 调用实际上就是
 
 573
 00:34:35,640 --> 00:34:40,650
-function calls. And components they are
+函数调用。而且组件就是
 
 574
 00:34:40,650 --> 00:34:43,920
-just functions. So how do you share your
+函数。那么你们是如何在
 
 575
 00:34:43,920 --> 00:34:47,550
-logic between two functions? You extract
+两个函数之间共享逻辑呢。你们会将公用逻辑提取到
 
 576
 00:34:47,550 --> 00:34:50,490
-it to a different function. That's what
+另外一个函数里面。这也是我将要做的
 
 577
 00:34:50,490 --> 00:34:53,220
-I'm going to do. You're going to copy and
+事情。我把这段代码复制
 
 578
 00:34:53,220 --> 00:34:58,050
-paste this. And I'm going to create a new
+粘贴到这里。我要新建一个
 
 579
 00:34:58,050 --> 00:35:04,890
-function called useWindowWidth and I'll
+叫做 useWindowWidth 的函数。然后把它
 
 580
 00:35:04,890 --> 00:35:08,220
-just paste it here. And so we need the
+粘贴到这里。我们需要
 
 581
 00:35:08,220 --> 00:35:10,350
-width in our component in order to
+组件里面的宽度，以便能够将其
 
 582
 00:35:10,350 --> 00:35:14,550
-render it. So I need to return it from
+渲染。因为我需要在这个函数里面
 
 583
 00:35:14,550 --> 00:35:18,890
-this function, which is the current width.
+返回当前宽度。
 
 584
 00:35:18,890 --> 00:35:25,410
-And then I can go back up. And I can say
+然后我们回到上面的代码，这样修改：
 
 585
 00:35:25,410 --> 00:35:35,640
-const width equals useWindowWidth.
+const width = useWindowWidth。
 
 586
 00:35:35,640 --> 00:35:37,370
-[Applause]
+[掌声]
 
 587
 00:35:37,370 --> 00:35:44,080
-[Cheers]
+[欢呼声]
 
 588
 00:35:44,080 --> 00:35:51,020
-So what is this function? We didn't do
+那么这个函数是什么呢？我们并没有做
 
 589
 00:35:51,020 --> 00:35:53,060
-anything special, we just extracted the
+什么特别的事情，我们仅仅是将逻辑提取到了
 
 590
 00:35:53,060 --> 00:35:56,299
-function. Uh, but there is a convention here.
+一个函数里面。呃，但是这里有一个约定。
 
 591
 00:35:56,299 --> 00:35:59,960
-So we are calling this function a custom
+我们把这种函数叫做 custom
 
 592
 00:35:59,960 --> 00:36:04,610
-hook. And by convention custom hook names
+hook。按照约定，custom hook 的名字
 
 593
 00:36:04,610 --> 00:36:08,270
-always start with use. And so there are
+需要以 use 开头。这么约定主要有
 
 594
 00:36:08,270 --> 00:36:10,220
-two reasons for this. We're now going to
+两个原因。我们
 
 595
 00:36:10,220 --> 00:36:12,890
-like read your function name or to
+会读你的函数名或
 
 596
 00:36:12,890 --> 00:36:15,590
-string it or anything like this. But it
+修改函数名称。但是这是一个
 
 597
 00:36:15,590 --> 00:36:17,540
-is an important convention because first
+重要的约定，因为首先
 
 598
 00:36:17,540 --> 00:36:20,299
-of all, this lets us lint automatically
+以 use 开头来命名 custom hook，可以让我们自动检测是否
 
 599
 00:36:20,299 --> 00:36:22,910
-for violation of the first rule that I
+违反了我之前说过的第一条规则：
 
 600
 00:36:22,910 --> 00:36:25,340
-described about call hooks unconditionally.
+不能在条件判断里面使用 hook。
 
 601
 00:36:25,340 --> 00:36:27,830
-So if we didn't know if something is a
+因此如果我们无法得知哪些函数是
 
 602
 00:36:27,830 --> 00:36:29,390
-hook, then we wouldn't be able to do that.
+hook，那么我们就无法做到自动检测。
 
 603
 00:36:29,390 --> 00:36:33,200
-And another reason is that if you just
+另一个原因是，如果你查看
 
 604
 00:36:33,200 --> 00:36:35,720
-look at the component code, you kind of
+组件的代码，你可能会想要
 
 605
 00:36:35,720 --> 00:36:37,220
-want to know if some function can have
+知道某个函数里面是否含有
 
 606
 00:36:37,220 --> 00:36:39,470
-some state inside of it. So it's
+state。因此
 
 607
 00:36:39,470 --> 00:36:41,750
-important that there is a convention is
+这样的约定很重要，
 
 608
 00:36:41,750 --> 00:36:44,210
-, okay, use something it means that it's
+，好的，以 use 开头的函数表示这个函数是
 
 609
 00:36:44,210 --> 00:36:47,870
-potentially stateful. And here width gives
+有状态的。在这里 width 变量给了
 
 610
 00:36:47,870 --> 00:36:50,690
-us the current width and subscribes us to
+我们当前的宽度并且订阅了
 
 611
 00:36:50,690 --> 00:37:00,020
-updates through it. So if we wanted to, we
+其更新。如果我们想，我们
 
 612
 00:37:00,020 --> 00:37:02,240
-could even go further. It's probably not
+可以更进一步。在这个例子里面
 
 613
 00:37:02,240 --> 00:37:04,460
-necessary in this example, but I just
+也许并不必要，但是
 
 614
 00:37:04,460 --> 00:37:06,680
-want to give you like a sense of what
+我想要给你一个思路。
 
 615
 00:37:06,680 --> 00:37:10,190
-you could do. Um, so let's say like maybe
+嗯，我们也许
 
 616
 00:37:10,190 --> 00:37:11,930
-setting the document title was a bit
+设置文档的标题的功能会更加
 
 617
 00:37:11,930 --> 00:37:13,820
-more complicated and you wanted to like
+复杂，你希望能够把它的逻辑提取
 
 618
 00:37:13,820 --> 00:37:17,090
-extract it or test it separately. So I
+出来并单独测试。那么我把这段代码
 
 619
 00:37:17,090 --> 00:37:20,390
-could just copy and paste this. and I
+复制过来粘贴到这里。我可以
 
 620
 00:37:20,390 --> 00:37:22,580
-could write a new custom hook. I'm gonna
+写一个新的 custom hook。我把这个 hook 
 
 621
 00:37:22,580 --> 00:37:29,450
-call this one useDocumentTitle. And so
+命名为 useDocumentTitle。由于
 
 622
 00:37:29,450 --> 00:37:31,760
-the name and surname don't really make
+name 和 surname 在上下文作用域里
 
 623
 00:37:31,760 --> 00:37:34,250
-sense in the scope's context. We just want
+没有意义。我希望调用
 
 624
 00:37:34,250 --> 00:37:36,440
-to call this title. And this is going to
+标题，标题就是一个
 
 625
 00:37:36,440 --> 00:37:38,600
-be an argument, so custom hooks are
+参数，由于 custom hook 就是
 
 626
 00:37:38,600 --> 00:37:40,640
-javascript functions, so they can take
+javascript 函数，因此他们可以传递
 
 627
 00:37:40,640 --> 00:37:43,430
-arguments and return values or not
+参数，返回值或者
 
 628
 00:37:43,430 --> 00:37:46,700
-return. So it is going to take title as
+不返回。这里我把 title 设置为
 
 629
 00:37:46,700 --> 00:37:49,430
-an argument. And now in my component, I
+参数。然后在组件里面，
 
 630
 00:37:49,430 --> 00:37:54,140
-can say useDocumentTitle, name plus
+使用 useDocumentTitle，参数为 name 加上
 
 631
 00:37:54,140 --> 00:37:55,810
-surname.
+surname。
 
 632
 00:37:55,810 --> 00:37:59,420
-In fact, I could go even further. So in
+事实上，我可以更进一步。在这个例子
 
 633
 00:37:59,420 --> 00:38:01,700
-this case it's totally unnecessary, but
+中是完全没有必要的，但是
 
 634
 00:38:01,700 --> 00:38:04,340
-again, maybe our inputs were more
+同样的道理，也许我们的输入框会更加的
 
 635
 00:38:04,340 --> 00:38:06,259
-complicated, maybe we were tracking
+复杂，也许我们需要追踪
 
 636
 00:38:06,259 --> 00:38:08,150
-whether the input was focused and
+输入框的聚焦或
 
 637
 00:38:08,150 --> 00:38:09,730
-blurred, whether it has been validated,
+失焦事件，或者输入框是否被校验过、
 
 638
 00:38:09,730 --> 00:38:12,680
-submitted and so on. So maybe we had some
+提交过等等。也许我们还有
 
 639
 00:38:12,680 --> 00:38:14,600
-more logic there we wanted to pull it
+更多的逻辑想要从组件中
 
 640
 00:38:14,600 --> 00:38:17,000
-out of our components. Um, and reduce
+抽离。嗯，而且想要减少
 
 641
 00:38:17,000 --> 00:38:18,950
-duplication. And there is already some
+重复代码。这里已经有了重复
 
 642
 00:38:18,950 --> 00:38:21,049
-duplication, so we have this like almost
+的代码，这两段事件处理函数
 
 643
 00:38:21,049 --> 00:38:24,860
-identical event handlers. So what if we
+几乎一样。那么我们如果
 
 644
 00:38:24,860 --> 00:38:26,600
-could just, um, I'm going to delete one of
+，呃，我把他们删除一段，
 
 645
 00:38:26,600 --> 00:38:30,140
-them and extract the other one. I'm going
+然后提取另一段。我要创建另一个
 
 646
 00:38:30,140 --> 00:38:31,970
-to create a new hook, that I'm going to
+新 hook，把它命名为
 
 647
 00:38:31,970 --> 00:38:37,850
-call useFormInput. So this is my change
+useFormInput。这个 hook 是我的
 
 648
 00:38:37,850 --> 00:38:40,820
-handler. Now I'll also copy and paste
+change 处理函数。现在我把这个声明复制
 
 649
 00:38:40,820 --> 00:38:45,890
-this declaration. So this defines the
+粘贴到这里。这里定义了
 
 650
 00:38:45,890 --> 00:38:49,370
-state for this input. And so it's no
+输入框的状态。这里不再是
 
 651
 00:38:49,370 --> 00:38:51,890
-longer name and setName. I'll just call
+name 和 setName。我把这里改为更通用的
 
 652
 00:38:51,890 --> 00:38:56,000
-generically value and setValue. It's
+value 和 setValue。我把初始
 
 653
 00:38:56,000 --> 00:38:58,460
-going to take the initial value as an
+值作为
 
 654
 00:38:58,460 --> 00:39:02,960
-argument. And this is just going to be a
+参数。这里改为
 
 655
 00:39:02,960 --> 00:39:09,529
-handleChange, and this will setValue. So
+handleChange，这里改为 setValue。那么
 
 656
 00:39:09,529 --> 00:39:12,200
-what do we want to get in order to use
+我们该如何做在我们组件里面
 
 657
 00:39:12,200 --> 00:39:14,539
-this, uh, use an input in our component? We
+使用输入框呢？我们需要
 
 658
 00:39:14,539 --> 00:39:16,759
-want to get the current value, and a
+获取当前的 value 和
 
 659
 00:39:16,759 --> 00:39:18,740
-change handler. These are the things that
+change 处理函数。这是我们需要
 
 660
 00:39:18,740 --> 00:39:21,890
-we attach to the input. So let's just
+赋给输入框的。所以我们就在 hook 里面
 
 661
 00:39:21,890 --> 00:39:26,230
-return them. Um, return value and onChange
+返回他们。嗯，返回 value 和 onChange
 
 662
 00:39:26,230 --> 00:39:33,740
-handleChange. So now if we go back up, we
+handleChange 函数。我们回到组件里面，
 
 663
 00:39:33,740 --> 00:39:39,009
-can say name equals useFormInput Mary.
+这里改为 name 等于 useFormInput，参数 Mary。
 
 664
 00:39:39,009 --> 00:39:41,480
-The name is going to be an object with
+这里 name 变为了一个对象，包括
 
 665
 00:39:41,480 --> 00:39:45,200
-value and onChange fields. And surname
+value 和 onChange 函数。这里 surname 等于
 
 666
 00:39:45,200 --> 00:39:52,880
-is useFormInput Poppins. So this is now
+useFormInput， 初始化参数 Poppins。这里改为
 
 667
 00:39:52,880 --> 00:39:55,100
-going to be named dot value and surname
+name.value 和 surname.value
 
 668
 00:39:55,100 --> 00:39:57,289
-dot value because this is where the
+因为这两个值才是
 
 669
 00:39:57,289 --> 00:40:00,710
-string is. And so now I can remove this,
+我们需要的字符串。接下来我把这里
 
 670
 00:40:00,710 --> 00:40:07,100
-and I can spread over the name object.
+删除，然后将其改为 spread 属性。
 
 671
 00:40:07,100 --> 00:40:12,060
-Someone is laughing. [Laughing] All right. Let's just
+有人在笑。[笑声] 好的。我们
 
 672
 00:40:12,060 --> 00:40:15,960
-verify it and break it, yeah it works. So
+来验证一下，是的，运行正常。每次
 
 673
 00:40:15,960 --> 00:40:18,000
-each time we call a hook, its state is
+我们调用 hook，其状态都是
 
 674
 00:40:18,000 --> 00:40:20,880
-completely isolated. And this is because
+完全独立的。这是因为
 
 675
 00:40:20,880 --> 00:40:23,040
-we just rely on the order of hook calls,
+我们依赖调用 hook 的顺序，而不是
 
 676
 00:40:23,040 --> 00:40:25,290
-and not on names or anything. So you can
+通过名称或其他方式来实现的。所以你可以
 
 677
 00:40:25,290 --> 00:40:27,390
-call the same hook multiple times. Each
+多次调用相同的 hook。每次调用都会
 
 678
 00:40:27,390 --> 00:40:32,940
-call will get its own local state. So
+获取其自身的本地状态。
 
 679
 00:40:32,940 --> 00:40:35,490
