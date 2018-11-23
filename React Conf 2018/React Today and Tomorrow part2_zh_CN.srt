@@ -24,7 +24,7 @@ Team 工作，这是我第一次参加 React
 
 7
 00:00:35,629 --> 00:00:38,509
-这些问题。我们可以尝试独立地去  one by one, so we could try to solve them
+这些问题。我们可以尝试独立地去
 
 8
 00:00:38,509 --> 00:00:41,840
@@ -132,7 +132,7 @@ React 没有原生提供一个比 class 组件更
 
 34
 00:01:57,050 --> 00:01:59,329
-刚出来的时候，事实上已经包含了一个解决  came out it actually included a solution
+刚出来的时候，事实上已经包含了一个解决
 
 35
 00:01:59,329 --> 00:02:03,110
@@ -184,7 +184,7 @@ mixins 的代码并不是无法使用了。
 
 47
 00:02:35,040 --> 00:02:38,910
-在文章中，根据我们的  Blog, where we explain that we think in
+在文章中，根据我们的
 
 48
 00:02:38,910 --> 00:02:42,420
@@ -448,11 +448,11 @@ state，让 state 来
 
 113
 00:07:01,190 --> 00:07:05,390
-我要 export default class
+我要导出 default class
 
 114
 00:07:05,390 --> 00:07:12,720
-Greeding extends React component。我也
+Greeding 继承 React.Component。我也
 
 115
 00:07:12,720 --> 00:07:14,910
@@ -508,7 +508,7 @@ this.state.name。 然后
 
 128
 00:08:03,160 --> 00:08:06,910
-this.handleNameChange， 这是我的
+this.handleNameChange，这是我的
 
 129
 00:08:06,910 --> 00:08:10,570
