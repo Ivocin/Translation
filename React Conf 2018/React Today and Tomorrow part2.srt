@@ -2472,7 +2472,7 @@ extract it or test it separately. So I
 
 619
 00:37:17,090 --> 00:37:20,390
-could just copy and paste this. and I
+could just copy and paste this. And I
 
 620
 00:37:20,390 --> 00:37:22,580
@@ -2664,7 +2664,7 @@ is useFormInput Poppins. So this is now
 
 667
 00:39:52,880 --> 00:39:55,100
-going to be named dot value and surname
+going to be name dot value and surname
 
 668
 00:39:55,100 --> 00:39:57,289
