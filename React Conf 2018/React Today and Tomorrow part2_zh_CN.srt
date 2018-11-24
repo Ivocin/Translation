@@ -2884,199 +2884,199 @@ class 可以和 hook 并肩工作。
 
 722
 00:42:53,310 --> 00:43:02,189
-back to you the slides. All right, now
+我们回到幻灯片上来。好的，这张幻灯片
 
 723
 00:43:02,189 --> 00:43:06,490
-this is a slider you can actually tweet. [Laughing]
+就是你们可以发 tweet 的片子。 [笑声]
 
 724
 00:43:06,490 --> 00:43:09,490
-We present the Hooks proposal to you
+今天我们向你们展示了 Hook
 
 725
 00:43:09,490 --> 00:43:10,660
-today.
+提案。
 
 726
 00:43:10,660 --> 00:43:13,510
-Uh, hooks let us to use all React features
+呃，hooks 让我们可以在不使用 class 的情况下
 
 727
 00:43:13,510 --> 00:43:16,750
-without having to write a class. They do
+使用 React 的众多特性。而且我们没有
 
 728
 00:43:16,750 --> 00:43:19,600
-not deprecated classes, but you have the
+弃用 classes，但是我们给你们提供了一个
 
 729
 00:43:19,600 --> 00:43:21,790
-option to not have to write them. We
+不去写 class 的新选择。我们打算尽快
 
 730
 00:43:21,790 --> 00:43:24,250
-intend to cover all use cases for
+完成使用 hook 来替代 class 的全部
 
 731
 00:43:24,250 --> 00:43:27,070
-classes with hooks as soon as possible.
+用例。
 
 732
 00:43:27,070 --> 00:43:29,320
-There are a few that are missing, but
+目前还有一部分缺失，但是我们正在
 
 733
 00:43:29,320 --> 00:43:32,680
-we're working on them. And hooks let you
+处理这部分内容。而且 hook 能够让大家
 
 734
 00:43:32,680 --> 00:43:35,140
-reuse stateful logic, extracted out of
+复用有状态的逻辑，并将其从组件中提取
 
 735
 00:43:35,140 --> 00:43:38,230
-components, tested separately, reuse it
+出来，分别测试，在不同
 
 736
 00:43:38,230 --> 00:43:39,850
-between different components without
+组件之间复用，并且可以避免
 
 737
 00:43:39,850 --> 00:43:42,850
-introducing the wrapper hell. And again
+引入“包装地狱”。重要的是，
 
 738
 00:43:42,850 --> 00:43:44,560
-importantly it's not a breaking change,
+hook 不是一个破坏性的改动，
 
 739
 00:43:44,560 --> 00:43:48,000
-completely backwards compatible, strictly
+完全向后兼容，是严格
 
 740
 00:43:48,000 --> 00:43:52,240
-addition ..., uh, additive. And you can find the,
+添加性的。你可以从
 
 741
 00:43:52,240 --> 00:43:54,700
-we wrote the documentation for hooks, so
+这个 url 查找到我们关于 hook 的
 
 742
 00:43:54,700 --> 00:43:59,520
-you can find it at this url. Um, and
+文档。嗯，我们希望
 
 743
 00:43:59,520 --> 00:44:03,340
-we want to hear from you, the React
+听到你们的反馈，React
 
 744
 00:44:03,340 --> 00:44:05,170
-community wanna hear what you think
+社区希望了解到你们对 hook 的
 
 745
 00:44:05,170 --> 00:44:07,780
-about hooks. Um, whether you like them or not.
+想法，嗯，无论你们喜欢与否。
 
 746
 00:44:07,780 --> 00:44:10,420
-And we realize that it's pretty hard to
+而且我们发现如果不让大家实际使用 hook，
 
 747
 00:44:10,420 --> 00:44:12,070
-give feedback without actually trying
+就会很难收到反意见。
 
 748
 00:44:12,070 --> 00:44:17,100
-them. So we built them, and we released
+所以我们将 hook 构建发布到了
 
 749
 00:44:17,100 --> 00:44:22,000
-sixty ..., um, sixteen seven alpha. It's not a
+React 16.7 alpha 版本上。这个不是一个
 
 750
 00:44:22,000 --> 00:44:24,760
-major release, it's a minor release. But
+主要版本，是一个小版本。但是在这个
 
 751
 00:44:24,760 --> 00:44:26,730
-in alpha where you can try hooks. And
+alpha 版本，你可以尝试使用 hook。
 
 752
 00:44:26,730 --> 00:44:30,700
-we've been trying them in production at
+而且我们在 Facebook 的生产环境已经测试
 
 753
 00:44:30,700 --> 00:44:33,610
-Facebook for about a month. So we don't
+了一个月，因此我们认为
 
 754
 00:44:33,610 --> 00:44:36,910
-expect major bugs there. But the APIs
+不会有大的缺陷。但是 hook 的 API
 
 755
 00:44:36,910 --> 00:44:40,570
-themselves may change together with your
+可以根据你们的反馈意见
 
 756
 00:44:40,570 --> 00:44:44,320
-feedback. And I asked you not to rewrite
+进行调整。而且我不建议你们
 
 757
 00:44:44,320 --> 00:44:46,330
-anything like not to rewrite their whole
+把整个应用使用 hook 来
 
 758
 00:44:46,330 --> 00:44:50,560
-apps with hooks. Because first of all it's,
+重写。因为首先，hook 目前还在
 
 759
 00:44:50,560 --> 00:44:53,400
-it's a proposal. And second because
+提案阶段。第二个原因，我个人认为，
 
 760
 00:44:53,400 --> 00:44:56,500
-personally I, I find that it takes a bit
+使用 hook 的思维方式
 
 761
 00:44:56,500 --> 00:44:58,240
-of a mind shift to start thinking in
+需要一个思想上的
 
 762
 00:44:58,240 --> 00:45:01,360
-hooks, and it might be a bit confusing if
+改变，也许刚开始你们尝试把 
 
 763
 00:45:01,360 --> 00:45:03,310
-you try to just take a class component
+class 组件转为 hook 写法会比较
 
 764
 00:45:03,310 --> 00:45:07,030
-and convert it. But I do encourage you to
+困惑。但是我推荐大家
 
 765
 00:45:07,030 --> 00:45:08,710
-try using hooks in some of the newer
+尝试在新的
 
 766
 00:45:08,710 --> 00:45:11,110
-code that you write in and let us know
+代码里使用 hook，并且让我们知道
 
 767
 00:45:11,110 --> 00:45:15,450
-what you think. So,
+你们是怎么想的。那么，
 
 768
 00:45:15,450 --> 00:45:16,310
-thank you.
+谢谢大家。
 
 769
 00:45:16,310 --> 00:45:20,650
-[Applause]
+[掌声]
 
 770
 00:45:20,650 --> 00:45:22,150
-[Applause]
+[掌声]
 
 771
 00:45:22,150 --> 00:45:25,880
