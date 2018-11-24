@@ -3080,260 +3080,260 @@ class 组件转为 hook 写法会比较
 
 771
 00:45:22,150 --> 00:45:25,880
-So in our view hooks represent our
+在我们看来，hook 代表着
 
 772
 00:45:25,880 --> 00:45:30,800
-vision for the future of React. But I
+React 的未来。但我认为
 
 773
 00:45:30,800 --> 00:45:34,640
-think they also represent the way we
+这也代表着我们推进 React 发展的
 
 774
 00:45:34,640 --> 00:45:38,540
-move React forward. And that is we don't
+方式。那就是我们不进行
 
 775
 00:45:38,540 --> 00:45:43,190
-do big rewrite. Uh, we want the new patterns
+大的重写。嗯，我们希望我们更喜欢的新模式
 
 776
 00:45:43,190 --> 00:45:46,790
-that we like better to coexist with the
+可以和旧模式
 
 777
 00:45:46,790 --> 00:45:49,820
-old patterns, so that we can have gradual
+并存，这样我们就可以进行渐进
 
 778
 00:45:49,820 --> 00:45:52,940
-migration and adoption just like you can
+迁移并接受这些新模式，就像你们渐进
 
 779
 00:45:52,940 --> 00:45:57,890
-gradually adopt React itself. And this is
+接受 React 本身一样。这也差不多
 
 780
 00:45:57,890 --> 00:46:00,350
-almost the end of my talk. Uh, I want to end
+是我演讲的结尾了。但是最后，我想讲讲
 
 781
 00:46:00,350 --> 00:46:11,690
-it on a personal note. So I started
+我个人的一些观点。我从
 
 782
 00:46:11,690 --> 00:46:16,990
-learning React about four years ago. And
+四年前学习 React。我遇到的
 
 783
 00:46:16,990 --> 00:46:20,980
-one of my first questions was why JSX.
+第一个问题就是为什么要使用 JSX。
 
 784
 00:46:20,980 --> 00:46:25,520
-Uh, but my second one of the next questions
+嗯，我第二个问题是
 
 785
 00:46:25,520 --> 00:46:28,730
-was I can figure out what does the logo
+React 的 logo 到底有
 
 786
 00:46:28,730 --> 00:46:32,180
-have to do with React. So the project is
+什么含义。React 项目没有起名叫
 
 787
 00:46:32,180 --> 00:46:35,660
-not called Atom, it's not a physics
+“原子”，它并不是一个物理
 
 788
 00:46:35,660 --> 00:46:37,610
-engine.
+引擎。
 
 789
 00:46:37,610 --> 00:46:40,670
-Um, so one interpretation is that it's kind
+嗯，有一个解释是，React 是
 
 790
 00:46:40,670 --> 00:46:41,630
-of upon on
+基于
 
 791
 00:46:41,630 --> 00:46:44,330
-reactions, so atoms participate in
+反应的（reactions），原子也参与了
 
 792
 00:46:44,330 --> 00:46:48,140
-chemical reactions, reactions -> React. Um, but
+化学反应，因此从 reactions 到 React。呃，
 
 793
 00:46:48,140 --> 00:46:50,090
-it's not a claim with React actually
+但是 React 没有官方承认过
 
 794
 00:46:50,090 --> 00:46:52,400
-got it, uh, I found a different interpretation
+这种说法。嗯，我发现了一个对我来说
 
 795
 00:46:52,400 --> 00:46:57,770
-that made more sense to me. And the way I
+更有意义的解释。我是
 
 796
 00:46:57,770 --> 00:46:59,980
-think about it, uh,
+这样思考的，呃，
 
 797
 00:46:59,980 --> 00:47:02,930
-we know that physical matter consists of
+我们知道物质是由
 
 798
 00:47:02,930 --> 00:47:07,010
-atoms. And we've learned that it's the
+原子组成的。我们学过物质的
 
 799
 00:47:07,010 --> 00:47:08,750
-types of these atoms and their
+外观和行为是由原子
 
 800
 00:47:08,750 --> 00:47:11,600
-properties that determine how the
+和其内部的属性
 
 801
 00:47:11,600 --> 00:47:15,160
-physical matter looks and behaves. And
+决定的。而
 
 802
 00:47:15,160 --> 00:47:17,600
-React has taught me something similar, 
+React 在我看来是类似的，
 
 803
 00:47:17,600 --> 00:47:20,330
-that you can take a user interface and
+你可以使用 React 来构建用户界面，
 
 804
 00:47:20,330 --> 00:47:23,120
-you can split it into these independent
+将其拆分为叫做组件的独立
 
 805
 00:47:23,120 --> 00:47:26,480
-units called components, and it's the
+单元。用户界面的外观和行为
 
 806
 00:47:26,480 --> 00:47:29,000
-types and properties of these components
+是由这些组件及其
 
 807
 00:47:29,000 --> 00:47:32,000
-that can describe how the user interface
+内部的属性
 
 808
 00:47:32,000 --> 00:47:35,290
-looks and behaves.
+决定的。
 
 809
 00:47:35,290 --> 00:47:38,270
-What's ironic though is that the word
+具有讽刺意味的是，原子（atom）
 
 810
 00:47:38,270 --> 00:47:43,580
-'atom', it literally means indivisible. So
+一词，字面上的意思是不可分割的。当
 
 811
 00:47:43,580 --> 00:47:45,560
-when scientists just discovered atom for
+科学家们首次发现原子
 
 812
 00:47:45,560 --> 00:47:47,090
-the first time, they thought this is the
+的时候，他们认为原子是
 
 813
 00:47:47,090 --> 00:47:50,690
-smallest thing we're gonna find. But
+我们发现的最小的物质。但是
 
 814
 00:47:50,690 --> 00:47:53,720
-later they discovered an electron, which
+之后他们就发现了电子，电子是
 
 815
 00:47:53,720 --> 00:47:55,840
-is a smaller particle inside the atom.
+原子内部更小的微粒。
 
 816
 00:47:55,840 --> 00:47:58,580
-And it turned out it actually electrons
+后来证明实际上电子
 
 817
 00:47:58,580 --> 00:48:03,770
-explain a lot about how atoms work. And I
+更能描述原子运行的原理。我
 
 818
 00:48:03,770 --> 00:48:05,980
-kind of feel the same way about hooks. I
+对 hook 也有类似的感觉。我
 
 819
 00:48:05,980 --> 00:48:10,000
-don't feel like hooks are a new feature.
+感觉 hook 不是一个新特性。
 
 820
 00:48:10,000 --> 00:48:13,370
-Rather I feel that hooks provide me with
+我感觉 hook 提供了使用
 
 821
 00:48:13,370 --> 00:48:15,830
-access to React features that I already
+我们已知的 React 特性
 
 822
 00:48:15,830 --> 00:48:18,530
-know, such as state and context and lifecycle.
+的能力，如 state 、context 和生命周期。
 
 823
 00:48:18,530 --> 00:48:26,300
-And I feel like hooks are a more
+而且我感觉 hook 就像
 
 824
 00:48:26,300 --> 00:48:29,290
-direct representation of React. And that
+React 的一个更直观的表现。Hook
 
 825
 00:48:29,290 --> 00:48:32,780
-they really explain how a component
+在组件内部真正解释了组件
 
 826
 00:48:32,780 --> 00:48:36,230
-works inside. And I feel like they've
+是如何工作的。我感觉 hook 一直
 
 827
 00:48:36,230 --> 00:48:38,750
-been hiding in plain sight for four
+在我们的视线里面隐藏了
 
 828
 00:48:38,750 --> 00:48:41,930
-years. And in fact if you look at the
+四年。事实上，如果看看
 
 829
 00:48:41,930 --> 00:48:44,660
-React logo, you can see those electron
+React 的 logo，可以看到电子的
 
 830
 00:48:44,660 --> 00:48:47,510
-orbits there. So maybe hooks have been
+轨道，而 hook 好像一直就
 
 831
 00:48:47,510 --> 00:48:51,600
-there all along. Thank you.
+在那里。谢谢。
 
 832
 00:48:51,600 --> 00:48:57,440
-[Applause]
+[掌声]
 
 833
 00:48:57,440 --> 00:49:04,620
-[Applause]
+[掌声]
 
 834
 00:49:04,620 --> 00:49:07,270
-Dan, thank you so much. Sophie thank you
+Dan，非常感谢你。Sophie，也谢谢
 
 835
 00:49:07,270 --> 00:49:09,000
-as well.
+你。
