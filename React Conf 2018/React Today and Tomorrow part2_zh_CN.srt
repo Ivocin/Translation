@@ -452,7 +452,7 @@ state，让 state 来
 
 114
 00:07:05,390 --> 00:07:12,720
-Greeding 继承 React.Component。我也
+Greeting 继承 React.Component。我也
 
 115
 00:07:12,720 --> 00:07:14,910
