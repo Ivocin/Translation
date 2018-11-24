@@ -1708,7 +1708,7 @@ by default although there is a way to
 
 428
 00:26:09,650 --> 00:26:13,340
-opt out of that. And not is that in the
+opt out of that. And note is that in the
 
 429
 00:26:13,340 --> 00:26:15,350
@@ -1860,7 +1860,7 @@ I'm, I'm going to listen to the resize
 
 466
 00:28:15,560 --> 00:28:20,749
-event, handle resize. And I need to
+event, handleResize. And I need to
 
 467
 00:28:20,749 --> 00:28:23,330
