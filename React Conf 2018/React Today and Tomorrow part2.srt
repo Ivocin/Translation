@@ -112,7 +112,7 @@ component. And so once you add a class
 
 29
 00:01:41,360 --> 00:01:44,420
-component, you can split it up further
+component, you can't split it up further
 
 30
 00:01:44,420 --> 00:01:48,190
@@ -172,7 +172,7 @@ But we don't encourage using mixins in
 
 44
 00:02:27,600 --> 00:02:29,880
-React. And if you curious why there is a
+React. And if you curious why, there is a
 
 45
 00:02:29,880 --> 00:02:32,910
@@ -452,7 +452,7 @@ So I'm gonna do the export default class
 
 114
 00:07:05,390 --> 00:07:12,720
-Greeding extends React component. And so
+Greeting extends React component. And so
 
 115
 00:07:12,720 --> 00:07:14,910
@@ -1572,7 +1572,7 @@ effects in a class.
 
 394
 00:24:15,640 --> 00:24:21,830
-So how do we do this with hooks. Well the
+So how do we do this with hooks? Well the
 
 395
 00:24:21,830 --> 00:24:23,960
@@ -2472,7 +2472,7 @@ extract it or test it separately. So I
 
 619
 00:37:17,090 --> 00:37:20,390
-could just copy and paste this. and I
+could just copy and paste this. And I
 
 620
 00:37:20,390 --> 00:37:22,580
@@ -2664,7 +2664,7 @@ is useFormInput Poppins. So this is now
 
 667
 00:39:52,880 --> 00:39:55,100
-going to be named dot value and surname
+going to be name dot value and surname
 
 668
 00:39:55,100 --> 00:39:57,289

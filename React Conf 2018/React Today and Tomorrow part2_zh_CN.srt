@@ -1,1286 +1,1286 @@
 ﻿1
 00:00:04,000 --> 00:00:10,550
-Hi. Ah, my name is Dan, I work on the React
+嗨。我的名字是 Dan。我在 React
 
 2
 00:00:10,550 --> 00:00:13,759
-Team and this is my first time in React
+Team 工作，这是我第一次参加 React
 
 3
 00:00:13,759 --> 00:00:28,160
-Conf. [Applause] And so Sophie talked about these
+大会。 [掌声] 刚才 Sophie 讲述了这三个
 
 4
 00:00:28,160 --> 00:00:30,740
-problems that I think most of you have
+问题，我想大多数的开发者在 React
 
 5
 00:00:30,740 --> 00:00:34,280
-encountered in React development. And of
+开发过程中都会遇到这些问题。当然，
 
 6
 00:00:34,280 --> 00:00:35,629
-course we could approach these problems
+我们可以逐一来解决
 
 7
 00:00:35,629 --> 00:00:38,509
-one by one, so we could try to solve them
+这些问题。我们可以尝试独立地去
 
 8
 00:00:38,509 --> 00:00:41,840
-in isolation. But it seems like solving
+解决这些问题。但是实际上解决其中一个问题
 
 9
 00:00:41,840 --> 00:00:44,829
-one of them makes some other one worse.
+可能会使其他问题更加严重。
 
 10
 00:00:44,829 --> 00:00:48,199
-So for example, if we try to solve the
+比如我们尝试去解决
 
 11
 00:00:48,199 --> 00:00:51,079
-wrapper hell by putting more logic into
+“包装地狱”的问题，可以将更多的逻辑放到
 
 12
 00:00:51,079 --> 00:00:53,780
-components themselves, then our
+组件里面，那么我们的
 
 13
 00:00:53,780 --> 00:00:55,879
-components become larger and harder to
+组件会变得更大，而且更难以
 
 14
 00:00:55,879 --> 00:00:58,879
-refactor. And then on the other hand, if
+重构。另一个方面，如果
 
 15
 00:00:58,879 --> 00:01:01,910
-we try to split the components apart
+我们尝试将组件拆分为
 
 16
 00:01:01,910 --> 00:01:06,019
-into smaller pieces and reuse those, then
+更小的片段，以方便重用，那么
 
 17
 00:01:06,019 --> 00:01:07,550
-we end up with more nests than in the
+我们的组件树的嵌套更多了，
 
 18
 00:01:07,550 --> 00:01:09,139
-component tree and we get the wrapper
+而且最终又会以
 
 19
 00:01:09,139 --> 00:01:13,519
-hell again. And finally in either case we
+“包装地狱” 收场。最后，无论那种情况，
 
 20
 00:01:13,519 --> 00:01:15,499
-have all the confusion that comes with
+使用 class 都会让人产生
 
 21
 00:01:15,499 --> 00:01:18,230
-the classes. So we think that this is
+困惑。因此我们认为造成这种情况是因为
 
 22
 00:01:18,230 --> 00:01:19,910
-because these are not three separate
+这不是三个独立的
 
 23
 00:01:19,910 --> 00:01:23,660
-problems. We think that this is, ah, these are
+问题。我们认为，这是同一个问题的
 
 24
 00:01:23,660 --> 00:01:27,470
-three symptoms of one problem. And the
+三个症状。问题在于
 
 25
 00:01:27,470 --> 00:01:29,749
-problem is that React does not provide a
+React 没有原生提供一个比 class 组件更
 
 26
 00:01:29,749 --> 00:01:34,850
-simpler, smaller, lightweight primitive to
+简单，更小型，更轻量级的方式来
 
 27
 00:01:34,850 --> 00:01:37,670
-add state or lifecycle than a class
+添加 state 或生命周期。
 
 28
 00:01:37,670 --> 00:01:41,360
-component. And so once you add a class
+而且一旦你使用了 class
 
 29
 00:01:41,360 --> 00:01:44,420
-component, you can split it up further
+组件，你没有办法在不造成“包装地狱”的情况下,
 
 30
 00:01:44,420 --> 00:01:48,190
-without introducing the wrapper hell. And
+进一步拆分它。事实上，
 
 31
 00:01:48,190 --> 00:01:51,889
-in fact it's not a new problem. So if you
+这并不是一个新问题。如果你
 
 32
 00:01:51,889 --> 00:01:54,530
-use React for like more than a couple of
+已经使用了 React 几年，
 
 33
 00:01:54,530 --> 00:01:57,050
-years, you might remember then when React
+你也许还记得在 React
 
 34
 00:01:57,050 --> 00:01:59,329
-came out it actually included a solution
+刚出来的时候，事实上已经包含了一个解决
 
 35
 00:01:59,329 --> 00:02:03,110
-to this problem. Ah, it was mixins. So
+方案。嗯，这个解决方案就是 mixins。
 
 36
 00:02:03,110 --> 00:02:06,499
-mixins allow you to reuse some methods
+Mixins 能够让你在 class 之间复用
 
 37
 00:02:06,499 --> 00:02:08,060
-between classes and this way you
+方法，通过 mixins 可以
 
 38
 00:02:08,060 --> 00:02:10,610
-wouldn't have all these wrappers. So
+减少嵌套。所以我们要在
 
 39
 00:02:10,610 --> 00:02:16,790
-should we add mixins back to React? [Yeah ... No...]
+React 里面重新把 mixins 添加回来吗？ [对 ... 不...]
 
 40
 00:02:16,790 --> 00:02:20,310
-That's right, no no, we're not gonna do
+对了，不，不，我们不会添加 mixins。
 
 41
 00:02:20,310 --> 00:02:23,040
-that. Ah, I mean the codes using mixins
+啊，我的意思是之前使用
 
 42
 00:02:23,040 --> 00:02:25,230
-the rounds, it's not like, it's not broken.
+mixins 的代码并不是无法使用了。
 
 43
 00:02:25,230 --> 00:02:27,600
-But we don't encourage using mixins in
+但是我们不再推荐在 React 里使用 mixins。
 
 44
 00:02:27,600 --> 00:02:29,880
-React. And if you curious why there is a
+如果你好奇我们这么做的原因，可以在 React Blog 里面
 
 45
 00:02:29,880 --> 00:02:32,910
-blog post, uh, that we wrote code called
+查看我们之前写的一篇文章，题目是
 
 46
 00:02:32,910 --> 00:02:35,040
-"Mixins Considered Harmful" on the React
+《 Mixins 是有害的》。
 
 47
 00:02:35,040 --> 00:02:38,910
-Blog, where we explain that we think in
+在文章中，根据我们的
 
 48
 00:02:38,910 --> 00:02:42,420
-our experience, the problems that mixins
+实验结果，我们发现 mixins 带来的问题
 
 49
 00:02:42,420 --> 00:02:45,000
-create are worse than the problems that
+远比它解决的问题
 
 50
 00:02:45,000 --> 00:02:47,790
-they solve. Ah, so that's why we don't
+多。因此，我们不推荐大家
 
 51
 00:02:47,790 --> 00:02:51,870
-encourage using mixins. So perhaps we
+使用 mixins。那么也许
 
 52
 00:02:51,870 --> 00:02:53,310
-could just can't solve this problem
+我们解决不了这个问题了，
 
 53
 00:02:53,310 --> 00:02:55,860
-maybe its inherent to the React
+因为这是 React 组件模型固有的
 
 54
 00:02:55,860 --> 00:02:57,780
-component model. Maybe we should just
+问题。也许我们不得不
 
 55
 00:02:57,780 --> 00:03:10,470
-accept it. [Laughing] Or maybe in there is a, perhaps
+选择接受现实。[笑声] 或者也许
 
 56
 00:03:10,470 --> 00:03:12,510
-there is a different way we could write
+有另外一种书写组件的
 
 57
 00:03:12,510 --> 00:03:15,720
-our components that doesn't suffer from
+形式，可以避免
 
 58
 00:03:15,720 --> 00:03:19,200
-either of these problems. And that's what
+这些问题。这也就是今天
 
 59
 00:03:19,200 --> 00:03:22,680
-I'm going to talk about today. But before
+我将要分享的内容。但是在
 
 60
 00:03:22,680 --> 00:03:24,840
-I start I want to touch a little bit on
+开始分享我们在 React 的
 
 61
 00:03:24,840 --> 00:03:27,960
-the way we approach making changes and
+改动和新特性之前，我想先讲讲
 
 62
 00:03:27,960 --> 00:03:31,200
-additions to React which is a year ago
+一年前我们建立的
 
 63
 00:03:31,200 --> 00:03:34,290
-we set up an RFC process, so RFC stands
+RFC 流程，RFC 表示
 
 64
 00:03:34,290 --> 00:03:36,840
-for request for comments, and it means
+request for comments，它意味着
 
 65
 00:03:36,840 --> 00:03:38,880
-that whenever we want to make or
+无论是我们还是其他人
 
 66
 00:03:38,880 --> 00:03:40,680
-somebody else wants to make a
+想要对 React 做出
 
 67
 00:03:40,680 --> 00:03:43,620
-substantial change or addition to React,
+大量变化或者添加新特性时,
 
 68
 00:03:43,620 --> 00:03:46,830
-they need to write up a proposal with
+都需要撰写一个提案，提案里面
 
 69
 00:03:46,830 --> 00:03:49,260
-detail in the motivation and the
+需要包含动机的详情和
 
 70
 00:03:49,260 --> 00:03:51,660
-detailed design of how this will work.
+该提案如何工作的详细设计。
 
 71
 00:03:51,660 --> 00:03:56,250
-And so that's what we're going to do.
+这正是我们要做的事情。
 
 72
 00:03:56,250 --> 00:03:59,520
-We're excited to announce that we are
+我们非常兴奋地宣布：我们已经
 
 73
 00:03:59,520 --> 00:04:02,040
-ready to present a proposal for how we
+准备好了一个提案
 
 74
 00:04:02,040 --> 00:04:05,520
-can solve these three problems.
+来解决这三个问题。
 
 75
 00:04:05,520 --> 00:04:09,420
-And importantly this proposal does not
+重要的是，本提案没有
 
 76
 00:04:09,420 --> 00:04:11,820
-have breaking changes or deprecations in
+不向下兼容的变化，也没有弃用任何功能。
 
 77
 00:04:11,820 --> 00:04:15,990
-it. It is strictly additive, it is opt-in, 
+本提案是严格添加性的、可选择的
 
 78
 00:04:15,990 --> 00:04:20,790
-and it adds some new APIs which happens
+而且增加了一些新的 APIs 来
  
 79
 00:04:20,790 --> 00:04:23,610
-when they try to solve problems. And we
+帮助我们解决这些问题。并且我们
 
 80
 00:04:23,610 --> 00:04:25,709
-would love to hear your feedback on this
+希望听到你们对本提案的反馈，
 
 81
 00:04:25,709 --> 00:04:28,620
-proposal which is why we're, ur, we're going
+这也是为什么我们在今天发布本提案
 
 82
 00:04:28,620 --> 00:04:31,440
-to publish it today. And we thought about
+的原因。我们想过很多
 
 83
 00:04:31,440 --> 00:04:33,510
-many ways we could share this proposal,
+发布本提案的方式，
 
 84
 00:04:33,510 --> 00:04:35,370
-so maybe we just like write off in there ...
+也许我们可以写好提案后，
 
 85
 00:04:35,370 --> 00:04:39,240
-write up an RFC and post it. Um, but since we
+提出一个 RFC 然后放在那里。但是既然
 
 86
 00:04:39,240 --> 00:04:41,700
-were going to run React Conf anyway, we
+我们总是要召开 React 大会，我们决定
 
 87
 00:04:41,700 --> 00:04:45,650
-just decided to, ah, just show it here. And
+在本次大会上发布这个提案。那么，
 
 88
 00:04:45,650 --> 00:04:49,710
-we're going to demo.
+接下来进入 Demo 环节。
 
 89
 00:04:49,710 --> 00:04:59,479
-[Applause]
+[掌声]
 
 90
 00:04:59,479 --> 00:05:06,929
-It already mirrors the displays. Sorry,
+我的屏幕已经投在了显示器上。对不起，
 
 91
 00:05:06,929 --> 00:05:19,670
-technical glitch.
+有点技术故障。
 
 92
 00:05:19,670 --> 00:05:22,280
-Ur, can somebody who understands projectors
+呃，有谁会用这个投影仪，来
 
 93
 00:05:22,280 --> 00:05:33,250
-help me. [Laughing] Ur, can I make it mirror my desktop?
+帮帮我。[笑声] 呃，我能复制我的桌面吗？
 
 94
 00:05:33,250 --> 00:05:41,290
-Please.
+请。
 
 95
 00:05:41,290 --> 00:05:46,970
-(I can do it) Yeah. [Laughing]
+(我能) 是啊。 [笑声]
 
 96
 00:05:46,970 --> 00:05:50,370
-Okay but it doesn't show on the screen, I
+好的，但是屏幕上没有显示，我
 
 97
 00:05:50,370 --> 00:05:53,980
-don't see anything. [Laughing]
+什么都看不到。 [笑声]
 
 98
 00:05:53,980 --> 00:06:08,390
-That's, that's the problem that I had.  [Applause]
+这就是我现在的问题。 [掌声]
 
 99
 00:06:08,390 --> 00:06:17,180
-Okay, disaster averted. [Laughing]
+好的，灾难过去了。[笑声]
 
 100
 00:06:17,180 --> 00:06:22,020
-All right, um, let me check the font size a
+好的，嗯，让我来稍微调整下
 
 101
 00:06:22,020 --> 00:06:27,960
-little bit. Do you see this file? [Yeah] All right.
+文字大小。你们能看清吗？ [可以的。] 好的。
 
 102
 00:06:27,960 --> 00:06:34,140
-So, ah, here is a simple React component, ah, that
+那么，我们来看，这里是一个普通的 React 组件，
 
 103
 00:06:34,140 --> 00:06:36,840
-just it is a row, this is just some
+这是一个 Row 组件，这里有一些
 
 104
 00:06:36,840 --> 00:06:39,870
-styling, and it it renders a person's
+样式，然后渲染出一个
 
 105
 00:06:39,870 --> 00:06:43,170
-name. And so let's say that we want this
+人名。我们想要做的是
 
 106
 00:06:43,170 --> 00:06:47,340
-name to be editable. So how do you do it
+让这个名字可编辑。那么我们平时在 React 里
 
 107
 00:06:47,340 --> 00:06:49,560
-in React normally? Well, like if we want
+通常是怎么做的呢？我们需要
 
 108
 00:06:49,560 --> 00:06:52,200
-to add an input there we need to return
+在这里添加一个 input，需要将这些内容放到
 
 109
 00:06:52,200 --> 00:06:54,630
-this component into a class, add some
+class 里面返回，添加一些本地
 
 110
 00:06:54,630 --> 00:06:56,400
-local state to it, and let that state
+state，让 state 来
 
 111
 00:06:56,400 --> 00:06:58,740
-drive the input. So that's exactly what
+驱动 input。这也是我
 
 112
 00:06:58,740 --> 00:07:01,190
-I'm going to do, uh, that's what we do today.
+准备做的事情。这也是现今大家通常做的事情。
 
 113
 00:07:01,190 --> 00:07:05,390
-So I'm gonna do the export default class
+我要导出 default class
 
 114
 00:07:05,390 --> 00:07:12,720
-Greeding extends React component. And so
+Greeding 继承 React.Component。我也
 
 115
 00:07:12,720 --> 00:07:14,910
-I'm going to use only stable javaScript
+只会在这里使用稳定的 javaScript
 
 116
 00:07:14,910 --> 00:07:20,840
-syntax. So constructor props, super props.
+语法。接下来是 constructor props, super props。
 
 117
 00:07:20,840 --> 00:07:25,670
-This the state, going to initialize, ur,
+在这里把 state 里的 name 初始化为
 
 118
 00:07:25,670 --> 00:07:30,960
-name to Mary here. And I'm going to
+Mary。接下来我要
 
 119
 00:07:30,960 --> 00:07:34,320
-declare a render method and copy and
+声明一个 render 函数，复制一下这段代码然后
 
 120
 00:07:34,320 --> 00:07:41,950
-paste this.
+粘贴到这里。
 
 121
 00:07:41,950 --> 00:07:44,680
-Sorry.
+对不起。
 
 122
 00:07:44,680 --> 00:07:48,040
-Okay. And so I want this to be instead of
+好的。我希望这里不再
 
 123
 00:07:48,040 --> 00:07:49,450
-just rendering the name, I want this
+仅仅渲染 name，我希望这里可以渲染一个
 
 124
 00:07:49,450 --> 00:07:51,400
-render an input. So I'm replacing
+input。我把这里替换为
 
 125
 00:07:51,400 --> 00:07:56,320
-this by an input, and the value of the
+一个 input，然后 input 的值设置为
 
 126
 00:07:56,320 --> 00:08:00,450
-input is this dot state dot name. And
+this.state.name。 然后
 
 127
 00:08:00,450 --> 00:08:03,160
-if I make a change I want to call this
+在 input 输入发生变化时，调用
 
 128
 00:08:03,160 --> 00:08:06,910
-dot handleNameChange, that's going to
+this.handleNameChange，这是我的
 
 129
 00:08:06,910 --> 00:08:10,570
-be my change caller. And I'm going to
+change 回调函数。我把它
 
 130
 00:08:10,570 --> 00:08:13,330
-declare it here, when the name changes we
+声明在这里，当名字发生变化时，
 
 131
 00:08:13,330 --> 00:08:16,660
-call setState like we normally do. And
+像我们通常做的那样调用 setState 方法。然后
 
 132
 00:08:16,660 --> 00:08:19,900
-we set the name to e dot target dot
+将 name 设置为 e.target.value
 
 133
 00:08:19,900 --> 00:08:26,440
-value. Right. So now if I edit the ... [TypeError In Page] Okay so
+对吧。如果我编辑 ... [页面上报了 TypeError 的错误] 好吧，所以我
 
 134
 00:08:26,440 --> 00:08:33,070
-I, I need to bind ... [Laughing] Sorry I need to bind
+应该去绑定 ... [笑声] 对不起，我需要在这里绑定
 
 135
 00:08:33,070 --> 00:08:36,940
-the events on there. Okay so now I can
+events 事件。 好的，现在这样
 
 136
 00:08:36,940 --> 00:08:40,390
-actually edit it and it works. So a
+我们就可以编辑它了，运行正常。
 
 137
 00:08:40,390 --> 00:08:43,450
-familiar class component is, uh, if you work
+这个 class 组件我们应该非常熟悉了。你如果
 
 138
 00:08:43,450 --> 00:08:45,280
-with React probably right a lot of
+使用 React 开发可能会遇到很多类似的
 
 139
 00:08:45,280 --> 00:08:52,060
-those. But let's take a step back. What if
+代码。但让我们后退一步，如果
 
 140
 00:08:52,060 --> 00:08:55,300
-we didn't have to write a class when we
+想要使用 state 时，能否不必须使用
 
 141
 00:08:55,300 --> 00:08:58,420
-wanted to use state. So I'm not sure how
+class 组件？我不确定
 
 142
 00:08:58,420 --> 00:09:00,800
-that's gonna work. But I'll just start
+它如何运行。但是我就准备
 
 143
 00:09:00,800 --> 00:09:02,560
-with what I know, I want to render an
+跟据我的已知来进行，我需要渲染一个
 
 144
 00:09:02,560 --> 00:09:06,390
-input. So I'm gonna put an input here. And
+input。我在这里放入一个 input。
 
 145
 00:09:06,390 --> 00:09:08,979
-the input has a value and that value
+这个 input 的 value 的值为
 
 146
 00:09:08,979 --> 00:09:11,469
-is the current name, so I'll just pass
+当前的 name 的值，所以我就传入
 
 147
 00:09:11,469 --> 00:09:14,710
-name. I don't know where to get name from.
+name 值。我不知道从哪里获取 name。
 
 148
 00:09:14,710 --> 00:09:18,359
-So it doesn't come from props, uh,
+它不是从 props 里面来，嗯，
 
 149
 00:09:18,359 --> 00:09:22,410
-I'll just declare it, and I don't know,
+我就在这里声明，我不知道它的值，
 
 150
 00:09:22,410 --> 00:09:26,200
-I'll fill it in later. Uh, it's gonna have a
+之后我再填写这一块。呃，这里应该也有一个
 
 151
 00:09:26,200 --> 00:09:27,790
-change caller there as well, so I'm going
+change 回调函数，我在
 
 152
 00:09:27,790 --> 00:09:33,089
-to declare onChange handleNameChange.
+这里声明 onChange 函数 handleNameChange。
 
 153
 00:09:33,089 --> 00:09:38,229
-And I'm adding a function here takes an
+我在这里添加一个函数来
 
 154
 00:09:38,229 --> 00:09:42,160
-event. And then here I want to tell React
+处理事件。在这里我想要通知 React
 
 155
 00:09:42,160 --> 00:09:45,430
-to set the name to something, but again
+设置 name 值到某处，但又一次地，
 
 156
 00:09:45,430 --> 00:09:47,200
-I'm not sure how to do that from a
+我不确定在 functional 组件里如何实现
 
 157
 00:09:47,200 --> 00:09:48,999
-functional component. So I'll just call
+这个功能。因此我就直接调用
 
 158
 00:09:48,999 --> 00:09:51,280
-something called setName.
+一个叫做 setName 的方法。
 
 159
 00:09:51,280 --> 00:09:57,010
-With the current input value. And I'll
+使用当前的 input 的值。我把它
 
 160
 00:09:57,010 --> 00:10:06,570
-just declare it here.
+声明在这里。
 
 161
 00:10:06,570 --> 00:10:09,040
-All right, so these two things they're
+好吧，由于这两件事情
 
 162
 00:10:09,040 --> 00:10:11,080
-closely related, right. So one of them is
+是密切相关的，对吧。其中一个是 state 里
 
 163
 00:10:11,080 --> 00:10:13,630
-the current value of the name state
+name 变量的当前值，
 
 164
 00:10:13,630 --> 00:10:17,440
-variable and the other is a function
+而另一个是一个函数，
 
 165
 00:10:17,440 --> 00:10:20,700
-that lets us set the name state variable.
+该函数让我们去设置 state 里的 name 变量。
 
 166
 00:10:20,700 --> 00:10:22,930
-And so because these things are closely
+由于这两件事情
 
 167
 00:10:22,930 --> 00:10:24,820
-related, I'm actually going to put them
+非常相关，我将它们
 
 168
 00:10:24,820 --> 00:10:29,950
-together as a pair of values. So I'm
+合并到一起作为一对值。
 
 169
 00:10:29,950 --> 00:10:31,390
-going to get them together from
+我们从某处一同获取到
 
 170
 00:10:31,390 --> 00:10:35,220
-somewhere. So where do I get them from?
+它们的值。所以问题是我从哪里获取到它们？
 
 171
 00:10:35,220 --> 00:10:40,050
-From React local state. So how do I use
+答案是从 React 本地状态里面获取。 那么我如何
 
 172
 00:10:40,050 --> 00:10:42,370
-React local state from a function
+在 function 组件里面获取到 React 到本地状态呢？
 
 173
 00:10:42,370 --> 00:10:46,960
-component? Well, what if I could just use
+嗯，我直接使用 use state
 
 174
 00:10:46,960 --> 00:10:53,940
-state.
+会怎样。
 
 175
 00:10:53,940 --> 00:11:01,230
-And past the initial state to specify it.
+把初始到状态传给 useState 函数来指定它的初始值。
 
 176
 00:11:01,230 --> 00:11:08,010
-Let's see if this works. Yeah, it works.
+我们来看一下程序运行是否正常。是的，运行正常。
 
 177
 00:11:08,010 --> 00:11:17,310
-[Applause & Cheers]
+[掌声和欢呼声]
 
 178
 00:11:17,310 --> 00:11:19,630
-So let's, let's compare the two
+那么我们来比较一下这两种
 
 179
 00:11:19,630 --> 00:11:25,120
-approaches. So on the left we have a
+方式。在左侧是我们熟悉的
 
 180
 00:11:25,120 --> 00:11:27,700
-familiar class component. This state has
+class 组件。这里 state 必须
 
 181
 00:11:27,700 --> 00:11:31,180
-to be an object. Uh, we bind some event
+是一个对象。嗯，我们绑定一些事件
 
 182
 00:11:31,180 --> 00:11:33,160
-handlers so that we can access. This
+处理函数以便调用。在
 
 183
 00:11:33,160 --> 00:11:36,099
-inside the event handler for this dot setState.
+事件处理函数里面使用了 this.setState 方法。
 
 184
 00:11:36,099 --> 00:11:39,160
-When we call setState it
+当我们调用 setState 方法时，
 
 185
 00:11:39,160 --> 00:11:41,020
-actually doesn't just set the state that
+实际上并没有直接将值设置到 state 里面，
 
 186
 00:11:41,020 --> 00:11:44,620
-merges, the state are the argument into
+state 作为参数合并到
 
 187
 00:11:44,620 --> 00:11:47,050
-the state object. And then when we want
+state 对象里。而当我想要获取
 
 188
 00:11:47,050 --> 00:11:49,120
-to access the state which is this dot
+state 时，我们需要调用
 
 189
 00:11:49,120 --> 00:11:52,359
-state dot something. So in the
+this.state.something。那么我们再来
 
 190
 00:11:52,359 --> 00:11:55,359
-example on the right, we don't need to
+看右侧的例子：我们不需要使用
 
 191
 00:11:55,359 --> 00:11:57,940
-access this dot state dot something.
+this.state.something 来获取 state。
 
 192
 00:11:57,940 --> 00:12:00,339
-Because the name state variable is
+因为 state 里的 name 变量
 
 193
 00:12:00,339 --> 00:12:02,530
-already available in the function. It's
+在函数里已经可用。它就是
 
 194
 00:12:02,530 --> 00:12:05,440
-just the variable. And similarly when we
+一个变量。同样的，当我们
 
 195
 00:12:05,440 --> 00:12:07,540
-need to set the state, we don't need to
+需要设置 state 时，我们不需要
 
 196
 00:12:07,540 --> 00:12:11,320
-access this dot something. Because the
+使用 this.something。因为
 
 197
 00:12:11,320 --> 00:12:13,450
-function that let us set the name is
+函数也可以让我们在其作用域内
 
 198
 00:12:13,450 --> 00:12:19,270
-also available in the scope. So what is
+设置 name 的值。那么
 
 199
 00:12:19,270 --> 00:12:25,560
-useState exactly? UseState is a hook. A
+useState 到底是什么呢？ UseState 是一个 hook。
 
 200
 00:12:25,560 --> 00:12:29,200
-hook is a function provided by React
+Hook 是一个 React 提供的函数，
 
 201
 00:12:29,200 --> 00:12:32,670
-that lets you hook into React features
+它可以让你在 function 组件中“钩” 到
 
 202
 00:12:32,670 --> 00:12:34,999
-from your function components. And
+一些 React 特性。
 
 203
 00:12:34,999 --> 00:12:38,979
-useState is the first hook that we're going
+而 useState 是我们今天讲到的第一个
 
 204
 00:12:38,979 --> 00:12:40,870
-to take a look at today, but there are a
+hook，后面还有
 
 205
 00:12:40,870 --> 00:12:43,089
-few more. So we're going to see them
+一些更多的 hook。我们会在后面
 
 206
 00:12:43,089 --> 00:12:52,250
-later.
+看到它们。
 
 207
 00:12:52,250 --> 00:12:54,630
-All right, so let's go back to our
+好的，让我们回到我们
 
 208
 00:12:54,630 --> 00:12:58,170
-familiar class example. So let's say we
+熟悉的 class 例子。我们接下来想要
 
 209
 00:12:58,170 --> 00:13:01,050
-wanted to add a second field. For example,
+添加第二个区域。比如，
 
 210
 00:13:01,050 --> 00:13:04,319
-for a surname. So the way we normally do
+添加一个姓氏的区域。那么我们通常的做法是
 
 211
 00:13:04,319 --> 00:13:07,109
-this is we add another key to the state.
+在 state 添加一个新 key。
 
 212
 00:13:07,109 --> 00:13:13,020
-And we, uh, I'm going to copy and paste this
+我把这行复制然后粘贴到这里。
 
 213
 00:13:13,020 --> 00:13:18,569
-row. It's gonna say surname now. It's
+这里改成 surname。在
 
 214
 00:13:18,569 --> 00:13:21,630
-going to render a surname, and handleSurnameChange.
+这里渲染，这里是 surname 和 handleSurnameChange。
 
 215
 00:13:21,630 --> 00:13:24,989
-When I copy and paste
+我再来复制
 
 216
 00:13:24,989 --> 00:13:30,260
-this event handler, this will be surname.
+这个事件处理函数，把这里改成 surname。
 
 217
 00:13:30,260 --> 00:13:42,810
-And I need to bind it.
+别忘了绑定这个函数。
 
 218
 00:13:42,810 --> 00:13:49,830
-Okay, Mary Poppins. So we can see that it
+好的，Mary Poppins 显示出来了，我们可以看到
 
 219
 00:13:49,830 --> 00:13:54,180
-works. Uh, so how do we do the same with
+程序运行正常。那么我们如何使用 hook 来实现相同的
 
 220
 00:13:54,180 --> 00:13:59,999
-hooks? So one thing we could do is we
+功能呢？我们需要做的一件事情是把我们的 state
 
 221
 00:13:59,999 --> 00:14:02,489
-could make our state an object. As you
+改为一个对象。可以看到，
 
 222
 00:14:02,489 --> 00:14:05,310
-can see that the state with hooks state
+使用 hook 的 state 并不强制其类型
 
 223
 00:14:05,310 --> 00:14:06,989
-doesn't have to be an object. It can be
+必须为对象。它可以是任何原生
 
 224
 00:14:06,989 --> 00:14:09,090
-any primitive. We could make it an object
+类型。我们可以在需要的时候把它
 
 225
 00:14:09,090 --> 00:14:11,460
-if we wanted to, but we also don't have
+变为对象，但是我们不用必须这么做。
 
 226
 00:14:11,460 --> 00:14:15,300
-to. So conceptually surname is, uh, is not
+从概念上讲，surname 和
 
 227
 00:14:15,300 --> 00:14:19,320
-closely related to state, uh, to the name. So
+name 关系不大。所以
 
 228
 00:14:19,320 --> 00:14:21,150
-what we could do is we could declare a
+我们需要做的是，再次调用 useState hook 来
 
 229
 00:14:21,150 --> 00:14:24,780
-second state variable by calling the
+声明第二个 state
 
 230
 00:14:24,780 --> 00:14:26,719
-useState hook again.
+变量。
 
 231
 00:14:26,719 --> 00:14:29,940
-So I'll declare surname. I can give it any
+在这里我声明 surname，当然我可以给它起
 
 232
 00:14:29,940 --> 00:14:31,589
-name, it's just the variable in my code.
+任何名字，因为它就是我程序里的一个变量。
 
 233
 00:14:31,589 --> 00:14:37,050
-And setSurname. Calling useState and
+再来设置 setSurname。调用 useState，
 
 234
 00:14:37,050 --> 00:14:39,599
-passing the initial state for that state
+传入 state 初始
 
 235
 00:14:39,599 --> 00:14:41,510
-variable 'Poppins'.
+变量 'Poppins'。
 
 236
 00:14:41,510 --> 00:14:43,800
-So again I'm gonna copy and paste
+我再一次复制和粘贴
 
 237
 00:14:43,800 --> 00:14:51,060
-the row. Say surname, the value surname,
+这个 Row 片段。改为 surname，值改为 surname，
 
 238
 00:14:51,060 --> 00:14:55,680
-handleSurnameChange. And when the user
+onchange 事件改为 handleSurnameChange。当用户编辑
 
 239
 00:14:55,680 --> 00:15:03,089
-edits the surname, not sir name, we want
+surname 时，不是 sir name，我们
 
 240
 00:15:03,089 --> 00:15:07,920
-to set the surname.
+希望能够修改 surname 的值。
 
 241
 00:15:07,920 --> 00:15:14,300
-Let's see if this works.
+我们来看看能否正常运行。
 
 242
 00:15:14,300 --> 00:15:22,660
-Yay, it looks like it works. [Applause]
+耶，运行正常。 [掌声]
 
 243
 00:15:22,660 --> 00:15:26,630
-So we can see that we can use hooks more
+所以我们可以看到，我们可以在组件里
 
 244
 00:15:26,630 --> 00:15:29,960
-than once in a component. Let's compare
+使用多次 hook。 我们来更详细地比较
 
 245
 00:15:29,960 --> 00:15:34,400
-the two approaches in more detail. So on
+这两种方式。在
 
 246
 00:15:34,400 --> 00:15:37,040
-the left familiar class component state
+左侧我们熟悉的 class 组件里的 state
 
 247
 00:15:37,040 --> 00:15:40,010
-is always an object, has multiple fields,
+总是对象，具有多个字段，
 
 248
 00:15:40,010 --> 00:15:42,620
-may call setState will merge some
+需要调用 setState 函数将其中的
 
 249
 00:15:42,620 --> 00:15:45,770
-something into that object. And then when
+某些值合并进 state 对象中。当我们需要
 
 250
 00:15:45,770 --> 00:15:47,510
-we want to access it, we do this dot
+获取它时，需要调用
 
 251
 00:15:47,510 --> 00:15:52,400
-state dot something. On the right in the
+this.state.something。在右侧使用 hook 的
 
 252
 00:15:52,400 --> 00:15:55,760
-example using hooks, we use the state
+例子中，我们使用了
 
 253
 00:15:55,760 --> 00:15:59,990
-hook twice. And that declares two state
+两次 hook。而且声明了两个
 
 254
 00:15:59,990 --> 00:16:03,830
-variables: name and surname. And whenever
+变量：name 和 surname。而且每当
 
 255
 00:16:03,830 --> 00:16:06,560
-we call setName or setSurname,
+我们调用 setName 或 setSurname，
 
 256
 00:16:06,560 --> 00:16:08,750
-this tells React that it needs to
+这时 React 会接到需要
 
 257
 00:16:08,750 --> 00:16:11,000
-rerender this component, just like if we
+重新渲染该组件的通知，就和
 
 258
 00:16:11,000 --> 00:16:13,850
-called setState. And so the next time
+调用 setState 一样。所以下一次
 
 259
 00:16:13,850 --> 00:16:16,370
-React renders our components is going
+React 渲染组件会
 
 260
 00:16:16,370 --> 00:16:19,580
-to pass the current name and the current
+将当前的 name 和
 
 261
 00:16:19,580 --> 00:16:23,510
-surname to our component. And then we can
+surname 传递给组件。而且我们可以
 
 262
 00:16:23,510 --> 00:16:25,520
-use it directly without accessing this
+直接使用这些 state 变量，不需要调用
 
 263
 00:16:25,520 --> 00:16:36,400
-dot state dot something.
+this.state.something。
 
 264
 00:16:36,400 --> 00:16:39,640
-All right. So let's go back to our class
+好的。我们再回到我们的 class 组件的
 
 265
 00:16:39,640 --> 00:16:43,510
-example. What else, what other features of
+例子。有没我们知道的其他的
 
 266
 00:16:43,510 --> 00:16:46,479
-React we know? So another thing you
+React 特性呢？那么另外一个你可能
 
 267
 00:16:46,479 --> 00:16:48,670
-might want to do from a component is to
+希望在组件里面做的事情就是
 
 268
 00:16:48,670 --> 00:16:52,570
-read context. So context, in case you're
+读取 context。有可能你对 context
 
 269
 00:16:52,570 --> 00:16:54,849
-not familiar, it's like, ur, kind of like
+还不熟悉，它就像一种
 
 270
 00:16:54,849 --> 00:16:57,489
-global variables for a subtree. So it's
+为了子树准备的全局变量。它
 
 271
 00:16:57,489 --> 00:17:00,130
-useful for things like read the current
+在读取当前
 
 272
 00:17:00,130 --> 00:17:02,859
-theme like visual theme or the current
+主题或者是当前
 
 273
 00:17:02,859 --> 00:17:05,650
-language that the user is using. And it's
+用户正在使用的语言很有用。它可以
 
 274
 00:17:05,650 --> 00:17:08,050
-useful to avoid passing everything
+有效避免总是
 
 275
 00:17:08,050 --> 00:17:10,150
-through props if you need all components
+通过 props 传值，当所有组件需要
 
 276
 00:17:10,150 --> 00:17:13,030
-to be able to read some value. So we're
+都需要读取一些相同变量的时候。所以我们
 
 277
 00:17:13,030 --> 00:17:17,410
-going to import ThemeContext and 
+将要导入 ThemeContext 和
 
 278
 00:17:17,410 --> 00:17:19,989
-LocaleContext which I already declared in
+LocaleContext，这两个 context 我已经在
 
 279
 00:17:19,989 --> 00:17:23,320
-another file. And the API you've probably
+另一个文件里定义好了。可能你们
 
 280
 00:17:23,320 --> 00:17:25,900
-most familiar with for consuming context,
+最熟悉的用来消费 context，
 
 281
 00:17:25,900 --> 00:17:27,219
-especially if you have to consume
+尤其是消费多个
 
 282
 00:17:27,219 --> 00:17:30,040
-multiple contexts, is the render prop API.
+context 的 API 就是 render prop API。
 
 283
 00:17:30,040 --> 00:17:33,219
-And it looks like this. So I'm going to
+就像这样写。我往下滚动
 
 284
 00:17:33,219 --> 00:17:36,729
-scroll down here. So we can choose ThemeContext
+到这里。我们使用 ThemeContext
 
 285
 00:17:36,729 --> 00:17:40,589
-Consumer that gives us the theme.
+Consumer 获得主题。
 
 286
 00:17:40,589 --> 00:17:43,420
-In my case, it's just going to be a CSS
+在我的例子里，主题就是个简单的
 
 287
 00:17:43,420 --> 00:17:50,109
-class. So I copy this, all this code
+样式。我把这段代码复制，将其全部放入
 
 288
 00:17:50,109 --> 00:17:55,450
-inside the render prop. And I'm going to
+render prop 内部。将
 
 289
 00:17:55,450 --> 00:18:01,150
-use className equals 'theme' . All right,
+className 赋值为 'theme'。好的，
 
 290
 00:18:01,150 --> 00:18:04,280
-very old-timey. [Laughing]
+非常老旧的样式。[笑声]
 
 291
 00:18:04,280 --> 00:18:06,770
-And I also want to show the current
+我也想展示当前的
 
 292
 00:18:06,770 --> 00:18:09,739
-language, so I'm going to use
+语言，因此我将要使用
 
 293
 00:18:09,739 --> 00:18:18,290
-LocaleContext Consumer. And it's going to
+LocaleContext Consumer。我们再来渲染
 
 294
 00:18:18,290 --> 00:18:22,670
-render another row, so I will copy and
+另一行，把这行代码复制
 
 295
 00:18:22,670 --> 00:18:27,969
-paste this row, can say language.
+粘贴到这里，改成 language。
 
 296
 00:18:27,969 --> 00:18:34,760
-Language. And render it here. Okay, we can
+Language。在这里渲染。好的，我们能够看到
 
 297
 00:18:34,760 --> 00:18:37,550
-see that context works. And that's
+context 运行了。这也许是
 
 298
 00:18:37,550 --> 00:18:39,920
-probably normally consume context. We
+最普通的消费 context 情况了。实际上，我们
 
 299
 00:18:39,920 --> 00:18:41,780
-actually added a more convenient API for
+在 React 16.6 版本上增加了一个更加方便的 API
 
 300
 00:18:41,780 --> 00:18:45,800
-accessing it in classes in 16.6. Ur, but
+来获取它。呃，但是
 
 301
 00:18:45,800 --> 00:18:47,900
-this is how you can see multiple
+这就是你们常见的多
 
 302
 00:18:47,900 --> 00:18:53,479
-contexts. So let's look at the, at how we
+context 的情形。那么我们看一下
 
 303
 00:18:53,479 --> 00:18:57,469
-could do this with hooks. So as we said
+如何使用 hook 实现相同的功能。就像我们所
 
 304
 00:18:57,469 --> 00:18:59,780
-that, state is a fundamental feature of
+说，state 是 React
 
 305
 00:18:59,780 --> 00:19:02,690
-React and this is why you can use state.
+的基础特性，因此我们可以使用 useState 来获取 state。
 
 306
 00:19:02,690 --> 00:19:07,339
-And so if we want to use context, I need
+那么如果我们想要使用 context，我需要导入
 
 307
 00:19:07,339 --> 00:19:10,760
-to import my contexts. So this is gonna
+我的 contexts。这里导入
 
 308
 00:19:10,760 --> 00:19:17,500
-be a ThemeContext, LocaleContext. And
+ThemeContext 和 LocaleContext。
 
 309
 00:19:17,500 --> 00:19:20,660
-now if I want to use context from my
+现在如果我想在我组件里使用
 
 310
 00:19:20,660 --> 00:19:27,200
-component, I can use context. And then to
+context，我可以使用 useContext。然后为了
 
 311
 00:19:27,200 --> 00:19:31,239
-get the current theme, I can use context
+获取当前的主题，我可以使用 context
 
 312
 00:19:31,239 --> 00:19:35,060
-ThemeContext. And to get the current
+ThemeContext。为了获取当前的
 
 313
 00:19:35,060 --> 00:19:39,410
-locale I can use context LocaleContext.
+语言，我可以使用 context LocaleContext。
 
 314
 00:19:39,410 --> 00:19:42,560
-And this doesn't just read the context,
+这里 useContext 不只是读取了 context，
 
 315
 00:19:42,560 --> 00:19:44,719
-it also subscribes the component to
+它也订阅了该组件，当 context 发生变化，
 
 316
 00:19:44,719 --> 00:19:47,690
-updates to this context. But it just
+组件随之更新。但现在 useContext 就
 
 317
 00:19:47,690 --> 00:19:49,880
-gives me the current values, so I can, I
+给出了 ThemeContext 的当前值 theme，所以我可以
 
 318
 00:19:49,880 --> 00:19:56,150
-can put it into my CSS className. And I
+将其赋给 className。然后我来添加一个
 
 319
 00:19:56,150 --> 00:20:05,270
-can add the bro, that's language, and I can
+兄弟节点，label 改为 Language， 把 locale 放到
 
 320
 00:20:05,270 --> 00:20:09,240
-put it here.
+这里。
 
 321
 00:20:09,240 --> 00:20:18,410
-[Applause]
+[掌声]
 
 322
 00:20:18,410 --> 00:20:21,150
@@ -2248,467 +2248,467 @@ prop，我需要去重新注册一个不同的 id
 
 563
 00:34:02,730 --> 00:34:07,020
-All right, so there is one more thing that I want
+好的，我在这里还想要演示
 
 564
 00:34:07,020 --> 00:34:10,830
-to show here. So this component is
+另外一件事。现在组件已经
 
 565
 00:34:10,830 --> 00:34:14,610
-getting pretty large, and it's fine. So we
+非常庞大了，这也没有太大的问题。我们考虑到
 
 566
 00:34:14,610 --> 00:34:16,770
-expect that since you now can do more in
+在 function 组件中你们有可能
 
 567
 00:34:16,770 --> 00:34:19,380
-function components, they will get larger
+做更多的事情，组件会变得更大，
 
 568
 00:34:19,380 --> 00:34:23,850
-and that's totally okay. Um, but you might
+但也完全没有问题。嗯，但是你有可能
 
 569
 00:34:23,850 --> 00:34:25,950
-want to reuse some of that logic in
+想要复用其他组件里面到一些逻辑，
 
 570
 00:34:25,950 --> 00:34:28,620
-other components or extract it or test
+或者是想要将公用的逻辑抽取出来，或者是想要
 
 571
 00:34:28,620 --> 00:34:32,040
-it separately. What's interesting though
+分别测试。有趣的是，
 
 572
 00:34:32,040 --> 00:34:35,640
-is that hooks calls uh, they are just
+hook 调用实际上就是
 
 573
 00:34:35,640 --> 00:34:40,650
-function calls. And components they are
+函数调用。而且组件就是
 
 574
 00:34:40,650 --> 00:34:43,920
-just functions. So how do you share your
+函数。那么你们是如何在
 
 575
 00:34:43,920 --> 00:34:47,550
-logic between two functions? You extract
+两个函数之间共享逻辑呢。你们会将公用逻辑提取到
 
 576
 00:34:47,550 --> 00:34:50,490
-it to a different function. That's what
+另外一个函数里面。这也是我将要做的
 
 577
 00:34:50,490 --> 00:34:53,220
-I'm going to do. You're going to copy and
+事情。我把这段代码复制
 
 578
 00:34:53,220 --> 00:34:58,050
-paste this. And I'm going to create a new
+粘贴到这里。我要新建一个
 
 579
 00:34:58,050 --> 00:35:04,890
-function called useWindowWidth and I'll
+叫做 useWindowWidth 的函数。然后把它
 
 580
 00:35:04,890 --> 00:35:08,220
-just paste it here. And so we need the
+粘贴到这里。我们需要
 
 581
 00:35:08,220 --> 00:35:10,350
-width in our component in order to
+组件里面的宽度，以便能够将其
 
 582
 00:35:10,350 --> 00:35:14,550
-render it. So I need to return it from
+渲染。因为我需要在这个函数里面
 
 583
 00:35:14,550 --> 00:35:18,890
-this function, which is the current width.
+返回当前宽度。
 
 584
 00:35:18,890 --> 00:35:25,410
-And then I can go back up. And I can say
+然后我们回到上面的代码，这样修改：
 
 585
 00:35:25,410 --> 00:35:35,640
-const width equals useWindowWidth.
+const width = useWindowWidth。
 
 586
 00:35:35,640 --> 00:35:37,370
-[Applause]
+[掌声]
 
 587
 00:35:37,370 --> 00:35:44,080
-[Cheers]
+[欢呼声]
 
 588
 00:35:44,080 --> 00:35:51,020
-So what is this function? We didn't do
+那么这个函数是什么呢？我们并没有做
 
 589
 00:35:51,020 --> 00:35:53,060
-anything special, we just extracted the
+什么特别的事情，我们仅仅是将逻辑提取到了
 
 590
 00:35:53,060 --> 00:35:56,299
-function. Uh, but there is a convention here.
+一个函数里面。呃，但是这里有一个约定。
 
 591
 00:35:56,299 --> 00:35:59,960
-So we are calling this function a custom
+我们把这种函数叫做 custom
 
 592
 00:35:59,960 --> 00:36:04,610
-hook. And by convention custom hook names
+hook。按照约定，custom hook 的名字
 
 593
 00:36:04,610 --> 00:36:08,270
-always start with use. And so there are
+需要以 use 开头。这么约定主要有
 
 594
 00:36:08,270 --> 00:36:10,220
-two reasons for this. We're now going to
+两个原因。我们
 
 595
 00:36:10,220 --> 00:36:12,890
-like read your function name or to
+会读你的函数名或
 
 596
 00:36:12,890 --> 00:36:15,590
-string it or anything like this. But it
+修改函数名称。但是这是一个
 
 597
 00:36:15,590 --> 00:36:17,540
-is an important convention because first
+重要的约定，因为首先
 
 598
 00:36:17,540 --> 00:36:20,299
-of all, this lets us lint automatically
+以 use 开头来命名 custom hook，可以让我们自动检测是否
 
 599
 00:36:20,299 --> 00:36:22,910
-for violation of the first rule that I
+违反了我之前说过的第一条规则：
 
 600
 00:36:22,910 --> 00:36:25,340
-described about call hooks unconditionally.
+不能在条件判断里面使用 hook。
 
 601
 00:36:25,340 --> 00:36:27,830
-So if we didn't know if something is a
+因此如果我们无法得知哪些函数是
 
 602
 00:36:27,830 --> 00:36:29,390
-hook, then we wouldn't be able to do that.
+hook，那么我们就无法做到自动检测。
 
 603
 00:36:29,390 --> 00:36:33,200
-And another reason is that if you just
+另一个原因是，如果你查看
 
 604
 00:36:33,200 --> 00:36:35,720
-look at the component code, you kind of
+组件的代码，你可能会想要
 
 605
 00:36:35,720 --> 00:36:37,220
-want to know if some function can have
+知道某个函数里面是否含有
 
 606
 00:36:37,220 --> 00:36:39,470
-some state inside of it. So it's
+state。因此
 
 607
 00:36:39,470 --> 00:36:41,750
-important that there is a convention is
+这样的约定很重要，
 
 608
 00:36:41,750 --> 00:36:44,210
-, okay, use something it means that it's
+，好的，以 use 开头的函数表示这个函数是
 
 609
 00:36:44,210 --> 00:36:47,870
-potentially stateful. And here width gives
+有状态的。在这里 width 变量给了
 
 610
 00:36:47,870 --> 00:36:50,690
-us the current width and subscribes us to
+我们当前的宽度并且订阅了
 
 611
 00:36:50,690 --> 00:37:00,020
-updates through it. So if we wanted to, we
+其更新。如果我们想，我们
 
 612
 00:37:00,020 --> 00:37:02,240
-could even go further. It's probably not
+可以更进一步。在这个例子里面
 
 613
 00:37:02,240 --> 00:37:04,460
-necessary in this example, but I just
+也许并不必要，但是
 
 614
 00:37:04,460 --> 00:37:06,680
-want to give you like a sense of what
+我想要给你一个思路。
 
 615
 00:37:06,680 --> 00:37:10,190
-you could do. Um, so let's say like maybe
+嗯，我们也许
 
 616
 00:37:10,190 --> 00:37:11,930
-setting the document title was a bit
+设置文档的标题的功能会更加
 
 617
 00:37:11,930 --> 00:37:13,820
-more complicated and you wanted to like
+复杂，你希望能够把它的逻辑提取
 
 618
 00:37:13,820 --> 00:37:17,090
-extract it or test it separately. So I
+出来并单独测试。那么我把这段代码
 
 619
 00:37:17,090 --> 00:37:20,390
-could just copy and paste this. and I
+复制过来粘贴到这里。我可以
 
 620
 00:37:20,390 --> 00:37:22,580
-could write a new custom hook. I'm gonna
+写一个新的 custom hook。我把这个 hook 
 
 621
 00:37:22,580 --> 00:37:29,450
-call this one useDocumentTitle. And so
+命名为 useDocumentTitle。由于
 
 622
 00:37:29,450 --> 00:37:31,760
-the name and surname don't really make
+name 和 surname 在上下文作用域里
 
 623
 00:37:31,760 --> 00:37:34,250
-sense in the scope's context. We just want
+没有意义。我希望调用
 
 624
 00:37:34,250 --> 00:37:36,440
-to call this title. And this is going to
+标题，标题就是一个
 
 625
 00:37:36,440 --> 00:37:38,600
-be an argument, so custom hooks are
+参数，由于 custom hook 就是
 
 626
 00:37:38,600 --> 00:37:40,640
-javascript functions, so they can take
+javascript 函数，因此他们可以传递
 
 627
 00:37:40,640 --> 00:37:43,430
-arguments and return values or not
+参数，返回值或者
 
 628
 00:37:43,430 --> 00:37:46,700
-return. So it is going to take title as
+不返回。这里我把 title 设置为
 
 629
 00:37:46,700 --> 00:37:49,430
-an argument. And now in my component, I
+参数。然后在组件里面，
 
 630
 00:37:49,430 --> 00:37:54,140
-can say useDocumentTitle, name plus
+使用 useDocumentTitle，参数为 name 加上
 
 631
 00:37:54,140 --> 00:37:55,810
-surname.
+surname。
 
 632
 00:37:55,810 --> 00:37:59,420
-In fact, I could go even further. So in
+事实上，我可以更进一步。在这个例子
 
 633
 00:37:59,420 --> 00:38:01,700
-this case it's totally unnecessary, but
+中是完全没有必要的，但是
 
 634
 00:38:01,700 --> 00:38:04,340
-again, maybe our inputs were more
+同样的道理，也许我们的输入框会更加的
 
 635
 00:38:04,340 --> 00:38:06,259
-complicated, maybe we were tracking
+复杂，也许我们需要追踪
 
 636
 00:38:06,259 --> 00:38:08,150
-whether the input was focused and
+输入框的聚焦或
 
 637
 00:38:08,150 --> 00:38:09,730
-blurred, whether it has been validated,
+失焦事件，或者输入框是否被校验过、
 
 638
 00:38:09,730 --> 00:38:12,680
-submitted and so on. So maybe we had some
+提交过等等。也许我们还有
 
 639
 00:38:12,680 --> 00:38:14,600
-more logic there we wanted to pull it
+更多的逻辑想要从组件中
 
 640
 00:38:14,600 --> 00:38:17,000
-out of our components. Um, and reduce
+抽离。嗯，而且想要减少
 
 641
 00:38:17,000 --> 00:38:18,950
-duplication. And there is already some
+重复代码。这里已经有了重复
 
 642
 00:38:18,950 --> 00:38:21,049
-duplication, so we have this like almost
+的代码，这两段事件处理函数
 
 643
 00:38:21,049 --> 00:38:24,860
-identical event handlers. So what if we
+几乎一样。那么我们如果
 
 644
 00:38:24,860 --> 00:38:26,600
-could just, um, I'm going to delete one of
+，呃，我把他们删除一段，
 
 645
 00:38:26,600 --> 00:38:30,140
-them and extract the other one. I'm going
+然后提取另一段。我要创建另一个
 
 646
 00:38:30,140 --> 00:38:31,970
-to create a new hook, that I'm going to
+新 hook，把它命名为
 
 647
 00:38:31,970 --> 00:38:37,850
-call useFormInput. So this is my change
+useFormInput。这个 hook 是我的
 
 648
 00:38:37,850 --> 00:38:40,820
-handler. Now I'll also copy and paste
+change 处理函数。现在我把这个声明复制
 
 649
 00:38:40,820 --> 00:38:45,890
-this declaration. So this defines the
+粘贴到这里。这里定义了
 
 650
 00:38:45,890 --> 00:38:49,370
-state for this input. And so it's no
+输入框的状态。这里不再是
 
 651
 00:38:49,370 --> 00:38:51,890
-longer name and setName. I'll just call
+name 和 setName。我把这里改为更通用的
 
 652
 00:38:51,890 --> 00:38:56,000
-generically value and setValue. It's
+value 和 setValue。我把初始
 
 653
 00:38:56,000 --> 00:38:58,460
-going to take the initial value as an
+值作为
 
 654
 00:38:58,460 --> 00:39:02,960
-argument. And this is just going to be a
+参数。这里改为
 
 655
 00:39:02,960 --> 00:39:09,529
-handleChange, and this will setValue. So
+handleChange，这里改为 setValue。那么
 
 656
 00:39:09,529 --> 00:39:12,200
-what do we want to get in order to use
+我们该如何做在我们组件里面
 
 657
 00:39:12,200 --> 00:39:14,539
-this, uh, use an input in our component? We
+使用输入框呢？我们需要
 
 658
 00:39:14,539 --> 00:39:16,759
-want to get the current value, and a
+获取当前的 value 和
 
 659
 00:39:16,759 --> 00:39:18,740
-change handler. These are the things that
+change 处理函数。这是我们需要
 
 660
 00:39:18,740 --> 00:39:21,890
-we attach to the input. So let's just
+赋给输入框的。所以我们就在 hook 里面
 
 661
 00:39:21,890 --> 00:39:26,230
-return them. Um, return value and onChange
+返回他们。嗯，返回 value 和 onChange
 
 662
 00:39:26,230 --> 00:39:33,740
-handleChange. So now if we go back up, we
+handleChange 函数。我们回到组件里面，
 
 663
 00:39:33,740 --> 00:39:39,009
-can say name equals useFormInput Mary.
+这里改为 name 等于 useFormInput，参数 Mary。
 
 664
 00:39:39,009 --> 00:39:41,480
-The name is going to be an object with
+这里 name 变为了一个对象，包括
 
 665
 00:39:41,480 --> 00:39:45,200
-value and onChange fields. And surname
+value 和 onChange 函数。这里 surname 等于
 
 666
 00:39:45,200 --> 00:39:52,880
-is useFormInput Poppins. So this is now
+useFormInput， 初始化参数 Poppins。这里改为
 
 667
 00:39:52,880 --> 00:39:55,100
-going to be named dot value and surname
+name.value 和 surname.value
 
 668
 00:39:55,100 --> 00:39:57,289
-dot value because this is where the
+因为这两个值才是
 
 669
 00:39:57,289 --> 00:40:00,710
-string is. And so now I can remove this,
+我们需要的字符串。接下来我把这里
 
 670
 00:40:00,710 --> 00:40:07,100
-and I can spread over the name object.
+删除，然后将其改为 spread 属性。
 
 671
 00:40:07,100 --> 00:40:12,060
-Someone is laughing. [Laughing] All right. Let's just
+有人在笑。[笑声] 好的。我们
 
 672
 00:40:12,060 --> 00:40:15,960
-verify it and break it, yeah it works. So
+来验证一下，是的，运行正常。每次
 
 673
 00:40:15,960 --> 00:40:18,000
-each time we call a hook, its state is
+我们调用 hook，其状态都是
 
 674
 00:40:18,000 --> 00:40:20,880
-completely isolated. And this is because
+完全独立的。这是因为
 
 675
 00:40:20,880 --> 00:40:23,040
-we just rely on the order of hook calls,
+我们依赖调用 hook 的顺序，而不是
 
 676
 00:40:23,040 --> 00:40:25,290
-and not on names or anything. So you can
+通过名称或其他方式来实现的。所以你可以
 
 677
 00:40:25,290 --> 00:40:27,390
-call the same hook multiple times. Each
+多次调用相同的 hook。每次调用都会
 
 678
 00:40:27,390 --> 00:40:32,940
-call will get its own local state. So
+获取其自身的本地状态。
 
 679
 00:40:32,940 --> 00:40:35,490
