@@ -2712,175 +2712,175 @@ name.value 和 surname.value
 
 679
 00:40:32,940 --> 00:40:35,490
-let's compare the two approaches for
+我们最后一次来比较
 
 680
 00:40:35,490 --> 00:40:45,720
-the last time. Um, so on the left we have a
+这两种方式。嗯，在左侧我们熟悉的
 
 681
 00:40:45,720 --> 00:40:48,000
-familiar class component, it has some,
+class 组件例子里，在一个对象里面
 
 682
 00:40:48,000 --> 00:40:51,600
-some state in an object, bind some
+有一些 state，绑定了一些
 
 683
 00:40:51,600 --> 00:40:54,810
-methods, has some logic spread across
+方法，有一些逻辑分散到了
 
 684
 00:40:54,810 --> 00:40:57,060
-different lifecycle methods as a
+不同的声明周期方法里面，这些逻辑是
 
 685
 00:40:57,060 --> 00:41:02,520
-bunch of event handlers, um, uses, um, uses
+一串事件处理函数。嗯，我们用了
 
 686
 00:41:02,520 --> 00:41:04,440
-something things from the context and
+来自 context 的内容来
 
 687
 00:41:04,440 --> 00:41:11,310
-render stuff. Um, pretty familiar. And on the
+渲染内容。嗯，这种情况我们相当属性了。在右侧窗格
 
 688
 00:41:11,310 --> 00:41:13,350
-right pane, this may not look like the
+里面，和我们常见的
 
 689
 00:41:13,350 --> 00:41:17,130
-React components were used to. But it
+React 组件不同。但是它是
 
 690
 00:41:17,130 --> 00:41:19,770
-kind of makes sense. Even if you don't
+有意义的。即使你并不知道
 
 691
 00:41:19,770 --> 00:41:21,270
-know how these functions are implemented.
+这些函数是如何实现的。
 
 692
 00:41:21,270 --> 00:41:24,380
-You can see okay it uses to form inputs, 
+你可以看到，这个函数就是用来组织输入框的，
 
 693
 00:41:24,380 --> 00:41:26,760
-uses some context to get theme and
+这个函数用了 context 来获取主题和
 
 694
 00:41:26,760 --> 00:41:29,460
-locale, it uses the window width and
+本地语言，这个函数使用了窗口宽度和
 
 695
 00:41:29,460 --> 00:41:33,240
-document title, and it renders a bunch of
+文档标题，然后渲染了一连串的
 
 696
 00:41:33,240 --> 00:41:36,360
-stuff. And if we want to. We can scroll
+内容。如果我们想了解更多，我们可以滚动窗口
 
 697
 00:41:36,360 --> 00:41:38,670
-further and we can see okay, so this is
+到下面，可以看到，这就是
 
 698
 00:41:38,670 --> 00:41:41,460
-how the input works, this is how setting
+输入框如何运行的代码，这里是如何设置
 
 699
 00:41:41,460 --> 00:41:44,340
-the document title works, this is how the
+文档标题的代码，而这里是如何设置并订阅
 
 700
 00:41:44,340 --> 00:41:47,520
-window width subscription works. Or maybe
+窗口宽度的代码。或许
 
 701
 00:41:47,520 --> 00:41:49,920
-this could be an npm package and you
+这里可以是一个 npm 包，实际上
 
 702
 00:41:49,920 --> 00:41:52,470
-don't actually need to know that. All we
+你没有必要了解它是如何实现的。我们可以
 
 703
 00:41:52,470 --> 00:41:54,510
-could pull it back into a component or
+将它在组件里面调用，或者在组件之间复制粘贴
 
 704
 00:41:54,510 --> 00:41:56,910
-copy and paste between components. So
+他们。
 
 705
 00:41:56,910 --> 00:42:00,060
-hooks give you custom hooks, give you the
+Hook 提供了 custom hook，灵活提供了
 
 706
 00:42:00,060 --> 00:42:01,620
-flexibility to create your own
+创建你自己的
 
 707
 00:42:01,620 --> 00:42:04,710
-abstractions that are not ...  they do not
+抽象函数的功能，custom hook 不会让你
 
 708
 00:42:04,710 --> 00:42:08,100
-inflate your React component tree and avoid
+的 React 组建树变得庞大，而且可以避免
 
 709
 00:42:08,100 --> 00:42:14,720
-the wrapper hell.
+“包装地狱”。
 
 710
 00:42:14,720 --> 00:42:16,610
-[Applause]
+[掌声]
 
 711
 00:42:16,610 --> 00:42:22,010
-[Applause]
+[掌声]
 
 712
 00:42:22,010 --> 00:42:23,749
-[Applause]
+[掌声]
 
 713
 00:42:23,749 --> 00:42:27,630
-And importantly these are not two
+而且重要的是，这两个例子并不是
 
 714
 00:42:27,630 --> 00:42:29,489
-separate applications. So this is
+独立的两个应用。实际上，这两个例子是在
 
 715
 00:42:29,489 --> 00:42:32,640
-actually one application. So I have this
+同一个应用里面。我把这个窗口
 
 716
 00:42:32,640 --> 00:42:34,590
-window open just to demonstrate that
+打开的目的就是想要展示
 
 717
 00:42:34,590 --> 00:42:37,650
-classes can work side by side with hooks.
+class 可以和 hook 并肩工作。
 
 718
 00:42:37,650 --> 00:42:40,620
-And while hooks represent our vision for
+而 hook 代表这我们对 React 未来的
 
 719
 00:42:40,620 --> 00:42:44,580
-the future of React. Uh, we don't want to
+期许，嗯，但是我们并不想
 
 720
 00:42:44,580 --> 00:42:47,789
-make breaking changes like this. So we
+做出不向下兼容的改变。我们还需要
 
 721
 00:42:47,789 --> 00:42:53,310
-need to keep classes working. Ur, let's go
+保证 class 可以正常运行。
 
 722
 00:42:53,310 --> 00:43:02,189
