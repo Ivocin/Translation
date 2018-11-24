@@ -1,4 +1,4 @@
-1
+﻿1
 00:00:04,000 --> 00:00:10,550
 Hi. Ah, my name is Dan, I work on the React
 
@@ -1284,967 +1284,967 @@ put it here.
 
 322
 00:20:18,410 --> 00:20:21,150
-All right, so let's,let's compare the two
+那么，让我们，让我们比较这两个
 
 323
 00:20:21,150 --> 00:20:25,170
-approaches. So this is the traditional
+方法。这是传统的
 
 324
 00:20:25,170 --> 00:20:28,370
-kind of render prop API.
+render prop API 的使用方式。
 
 325
 00:20:28,370 --> 00:20:31,140
-It is very explicit about what it's
+非常清楚地显示了它正在做什么。
 
 326
 00:20:31,140 --> 00:20:34,650
-doing. But it does get a little bit
+但是它还包含了一点点的
 
 327
 00:20:34,650 --> 00:20:38,430
-nested and you encounter this not just
+嵌套，而且你遇到的不只有
 
 328
 00:20:38,430 --> 00:20:39,930
-with context with, with any kind of
+任何一种
 
 329
 00:20:39,930 --> 00:20:44,880
-render prop API. So with hooks, it
+render prop API。所以使用 hooks，它
 
 330
 00:20:44,880 --> 00:20:49,500
-does the same thing. But it's flat. So we
+也能做同样的事情。但是会有些单调。所以我们
 
 331
 00:20:49,500 --> 00:20:51,359
-just say we use this context in this
+就说我们使用这个 context 在这个
 
 332
 00:20:51,359 --> 00:20:53,820
-context and we get the theme and locale.
+context 中，并且我们得到了 theme 和 locale。
 
 333
 00:20:53,820 --> 00:21:00,120
-And then we can use them. So you might be
+然后我们可以使用它们了。然后，你可能
 
 334
 00:21:00,120 --> 00:21:01,979
-wondering at this point how can React
+想问 React 是如何
 
 335
 00:21:01,979 --> 00:21:04,739
-possibly know. For example, I have this two
+知道的。例如，我在这调用了两个
 
 336
 00:21:04,739 --> 00:21:07,140
-useState calls. So how does it know
+useState。所以它是如何知道
 
 337
 00:21:07,140 --> 00:21:09,390
-which state variable corresponds to
+哪一个 state 和调用的哪一个
 
 338
 00:21:09,390 --> 00:21:13,770
-which useState call. And the answer is
+useState 是相一致的。答案是
 
 339
 00:21:13,770 --> 00:21:16,859
-that React relies on the order of these
+React 依赖于这些
 
 340
 00:21:16,859 --> 00:21:20,430
-calls. This may be a little bit unusual.
+调用的顺序。这可能有一点不太寻常。
 
 341
 00:21:20,430 --> 00:21:24,630
-And, ah, in order for this to work correctly,
+为了让它正确地运行起来。
 
 342
 00:21:24,630 --> 00:21:26,940
-there is a rule that you need to follow
+当你在使用 hooks 的时候，这儿有一条你需要去遵循的规则。
 
 343
 00:21:26,940 --> 00:21:30,450
-when you use hooks. And the rule is that
+这条规则就是
 
 344
 00:21:30,450 --> 00:21:34,170
-you cannot call hook inside a condition.
+你不能在条件里面调用 hook。
 
 345
 00:21:34,170 --> 00:21:36,690
-It has to be at the top level of your
+它必须在你的组件的顶层。
 
 346
 00:21:36,690 --> 00:21:39,150
-component. So if I do something like, if
+所以如果我做一些类似于
 
 347
 00:21:39,150 --> 00:21:43,380
-props condition, and then I call the useState
+props 条件，然后我在这调用 useState
 
 348
 00:21:43,380 --> 00:21:45,989
-hook here. We actually have a
+hook。我们实际上拥有一个
 
 349
 00:21:45,989 --> 00:21:49,020
-linter plugin that is going to complain
+linter 插件用来提示
 
 350
 00:21:49,020 --> 00:21:51,000
-that 'This is not the correct way to use
+'This is not the correct way to use
 
 351
 00:21:51,000 --> 00:21:55,050
-hooks'. And we realize that this is an
+hooks'。我们意识到这是一个 
 
 352
 00:21:55,050 --> 00:21:59,640
-unusual limitation, uh, but it is pretty
+不同寻常的限制，嗯，但是这对正确地使用
 
 353
 00:21:59,640 --> 00:22:02,190
-important for hooks tour correctly and
+hooks 十分重要，也
 
 354
 00:22:02,190 --> 00:22:04,920
-also to enable certain things that I
+可以使事情变得更明确，我
 
 355
 00:22:04,920 --> 00:22:07,380
-think will you will like that I will show
+认为你们会喜欢它的，我等会儿会向你们
 
 356
 00:22:07,380 --> 00:22:11,359
-it later.
+展示它。
 
 357
 00:22:11,359 --> 00:22:17,970
-All right, so let's go back to our class.
+那么，让我们回头看看我们的 class。
 
 358
 00:22:17,970 --> 00:22:20,040
-So the other thing you might want to
+你使用 class 想要
 
 359
 00:22:20,040 --> 00:22:23,880
-reach for the class for is lifecycle
+达到的另一件事可能就是生命周期
 
 360
 00:22:23,880 --> 00:22:26,880
-methods. So the most commonly use case
+方法。所以最普遍的
 
 361
 00:22:26,880 --> 00:22:28,620
-for lifecycle methods is you want to
+生命周期方法的案例就是你想要
 
 362
 00:22:28,620 --> 00:22:31,710
-perform some side effect such as firing
+执行一些 sideEffect，例如发送
 
 363
 00:22:31,710 --> 00:22:34,170
-off request, performing some kind of
+请求，执行一些
 
 364
 00:22:34,170 --> 00:22:37,380
-imperative DOM mutation interfacing with
+使用浏览器 API 的必要的 DOM 转换接口
 
 365
 00:22:37,380 --> 00:22:39,570
-the browser APIs. So you might want to
+所以，你可能想要
 
 366
 00:22:39,570 --> 00:22:41,490
-do something like this and you can't do
+做一些类似于这个，但是你不能使用
 
 367
 00:22:41,490 --> 00:22:43,950
-during rendering, because it's, it's not
+渲染。因为它还不能
 
 368
 00:22:43,950 --> 00:22:46,579
-rendered yet. So the way you do
+被渲染。所以，你在 React 中使用
 
 369
 00:22:46,579 --> 00:22:49,770
-side effects in React is you declare a
+side effects 的方法是你声明一个
 
 370
 00:22:49,770 --> 00:22:52,200
-lifecycle method like componentDidMount.
+类似于 componentDidMount 的生命周期方法。
 
 371
 00:22:52,200 --> 00:22:58,140
-And then let's say that, uh, if, let me show
+那么比如说，嗯，让我向你们展示一下
 
 372
 00:22:58,140 --> 00:23:00,000
-this. So you see at the top of the screen,
+这个。那么，你看到在屏幕的顶部，
 
 373
 00:23:00,000 --> 00:23:03,450
-it says React App. So there is actually a
+它显示的是 React App。这里实际上拥有一个
 
 374
 00:23:03,450 --> 00:23:06,030
-browser API that lets us update this. So
+使我们更新这个的浏览器 API。
 
 375
 00:23:06,030 --> 00:23:09,810
-let's say we want the tab title to be
+比如说我们想要这个 tab 的标题变成
 
 376
 00:23:09,810 --> 00:23:12,660
-the name of the person and changed it as
+这个人的名字并且随着我定义的值而改变。
 
 377
 00:23:12,660 --> 00:23:15,810
-I type. And so to set it initially I'm
+然后，现在我要初始化它
 
 378
 00:23:15,810 --> 00:23:17,670
-going, uh, there is a browser API to do
+嗯，这儿有一个浏览器 API 可以做
 
 379
 00:23:17,670 --> 00:23:21,089
-this, is document.title equals
+这件事，那就是 document.title 等于
 
 380
 00:23:21,089 --> 00:23:24,720
-this.state.name plus space plus
+this.state.name 加空格加
 
 381
 00:23:24,720 --> 00:23:29,250
-this.state.surname. So now we can
+this.state.surname。那么现在我们可以
 
 382
 00:23:29,250 --> 00:23:33,570
-see it says Mary Poppins. But then if I,
+看见这里显示 Mary Poppins。但是如果我现在，
 
 383
 00:23:33,570 --> 00:23:37,110
-if I edit it, it doesn't get
+如果我编辑它，它不会
 
 384
 00:23:37,110 --> 00:23:39,090
-automatically updated, because I also
+自动地更新，因为我也
 
 385
 00:23:39,090 --> 00:23:41,930
-need to implement componentDitUpdate.
+需要 implement componentDitUpdate。
 
 386
 00:23:41,930 --> 00:23:44,940
-For the, uh, for the side effects to be
+为了让 side effect 变得
 
 387
 00:23:44,940 --> 00:23:48,480
-consistent with what I rendered. So I'm
+和我渲染的一致，所以我
 
 388
 00:23:48,480 --> 00:23:50,060
-going to declare componentDitUpdate,
+将要声明 componentDitUpdate,
 
 389
 00:23:50,060 --> 00:23:57,150
-and just copy and paste this.
+就只要复制和粘贴到这。
 
 390
 00:23:57,150 --> 00:24:00,440
-All right, so now says Mary Poppins, but if I
+那么，现在说 Mary Poppins，但是如果我
 
 391
 00:24:00,440 --> 00:24:04,560
-started editing it, the document title
+开始编辑它，这个文档的标题也更新了。
 
 392
 00:24:04,560 --> 00:24:06,960
-updates. And this is how we perform side
+这就是我们如何在一个
 
 393
 00:24:06,960 --> 00:24:15,640
-effects in a class.
+class 里执行一个 side effect 了。
 
 394
 00:24:15,640 --> 00:24:21,830
-So how do we do this with hooks. Well the
+所以我们要如何用 hooks 实现它呢。
 
 395
 00:24:21,830 --> 00:24:23,960
-ability to perform side effects is
+执行 side effect 是 
 
 396
 00:24:23,960 --> 00:24:27,970
-another core feature of React components.
+React 组件的另一个核心特点。
 
 397
 00:24:27,970 --> 00:24:32,779
-So if we want to use an effect from our
+所以如果我们想要使用我们的
 
 398
 00:24:32,779 --> 00:24:37,700
-component. Make an import use effect from
+组件的效果，需要从 React 里 import 一个 useEffect。
 
 399
 00:24:37,700 --> 00:24:43,760
-React. And then we want to tell React
+然后我们要告诉 React
 
 400
 00:24:43,760 --> 00:24:46,100
-what to do after React has flushed our
+在 React 清除组件之后
 
 401
 00:24:46,100 --> 00:24:48,740
-components to the DOM. So we pass a
+对 DOM 做什么。所以我们通过一个
 
 402
 00:24:48,740 --> 00:24:51,590
-function which is where we perform our
+在我们执行 effect 的时候的函数
 
 403
 00:24:51,590 --> 00:24:54,110
-effect. So I'm going to say document dot
+所以我设置 document.
 
 404
 00:24:54,110 --> 00:24:57,610
-title equals name plus space plus
+title 等于 name 加上空格加上
 
 405
 00:24:57,610 --> 00:25:05,150
-surname. You can see it says Mary Poppins
+surname。你们可以看到这儿就显示了 Mary Poppins。
 
 406
 00:25:05,150 --> 00:25:10,100
-here. And if I start editing it actually
+然后如果我开始编辑它，它实际上也会
 
 407
 00:25:10,100 --> 00:25:11,769
-updates.
+更新。
 
 408
 00:25:11,769 --> 00:25:15,289
-So what default useEffect runs both
+所以要使默认的 userEffect 运行起来
 
 409
 00:25:15,289 --> 00:25:18,799
-after the initial render and after every
+需要在初始化渲染和每一次
 
 410
 00:25:18,799 --> 00:25:21,650
-update. So by default it is consistent
+更新之后。所以通过默认设置他会和
 
 411
 00:25:21,650 --> 00:25:24,980
-with what here rendered. And you can opt
+这儿渲染什么相一致。
 
 412
 00:25:24,980 --> 00:25:26,960
-out of this behavior if like for
+如果出于考虑性能原因
 
 413
 00:25:26,960 --> 00:25:28,850
-performance reasons and, or if you have
+或者你有特殊的逻辑，可以选择不采用这种行为。
 
 414
 00:25:28,850 --> 00:25:32,539
-special logic. And Ryan's talk after me
+在我之后，Ryan 的演讲
 
 415
 00:25:32,539 --> 00:25:37,910
-will touch a little bit on this. So let's
+将会谈到一些关于这个的内容。所以，让我们
 
 416
 00:25:37,910 --> 00:25:43,700
-compare the two approaches. So in the, in the
+比较这两个方法。在这个，这个
 
 417
 00:25:43,700 --> 00:25:45,890
-class we divide method ... we divide the
+类里，我们将函数分开。我们
 
 418
 00:25:45,890 --> 00:25:48,860
-logic based on lifecycle method names. So
+基于生命周期函数名将逻辑分开。所以
 
 419
 00:25:48,860 --> 00:25:50,210
-this is why we have componentDidMount,
+这是我们为什么会有 componentDidMount,
 
 420
 00:25:50,210 --> 00:25:51,799
-componentDitUpdate, they fire at
+componentDitUpdate 的原因。他们在
 
 421
 00:25:51,799 --> 00:25:54,560
-different times. And we sometimes repeat
+不同的时间上被触发。我们有时候
 
 422
 00:25:54,560 --> 00:25:56,450
-some logic between them, we could extract
+在他们之间重复一些逻辑。我们可以把
 
 423
 00:25:56,450 --> 00:25:58,519
-it to a function but still we would have
+它放进一个函数里，但是我们仍然不得不
 
 424
 00:25:58,519 --> 00:26:00,890
-to call it in two places and remember to
+在两个地方调用它，而且要记得
 
 425
 00:26:00,890 --> 00:26:04,370
-keep it consistent. And with, uh, with the
+保持一致。通过，通过使用
 
 426
 00:26:04,370 --> 00:26:07,610
-effect hook, the effects are consistent
+effect hook，效果会和
 
 427
 00:26:07,610 --> 00:26:09,650
-by default although there is a way to
+默认的保持一致。即使这有个办法
 
 428
 00:26:09,650 --> 00:26:13,340
-opt out of that. And not is that in the
+能够不采用这个方法。并不是说
 
 429
 00:26:13,340 --> 00:26:15,350
-class we need to access this dot state,
+在类中我们需要访问 this.state，
 
 430
 00:26:15,350 --> 00:26:17,360
-so there needs to be a special API to do
+所以需要一个特殊的 API 来完成
 
 431
 00:26:17,360 --> 00:26:20,570
-this. But in the effect example, we
+这个。但是在这个 effect 例子中，我们
 
 432
 00:26:20,570 --> 00:26:22,070
-actually don't need a special API to
+实际上不需要一个特殊的 API 去
 
 433
 00:26:22,070 --> 00:26:24,040
-access the state
+访问这个 state
 
 434
 00:26:24,040 --> 00:26:26,470
-variable. Because it's already in the
+变量。因为它已经在
 
 435
 00:26:26,470 --> 00:26:28,450
-scope of the function. It is declared
+这个函数的范围内。它被声明在
 
 436
 00:26:28,450 --> 00:26:31,270
-right above. And this is why the effect
+右边。这就是 the effect
 
 437
 00:26:31,270 --> 00:26:34,780
-is declared inside the component rather
+被声明在这个 component 里，而
 
 438
 00:26:34,780 --> 00:26:37,390
-than the, rather than outside. Because
+不是，不是在外面的原因。因为
 
 439
 00:26:37,390 --> 00:26:39,700
-this gives us access to state variables,
+这样我们能够访问 state 变量，
 
 440
 00:26:39,700 --> 00:26:42,520
-ability to set them and anything else
+能够去设置他们和任何其他
 
 441
 00:26:42,520 --> 00:26:45,130
-like the current context value for
+像当前上下文的值。例如，
 
 442
 00:26:45,130 --> 00:26:56,380
-example, or any of these contexts. 
+这些上下文的其中一个。
 
 443
 00:26:56,380 --> 00:26:58,120
-All right, so let's go back to the familiar
+那么，我们回头看看熟悉的
 
 444
 00:26:58,120 --> 00:27:02,290
-class example. Ur, another thing you might
+类的例子。嗯，其他你可能
 
 445
 00:27:02,290 --> 00:27:04,180
-want to use lifecycle methods for in a
+想要做的事是使用生命周期方法
 
 446
 00:27:04,180 --> 00:27:07,750
-class is subscriptions. So maybe you want
+在类被使用的时候。所以你可能想要
 
 447
 00:27:07,750 --> 00:27:09,550
-to subscribe to some kind of browser API
+去订阅一些浏览器 API，
 
 448
 00:27:09,550 --> 00:27:12,040
-and it gives you some value, for example
+然后它会提供给你一些值，例如
 
 449
 00:27:12,040 --> 00:27:15,250
-the window size. And you want to update
+窗口的大小。然后你想要更新
 
 450
 00:27:15,250 --> 00:27:17,500
-the state in response to changes to this
+这个 state 对该值的改变做出反应。
 
 451
 00:27:17,500 --> 00:27:20,440
-value. And so the way we could do this in
+所以我们可以在一个类里使用这个方法
 
 452
 00:27:20,440 --> 00:27:23,800
-a class, let's say that we want to, ur, that
+比如说我们想要，嗯，
 
 453
 00:27:23,800 --> 00:27:26,590
-we want to monitor the window width. So
+我们想要监测窗口的宽度。所以
 
 454
 00:27:26,590 --> 00:27:30,610
-I'm going to put width into state. This
+我将 width 放进 state 里。这个
 
 455
 00:27:30,610 --> 00:27:35,560
-window innerWidth browser API. And I
+window.innerWidth 浏览器 API。然后我
 
 456
 00:27:35,560 --> 00:27:38,980
-want to render it. Ur, let me copy and paste
+想要渲染它。嗯，让我们复制并且粘贴
 
 457
 00:27:38,980 --> 00:27:47,800
-this. So this is gonna say width. And I'm
+这个。所以这个将会展示 width。我将
 
 458
 00:27:47,800 --> 00:27:49,750
-going to render it here. It is this dot state
+在这个地方渲染它。它是 this.state
 
 459
 00:27:49,750 --> 00:27:53,590
-dot width. This is the width of the
+width。这就是窗口的宽度了，
 
 460
 00:27:53,590 --> 00:27:57,860
-window, not the width of Mary Poppins. [Laughing]
+而不是 Mary Poppins 的宽度。 [大笑]
 
 461
 00:27:57,860 --> 00:28:02,660
-And I'm going to add a, ur, I'm going to add
+我将添加一个，嗯，我将要添加
 
 462
 00:28:02,660 --> 00:28:04,580
-an event listener, so we need to actually
+一个事件监听，所以我们需要真真切切地
 
 463
 00:28:04,580 --> 00:28:08,090
-listen to changes in the width. So at
+监听这个 width 的改变。所以设置
 
 464
 00:28:08,090 --> 00:28:12,670
-window dot addEventListener.
+window.addEventListener。
 
 465
 00:28:12,670 --> 00:28:15,560
-I'm, I'm going to listen to the resize
+我，我将监听 resize 事件，
 
 466
 00:28:15,560 --> 00:28:20,749
-event, handle resize. And I need to
+handleResize。然后我需要
 
 467
 00:28:20,749 --> 00:28:23,330
-declare this event. And so this is where
+声明这个事件。所以在这儿
 
 468
 00:28:23,330 --> 00:28:27,350
-we're going to update the width state, to
+我们将更新这个 width 状态，变成
 
 469
 00:28:27,350 --> 00:28:32,150
-be window dot innerWidth. And we need
+window.innerWidth。然后我们需要
 
 470
 00:28:32,150 --> 00:28:42,229
-to bind it. And, uh, and I also need to
+去绑定它。然后，嗯，然后我也需要
 
 471
 00:28:42,229 --> 00:28:44,269
-unsubscribe. So I don't want a memory
+取消订阅。所以我不想要一个内存
 
 472
 00:28:44,269 --> 00:28:46,580
-leak with like keeping these
+泄漏比如说保留这些
 
 473
 00:28:46,580 --> 00:28:48,140
-subscriptions. I want to unsubscribe from
+订阅。我想要从这个事件取消订阅。
 
 474
 00:28:48,140 --> 00:28:50,600
-this event. So the way we do this in a
+所以我们在一个类里做这个的办法
 
 475
 00:28:50,600 --> 00:28:52,880
-class is we create another lifecycle
+是我们创建其他
 
 476
 00:28:52,880 --> 00:28:56,650
-method called componentWillUnmount. And
+叫做 componentWillUnmount 的生命周期方法。然后
 
 477
 00:28:56,650 --> 00:28:59,029
-I'm going to copy and paste this logic
+我将复制并且粘贴这段逻辑逻辑代码
 
 478
 00:28:59,029 --> 00:29:01,779
-here, except this will 
+到这，将这个替换成 
 
 479
 00:29:01,779 --> 00:29:05,299
-removeEventListener. So we set up an event
+removeEventListener。所以我们设置了一个事件
 
 480
 00:29:05,299 --> 00:29:06,920
-listener, and we remove the event
+监听，然后我们移除这个事件
 
 481
 00:29:06,920 --> 00:29:08,870
-listener. And we can verify that this
+监听。然后我们可以
 
 482
 00:29:08,870 --> 00:29:11,479
-actually works by dragging this. You see
+通过拖动来验证这一点。你看到
 
 483
 00:29:11,479 --> 00:29:17,029
-the width is changing. So it works. So
+这个 width 正在变化。所以它起效果了。所以
 
 484
 00:29:17,029 --> 00:29:18,920
-let's see how could ...  how we could do this
+让我们看看如何可以，我们如何
 
 485
 00:29:18,920 --> 00:29:31,130
-with hooks. So conceptually listening to
+用 hooks 实现这个。因此，从概念上来说，监听
 
 486
 00:29:31,130 --> 00:29:33,709
-the window width has nothing to do with
+窗口宽度
 
 487
 00:29:33,709 --> 00:29:37,279
-setting the document title. So that's why
+与设置文档标题无关。所以这就是为什么
 
 488
 00:29:37,279 --> 00:29:39,320
-we're not gonna put it in that effect.
+我们没有把它放入 effect 的原因。
 
 489
 00:29:39,320 --> 00:29:41,330
-It's conceptually completely separate
+这在概念上是完全独立的 effect，
 
 490
 00:29:41,330 --> 00:29:44,060
-effect and just like we could use state
+就像我们可以使用不止一次的 useState 用来
 
 491
 00:29:44,060 --> 00:29:46,610
-more than once to declare multiple state
+去声明多种 state 
 
 492
 00:29:46,610 --> 00:29:49,580
-variables, we can use effect more than
+变量，我们可以使用不止一次的 useEffect
 
 493
 00:29:49,580 --> 00:29:54,130
-once to perform different side effects.
+去实现不同的 side effects。
 
 494
 00:29:54,130 --> 00:29:57,560
-So I want to subscribe to window
+所以我想要订阅 window.
 
 495
 00:29:57,560 --> 00:30:05,259
-addEventListener, resize, handleResize. And
+addEventListener，resize，handleResize。然后
 
 496
 00:30:05,259 --> 00:30:08,719
-I'm gonna need to keep some state for
+我需要保存一些
 
 497
 00:30:08,719 --> 00:30:10,130
-the current width.
+当前 width 的状态。
 
 498
 00:30:10,130 --> 00:30:12,140
-So I'm actually going to declare another
+所以，我将声明其他的
 
 499
 00:30:12,140 --> 00:30:17,330
-state variable. So I'll say, ur, width and
+ state 变量。所以我提到，嗯，width 和
 
 500
 00:30:17,330 --> 00:30:23,390
-setWidth. We get them by using state with
+setWidth。我们通过 useState
 
 501
 00:30:23,390 --> 00:30:27,670
-window innerWidth as the initial value.
+设置他们的初始值为 window.innerWidth。
 
 502
 00:30:27,670 --> 00:30:32,450
-And now in my handleResize function,
+现在，在我的 handleResize 函数里,
 
 503
 00:30:32,450 --> 00:30:34,130
-I'll just declare it here. Because it
+我将在这声明它。因为它
 
 504
 00:30:34,130 --> 00:30:37,489
-isn't used anywhere else. And it's going
+没有在其他地方被使用。然后用
 
 505
 00:30:37,489 --> 00:30:44,180
-to setWidth to the current width. Um, I
+setWidth 去设置它当前的 width。嗯，我
 
 506
 00:30:44,180 --> 00:30:46,460
-need to render it. So I'll copy
+需要去渲染它。所以我复制
 
 507
 00:30:46,460 --> 00:30:54,580
-and paste this row. I'm gonna say width.
+并粘贴这个 row。我在这儿写 width。 
 
 508
 00:30:54,580 --> 00:30:58,910
-And finally I need to clean up after
+最后我需要在这个 
 
 509
 00:30:58,910 --> 00:31:02,060
-this effect. So I need to specify how to
+effect 之后去清除它。所以我需要指定如何
 
 510
 00:31:02,060 --> 00:31:05,870
-clean up. And again conceptually cleaning
+清除。再一次从概念上说，清除
 
 511
 00:31:05,870 --> 00:31:08,779
-up is part of this effect. So this effect
+也是这个 effect 的一部分。所以这个 effect
 
 512
 00:31:08,779 --> 00:31:12,940
-has a clean up place. And the order, you,
+有一个清除的地方。这个顺序，你，
 
 513
 00:31:12,940 --> 00:31:16,070
-the way you can specify it is that any
+你可以提出的办法是任何
 
 514
 00:31:16,070 --> 00:31:21,549
-effect can optionally return a function.
+effect 可以选择返回一个函数。
 
 515
 00:31:21,549 --> 00:31:25,970
-And if it does return the function, then
+如果它返回一个函数，那么
 
 516
 00:31:25,970 --> 00:31:28,039
-React will call this function to clean
+React 将调用这个函数
 
 517
 00:31:28,039 --> 00:31:30,830
-up after the effect. So this is where we
+在 effect 之后清除。所以这就是我们
 
 518
 00:31:30,830 --> 00:31:37,920
-unsubscribe.
+取消订阅的地方。
 
 519
 00:31:37,920 --> 00:31:39,870
-Okay, let's just verify that this
+Ok，让我们验证一下
 
 520
 00:31:39,870 --> 00:31:49,000
-actually works. Yay. [Applause]
+这个实际的操作吧。耶！[鼓掌]
 
 521
 00:31:56,220 --> 00:32:02,640
-So let's compare the two approaches. On the left, we have a
+那么让我们比较这两个方法。在左边，我们使用了一个
 
 522
 00:32:02,640 --> 00:32:06,690
-familiar class component, ur, nothing
+熟悉的 class 组件，嗯，在这没有
 
 523
 00:32:06,690 --> 00:32:09,539
-surprising there. We, we have some side
+令人惊喜的东西。我们，我们有一些 side
 
 524
 00:32:09,539 --> 00:32:12,720
-effects, some related logic is split
+effects，一些和逻辑相关的是分开
 
 525
 00:32:12,720 --> 00:32:15,360
-apart. So we can see that document title
+的部分。所以我们可以看见文档的标题
 
 526
 00:32:15,360 --> 00:32:17,190
-has been set here. But it's also being
+在这儿被设置。但是它在这也
 
 527
 00:32:17,190 --> 00:32:19,680
-set here. And then we subscribe to an
+被设置了。然后我们在这订阅一个
 
 528
 00:32:19,680 --> 00:32:20,610
-effect here.
+effect。
 
 529
 00:32:20,610 --> 00:32:23,220
-Sorry, subscribe to the event here, but we
+抱歉，在这订阅这个事件，但是我们
 
 530
 00:32:23,220 --> 00:32:25,650
-unsubscribe here. So these things need to
+在这取消订阅。所以这些事情需要
 
 531
 00:32:25,650 --> 00:32:28,710
-be in sync with each other. And then this
+相互同步。然后这个
 
 532
 00:32:28,710 --> 00:32:31,260
-method contains two unrelated methods
+方法包含了两个不相关的方法
 
 533
 00:32:31,260 --> 00:32:34,950
-two unrelated lines. So that me in the in
+在这不相关的两行中。因此，我，在，在
 
 534
 00:32:34,950 --> 00:32:36,690
-feature make it a bit difficult to test
+特点上孤立地测试他们有点难。
 
 535
 00:32:36,690 --> 00:32:41,039
-them in isolation. But it looks very
+但是它看起来非常的令人熟悉。
 
 536
 00:32:41,039 --> 00:32:46,350
-familiar. So that's, that's nice. So this
+所以，这，这很棒。所以这段
 
 537
 00:32:46,350 --> 00:32:48,660
-code probably looks less familiar. But
+代码看起来可能会更不怎么熟悉。但是
 
 538
 00:32:48,660 --> 00:32:50,039
-let's take another look at what's going
+让我们再看一看这里发生了什么。
 
 539
 00:32:50,039 --> 00:32:54,150
-on here. Ur, in with hooks we separate code
+嗯，在 hooks 中，我们分离代码
 
 540
 00:32:54,150 --> 00:32:56,310
-not based on the lifecycle method name,
+不是基于生命周期函数的名字，
 
 541
 00:32:56,310 --> 00:32:59,700
-but based on what the code is doing. So
+而是基于这段代码要做什么。所以
 
 542
 00:32:59,700 --> 00:33:01,680
-we can see that there is one effect
+我们可以看到这个有一个 effect 
 
 543
 00:33:01,680 --> 00:33:04,289
-which is we updated document title.
+我们用来更新文档的标题
 
 544
 00:33:04,289 --> 00:33:06,090
-That's one thing, this component can do.
+这是一件 compnent 能做的事。
 
 545
 00:33:06,090 --> 00:33:09,360
-And then there is another effect which
+然后这儿有另一个
 
 546
 00:33:09,360 --> 00:33:12,299
-is subscribing to the window resize
+被订阅用于 window resize 时间的 effect 
 
 547
 00:33:12,299 --> 00:33:14,610
-event and update in the state when it
+并且当它被改变时在这个 state 里被更新。
 
 548
 00:33:14,610 --> 00:33:18,870
-changes. And, ur, this effect has a cleanup
+然后，嗯，这个 effect 有一个清除
 
 549
 00:33:18,870 --> 00:33:21,000
-phase which means that when it's time to
+阶段，意味着什么时候该去
 
 550
 00:33:21,000 --> 00:33:23,549
-remove this effect React removes it and
+移除这个 effect，React 移除它
 
 551
 00:33:23,549 --> 00:33:26,730
-avoids the memory leaks. And if you've
+然后避免内存泄漏。如果你
 
 552
 00:33:26,730 --> 00:33:28,920
-been carefully watching, you might notice
+一直仔细观察，你可能注意到
 
 553
 00:33:28,920 --> 00:33:31,110
-that since effect run after every render,
+由于 effect 在每次渲染之后运行，
 
 554
 00:33:31,110 --> 00:33:33,600
-we're just gonna keep resubscribing. So
+我们只是继续重新订阅。所以
 
 555
 00:33:33,600 --> 00:33:36,150
-there is a way to optimize this. Uh, so
+这儿有一个方法去优化这个。嗯。所以
 
 556
 00:33:36,150 --> 00:33:38,820
-default is to be consistent, ur, which is
+默认是一致的，嗯，这
 
 557
 00:33:38,820 --> 00:33:40,590
-important. If you for example use some
+很重要。如果你，例如在这使用一些
 
 558
 00:33:40,590 --> 00:33:44,039
-prop here, I need to resubscribe to a different id from
+prop，我需要去重新注册一个不同的 id 
 
 559
 00:33:44,039 --> 00:33:46,350
-props or something similar. But there is
+从道具或类似的东西。但是这儿有
 
 560
 00:33:46,350 --> 00:33:48,360
-a way to optimize it and opt out of this
+一个方法去优化它并且选择不用这个
 
 561
 00:33:48,360 --> 00:33:50,250
-behavior. And Ryan in the next
+行为。然后 Ryan 在下一个
 
 562
 00:33:50,250 --> 00:34:02,730
-talk will mention how to do it. 
+演讲中将会提到如何去实现它。
 
 563
 00:34:02,730 --> 00:34:07,020
