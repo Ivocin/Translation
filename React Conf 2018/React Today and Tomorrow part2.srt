@@ -848,7 +848,7 @@ And we, uh, I'm going to copy and paste this
 
 213
 00:13:13,020 --> 00:13:18,569
-row. It's gonna say surname now. It's
+Row. It's gonna say surname now. It's
 
 214
 00:13:18,569 --> 00:13:21,630
