@@ -456,7 +456,7 @@ Greeting extends React component. And so
 
 115
 00:07:12,720 --> 00:07:14,910
-I'm going to use only stable javaScript
+I'm going to use only stable JavaScript
 
 116
 00:07:14,910 --> 00:07:20,840
@@ -848,7 +848,7 @@ And we, uh, I'm going to copy and paste this
 
 213
 00:13:13,020 --> 00:13:18,569
-row. It's gonna say surname now. It's
+Row. It's gonna say surname now. It's
 
 214
 00:13:18,569 --> 00:13:21,630
@@ -1708,7 +1708,7 @@ by default although there is a way to
 
 428
 00:26:09,650 --> 00:26:13,340
-opt out of that. And not is that in the
+opt out of that. And note is that in the
 
 429
 00:26:13,340 --> 00:26:15,350
@@ -1860,7 +1860,7 @@ I'm, I'm going to listen to the resize
 
 466
 00:28:15,560 --> 00:28:20,749
-event, handle resize. And I need to
+event, handleResize. And I need to
 
 467
 00:28:20,749 --> 00:28:23,330
@@ -2132,7 +2132,7 @@ two unrelated lines. So that me in the in
 
 534
 00:32:34,950 --> 00:32:36,690
-feature make it a bit difficult to test
+future make it a bit difficult to test
 
 535
 00:32:36,690 --> 00:32:41,039
