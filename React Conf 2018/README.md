@@ -35,6 +35,8 @@ keynote 内容整理（英文）：[React Today and Tomorrow - Part II.md](https
 
 中英双语字幕视频(已完成）： [React Today And Tomorrow Part II —— 中英双语字幕](http://www.iqiyi.com/w_19s2xeiycd.html)
 
+中文图文版： [[译] React 的今天和明天（图文版） —— 第二部分](https://juejin.im/post/5bfccbf8f265da61407e97b5)
+
 
 ### 第三部分为 [Ryan Florence](https://twitter.com/ryanflorence) 的演讲 —— 90% Cleaner React with Hooks ：
 
