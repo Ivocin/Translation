@@ -20,7 +20,9 @@ keynote 内容整理（英文）：[React Today and Tomorrow - Part I.md](https:
 
 keynote 内容整理（中文）：[React 的今天和明天——第一部分. md](https://github.com/Ivocin/Traslation/blob/master/React%20Conf%202018/React%E7%9A%84%E4%BB%8A%E5%A4%A9%E5%92%8C%E6%98%8E%E5%A4%A9%E2%80%94%E2%80%94%E7%AC%AC%E4%B8%80%E9%83%A8%E5%88%86.md)
 
-中英双语字幕视频(已完成）： [React Today And Tomorrow Part I —— 中英双语字幕](http://www.iqiyi.com/w_19s383ms9d.html)
+中英双语字幕视频(爱奇艺）： [React Today And Tomorrow Part I —— 中英双语字幕](http://www.iqiyi.com/w_19s383ms9d.html)
+
+中英双语幕视频（b站）：[【React Conf 2018】React 的今天和明天中英文双字幕](https://www.bilibili.com/video/av37035438)
 
 中文图文版： [[译] React 的今天和明天（图文版） —— 第一部分](https://juejin.im/post/5be90d825188254b0917f180)
 
@@ -33,7 +35,9 @@ keynote 内容整理（中文）：[React 的今天和明天——第一部分. 
 
 keynote 内容整理（英文）：[React Today and Tomorrow - Part II.md](https://github.com/Ivocin/Traslation/blob/master/React%20Conf%202018/React%20Today%20and%20Tomorrow%20-%20Part%20II.md)
 
-中英双语字幕视频(已完成）： [React Today And Tomorrow Part II —— 中英双语字幕](http://www.iqiyi.com/w_19s2xeiycd.html)
+中英双语字幕视频(爱奇艺）： [React Today And Tomorrow Part II —— 中英双语字幕](http://www.iqiyi.com/w_19s2xeiycd.html)
+
+中英双语幕视频（b站）：[【React Conf 2018】React 的今天和明天中英文双字幕](https://www.bilibili.com/video/av37035438)
 
 中文图文版： [[译] React 的今天和明天（图文版） —— 第二部分](https://juejin.im/post/5bfccbf8f265da61407e97b5)
 
