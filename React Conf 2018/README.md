@@ -6,6 +6,8 @@
 
 原视频地址：[React Today and Tomorrow and 90% Cleaner React With Hooks](https://youtu.be/dpw9EHDh2bM)
 
+中英双语幕视频（b站）：[【React Conf 2018】React 的今天和明天中英文双字幕](https://www.bilibili.com/video/av37035438)
+
 源视频完整英文字幕精校版（未完成）：[React Today and Tomorrow and 90% Cleaner React With Hooks - YouTube.srt](https://github.com/Ivocin/Traslation/blob/master/React%20Conf%202018/React%20Today%20and%20Tomorrow%20and%2090%25%20Cleaner%20React%20With%20Hooks%20-%20YouTube.srt)
 
 由于视频过长，将其拆分为三个部分翻译
