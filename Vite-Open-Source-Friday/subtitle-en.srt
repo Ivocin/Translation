@@ -20,7 +20,7 @@ It's a Friday when we talked to opensource maintainers about the project they wo
 
 6
 00:00:12,250 --> 00:00:15,364
-Sometimes we actually contribute to project, sometimes we build projects .
+Sometimes we actually contribute to project, sometimes we build projects.
 
 7
 00:00:16,261 --> 00:00:19,564
@@ -52,7 +52,7 @@ And why don't you go ahead to introduce yourself and tell us why you here today?
 
 14
 00:00:33,797 --> 00:00:34,516
-Sure
+Sure.
 
 15
 00:00:34,519 --> 00:00:35,568
@@ -64,7 +64,7 @@ and I am I,
 
 17
 00:00:37,849 --> 00:00:39,055
-I wrote Vuejs
+I wrote Vuejs.
 
 18
 00:00:39,139 --> 00:00:41,926
@@ -80,11 +80,11 @@ which is what I'm going to be talking about today.
 
 21
 00:00:50,749 --> 00:00:52,548
-So
+So.
 
 22
 00:00:52,549 --> 00:00:53,448
-Yeah
+Yeah.
 
 23
 00:00:53,449 --> 00:00:56,898
@@ -136,7 +136,7 @@ but I'd never heard Vite said out loud,
 
 35
 00:01:24,529 --> 00:01:26,148
-and I was called it Vite
+and I was called it Vite.
 
 36
 00:01:26,149 --> 00:01:28,098
@@ -160,7 +160,7 @@ and French means fast or quickly,
 
 41
 00:01:39,499 --> 00:01:40,458
-so.
+So.
 
 42
 00:01:41,838 --> 00:01:42,228
@@ -168,7 +168,7 @@ In fact,
 
 43
 00:01:42,229 --> 00:01:42,888
-it's cool too,
+It's cool too,
 
 44
 00:01:42,889 --> 00:01:44,988
@@ -180,7 +180,7 @@ but we are now living in a dilemma because some people are like.
 
 46
 00:01:49,759 --> 00:01:52,338
-if Vite is pronounced in the French way,
+If Vite is pronounced in the French way,
 
 47
 00:01:52,339 --> 00:01:56,238
@@ -212,7 +212,7 @@ Yeah,
 
 54
 00:02:10,219 --> 00:02:10,488
-sorry.
+Sorry.
 
 55
 00:02:10,489 --> 00:02:13,278
@@ -236,7 +236,7 @@ So appreciate Evan doing that.
 
 60
 00:02:24,206 --> 00:02:24,854
-Excellent
+Excellent.
 
 61
 00:02:24,913 --> 00:02:28,982
@@ -264,7 +264,7 @@ But if you want to make a comparison like if you have been using,
 
 67
 00:02:49,189 --> 00:02:52,848
-I think the closest thing in existence is Parcel like the
+I think the closest thing in existence is Parcel, like the,
 
 68
 00:02:52,849 --> 00:02:56,748
@@ -280,7 +280,7 @@ Parcel bundler,
 
 71
 00:03:01,819 --> 00:03:03,168
-Google is help me today
+Google is help me today.
 
 72
 00:03:03,169 --> 00:03:03,558
@@ -292,7 +292,7 @@ but obviously like the differences in how it's implemented,
 
 74
 00:03:08,948 --> 00:03:13,392
-and in terms of how the dev server works is fundamentally different
+and in terms of how the dev server works is fundamentally different.
 
 75
 00:03:14,029 --> 00:03:15,438
@@ -352,7 +352,7 @@ I think we're actually.
 
 89
 00:04:02,299 --> 00:04:03,828
-so I do a lot of frontend myself.
+So I do a lot of frontend myself.
 
 90
 00:04:03,829 --> 00:04:05,298
@@ -384,7 +384,7 @@ That's type a bundler.
 
 97
 00:04:19,957 --> 00:04:22,909
-I might try to keep bumbler is so you know as a one to one comparison.
+I might try to keep bundler is so you know as a one to one comparison.
 
 98
 00:04:22,909 --> 00:04:22,913
@@ -408,7 +408,7 @@ And that's why the stream is called next the next frontier,
 
 103
 00:04:41,326 --> 00:04:42,888
-Alright, what is the steam called
+Alright, what is the steam called?
 
 104
 00:04:42,889 --> 00:04:45,108
@@ -424,7 +424,7 @@ That's what it was.
 
 107
 00:04:50,748 --> 00:04:51,528
-We are excellent。
+We are excellent.
 
 108
 00:04:51,548 --> 00:04:55,608
@@ -440,7 +440,7 @@ Vite alongside you know snowpack, WMR, @web/dev-server.
 
 111
 00:05:05,869 --> 00:05:15,408
-I think we all come at a time where native ES models has finally somewhat reached its close to being universally available.
+I think we all come at a time where native ES modules has finally somewhat reached its close to being universally available.
 
 112
 00:05:15,409 --> 00:05:16,389
@@ -448,11 +448,11 @@ Finally,
 
 113
 00:05:17,991 --> 00:05:19,874
-If we disregard IE 11。
+If we disregard IE 11.
 
 114
 00:05:19,879 --> 00:05:30,288
-Then the latest version of all these major browsers all support native ES models it now usable in GitHub as well.
+Then the latest version of all these major browsers all support native ES modules it now usable in GitHub as well.
 
 115
 00:05:30,289 --> 00:05:37,398
@@ -500,15 +500,15 @@ Is,
 
 126
 00:06:14,749 --> 00:06:15,078
-You know
+You know,
 
 127
 00:06:15,079 --> 00:06:15,468
-Finally
+Finally,
 
 128
 00:06:15,469 --> 00:06:21,018
-We have this native standard model system that's going to be somewhat universal,
+We have this native standard module system that's going to be somewhat universal,
 
 129
 00:06:21,019 --> 00:06:34,878
@@ -572,7 +572,7 @@ If you want to get started,
 
 144
 00:07:05,298 --> 00:07:09,826
-it's going to ask you to use GitHub and like use this init @vitejs/app
+it's going to ask you to use GitHub and like use this init @vitejs/app.
 
 145
 00:07:09,829 --> 00:07:12,498
@@ -592,7 +592,7 @@ So what I want to do today is just like.
 
 149
 00:07:20,059 --> 00:07:26,088
-here is a fresh demo like I have an empty demo folder
+Here is a fresh demo like I have an empty demo folder.
 
 150
 00:07:26,089 --> 00:07:27,258
@@ -600,11 +600,11 @@ There's nothing here,
 
 151
 00:07:27,258 --> 00:07:31,277
-so I'm just going to do yarn add vite
+so I'm just going to do yarn add vite.
 
 152
 00:07:31,279 --> 00:07:32,298
-There are D vite
+There are D vite.
 
 153
 00:07:33,678 --> 00:07:34,868
@@ -636,7 +636,7 @@ So Vite is
 
 160
 00:07:48,349 --> 00:07:50,268
-Let's take a look at the note modules.
+Let's take a look at the node modules.
 
 161
 00:07:50,269 --> 00:07:51,318
@@ -644,7 +644,7 @@ It's 18 megabytes,
 
 162
 00:07:51,319 --> 00:08:02,298
-so it's also very small amount of models that's actually being installed because we pre bundle most of them to just make sure that installs faster.
+so it's also very small amount of modules that's actually being installed because we prebundle most of them to just make sure that installs faster.
 
 163
 00:08:02,299 --> 00:08:04,488
@@ -696,7 +696,7 @@ Yeah,
 
 175
 00:08:31,279 --> 00:08:35,148
-so this is just after you npm install or yarn add
+so this is just after you npm install or yarn add.
 
 176
 00:08:35,149 --> 00:08:39,078
@@ -712,7 +712,7 @@ And say hello.
 
 179
 00:08:47,508 --> 00:08:54,588
-And then I'm going to, so you can do npx vite here
+And then I'm going to, so you can do npx vite here.
 
 180
 00:08:54,589 --> 00:08:58,098
@@ -752,7 +752,7 @@ Oh,
 
 189
 00:09:18,348 --> 00:09:20,456
-yarn dev
+yarn dev.
 
 190
 00:09:22,518 --> 00:09:23,808
@@ -760,7 +760,7 @@ So I started a dev server.
 
 191
 00:09:25,968 --> 00:09:30,664
-Notice that I didn't do anything other than just running this
+Notice that I didn't do anything other than just running this.
 
 192
 00:09:30,668 --> 00:09:35,900
@@ -836,7 +836,7 @@ And with native modules.
 
 210
 00:10:32,144 --> 00:10:33,824
-With native ESM
+With native ESM.
 
 211
 00:10:33,829 --> 00:10:37,308
@@ -848,7 +848,7 @@ You can either do import here in line.
 
 213
 00:10:42,379 --> 00:10:44,478
-let's just do that actually main.js
+let's just do that actually main.js.
 
 214
 00:10:44,479 --> 00:10:45,498
@@ -864,7 +864,7 @@ So I'm going to create that here.
 
 217
 00:10:52,188 --> 00:10:52,908
-And
+And.
 
 218
 00:10:56,238 --> 00:10:58,308
@@ -872,7 +872,7 @@ So reload the page.
 
 219
 00:10:59,328 --> 00:11:02,868
-So make sure the console actually log hello
+So make sure the console actually log hello.
 
 220
 00:11:02,869 --> 00:11:05,388
@@ -904,7 +904,7 @@ This is not a real hot module replacement going on because this is just simply r
 
 227
 00:11:28,069 --> 00:11:32,808
-But it tracks all the things that's being import from your index.html
+But it tracks all the things that's being import from your index.html.
 
 228
 00:11:33,229 --> 00:11:35,778
@@ -932,7 +932,7 @@ Like link to CSS files.
 
 234
 00:11:51,678 --> 00:11:55,518
-So let's just say style.css
+So let's just say style.css.
 
 235
 00:11:56,718 --> 00:11:57,978
@@ -940,11 +940,11 @@ H1 color red.
 
 236
 00:11:59,748 --> 00:12:07,833
-You can obviously just use a link so style.css
+You can obviously just use a link so style.css.
 
 237
 00:12:07,879 --> 00:12:09,708
-So notice here I can eh
+So notice here I can eh,
 
 238
 00:12:09,709 --> 00:12:14,988
@@ -1032,7 +1032,7 @@ It's hot updating the CSS in place.
 
 259
 00:13:07,669 --> 00:13:15,468
-So what what's making that work is awesome Vite magic server？ Magic？
+So what what's making that work is awesome Vite magic server? Magic？
 
 260
 00:13:15,469 --> 00:13:15,858
@@ -1044,7 +1044,7 @@ So Vite is doing the work of recording the relationship.
 
 262
 00:13:18,979 --> 00:13:25,728
-So one thing I kind of want to point out is like when we have a lot of users coming from webpack
+So one thing I kind of want to point out is like when we have a lot of users coming from webpack.
 
 263
 00:13:25,729 --> 00:13:33,438
@@ -1096,7 +1096,7 @@ So that's kind of a thing.
 
 275
 00:14:14,899 --> 00:14:22,008
-A lot of people kind of have to sort of flip a switch in order to to get into Vite
+A lot of people kind of have to sort of flip a switch in order to to get into Vite.
 
 276
 00:14:22,009 --> 00:14:24,258
@@ -1120,7 +1120,7 @@ This is your stuff for me.
 
 281
 00:14:36,379 --> 00:14:39,528
-It's a more natural sort of mental model to work with,
+It's a more natural sort of mental module to work with,
 
 282
 00:14:39,529 --> 00:14:40,818
@@ -1152,7 +1152,7 @@ So some of the things we also do out of the box is.
 
 289
 00:15:10,728 --> 00:15:15,091
-Let's say we have styled.module.css
+Let's say we have styled.module.css.
 
 290
 00:15:16,638 --> 00:15:18,283
@@ -1172,7 +1172,7 @@ if you've worked with CSS modules,
 
 294
 00:15:26,989 --> 00:15:30,725
-it's kind of convention to name your files with this module.css
+it's kind of convention to name your files with this module.css.
 
 295
 00:15:32,000 --> 00:15:37,338
@@ -1352,11 +1352,11 @@ how can we get that working out?
 
 339
 00:17:50,149 --> 00:17:53,148
-proudly be to go to Tailwind CSS
+proudly be to go to Tailwind CSS.
 
 340
 00:17:55,188 --> 00:17:57,558
-And I'm going to look for Vite
+And I'm going to look for Vite.
 
 341
 00:17:57,559 --> 00:18:00,198
@@ -1392,7 +1392,7 @@ but it's not based on webpack the idea is,
 
 349
 00:18:21,949 --> 00:18:24,588
-CSS module is something that just works in Vite
+CSS module is something that just works in Vite.
 
 350
 00:18:24,589 --> 00:18:28,636
@@ -1408,7 +1408,7 @@ you just create a vite.config.js and you can say export defaults.
 
 353
 00:18:36,860 --> 00:18:39,460
-css modules
+css modules.
 
 354
 00:18:39,750 --> 00:18:47,065
@@ -1416,11 +1416,11 @@ then these options will be passed on to the post css modules plugin so you can c
 
 355
 00:18:47,200 --> 00:18:49,591
-localsConvention
+localsConvention.
 
 356
 00:18:49,848 --> 00:18:51,828
-To be camelCaseOnly if you want
+To be camelCaseOnly if you want.
 
 357
 00:18:52,758 --> 00:18:57,708
@@ -1440,11 +1440,11 @@ My personal opinion is because I've worked...
 
 361
 00:19:07,574 --> 00:19:07,578
-We maintain Vue CLI for Vue right here , and the CLI is built on top of webpack
+We maintain Vue CLI for Vue right here , and the CLI is built on top of webpack.
 
 362
 00:19:07,578 --> 00:19:12,253
-We maintain Vue CLI for Vue right here , and the CLI is built on top of webpack
+We maintain Vue CLI for Vue right here , and the CLI is built on top of webpack.
 
 363
 00:19:12,257 --> 00:19:17,778
@@ -3808,7 +3808,7 @@ Obviously you need to make sure you write your code that is node compatible,
 
 953
 00:54:17,779 --> 00:54:28,038
-but you can use es model syntax and vite will transform these syntax on the fly into something that's compatible to CommonJS
+but you can use es module syntax and vite will transform these syntax on the fly into something that's compatible to CommonJS
 
 954
 00:54:28,039 --> 00:54:30,498
@@ -3856,7 +3856,7 @@ so we do hot module replacement,
 
 965
 00:55:15,109 --> 00:55:19,638
-where only invalidating the specific models that's being edited.
+where only invalidating the specific modules that's being edited.
 
 966
 00:55:19,639 --> 00:55:20,328
