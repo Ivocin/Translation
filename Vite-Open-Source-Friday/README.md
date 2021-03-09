@@ -5,6 +5,7 @@
 > * 中英文字幕视频地址（腾讯视频）：[【译】下一代前端工具 ViteJS 中英双语字幕 - Open Source Friday](https://v.qq.com/x/page/z3232ldhxho.html)
 > * 英文字幕：听译、YouTube 自动字幕
 > * 英文校对、翻译：[Ivocin](https://github.com/Ivocin)
+> * 原文链接：[【译】下一代前端工具 ViteJS 中英双语字幕-掘金](https://juejin.cn/post/6937176680251424775)
 
 
 关于 **Vite**，来看看作者本人怎么说。本视频是 [Vue](https://v3.vuejs.org/) 以及 [Vite](https://vitejs.dev/) 作者 [尤雨溪](https://github.com/yyx990803) 在 2021 年 2 月 12 日在 [Twitch](https://www.twitch.tv/) 上做客 [GitHub Open Source Friday](https://www.youtube.com/watch?v=qXHiXSSD3Kc&list=PL0lo9MOBetEFmtstItnKlhJJVmMghxc0P) 节目的直播视频。在视频里有尤大关于 Vite 的各项功能的详细阐述、大神在线编码、在线 Debug、大佬 diss webpack 以及对 Vite 的哲学思考。本视频很长，接近 70 分钟，下面是视频摘录，大家可以选择自己感兴趣的点自行传送。强烈建议大家观看视频，里面有很多细节相信大家会有收获。视频地址：[【译】下一代前端工具 ViteJS 中英双语字幕 - Open Source Friday](https://www.bilibili.com/video/BV1kh411Q7WN)
