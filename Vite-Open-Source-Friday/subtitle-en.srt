@@ -2048,15 +2048,15 @@ I love this cool.
 
 513
 00:28:16,729 --> 00:28:17,568
-Just a hands up
+Just a hands up.
 
 514
 00:28:18,858 --> 00:28:23,538
-So I just created this tailwind config this postcss.config.js
+So I just created this tailwind config this postcss.config.js.
 
 515
 00:28:23,539 --> 00:28:26,298
-so there is really nothing special to do here.
+So there is really nothing special to do here.
 
 516
 00:28:26,299 --> 00:28:29,598
@@ -2072,7 +2072,7 @@ Some of these specific so ignore this,
 
 519
 00:28:34,699 --> 00:28:38,088
-because this is like a tailwind specific thing,
+because this is like a Tailwind specific thing,
 
 520
 00:28:38,089 --> 00:28:41,688
@@ -2080,7 +2080,7 @@ but this is the source code you want to actually just copy and put it here.
 
 521
 00:28:44,118 --> 00:28:48,138
-And just reenable this.
+And just re-enable this.
 
 522
 00:28:49,728 --> 00:28:51,318
@@ -2088,7 +2088,7 @@ And then OK,
 
 523
 00:28:51,319 --> 00:28:56,988
-so pages actually already reloaded is so I think I should have tailwind CSS in there.
+so pages actually already reloaded is so I think I should have Tailwind CSS in there.
 
 524
 00:28:56,989 --> 00:28:57,978
@@ -2096,7 +2096,7 @@ so I want to.
 
 525
 00:28:59,958 --> 00:29:03,678
-I don't use tailwind css just like enough
+I don't use Tailwind CSS just like tough enough,
 
 526
 00:29:03,679 --> 00:29:07,578
@@ -2108,7 +2108,7 @@ No？
 
 528
 00:29:08,509 --> 00:29:08,868
-no.
+No.
 
 529
 00:29:11,688 --> 00:29:12,048
@@ -2116,7 +2116,7 @@ Actually,
 
 530
 00:29:12,049 --> 00:29:13,518
-if anybody want to be a tailwind expert
+if anybody want to be a Tailwind expert,
 
 531
 00:29:13,519 --> 00:29:16,038
@@ -2132,15 +2132,15 @@ it's text dash.
 
 534
 00:29:17,059 --> 00:29:19,758
-text-3xl
+text-3xl.
 
 535
 00:29:19,759 --> 00:29:22,774
-This is the anthoer thing that programming on Twitch
+This is the other thing that programming on Twitch.
 
 536
 00:29:23,119 --> 00:29:29,688
-Ah, so it doesn't really work wondering why it's not working.
+Ah, so it doesn't really work, wondering why, it's not working.
 
 537
 00:29:29,689 --> 00:29:30,733
@@ -2152,11 +2152,11 @@ I don't know if you have a chat open,
 
 539
 00:29:33,619 --> 00:29:39,198
-but text-3xl
+but text-3xl,
 
 540
 00:29:39,199 --> 00:29:41,778
-Everybody is now searching the docks where you two as well.
+Everybody is now searching the docks for you too as well.
 
 541
 00:29:41,779 --> 00:29:43,098
@@ -2168,11 +2168,11 @@ well,
 
 543
 00:29:43,279 --> 00:29:51,588
-it's not actually updating the index.html doesn't mean that all because I'm actually overriding should hear here.
+it's not actually updating the index.html doesn't mean that all because I'm actually overriding should here.
 
 544
 00:29:51,589 --> 00:29:53,058
-so now text-3xl
+so now text-3xl.
 
 545
 00:29:53,059 --> 00:29:56,778
@@ -2208,7 +2208,7 @@ I think this is because I didn't restart the server.
 
 553
 00:30:21,636 --> 00:30:28,458
-is importing the tailwind library file?
+is importing the Tailwind library file?
 
 554
 00:30:28,459 --> 00:30:29,088
@@ -2232,7 +2232,7 @@ Yeah,
 
 559
 00:30:31,969 --> 00:30:39,378
-so I restarted server because they didn't know the post css config previously, it cached.
+so I restarted server because they didn't know the PostCSS config previously, it cached.
 
 560
 00:30:39,379 --> 00:30:40,128
@@ -2240,7 +2240,7 @@ Before we start,
 
 561
 00:30:40,129 --> 00:30:41,688
-I added the postcss config,
+I added the PostCSS config,
 
 562
 00:30:41,689 --> 00:30:44,868
@@ -2268,15 +2268,15 @@ OK.
 
 568
 00:30:56,269 --> 00:30:58,878
-And then looking at the index.html
+And then looking at the index.html.
 
 569
 00:30:58,879 --> 00:31:02,178
-we're not importing the tailwind CSS , ...we are, got it.
+We're not importing the tailwind CSS , ...we are, got it.
 
 570
 00:31:02,179 --> 00:31:03,618
-we're using this link here,
+We're using this link here,
 
 571
 00:31:03,619 --> 00:31:05,178
@@ -2324,7 +2324,7 @@ OK,
 
 582
 00:31:33,379 --> 00:31:38,058
-so that's if I think we're going to wrap it up here for CSS
+so that's if I think we're going to wrap it up here for CSS.
 
 583
 00:31:38,059 --> 00:31:38,598
@@ -2332,15 +2332,15 @@ it's actually.
 
 584
 00:31:40,008 --> 00:31:44,252
-Maybe also showcase something like
+Maybe also showcase something like.
 
 585
 00:31:44,643 --> 00:31:48,108
-I'm going to yarn add -D sass
+I'm going to yarn add -D sass.
 
 586
 00:31:49,938 --> 00:31:57,228
-So I'm just installing sass itself and I'm going to create a new file called style.scss
+So I'm just installing sass itself and I'm going to create a new file called style.scss.
 
 587
 00:31:59,118 --> 00:32:00,348
@@ -2352,7 +2352,7 @@ Red, is that the syntax?
 
 589
 00:32:06,768 --> 00:32:09,378
-So I wrote some scss
+So I wrote some scss.
 
 590
 00:32:10,848 --> 00:32:13,338
@@ -2368,11 +2368,11 @@ yeah,
 
 593
 00:32:19,789 --> 00:32:23,748
-so you install says and then you can use sass or scss
+So you install says and then you can use sass or scss.
 
 594
 00:32:23,749 --> 00:32:25,188
-and it just works like this.
+And it just works like this.
 
 595
 00:32:25,189 --> 00:32:25,758
@@ -2400,11 +2400,11 @@ Also works.
 
 601
 00:32:49,231 --> 00:32:55,518
-so most of the commission of stuff that you expect that should work，it probably will work.
+So most of the commission of stuff that you expect that should work，it probably will work.
 
 602
 00:32:59,748 --> 00:33:07,578
-And this is because we didn't do anything here is I'm just going to change this to style.scss
+And this is because we didn't do anything here is I'm just going to change this to style.scss.
 
 603
 00:33:08,418 --> 00:33:09,648
@@ -2412,7 +2412,7 @@ And reloads the page.
 
 604
 00:33:12,738 --> 00:33:15,648
-And then real quick going back to the vite config
+And then real quick going back to the vite config.
 
 605
 00:33:15,649 --> 00:33:17,328
@@ -2444,7 +2444,7 @@ we didn't really like ...
 
 612
 00:33:27,049 --> 00:33:32,718
-This is actually unnecessary , I know because I was just showing how you can customize CSS modules here.
+This is actually unnecessary, I know because I was just showing how you can customize CSS modules here.
 
 613
 00:33:32,719 --> 00:33:33,198
@@ -2472,7 +2472,7 @@ and it doesn't affect anything.
 
 619
 00:33:42,420 --> 00:33:47,012
-if you just want sass like this is all you need to work with sass
+if you just want sass like this is all you need to work with sass.
 
 620
 00:33:47,886 --> 00:34:02,719
@@ -2500,7 +2500,7 @@ But we can do more than this obviously.
 
 626
 00:34:22,419 --> 00:34:26,538
-So one use case that I have and because they are doing so much to twitch streaming this year,
+So one use case that I have and because they are doing so much to Twitch streaming this year,
 
 627
 00:34:26,539 --> 00:34:30,408
@@ -2516,15 +2516,15 @@ and then though I was making the distinction.
 
 630
 00:34:33,259 --> 00:34:36,138
-But we build a twitch bot,
+But we build a Twitch bot,
 
 631
 00:34:36,139 --> 00:34:38,438
-and then one thing I've noticed what things like OBS
+and then one thing I've noticed what things like OBS,
 
 632
 00:34:38,438 --> 00:34:41,654
-so like right now we're leveraging obs to get everything on the screen at the moment.
+so like right now we're leveraging OBS to get everything on the screen at the moment.
 
 633
 00:34:42,363 --> 00:34:50,350
@@ -2540,7 +2540,7 @@ but I'm curious of things like we talked about typescript,
 
 636
 00:34:56,479 --> 00:35:00,612
-but what about things like Deno will that be compatible
+but what about things like Deno will that be compatible?
 
 637
 00:35:01,065 --> 00:35:03,318
@@ -2552,11 +2552,11 @@ Deno is a whole different story because the signal is it's own thing.
 
 639
 00:35:07,999 --> 00:35:11,878
-So Vite is currently built on top of Node.js API
+So Vite is currently built on top of Node.js API.
 
 640
 00:35:11,929 --> 00:35:15,108
-So that's not going to be travelled to get it running in Deno
+So that's not going to be travelled to get it running in Deno.
 
 641
 00:35:15,109 --> 00:35:15,558
@@ -2588,7 +2588,7 @@ I want to use React.
 
 648
 00:35:34,158 --> 00:35:39,258
-So I added react and react-dom inside main.js
+So I added react and react-dom inside main.js.
 
 649
 00:35:39,259 --> 00:35:43,128
@@ -2596,7 +2596,7 @@ We probably want to change this to jsx because we are going to use some JSX.
 
 650
 00:35:44,958 --> 00:35:47,808
-So I'm going to say import React from react
+So I'm going to say import React from react.
 
 651
 00:35:49,249 --> 00:35:50,088
@@ -2608,7 +2608,7 @@ Import.
 
 653
 00:35:53,058 --> 00:35:55,128
-import ReactDom from 'react-dom'
+import ReactDom from 'react-dom'.
 
 654
 00:35:55,129 --> 00:35:56,268
@@ -2624,7 +2624,7 @@ ReactDom.render
 
 657
 00:36:07,728 --> 00:36:09,899
-We all came to watch Evan You write React
+We all came to watch Evan You write React.
 
 658
 00:36:11,868 --> 00:36:14,868
@@ -2644,11 +2644,11 @@ So that means we need to have something here.
 
 662
 00:36:27,378 --> 00:36:32,598
-So the main thing I would actually show casing here is not really like React
+So the main thing I would actually show casing here is not really like React.
 
 663
 00:36:32,599 --> 00:36:34,008
-but we need a App
+but we need a App.
 
 664
 00:36:34,009 --> 00:36:34,908
@@ -2656,7 +2656,7 @@ So function App.
 
 665
 00:36:39,438 --> 00:36:40,938
-return h1 hello
+return h1 hello.
 
 666
 00:36:41,898 --> 00:36:42,858
@@ -2684,7 +2684,7 @@ Alright,
 
 672
 00:36:55,279 --> 00:36:56,478
-so you get hello on the web
+so you get hello on the web.
 
 673
 00:36:56,479 --> 00:36:59,508
@@ -2720,7 +2720,7 @@ And instead of that,
 
 681
 00:37:29,029 --> 00:37:35,948
-I'm going to say imports {App} from './App'.
+I'm going to say imports { App } from './App'.
 
 682
 00:37:36,558 --> 00:37:39,888
@@ -2768,7 +2768,7 @@ Ah,
 
 693
 00:38:22,459 --> 00:38:26,358
-and it does that using esbuild so this is where we start to
+and it does that using esbuild so this is where we start to.
 
 694
 00:38:26,359 --> 00:38:29,598
@@ -2796,7 +2796,7 @@ And it's extremely extremely fast.
 
 700
 00:38:51,349 --> 00:38:54,228
-And that was shipped pretty recently wasn't it ？
+And that was shipped pretty recently wasn't it？
 
 701
 00:38:54,229 --> 00:38:55,670
@@ -2808,7 +2808,7 @@ yeah,
 
 703
 00:38:57,289 --> 00:39:00,498
-maybe it just made the newsletters recently
+maybe it just made the newsletters recently.
 
 704
 00:39:00,499 --> 00:39:01,488
@@ -2864,7 +2864,7 @@ notice this thing here,
 
 717
 00:39:49,849 --> 00:39:52,368
-says new dependency found react and react-dom。
+says new dependency found react and react-dom.
 
 718
 00:39:54,438 --> 00:39:59,898
@@ -2896,7 +2896,7 @@ Let's going to React here and look at the package.json here.
 
 725
 00:40:25,279 --> 00:40:27,918
-it says main: index.js
+it says main: index.js.
 
 726
 00:40:27,919 --> 00:40:32,928
@@ -2924,7 +2924,7 @@ so there is obviously something going on in the background.
 
 732
 00:40:49,348 --> 00:40:53,328
-Eh, webpack, Rollup you know, if you use this with Rollup
+Eh, webpack, Rollup you know, if you use this with Rollup.
 
 733
 00:40:53,329 --> 00:40:55,993
@@ -3008,7 +3008,7 @@ Ignore the dependency cache reforce process all the dependencies.
 
 753
 00:41:49,249 --> 00:41:50,208
-OK, intresting
+OK, intresting.
 
 754
 00:41:50,209 --> 00:41:50,388
@@ -3040,7 +3040,7 @@ you won't need to do anything when you restart the server.
 
 761
 00:41:59,479 --> 00:42:01,398
-But if you've passed a force it will
+But if you've passed a force it will.
 
 762
 00:42:03,408 --> 00:42:04,638
@@ -3064,7 +3064,7 @@ notice you are relying on react and react-dom.
 
 767
 00:42:15,514 --> 00:42:20,958
-And then it will check react and react-dom and notice they are not actually es modules.
+And then it will check react and react-dom and notice they are not actually ES modules.
 
 768
 00:42:20,959 --> 00:42:23,148
@@ -3072,7 +3072,7 @@ which means we need to do something about them,
 
 769
 00:42:23,149 --> 00:42:32,479
-So we will use esbuild to process them prebundle them into something that actually works in the browser as native es modules.
+So we will use esbuild to process them prebundle them into something that actually works in the browser as native ES modules.
 
 770
 00:42:32,558 --> 00:42:37,578
@@ -3084,7 +3084,7 @@ even though technically,
 
 772
 00:42:41,329 --> 00:42:47,328
-A CommonJS module transform to es module only has a single default export,
+A CommonJS module transform to ES module only has a single default export,
 
 773
 00:42:47,329 --> 00:42:54,738
@@ -3128,11 +3128,11 @@ if you look at the network tab when you load.
 
 783
 00:43:24,288 --> 00:43:28,231
-Maybe I can just do that in yarn add lodash-es
+Maybe I can just do that in yarn add lodash-es.
 
 784
 00:43:29,088 --> 00:43:35,327
-And I'm going to say import _ from 'lodash-es'
+And I'm going to say import _ from 'lodash-es'.
 
 785
 00:43:38,508 --> 00:43:38,778
@@ -3248,7 +3248,7 @@ it will say webpack or a Rollup, you probably have to wait a few seconds.
 
 813
 00:45:21,528 --> 00:45:28,097
-And so this so this is where esbuild really makes this process just like insanely fast
+And so this so this is where esbuild really makes this process just like insanely fast.
 
 814
 00:45:28,149 --> 00:45:31,218
@@ -3264,7 +3264,7 @@ And I try to pre bundle with Rollup and took me twenty eight seconds on M1 Mac.
 
 817
 00:45:45,498 --> 00:45:48,138
-And we've got a curiosity are you on M1 mac right now
+And we've got a curiosity are you on M1 mac right now.
 
 818
 00:45:48,139 --> 00:45:48,648
@@ -3280,7 +3280,7 @@ Yeah,
 
 821
 00:45:50,269 --> 00:45:52,758
-there's speculation in the chat right now
+there's speculation in the chat right now.
 
 822
 00:45:52,759 --> 00:45:53,148
@@ -3324,7 +3324,7 @@ Most of the time.
 
 832
 00:46:26,268 --> 00:46:29,748
-With with M1 plus esbuild
+With with M1 plus esbuild.
 
 833
 00:46:29,749 --> 00:46:30,378
@@ -3480,11 +3480,11 @@ there may be small issues,
 
 871
 00:48:52,579 --> 00:48:59,838
-but for the most parts we already have close to thirty thousand downloads per week and.
+but for the most parts we already have close to thirty thousand downloads per week.
 
 872
 00:49:01,818 --> 00:49:04,308
-The latest few versions has been pretty stable,
+And the latest few versions has been pretty stable,
 
 873
 00:49:04,309 --> 00:49:06,798
@@ -3500,7 +3500,7 @@ Let's add a script here.
 
 876
 00:49:22,218 --> 00:49:24,168
-build: 'vite build'
+build: 'vite build'.
 
 877
 00:49:26,838 --> 00:49:29,568
@@ -3508,7 +3508,7 @@ So that is literally it.
 
 878
 00:49:29,569 --> 00:49:35,988
-you just run yarn build so anything that's you can have working in dev
+you just run yarn build so anything that's you can have working in dev.
 
 879
 00:49:35,989 --> 00:49:37,578
@@ -3576,7 +3576,7 @@ The native target.
 
 895
 00:50:31,699 --> 00:50:37,968
-The default target build target for vite is browsers that support native es modules.
+The default target build target for vite is browsers that support native ES modules.
 
 896
 00:50:37,969 --> 00:50:40,518
@@ -3608,7 +3608,7 @@ We automatically polyfill dynamic import so that it works.
 
 903
 00:51:06,199 --> 00:51:13,368
-There is actually a support discrepancy between native es modules and native es modules dynamic import.
+There is actually a support discrepancy between native ES modules and native ES modules dynamic import.
 
 904
 00:51:13,369 --> 00:51:15,168
@@ -3620,7 +3620,7 @@ Even we have CSS code splitting.
 
 906
 00:51:18,429 --> 00:51:25,038
-So if you, all the code splitting in a vite project can be done with just es module dynamic import.
+So if you, all the code splitting in a vite project can be done with just ES module dynamic import.
 
 907
 00:51:26,628 --> 00:51:27,078
@@ -3640,7 +3640,7 @@ So if you have async chunk,
 
 911
 00:51:34,489 --> 00:51:35,628
-a lazy route
+a lazy route,
 
 912
 00:51:35,629 --> 00:51:42,918
@@ -3664,7 +3664,7 @@ then ensure the CSS is loaded before the JavaScript module is evaluated.
 
 917
 00:51:53,899 --> 00:51:58,248
-so you don't get the Flash of unstyled content
+so you don't get the Flash of unstyled content.
 
 918
 00:51:58,249 --> 00:52:00,648
@@ -3672,7 +3672,7 @@ So this is all done for you out of the box,
 
 919
 00:52:00,649 --> 00:52:06,198
-you don't need to configure anything if you want to get the same working with webpack
+you don't need to configure anything if you want to get the same working with webpack.
 
 920
 00:52:06,199 --> 00:52:07,728
@@ -3680,7 +3680,7 @@ it's another story,
 
 921
 00:52:07,729 --> 00:52:09,408
-like you have to look into CSS
+like you have to look into CSS,
 
 922
 00:52:09,409 --> 00:52:11,358
@@ -3748,7 +3748,7 @@ We're writing code.
 
 938
 00:52:57,889 --> 00:53:00,558
-Thus using ESM
+Thus using ESM,
 
 939
 00:53:01,698 --> 00:53:07,188
@@ -3756,7 +3756,7 @@ If you are not using like the latest version of node module,
 
 940
 00:53:07,189 --> 00:53:11,868
-latest version of GitHub with native es module support,
+latest version of GitHub with native ES module support,
 
 941
 00:53:11,869 --> 00:53:18,339
@@ -3768,7 +3768,7 @@ And what we are doing here is we provide a programmatic API called ssrLoadModule
 
 943
 00:53:25,879 --> 00:53:34,848
-So this is inspired by some of the work that Rich Harris is doing in Svelte and the idea is
+So this is inspired by some of the work that Rich Harris is doing in Svelte and the idea is.
 
 944
 00:53:35,718 --> 00:53:40,428
@@ -3800,7 +3800,7 @@ That's pretty much it.
 
 951
 00:54:06,049 --> 00:54:14,058
-your server entry runs in GitHub and it can use the same es import syntax to load the rest of your application.
+Your server entry runs in GitHub and it can use the same es import syntax to load the rest of your application.
 
 952
 00:54:14,059 --> 00:54:17,778
@@ -3808,11 +3808,11 @@ Obviously you need to make sure you write your code that is node compatible,
 
 953
 00:54:17,779 --> 00:54:28,038
-but you can use es module syntax and vite will transform these syntax on the fly into something that's compatible to CommonJS
+but you can use ES module syntax and vite will transform these syntax on the fly into something that's compatible to CommonJS
 
 954
 00:54:28,039 --> 00:54:30,498
-so it can run in GitHub
+so it can run in GitHub.
 
 955
 00:54:32,148 --> 00:54:33,978
@@ -3836,15 +3836,15 @@ The downside of this is obviously every time you edit a file,
 
 960
 00:54:51,619 --> 00:54:57,078
-you are be bundling the whole application for a CommonJS.
+You are be bundling the whole application for a CommonJS.
 
 961
 00:54:57,079 --> 00:55:05,418
-and that is slow with vite when you load this are these modules are similarly cached individually,
+And that is slow with vite when you load this are these modules are similarly cached individually,
 
 962
 00:55:05,419 --> 00:55:07,338
-like just like in the browser right?
+Like just like in the browser right?
 
 963
 00:55:07,339 --> 00:55:12,738
@@ -3852,7 +3852,7 @@ One of the reasons we want you to leverage native ESM is because each module is 
 
 964
 00:55:12,739 --> 00:55:15,108
-so we do hot module replacement,
+So we do hot module replacement,
 
 965
 00:55:15,109 --> 00:55:19,638
@@ -3892,7 +3892,7 @@ Also vite will smartly externalize dependencies that ships CommonJS.
 
 974
 00:55:52,789 --> 00:55:54,258
-for example,
+For example,
 
 975
 00:55:54,259 --> 00:55:59,208
@@ -3952,7 +3952,7 @@ I can probably shoot here.
 
 989
 00:56:43,788 --> 00:56:48,708
-So what you were just explaining does that also fall in line with the context of incremental builds
+So what you were just explaining does that also fall in line with the context of incremental builds.
 
 990
 00:56:50,388 --> 00:56:52,308
@@ -4020,7 +4020,7 @@ so if you're interested in server side rendering.
 
 1006
 00:57:26,149 --> 00:57:27,918
-check out the github repos,
+check out the GitHub repos,
 
 1007
 00:57:27,919 --> 00:57:32,478
@@ -4052,15 +4052,15 @@ OK,
 
 1014
 00:57:55,999 --> 00:57:57,588
-so of all this idea,
+So of all this idea,
 
 1015
 00:57:57,589 --> 00:58:03,348
-there's one thing I still haven't really mentioned up to this point at which is hot module replacement.
+There's one thing I still haven't really mentioned up to this point at which is hot module replacement.
 
 1016
 00:58:03,349 --> 00:58:03,798
-so.
+So.
 
 1017
 00:58:05,448 --> 00:58:11,898
@@ -4076,7 +4076,7 @@ Each vite demo so I recreate,
 
 1020
 00:58:16,819 --> 00:58:20,958
-so when you run npm init add vitejs slash app.
+So when you run npm init add vitejs slash app.
 
 1021
 00:58:22,278 --> 00:58:26,748
@@ -4088,7 +4088,7 @@ The vitejs create app application on the fly,
 
 1023
 00:58:29,749 --> 00:58:34,098
-and you can pick some of these existing templates that you can go with.
+And you can pick some of these existing templates that you can go with.
 
 1024
 00:58:34,099 --> 00:58:37,848
@@ -4096,7 +4096,7 @@ I say I'm going to just go with the basic Vue template here.
 
 1025
 00:58:40,128 --> 00:58:41,538
-vite view demo.
+vite Vue demo.
 
 1026
 00:58:43,158 --> 00:58:45,408
@@ -4104,7 +4104,7 @@ I'm going to just use my locally links.
 
 1027
 00:58:45,409 --> 00:58:46,218
-vite
+vite.
 
 1028
 00:58:46,219 --> 00:58:47,808
@@ -4120,7 +4120,7 @@ This is.
 
 1031
 00:58:53,538 --> 00:58:55,758
-Vue three app that's running on vite.
+Vue 3 app that's running on vite.
 
 1032
 00:58:59,058 --> 00:59:01,548
@@ -4296,7 +4296,7 @@ But the downside the challenge that we have had in the past is like say,
 
 1075
 01:01:35,629 --> 01:01:37,158
-with webpack
+with webpack.
 
 1076
 01:01:37,159 --> 01:01:38,358
@@ -4336,7 +4336,7 @@ but the premise of vite or other native ESM hot module replacement over native E
 
 1085
 01:02:10,099 --> 01:02:15,078
-so the premise is because each module is now cached individually.
+So the premise is because each module is now cached individually.
 
 1086
 01:02:15,079 --> 01:02:16,158
@@ -4384,7 +4384,7 @@ There's nothing like,
 
 1097
 01:02:49,309 --> 01:02:52,398
-then all we're doing and say
+then all we're doing and say.
 
 1098
 01:02:52,399 --> 01:02:52,998
@@ -4460,7 +4460,7 @@ and then we apply the updates precisely so we don't reload the whole application
 
 1116
 01:03:43,489 --> 01:03:47,268
-We don't need to do any bundling work and it just
+We don't need to do any bundling work and it just,
 
 1117
 01:03:47,269 --> 01:03:50,328
@@ -4484,11 +4484,11 @@ In production,
 
 1122
 01:04:13,489 --> 01:04:14,958
-you do want to the leverage tree-shaking
+you do want to the leverage tree-shaking.
 
 1123
 01:04:14,959 --> 01:04:20,504
-but that's kind of what the bunglers do I so for production vite still uses bundlers.
+But that's kind of what the bunglers do I so for production vite still uses bundlers.
 
 1124
 01:04:20,504 --> 01:04:26,028
@@ -4544,7 +4544,7 @@ I want to talk about what we already talk about like built in frameworks support
 
 1137
 01:05:09,499 --> 01:05:17,058
-I know there are a bunch of spelt users working on a svelte integration for vite as well.
+I know there are a bunch of spelt users working on a Svelte integration for vite as well.
 
 1138
 01:05:17,059 --> 01:05:17,748
@@ -4556,7 +4556,7 @@ I know a fork of Rollup plugin felt just work pretty much just works in vite.
 
 1140
 01:05:25,519 --> 01:05:28,758
-There's a question that came up about just a point I just mentioned about Rollup
+There's a question that came up about just a point I just mentioned about Rollup.
 
 1141
 01:05:28,759 --> 01:05:30,828
@@ -4596,23 +4596,23 @@ The thing here is,
 
 1150
 01:06:02,029 --> 01:06:02,718
-for example,
+For example,
 
 1151
 01:06:02,719 --> 01:06:07,365
-you want to have more control over the chunk rendering
+You want to have more control over the chunk rendering.
 
 1152
 01:06:07,365 --> 01:06:15,858
-and the into cross import the hash and handling assets, emitting files and then getting the bundle,
+And the into cross import the hash and handling assets, emitting files and then getting the bundle,
 
 1153
 01:06:15,859 --> 01:06:18,318
-analyzing the bundle optimizing the cross imports.
+Analyzing the bundle optimizing the cross imports.
 
 1154
 01:06:18,319 --> 01:06:22,386
-and all that stuff with esbuild that sort of you know you pretty much.
+And all that stuff with esbuild that sort of you know you pretty much.
 
 1155
 01:06:22,386 --> 01:06:26,808
@@ -4624,7 +4624,7 @@ So that's something.
 
 1157
 01:06:29,119 --> 01:06:29,868
-and I know.
+And I know.
 
 1158
 01:06:29,869 --> 01:06:36,288
@@ -4640,7 +4640,7 @@ I mean,
 
 1161
 01:06:39,769 --> 01:06:42,528
-in terms of bundling for applique, bundling applications,
+in terms of bundling for bundling applications,
 
 1162
 01:06:42,529 --> 01:06:44,508
@@ -4656,7 +4656,7 @@ Battle test in a more robust choice at this point of time.
 
 1165
 01:06:49,369 --> 01:06:55,818
-so obviously it means the production build of vite is going to be much slower than something that you know you.
+So obviously it means the production build of vite is going to be much slower than something that you know you.
 
 1166
 01:06:55,819 --> 01:06:58,188
@@ -4676,7 +4676,7 @@ So the default minifier is terser,
 
 1170
 01:07:12,349 --> 01:07:17,088
-but you can say vite build -- minify esbuild
+but you can say vite build -- minify esbuild.
 
 1171
 01:07:17,089 --> 01:07:17,508
@@ -4684,11 +4684,11 @@ ah,
 
 1172
 01:07:17,509 --> 01:07:22,398
-so we can use esbuild as the minifier which already speeds up the build by quite a bit,
+So we can use esbuild as the minifier which already speeds up the build by quite a bit,
 
 1173
 01:07:22,398 --> 01:07:26,898
-but in most cases the bundle will be slightly larger.
+But in most cases the bundle will be slightly larger.
 
 1174
 01:07:26,899 --> 01:07:28,968
@@ -4724,11 +4724,11 @@ yeah,
 
 1182
 01:07:40,099 --> 01:07:47,478
-and I think the last question would be how could folks stay up to date with vite checkout releases?
+And I think the last question would be how could folks stay up to date with vite checkout releases?
 
 1183
 01:07:47,479 --> 01:07:51,906
-And are you taking contributions right now as you're approaching the earth leaving the basement
+And are you taking contributions right now as you're approaching the earth leaving the basement.
 
 1184
 01:07:51,906 --> 01:07:54,738
@@ -4736,7 +4736,7 @@ Yeah, we have a lot of contributors already.
 
 1185
 01:07:54,739 --> 01:08:03,648
-So the easiest way to stay in touch is go to this Twitter handle adds vite_js
+So the easiest way to stay in touch is go to this Twitter handle adds vite_js.
 
 1186
 01:08:03,649 --> 01:08:05,778
@@ -4760,7 +4760,7 @@ Oh,
 
 1191
 01:08:20,239 --> 01:08:23,898
-also we have this chat.vitejs.dev
+also we have this chat.vitejs.dev.
 
 1192
 01:08:23,899 --> 01:08:25,188
@@ -4792,7 +4792,7 @@ yeah,
 
 1199
 01:08:38,719 --> 01:08:42,768
-So chat.vitejs.dev
+So chat.vitejs.dev.
 
 1200
 01:08:42,769 --> 01:08:45,348
@@ -4828,11 +4828,11 @@ I think it's a really good,
 
 1208
 01:08:58,399 --> 01:09:03,378
-and I hope you definitely pick up on the live streaming game folks have,
+And I hope you definitely pick up on the live streaming game folks have.
 
 1209
 01:09:03,379 --> 01:09:04,548
-if you have enjoyed this,
+If you have enjoyed this,
 
 1210
 01:09:04,549 --> 01:09:06,378
@@ -4852,7 +4852,7 @@ but he also has a Twitch.
 
 1214
 01:09:10,759 --> 01:09:13,548
-So what you mentioned your twitch is different.
+So what you mentioned your Twitch is different.
 
 1215
 01:09:13,549 --> 01:09:16,578
@@ -4896,7 +4896,7 @@ so my name is here bdougieYO that who I am.
 
 1225
 01:09:38,449 --> 01:09:40,158
-I do a lot of Github actions work,
+I do a lot of GitHub actions work,
 
 1226
 01:09:40,159 --> 01:09:43,248
