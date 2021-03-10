@@ -1600,7 +1600,7 @@ I just want to be opinionated.
 
 401
 00:21:47,719 --> 00:21:58,308
-so I can manage much more for the user and because the tool gets to manage all these things together together so the tool gets gets to sort of work.
+so I can manage much more for the user and because the tool gets to manage all these things together so the tool gets to sort of work.
 
 402
 00:21:58,309 --> 00:22:03,378
@@ -1644,11 +1644,11 @@ like we as an ecosystem, as the community we need,
 
 412
 00:22:50,929 --> 00:22:53,718
-we needed something to pave the way like webpack.
+we needed something to pave the way, like webpack.
 
 413
 00:22:53,719 --> 00:22:57,408
-then we try to put all these things together on top of webpack
+then we try to put all these things together on top of webpack.
 
 414
 00:22:57,409 --> 00:22:57,978
@@ -1672,11 +1672,11 @@ So if you look at things across,
 
 419
 00:23:09,289 --> 00:23:12,858
-like create-react-app or Vue-CLI or Next.js
+like create-react-app or Vue-CLI or Next.js.
 
 420
 00:23:12,859 --> 00:23:15,348
-a lot of stuff that is shared, right.
+A lot of stuff that is shared, right.
 
 421
 00:23:15,349 --> 00:23:17,778
@@ -1684,7 +1684,7 @@ They were doing a lot of similar stuff on top of webpack.
 
 422
 00:23:17,779 --> 00:23:21,108
-so I think we've finally reached his harm.
+So I think we've finally reached his harm.
 
 423
 00:23:21,109 --> 00:23:26,088
@@ -1740,7 +1740,7 @@ How about like,
 
 436
 00:23:55,279 --> 00:23:59,778
-How do we compare this with the Vue-CLI they are going to be working together eventually,
+How do we compare this with the Vue CLI they are going to be working together eventually,
 
 437
 00:23:59,779 --> 00:24:02,148
@@ -1788,7 +1788,7 @@ So it's a more complete solution,
 
 448
 00:24:49,639 --> 00:24:50,148
-so.
+So.
 
 449
 00:24:51,228 --> 00:24:51,798
@@ -1852,7 +1852,7 @@ So my question is,
 
 464
 00:25:29,329 --> 00:25:30,948
-is Vite
+Is Vite
 
 465
 00:25:30,949 --> 00:25:35,568
@@ -1896,11 +1896,11 @@ And then Vite itself exposes a pretty pretty well defined JavaScript API so you 
 
 475
 00:26:00,469 --> 00:26:03,438
-So an example is VitePress.
+So an example is VitePress,
 
 476
 00:26:03,439 --> 00:26:07,968
-which is a static site generator that is built on top Vite.
+which is a static site generator that is built on top of Vite.
 
 477
 00:26:07,969 --> 00:26:12,588
@@ -1952,7 +1952,7 @@ we talked about this before were alive,
 
 489
 00:26:34,069 --> 00:26:40,098
-but I wanted to have the fact And I know a lot of folks are downstream haven't been here before on Open Source Friday
+but I wanted to have the fact. And I know a lot of folks are downstream haven't been here before on Open Source Friday,
 
 490
 00:26:40,099 --> 00:26:43,368
@@ -1960,15 +1960,15 @@ but it's an opportunity for us to have conversations about projects.
 
 491
 00:26:43,369 --> 00:26:51,948
-Open up the Web browser and talk as opposed to like a podcast where you get a lot of high level and sort of walk through different patterns without getting they'll actually show it.
+Open up the web browser and talk as opposed to like a podcast where you get a lot of high level and sort of walk through different patterns without getting they'll actually show it.
 
 492
 00:26:51,949 --> 00:26:59,907
-And then I'm going to have any bill read the show notes. But it's nice to see is just give us the examples this right here and right in front of us
+And then I'm going to have any bill read the show notes. But it's nice to see is just give us the examples this right here and right in front of us.
 
 493
 00:27:01,772 --> 00:27:08,463
-So I'm going to just like quickly good tailwind going because so this is just installing a bunch of stuff,
+So I'm going to just like quickly good Tailwind going because so this is just installing a bunch of stuff,
 
 494
 00:27:08,539 --> 00:27:10,608
@@ -1976,11 +1976,11 @@ so I'm going to use yarn add
 
 495
 00:27:11,568 --> 00:27:15,288
--D with all these tailwind stuff,
+-D with all these Tailwind stuff,
 
 496
 00:27:15,289 --> 00:27:19,218
-so these are just like standard dependencies that tailwind wants you to install.
+so these are just like standard dependencies that Tailwind wants you to install.
 
 497
 00:27:20,928 --> 00:27:22,218
@@ -1988,11 +1988,11 @@ Once you install that,
 
 498
 00:27:22,219 --> 00:27:24,138
-I'm going to tailwind
+I'm going to tailwind.
 
 499
 00:27:25,458 --> 00:27:28,518
-There's that tailwindcss init -P
+There's that tailwindcss init -P.
 
 500
 00:27:31,818 --> 00:27:45,738
