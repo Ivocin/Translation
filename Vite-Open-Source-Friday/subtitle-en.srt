@@ -1252,7 +1252,7 @@ it also reloads.
 
 314
 00:16:33,859 --> 00:16:35,898
-So this is not how much replacement,
+So this is not hot module replacement,
 
 315
 00:16:35,899 --> 00:16:37,848
@@ -1284,11 +1284,11 @@ Yes，I've definitely been that path.
 
 322
 00:16:57,762 --> 00:17:04,488
-Then you need to look at all the PostCSS configurations for to CSS Loader add those loaders on webpack config again.
+Then you need to look at all the PostCSS configurations for to CSS loader add those loaders on webpack config again.
 
 323
 00:17:04,489 --> 00:17:05,718
-you get what I mean right.
+You get what I mean right.
 
 324
 00:17:05,719 --> 00:17:09,648
@@ -1312,11 +1312,11 @@ if you want to have custom PostCSS configs,
 
 329
 00:17:24,529 --> 00:17:26,778
-so you just add post.config.js
+so you just add post.config.js.
 
 330
 00:17:27,918 --> 00:17:30,348
-The export CSS config
+The export CSS config.
 
 331
 00:17:30,349 --> 00:17:30,918
@@ -1328,7 +1328,7 @@ This is similar to how you get the Tailwind CSS working.
 
 333
 00:17:35,833 --> 00:17:39,312
-Because Tailwind itself is really a Post CSS plugin.
+Because Tailwind itself is really a PostCSS plugin.
 
 334
 00:17:40,009 --> 00:17:42,558
@@ -1336,7 +1336,7 @@ So if you configure,
 
 335
 00:17:42,559 --> 00:17:45,858
-you want to configure Tailwind with Vite
+you want to configure Tailwind with Vite.
 
 336
 00:17:45,859 --> 00:17:47,538
@@ -1352,7 +1352,7 @@ how can we get that working out?
 
 339
 00:17:50,149 --> 00:17:53,148
-proudly be to go to Tailwind CSS.
+Proudly be to go to Tailwind CSS.
 
 340
 00:17:55,188 --> 00:17:57,558
@@ -1368,7 +1368,7 @@ Yes,
 
 343
 00:18:01,039 --> 00:18:02,148
-so why are you looking for that?
+So why are you looking for that?
 
 344
 00:18:02,149 --> 00:18:04,518
@@ -1388,7 +1388,7 @@ So Vite has its own configuration format,
 
 348
 00:18:18,709 --> 00:18:21,948
-but it's not based on webpack the idea is,
+but it's not based on webpack, the idea is,
 
 349
 00:18:21,949 --> 00:18:24,588
@@ -1408,11 +1408,11 @@ you just create a vite.config.js and you can say export defaults.
 
 353
 00:18:36,860 --> 00:18:39,460
-css modules.
+CSS modules.
 
 354
 00:18:39,750 --> 00:18:47,065
-then these options will be passed on to the post css modules plugin so you can configure like
+then these options will be passed on to the PostCSS modules plugin so you can configure like,
 
 355
 00:18:47,200 --> 00:18:49,591
@@ -1456,7 +1456,7 @@ So we have in some way if you use Vite with Vue.
 
 365
 00:19:22,609 --> 00:19:30,914
-you almost scared identical feature set with Vue CLI in terms of what you can do with source code.
+You almost scared identical feature set with Vue CLI in terms of what you can do with source code.
 
 366
 00:19:30,914 --> 00:19:30,918
@@ -1540,7 +1540,7 @@ I love the fact that there are strong opinions happening now in frontend JavaScr
 
 386
 00:20:44,539 --> 00:20:51,318
-because when you talk about like a wetpack like I am triggered where I've definitely got to a point where I want to use this new things,
+because when you talk about like a webpack like I am triggered where I've definitely got to a point where I want to use this new things,
 
 387
 00:20:51,319 --> 00:20:52,968
@@ -1548,7 +1548,7 @@ like Tailwind at the time,
 
 388
 00:20:52,969 --> 00:21:03,468
-and but I don't know how to get it like in my webpack config and there's sometimes some plugins some hoops after drunk through two different plugins that are competing against each other for space.
+and but I don't know how to get it, like in my webpack config and there's sometimes some plugins some hoops I have to jump through, sometimes two different plugins that are competing against each other for space.
 
 389
 00:21:03,469 --> 00:21:04,968
@@ -1556,11 +1556,11 @@ and sometimes I need both of them,
 
 390
 00:21:04,969 --> 00:21:09,378
-and I've sort of been burnt out enough about that a situation.
+and I've sort of been burnt out enough about that situation.
 
 391
 00:21:09,379 --> 00:21:13,458
-But it sounds like in Vite, one of the steps is working on a box.
+But it sounds like in Vite, one of the steps is working on the box.
 
 392
 00:21:13,459 --> 00:21:13,848
