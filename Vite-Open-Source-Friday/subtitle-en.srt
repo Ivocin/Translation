@@ -340,7 +340,7 @@ This is what it is like.
 
 86
 00:03:57,409 --> 00:03:58,938
-This is what Vite is
+This is what Vite is.
 
 87
 00:03:58,939 --> 00:04:00,468
@@ -356,7 +356,7 @@ So I do a lot of frontend myself.
 
 90
 00:04:03,829 --> 00:04:05,298
-I come from a React background.
+I come from like a React background.
 
 91
 00:04:05,299 --> 00:04:08,228
@@ -364,7 +364,7 @@ I've kind of some Vue projects too, on GitHub as well.
 
 92
 00:04:08,556 --> 00:04:11,621
-And I feel like we're going through a revolution that we're sort of seeing.
+And I feel like we're going through an evolution that we're sort of seeing.
 
 93
 00:04:11,629 --> 00:04:13,458
@@ -376,7 +376,7 @@ probably longer than that,
 
 95
 00:04:14,268 --> 00:04:17,777
-with like Webpack and how foxes that's sort of adopted.
+with like Webpack and how folks that's sort of adopted.
 
 96
 00:04:17,779 --> 00:04:18,919
@@ -604,7 +604,7 @@ so I'm just going to do yarn add vite.
 
 152
 00:07:31,279 --> 00:07:32,298
-There are D vite.
+There are -D vite.
 
 153
 00:07:33,678 --> 00:07:34,868
@@ -1100,7 +1100,7 @@ A lot of people kind of have to sort of flip a switch in order to to get into Vi
 
 276
 00:14:22,009 --> 00:14:24,258
-I think a parcel does this too right.
+I think Parcel does this too, right.
 
 277
 00:14:24,259 --> 00:14:29,478
@@ -1128,7 +1128,7 @@ but in a way right?
 
 283
 00:14:40,819 --> 00:14:50,568
-So what Vite does under the hood is we actually record these all these important relationships between the HTML and the CSS files?
+So what Vite does under the hood is we actually record these all these important relationships between the HTML and the CSS files.
 
 284
 00:14:52,728 --> 00:14:54,108
@@ -1164,7 +1164,7 @@ What is the module keyword, We've actually not seen that before.
 
 292
 00:15:22,459 --> 00:15:24,168
-so this is a convention I saw.
+So this is a convention I saw.
 
 293
 00:15:24,169 --> 00:15:26,988
