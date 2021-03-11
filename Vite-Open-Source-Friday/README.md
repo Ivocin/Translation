@@ -169,7 +169,3 @@ Vite 真正解决了 HMR 速度与随着应用越来越大而越来越慢的问�
 ## 后记
 
 好久没有做这么大型视频的翻译了，上一次还是[ React Conf 2018 的翻译](https://juejin.cn/post/6844903726684061710)。本视频翻译从春节假期 2 月 15 日开始，开工后时间比较少，断断续续花了三周多时间。好在 GitHub 在 Twitch 视频失效后，视频上传到了 YouTube 上，利用其自动字幕功能，后期节省了很多时间。确实 YouTube 的语音转文字功能更为强大。本视频已经改为外挂字幕重新上传，字幕地址：[Vite-Open-Source-Friday](https://github.com/Ivocin/Translation/tree/master/Vite-Open-Source-Friday)，如有问题，欢迎 pr。希望这个视频能够帮助到大家。
-
-
-
-本文正在参与「掘金 3 月闯关活动」，点击查看[活动详情](https://juejin.cn/post/6934506742986309639)。
