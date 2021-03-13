@@ -1,84 +1,84 @@
-> * 原文地址：[https://www.twilio.com/blog/how-to-build-a-cli-with-node-js)
+> * 原文地址：[How to build a CLI with Node.js](https://www.twilio.com/blog/how-to-build-a-cli-with-node-js)
 > * 原文作者：[DOMINIK KUNDEL](https://www.twilio.com/blog/author/dkundel)
 > * 本文永久链接：[https://github.com/Ivocin/Translation/Blogs/how-to-build-a-cli-with-node-js.md](https://github.com/Ivocin/Translation/Blogs/how-to-build-a-cli-with-node-js.md)
 > * 译者：[Ivocin](https://github.com/Ivocin/)
 > * 校对者：
 
-# How to build a CLI with Node.js
+# 如何使用 Node.js 构建 CLI
 
 ![](https://s3.amazonaws.com/com.twilio.prod.twilio-docs/images/atZ3n9vMFjjXDl_XxDtL_FCRSOt6EF0d8LnbMRCCJQUesM.width-808.png)
 
-Command-line interfaces (CLIs) built in Node.js allow you to automate repetitive tasks while leveraging the vast Node.js ecosystem. And thanks to package managers like [`npm`](https://www.npmjs.com/) and [`yarn`](https://yarnpkg.com/), these can be easily distributed and consumed across multiple platforms. In this post we'll look at why you might want to write a CLI, how to use Node.js for it, some useful packages and how you can distribute your new CLI.
+Node.js 中内置的命令行界面（CLI）能够让你充分利用庞大的 Node.js 生态系统自动化执行重复性任务。感谢像 [`npm`](https://www.npmjs.com/) 和 [`yarn`](https://yarnpkg.com/) 这样的包管理器，它们可以在多个平台上轻松分发和使用。在本文中，我们将介绍为什么要编写 CLI、如何使用Node.js 来创建 CLI、一些实用的包以及如何发布你的新 CLI。
 
-## Why create CLIs with Node.js
+## 为什么使用 Node.js 创建 CLI
 
-One of the reasons why Node.js got so popular is the rich package ecosystem with over 900,000 packages in the [`npm` registry](https://npmjs.com). By writing your CLIs in Node.js you can tap into this ecosystem including it's big amount of CLI-focused packages. Among others:
+Node.js 如此受欢迎的原因之一是其丰富的包生态系统，在 [`npm` 注册表](https://npmjs.com)中有超过 900,000 个包。通过使用 Node.js 编写 CLI，你可以利用这个生态系统，包括大量针对 CLI 的软件包。 其中：
 
-*   [`inquirer`](http://npm.im/inquirer), [`enquirer`](http://npm.im/enquirer) or `[prompts](https://npm.im/prompts)` for complex input prompts
-*   [`email-prompt`](http://npm.im/email-prompt) for convenient email input prompts
-*   [`chalk`](http://npm.im/chalk) or `[kleur](https://npm.im/kleur)` for colored output
-*   [`ora`](http://npm.im/ora) for beautiful spinners
-*   [`boxen`](http://npm.im/boxen) for drawing boxes around your output
-*   [`stmux`](http://npm.im/stmux) for a `tmux` like UI
-*   [`listr`](http://npm.im/listr) for progress lists
-*   [`ink`](http://npm.im/ink) to build CLIs with React
-*   [`meow`](http://npm.im/meow) or [`arg`](http://npm.im/arg) for basic argument parsing
-*   [ `commander`](http://npm.im/commander) and [`yargs`](https://www.npmjs.com/package/yargs) for complex argument parsing and subcommand support
-*   [`oclif`](https://oclif.io/) a framework for building extensible CLIs by Heroku (`[gluegun](https://infinitered.github.io/gluegun/#/)` as an alternative)
+*   [`inquirer`](http://npm.im/inquirer)、 [`enquirer`](http://npm.im/enquirer)  或者 `[prompts](https://npm.im/prompts)` ：复杂的输入提示
+*   [`email-prompt`](http://npm.im/email-prompt) ：简化电子邮件输入提示
+*   [`chalk`](http://npm.im/chalk) or `[kleur](https://npm.im/kleur)` ：彩色输出
+*   [`ora`](http://npm.im/ora)：漂亮的加载状态动画
+*   [`boxen`](http://npm.im/boxen)：在输出周围绘制边框
+*   [`stmux`](http://npm.im/stmux)：提供 `tmux`(Terminal Multiplexing) 风格的 UI
+*   [`listr`](http://npm.im/listr)：进度列表
+*   [`ink`](http://npm.im/ink)：使用 React 构建 CLI
+*   [`meow`](http://npm.im/meow) 或者 [`arg`](http://npm.im/arg)：基础参数解析
+*   [ `commander`](http://npm.im/commander) 和 [`yargs`](https://www.npmjs.com/package/yargs)：复杂参数解析以及子命令支持
+*   [`oclif`](https://oclif.io/) 由 Heroku 构建的可扩展 CLI 框架 (也可以选择 `[gluegun](https://infinitered.github.io/gluegun/#/)`)
 
 Additionally there are many convenient ways to consume CLIs published to `npm` from both `yarn` and `npm`. Take as an example `create-flex-plugin`, a CLI that you can use to bootstrap a plugin for [Twilio Flex](https://twilio.com/flex). You can install it as a global command:
+此外，`yarn` 和 `npm` 都提供了许多方便的方法来使用发布到 `npm` 的 CLI。我们以 `create-flex-plugin` 为例，使用它可以创建 [Twilio Flex](https://twilio.com/flex) 插件。你可以将其安装为全局命令：
 
 ```
-# Using npm:
+# 使用 npm:
 npm install -g create-flex-plugin
-# Using yarn:
+# 使用 yarn:
 yarn global add create-flex-plugin
-# Afterwards you will be able to consume it:
+# 安装成功后你就可以使用了：
 create-flex-plugin
 ```
 
-Or as project specific dependencies:
+也可以将其作为项目的特定依赖：
 
 ```
-# Using npm:
+# 使用 npm:
 npm install create-flex-plugin --save-dev
-# Using yarn:
+# 使用 yarn:
 yarn add create-flex-plugin --dev
-# Afterwards the command will be in
-./node_modules/.bin/create-flex-plugin
-# Or via npx using npm:
+# 安装成功后命令在 ./node_modules/.bin/create-flex-plugin 路径
+# 或者使用 npm 的 npx 命令：
 npx create-flex-plugin
-# And via yarn:
+# 也可以使用 yarn：
 yarn create-flex-plugin
 ```
 
-In fact `npx` supports executing CLIs even when they are not installed yet. Simply run `npx create-flex-plugin` and it will download it into a cache if it can't find a locally- or globally-installed version.
+事实上，即使没有提前安装 CLI，`npx` 命令也可以执行。只需运行 `npx create-flex-plugin` 命令，`npx` 会优先使用本地或全局安装的版本，如果找不到，它会将其下载到缓存中。
 
-Lastly since `npm` version 6.1, `npm init` and `yarn` supports a way for you to bootstrap projects using CLIs that are named `create-*`. As an example, for our `create-flex-plugin` really all we have to call is:
+从 `npm` 6.1 版本开始，使用 `npm init` 和 `yarn` 支持使用名为`create-*` 的 CLI 来启动项目的方法。例如，对于我们的`create-flex-plugin`，我们真正需要调用的是：
 
 ```
-# Using Node.js
+# 使用 Node.js
 npm init flex-plugin
-# Using Yarn:
+# 使用 Yarn:
 yarn create flex-plugin
 ```
 
-## Setup Your First CLI
+## 创建你的第一个 CLI
 
-If you prefer following along a video tutorial, [check out this tutorial on our YouTube](https://www.youtube.com/watch?v=s2h28p4s-Xs)[](http://savefrom.net/?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3Ds2h28p4s-Xs&utm_source=chameleon&utm_medium=extensions&utm_campaign=link_modifier "Get a direct link").
+如果你希望按照视频教程进行操作，[请查看我们在 YouTube 上的教程](https://www.youtube.com/watch?v=s2h28p4s-Xs).
 
-Now that we covered why you might want to create a CLI using Node.js, let's start building one. We'll use `npm` in this tutorial but there are equivalent commands for most things in `yarn`. Make sure you have [Node.js](https://nodejs.org/en/download/) and [`npm`](https://www.npmjs.com/) installed on your system.
+现在我们介绍了你可能想要使用 Node.js 创建 CLI 的原因，现在让我们来构建一个 CLI。我们将在本教程中使用 `npm`，但是绝大部分都有相同作用的 `yarn` 命令。确保你在系统上安装了 [Node.js](https://nodejs.org/en/download/) 和 [`npm`](https://www.npmjs.com/)。
 
-In this tutorial we'll create a CLI that bootstraps new projects to your own preferences by running `npm init @your-username/project`.
+在本教程中，我们将创建一个 CLI，通过运行 `npm init @your-username/project`，创建一个你自己偏好的新项目。
 
-Start a new Node.js project by running:
+通过如下命令创建一个新的 Node.js 项目：
 
 ```
 mkdir create-project && cd create-project
 npm init --yes
 ```
 
-Afterwards create a directory called `src/` in the root of your project and place a file called `cli.js` into it with the following code:
+然后在项目的根目录中创建一个名为 `src/` 的目录，并在其中创建 `cli.js` 文件，代码如下：
 
 ```
 export function cli(args) {
@@ -86,7 +86,7 @@ export function cli(args) {
 }
 ```
 
-This will be the part where we'll later parse our logic and then trigger our actual business logic. Next we'll need to create our entry point for our CLI. Create a new directory `bin/` in the root of our project and create a new file inside it called `create-project`. Place the following lines of code into it:
+这将是我们稍后解析逻辑然后触发实际业务逻辑的部分。接下来，我们需要为 CLI 创建入口。在项目的根目录中创建一个新目录 `bin/`，并在其中创建一个名为 `create-project` 的新文件。将以下代码行放入其中：
 
 ```
 #!/usr/bin/env node
@@ -95,15 +95,15 @@ require = require('esm')(module /*, options*/);
 require('../src/cli').cli(process.argv);
 ```
 
-There's a few things going on in this small snippet. First we require a module called `esm` that enables us to use `import` in the other files. This is not directly related to building CLIs but we will be using [ES Modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) in this tutorial and the `esm` package allows us to do so without the need to transpile for Node.js versions without the support. Afterwards we'll require our `cli.js` file and call the `cli` function exposed with [`process.argv`](https://nodejs.org/api/process.html#process_process_argv) which is an array of all the arguments passed to this script from the command line. 
+这个小代码片段一共做了两件事情。首先，我们引入了一个名为 `esm` 的模块，它可以让我们在其他文件中使用 `import`。这与构建 CLI 没有直接关系，但我们将在本教程中使用 [ES 模块](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)，`esm` 包允许我们这样做，而无需在没有支持的情况下转换 Node.js 版本。然后我们引入我们的 `cli.js` 文件并调用其暴露的 `cli` 函数，并传入 [`process.argv`](https://nodejs.org/api/process.html#process_process_argv) 参数，该参数是从命令行传递给该脚本的全部参数的数组。
 
-Before we can test our script we'll need to install our `esm` dependency by running:
+在我们测试脚本之前，需要安装 `esm` 依赖，执行如下命令：
 
 ```
 npm install esm
 ```
 
-We'll also have to inform the package manager that we are exposing a CLI script. We do this by adding the appropriate entry in our `package.json`. Don't forget to also update the `description`, `name`, `keyword` and `main` properties accordingly:
+我们还必须告知包管理器我们需要暴露的 CLI 脚本。通过在 `package.json` 中添加合适的条目来完成此操作。不要忘记更新 `description`、`name`、`keyword` 和 `main` 属性：
 
 ```
 {
@@ -133,21 +133,21 @@ We'll also have to inform the package manager that we are exposing a CLI script.
 }
 ```
 
-If you look at the `bin` key, we are passing in an object with two key/value pairs. Those define the CLI commands that your package manager will install. In our case we'll register the same script for two commands. Once using our own `npm` scope by using our username and once as the generic `create-project` command for convenience.
+我们来看 `bin` 这个属性，值为一个包含两个键值对的对象。它们定义了你的包管理器将要安装的 CLI 命令。在我们的例子中，我们为相同脚本注册了两条命令。一条命令使用我们自己用户名的 `npm` 作用域，另一条通用的 `create-project` 命令方便使用。
 
-Now that we have this done, we can test our script. To do so, the easiest way is to use the [`npm link`](https://docs.npmjs.com/cli/link.html) command. Run in your terminal inside your project:
+现在我们完成了这项工作，我们可以测试我们的脚本。要做到这一点，最简单的方法是使用 [`npm link`](https://docs.npmjs.com/cli/link.html) 命令。在项目内的终端中运行：
 
 ```
 npm link
 ```
 
-This will globally install a symlink linking to your current project so there's no need for you to re-run this when we update our code. After running `npm link` you should have your CLI commands available. Try running:
+这将当前项目链接到全局执行环境，因此在更新代码时无需重新运行它。运行 `npm link` 后，你就可以使用 CLI 命令了。试试运行：
 
 ```
 create-project
 ```
 
-You should see an output similar to this:
+应该可以看到类似于如下的输出：
 
 ```
 [ '/usr/local/Cellar/node/11.6.0/bin/node',
