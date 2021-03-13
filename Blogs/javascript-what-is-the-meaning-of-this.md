@@ -1,4 +1,4 @@
-# JavaScript: What is the meaning of this?
+# [译]JavaScript: 带你彻底搞懂 this
 
 > * 原文地址：[JavaScript: What is the meaning of this?](https://web.dev/javascript-this/)
 > * 原文作者：[Jake Archibald](https://web.dev/authors/jakearchibald/)
@@ -6,27 +6,24 @@
 > * 本文永久链接：[https://github.com/Ivocin/Translation/Blogs/javascript-what-is-the-meaning-of-this.md](https://github.com/Ivocin/Translation/blob/master/Blogs/javascript-what-is-the-meaning-of-this.md)
 > * 翻译、校对：[Ivocin](https://github.com/Ivocin/)
 
-Figuring out the value of `this` can be tricky in JavaScript, here's how to do it…
 
----
+搞明白 JavaScript 中 `this` 的值有时候会很棘手，本文带你彻底搞懂 `this`。
 
-JavaScript's `this` is the butt of many jokes, and that's because, well, it's pretty complicated. However, I've seen developers do much-more-complicated and domain-specific things to avoid dealing with this `this`. If you're unsure about `this`, hopefully this will help. This is my `this` guide.
+JavaScript 的 `this` 往往会成为许多笑话的笑柄，因为它想当复杂。然而，我发现很多开发人员为了避免处理 `this`，用了更加复杂和特定领域的处理。如果你对 `this` 还不熟悉，希望本文能帮助到你。下面进入我的 `this` 指南。
 
-I'm going to start with the most specific situation, and end with the least-specific. This article is kinda like a big `if (…) … else if () … else if (…) …`, so you can go straight to the first section that matches the code you're looking at.
-
-
-
-1. [If the function is defined as an arrow function](#arrow-functions)
-2. [Otherwise, if the function/class is called with `new`](#new)
-3. [Otherwise, if the function has a 'bound' `this` value](#bound)
-4. [Otherwise, if `this` is set at call-time](#call-apply)
-5. [Otherwise, if the function is called via a parent object (`parent.func()`)](#object-member)
-6. [Otherwise, if the function or parent scope is in strict mode](#strict)
-7. [Otherwise](#otherwise)
+我将从最具体的情况开始，以最不具体的情况结束，本文的结构类似与一个大的 `if (…) … else if () … else if (…) …` 语句，所以你可以直接跳转到匹配你代码情况的章节。
 
 
 
-## If the function is defined as an arrow function: <span id="arrow-functions"></span>
+1. [如果是箭头函数](#arrow-functions)
+2. [否则，如果使用 `new` 调用函数/类](#new)
+3. [否则, 函数被 `bind` 了 `this`](#bound)
+4. [否则, 如果 `this` 在调用时设置](#call-apply)
+5. [否则, 如果使用父对象(`parent.func()`) 调用函数](#object-member)
+6. [否则, 如果函数或者其父作用域使用严格模式](#strict)
+7. [否则](#otherwise)
+
+## 如果是箭头函数：<span id="arrow-functions"></span>
 
 ```js
 const arrowFunction = () => {
@@ -34,78 +31,81 @@ const arrowFunction = () => {
 };
 ```
 
-
-
-In this case, the value of `this` is *always* the same as `this` in the parent scope:
+在这种情况下，`this` 的值**永远**与父作用域的 `this` 相同。
 
 ```js
 const outerThis = this;
 
 const arrowFunction = () => {
-  // Always logs `true`:
+  // 永远输出 `true`:
   console.log(this === outerThis);
 };
 ```
 
-Arrow functions are great because the inner value of `this` can't be changed, it's *always* the same as the outer `this`.
+箭头函数非常优秀，因为其内部 `this` 的值无法被改变，它与外部的 `this` **永远** 相同。
 
+### 其他例子 <span id="other-examples"></span>
 
+使用箭头函数， `this` 的值**无法**被 [`bind`](#bound) 改变：
 
-### Other examples <span id="other-examples"></span>
-
-With arrow functions, the value of `this` *can't* be changed with [`bind`](#bound):
-
-```
-// Logs `true` - bound `this` value is ignored:arrowFunction.bind({foo: 'bar'})();
-```
-
-With arrow functions, the value of `this` *can't* be changed with [`call` or `apply`](#call-apply):
-
-```
-// Logs `true` - called `this` value is ignored:arrowFunction.call({foo: 'bar'});// Logs `true` - applied `this` value is ignored:arrowFunction.apply({foo: 'bar'});
+```js
+// 输出为 `true` - bind `this` 被忽略：
+arrowFunction.bind({foo: 'bar'})();
 ```
 
-With arrow functions, the value of `this` *can't* be changed by calling the function as a member of another object:
+使用箭头函数，`this` 的值**无法**被 [`call` 或 `apply`](#call-apply) 改变：
 
-```
-const obj = {arrowFunction};// Logs `true` - parent object is ignored:obj.arrowFunction();
-```
-
-With arrow functions, the value of `this` *can't* be changed by calling the function as a constructor:
-
-```
-// TypeError: arrowFunction is not a constructornew arrowFunction();
+```js
+// 输出为 `true` - call `this` 被忽略：
+arrowFunction.call({foo: 'bar'});
+// 输出为 `true` - apply `this` 被忽略：
+arrowFunction.apply({foo: 'bar'});
 ```
 
-### 'Bound' instance methods <span id="'bound'-instance-methods"></span>
+使用箭头函数，`this` 的值**无法**通过将函数作为另一个对象的成员变量来调用改变：
 
-With instance methods, if you want to ensure `this` always refers to the class instance, the best way is to use arrow functions and [class fields](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields):
+```js
+const obj = {arrowFunction};
+// 输出为 `true` - 父对象被忽略：
+obj.arrowFunction();
+```
+
+使用箭头函数，`this` 的值**无法**通过将函数作为构造函数来调用而改变：
+
+```js
+// TypeError: arrowFunction is not a constructor
+new arrowFunction();
+```
+
+### “绑定” 实例方法 <span id="'bound'-instance-methods"></span>
+
+对于实例方法，如果想要确保 `this` 始终指向类实例，最好的方法是使用箭头函数和 [class fields](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields)：
 
 ```js
 class Whatever {
   someMethod = () => {
-    // Always the instance of Whatever:
+    // 永远是 Whatever 的实例：
     console.log(this);
   };
 }
 ```
 
-This pattern is really useful when using instance methods as event listeners in components (such as React components, or web components).
+这个模式在将实例方法作为组件内的事件监听器时十分有用（如 React 组件或者 Web Components）。
 
-The above might feel like it's breaking the "`this` will be the same as `this` in the parent scope" rule, but it starts to make sense if you think of class fields as syntactic sugar for setting things in the constructor:
+上面的代码貌似打破了“`this` 的值**永远**与父作用域的 `this` 相同”的规则，但是如果你将 class fields 看作将对象设置到构造函数的语法糖，那么就好理解了：
 
 ```js
 class Whatever {
   someMethod = (() => {
     const outerThis = this;
     return () => {
-      // Always logs `true`:
+      // 永远输出 `true`:
       console.log(this === outerThis);
     };
   })();
 }
 
-// …is roughly equivalent to:
+// …大致等于：
 
 class Whatever {
   constructor() {
@@ -118,7 +118,7 @@ class Whatever {
 }
 ```
 
-Alternative pattens involve binding an existing function in the constructor, or assigning the function in the constructor. If you can't use class fields for some reason, assigning functions in the constructor is a reasonable alternative:
+其他模式包括在构造函数中绑定现有函数，或在构造函数中对函数赋值。如果你由于某种原因不能使用 class fields，则在构造函数中对函数赋值是一种合理的选择：
 
 ```js
 class Whatever {
@@ -130,13 +130,13 @@ class Whatever {
 }
 ```
 
-## Otherwise, if the function/class is called with `new`: <span id="new"></span>
+## 否则，如果使用 `new` 调用函数/类： <span id="new"></span>
 
 ```
 new Whatever();
 ```
 
-The above will call `Whatever` (or its constructor function if it's a class) with `this` set to the result of `Object.create(Whatever.prototype)`.
+上面代码会调用 `Whatever`（或者它的构造函数，如果它是类），并将 `this` 设置为 `Object.create(Whatever.prototype)` 的结果。
 
 ```js
 class MyClass {
@@ -147,11 +147,11 @@ class MyClass {
   }
 }
 
-// Logs `true`:
+// 输出为 `true`:
 new MyClass();
 ```
 
-The same is true for older-style constructors:
+使用旧式的构造函数结果也一样：
 
 ```js
 function MyClass() {
@@ -160,29 +160,29 @@ function MyClass() {
   );
 }
 
-// Logs `true`:
+// 输出 `true`:
 new MyClass();
 ```
 
-### Other examples <span id="other-examples-2"></span>
+### 其他例子 <span id="other-examples-2"></span>
 
-When called with `new`, the value of `this` *can't* be changed with [`bind`](#bound):
+使用 `new` 调用，`this` 的值**无法**被 [`bind`](#bound) 改变：
 
 ```js
 const BoundMyClass = MyClass.bind({foo: 'bar'});
-// Logs `true` - bound `this` value is ignored:
+// 输出为 `true` - bind `this` 被忽略：
 new BoundMyClass();
 ```
 
-When called with `new`, the value of `this` *can't* be changed by calling the function as a member of another object:
+使用 `new` 调用，`this` 的值**无法**通过将函数作为另一个对象的成员变量来调用改变：
 
 ```js
 const obj = {MyClass};
-// Logs `true` - parent object is ignored:
+// 输出为 `true` - 父对象被忽略：
 new obj.MyClass();
 ```
 
-## Otherwise, if the function has a 'bound' `this` value: <span id="bound"></span>
+## 否则, 函数被 `bind` 了 `this`： <span id="bound"></span>
 
 ```js
 function someFunction() {
@@ -193,37 +193,34 @@ const boundObject = {hello: 'world'};
 const boundFunction = someFunction.bind(boundObject);
 ```
 
-Whenever `boundFunction` is called, its `this` value will be the object passed to `bind` (`boundObject`).
+每当 `boundFunction` 被调用，它的 `this` 值就是通过 `bind` 传入的值（`boundObject`）。
 
 ```js
-// Logs `false`:
+// 输出 `false`:
 console.log(someFunction() === boundObject);
-// Logs `true`:
+// 输出 `true`:
 console.log(boundFunction() === boundObject);
 ```
 
-
-
 -----
 
-**Warning**: Avoid using `bind` to bind a function to its outer `this`. Instead, use [arrow functions](#arrow-functions), as they make `this` clear from the function declaration, rather than something that happens later in the code.
-
-Don't use `bind` to set `this` to some value unrelated to the parent object; it's usually unexpected and it's why `this` gets such a bad reputation. Consider passing the value as an argument instead; it's more explicit, and works with arrow functions.
-
+**Warning**: 避免使用 `bind` 将函数绑定到其外部的 `this`。使用[箭头函数](#arrow-functions)替代，因为这样 `this` 可以在函数声明就能清楚地看出来，而非在后续代码中看到。
+不要使用 `bind` 设置 `this` 为与父对象无关的值；这通常是出乎意料的，这也是 `this` 获得如此糟糕名声的原因。考虑将值作为参数传递；它更加明确，并且可以使用箭头函数。
 
 
-### Other examples <span id="other-examples-3"></span>
 
-When calling a bound function, the value of `this` *can't* be changed with [`call` or `apply`](#call-apply):
+### 其他例子 <span id="other-examples-3"></span>
+
+使用 `bind` 调用函数，`this` 的值**无法**被 [`call` 或 `apply`](#call-apply) 改变：
 
 ```js
-// Logs `true` - called `this` value is ignored:
+// 输出为 `true` - call `this` 被忽略：
 console.log(boundFunction.call({foo: 'bar'}) === boundObject);
-// Logs `true` - applied `this` value is ignored:
+// 输出为 `true` - apply `this` 被忽略：
 console.log(boundFunction.apply({foo: 'bar'}) === boundObject);
 ```
 
-When calling a bound function, the value of `this` *can't* be changed by calling the function as a member of another object:
+使用 `bind` 调用函数，`this` 的值**无法**通过将函数作为另一个对象的成员变量来调用改变：
 
 ```js
 const obj = {boundFunction};
@@ -231,7 +228,7 @@ const obj = {boundFunction};
 console.log(obj.boundFunction() === boundObject);
 ```
 
-## Otherwise, if `this` is set at call-time: <span id="call-apply"></span>
+## 否则, 如果 `this` 在调用时设置: <span id="call-apply"></span>
 
 ```js
 function someFunction() {
@@ -240,48 +237,43 @@ function someFunction() {
 
 const someObject = {hello: 'world'};
 
-// Logs `true`:
+// 输出 `true`:
 console.log(someFunction.call(someObject) === someObject);
-// Logs `true`:
+// 输出 `true`:
 console.log(someFunction.apply(someObject) === someObject);
 ```
 
-The value of `this` is the object passed to `call`/`apply`.
-
+`this` 的值就是传递给 `call`/`apply` 的对象。
 
 
 ----
 
-**Warning**: Don't use `call`/`apply` to set `this` to some value unrelated to the parent object; it's usually unexpected and it's why `this` gets such a bad reputation. Consider passing the value as an argument instead; it's more explicit, and works with arrow functions.
+**警告**: 不要使用 `bind` 设置 `this` 为与父对象无关的值；这通常是出乎意料的，这也是 `this` 获得如此糟糕名声的原因。考虑将值作为参数传递；它更加明确，并且可以使用箭头函数。
 
+不幸的是，`this` 可能会被如 DOM 事件监听器之类的函数设置为其他值，使用它会导致代码难以理解：
 
-
-Unfortunately `this` is set to some other value by things like DOM event listeners, and using it can result in difficult-to-understand code:
-
-Don't
+不要这样：
 
 ```js
 element.addEventListener('click', function (event) {
-  // Logs `element`, since the DOM spec sets `this` to
-  // the element the handler is attached to.
+  // 输出 `element`, 因为 DOM 将 `this` 设置为
+  // click 绑定的元素上
   console.log(this);
 });
 ```
 
-I avoid using `this` in cases like above, and instead:
-
-Do
+我会避免在上述场景中使用 `this`，我会这样使用：
 
 ```js
 element.addEventListener('click', (event) => {
-  // Ideally, grab it from a parent scope:
+  // 理想情况, 从父作用域获得它：
   console.log(element);
-  // But if you can't do that, get it from the event object:
+  // 但是如果你不想这么做，可以从 event 对象获取它：
   console.log(event.currentTarget);
 });
 ```
 
-## Otherwise, if the function is called via a parent object (`parent.func()`): <span id="object-member"></span>
+## 否则, 如果使用父对象(`parent.func()`) 调用函数： <span id="object-member"></span>
 
 ```js
 const obj = {
@@ -290,25 +282,25 @@ const obj = {
   },
 };
 
-// Logs `true`:
+// 输出 `true`:
 console.log(obj.someMethod() === obj);
 ```
 
-In this case the function is called as a member of `obj`, so `this` will be `obj`. This happens at call-time, so the link is broken if the function is called without its parent object, or with a different parent object:
+在这种情况下，函数作为 `obj` 的成员变量被调用，所以 `this` 指向 `obj`。这是在调用时发生的，因此如果没有使用父对象调用，或者使用一个不同的父对象调用，该连接会断开：
 
 ```js
 const {someMethod} = obj;
-// Logs `false`:
+// 输出 `false`:
 console.log(someMethod() === obj);
 
 const anotherObj = {someMethod};
-// Logs `false`:
+// 输出 `false`:
 console.log(anotherObj.someMethod() === obj);
-// Logs `true`:
+// 输出 `true`:
 console.log(anotherObj.someMethod() === anotherObj);
 ```
 
-`someMethod() === obj` is false because `someMethod` *isn't* called as a member of `obj`. You might have encountered this gotcha when trying something like this:
+`someMethod() === obj` 为 `false`，因为 `someMethod` **不是** 作为 `obj` 的成员变量被调用的。尝试执行以下操作时，可能会遇到此陷阱：
 
 ```js
 const $ = document.querySelector;
@@ -316,21 +308,21 @@ const $ = document.querySelector;
 const el = $('.some-element');
 ```
 
-This breaks because the implementation of `querySelector` looks at its own `this` value and expects it to be a DOM node of sorts, and the above breaks that connection. To achieve the above correctly:
+这个报错是因为 `querySelector` 实现会寻找它的 `this` 值，并期望其某种 DOM 节点，上述代码破坏了连接。为了正确实现上述功能，可以这样写：
 
 ```js
 const $ = document.querySelector.bind(document);
-// Or:
+// 或者：
 const $ = (...args) => document.querySelector(...args);
 ```
 
-Fun fact: Not all APIs use `this` internally. Console methods like `console.log` were changed to avoid `this` references, so `log` doesn't need to be bound to `console`.
+有趣的事实：并不是所有的 API 都在其内部使用了 `this`。Console 方法（如 `console.log`）就改为了不使用 `this` 引用，因此 `log` 方法不需要绑定 `console`。
 
 ---
 
-**Warning**: Don't transplant a function onto an object just to set `this` to some value unrelated to the parent object; it's usually unexpected and it's why `this` gets such a bad reputation. Consider passing the value as an argument instead; it's more explicit, and works with arrow functions.
+**警告**: 不要使用 `bind` 设置 `this` 为与父对象无关的值；这通常是出乎意料的，这也是 `this` 获得如此糟糕名声的原因。考虑将值作为参数传递；它更加明确，并且可以使用箭头函数。
 
-## Otherwise, if the function or parent scope is in strict mode: <span id="strict"></span>
+## 否则, 如果函数或者其父作用域使用严格模式： <span id="strict"></span>
 
 ```js
 function someFunction() {
@@ -338,43 +330,42 @@ function someFunction() {
   return this;
 }
 
-// Logs `true`:
+// 输出 `true`:
 console.log(someFunction() === undefined);
 ```
 
-In this case, the value of `this` is undefined. `'use strict'` isn't needed in the function if the parent scope is in [strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode) (and all modules are in strict mode).
+在这种情况下，`this` 的值是 `undefined`。如果父作用域处于[严格模式](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)（而且所有模块都处在严格模式），则不需要在函数内部使用 `'use strict'`。
 
 ---
 
-**Warning**: Don't rely on this. I mean, there are easier ways to get an `undefined` value 😀.
+**警告**: 不要依赖这个。我的意思是，有更简单的方式来得到一个 `undefined` 值 😀。
 
-## Otherwise: <span id="otherwise"></span>
+## 否则: <span id="otherwise"></span>
 
 ```js
 function someFunction() {
   return this;
 }
 
-// Logs `true`:
+// 输出 `true`:
 console.log(someFunction() === globalThis);
 ```
 
-In this case, the value of `this` is the same as `globalThis`.
+在这种情况下，`this` 的值与 `globalThis` 相同。
 
 ---
 
-Most folks (including me) call `globalThis` the global object, but this isn't 100% technically correct. Here's [Mathias Bynens with the details](https://mathiasbynens.be/notes/globalthis#terminology), including why it's called `globalThis` rather than simply `global`.
+很多人（包括我）把 `globalThis` 称为 `global` 对象，但这不是 100% 技术正确的。在 [Mathias Bynens with the details](https://mathiasbynens.be/notes/globalthis#terminology) 中，有它为什么叫 `globalThis` 而不是 `global` 的原因。
 
 ---
 
-**Warning**: Avoid using `this` to reference the global object (yes, I'm still calling it that). Instead, use [`globalThis`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis), which is much more explicit.
+**警告**: 避免使用 `this` 指向 `global` 对象（对，我仍然这么叫它）。改为使用[`globalThis`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/globalThis)，它更加明确。
 
 
+## 结语 <span id="Phew"></span>
 
-## Phew! <span id="Phew"></span>
+好了，这就是我理解的 `this` 的全部了。如果有任何问题或者我有所遗漏，请[给我发推](https://twitter.com/jaffathecake)。
 
-And that's it! That's everything I know about `this`. Any questions? Something I've missed? Feel free to [tweet at me](https://twitter.com/jaffathecake).
-
-Thanks to [Mathias Bynens](https://twitter.com/mathias), [Ingvar Stepanyan](https://twitter.com/RReverser), and [Thomas Steiner](https://twitter.com/tomayac) for reviewing.
+感谢 [Mathias Bynens](https://twitter.com/mathias), [Ingvar Stepanyan](https://twitter.com/RReverser), 和 [Thomas Steiner](https://twitter.com/tomayac) 的审阅。
 
 
