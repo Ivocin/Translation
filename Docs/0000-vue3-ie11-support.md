@@ -1,20 +1,20 @@
-- Start Date: 2021-04-02
-- Target Major Version: 3.x
-- Reference Issues: N/A
-- Implementation PR: N/A
+- 开始日期： 2021-04-02
+- 目标版本: 3.x
+- 参考 Issue： N/A
+- 实现 PR： N/A
 
-# Summary
+# 摘要
 
-- Drop IE11 support plan for Vue 3.
-- Focus on backport compatible features back to Vue 2.7.
+- 移除 Vue 3 对 IE11 的支持。
+- 将精力转为把兼容特性向前移植到 Vue 2.7 版本中。
 
-# Motivation
+# 动机
 
-We have been asked about IE11 support since the start of Vue 3's development, tracing back to end of 2018. Many users have asked whether Vue 3 will support IE11, and our original plan was to release Vue 3 and let it stablizie first, and add IE11 support at a later stage. During the long development process, we've also made research and experiments for IE11 compatibility on the side, but due to the complexity involved and amount of other work at hand, it's been de-prioritized down the road.
+从 Vue 3 启动开发开始，一直到 2018 年底，我们一直被问到有关 IE11 支持的问题。很多用户都问过，Vue 3 是否会支持 IE11，我们原本都计划是先发布 Vue 3，让它稳定下来，然后在后续阶段增加对 IE11 的支持。在漫长的开发过程中，我们另外还做了兼容 IE11 的研究和实验，但是由于其复杂性以及手头大量的其他工作，这项工作的优先级就降低了。
 
-When we take another look at the problem today in 2021, the browser and JavaScript landscape has changed quite a bit. More developers are now using modern language features, and more importantly [Microsoft itself has started to actively push users away from IE](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-perils-of-using-internet-explorer-as-your-default-browser/ba-p/331732) with its investment in Edge. It is also [dropping IE11 support in its own major projects like Microsoft 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666). Just a few days ago [WordPress also made the decision to drop IE11 support](https://make.wordpress.org/core/2021/03/25/discussion-summary-dropping-support-for-ie11/). IE11's global usage has [dropped below 1%](https://caniuse.com/usage-table). When we are talking about public-facing websites and apps, IE11 is on a clear fast decline.
+当我们在 2021 年再来看这个问题时，浏览器和 JavaScript 的情况都发生了巨大变化。现在更多的开发者使用现代语言特性，更为重要的是，[微软自己开始积极推动用户远离 IE](https://techcommunity.microsoft.com/t5/windows-it-pro-blog/the-perils-of-using-internet-explorer-as-your-default-browser/ba-p/331732)，并对 Edge 持续投入精力。它还在[自己的主要产品（如 Microsoft 365）中移除了对 IE11 的支持](https://techcommunity.microsoft.com/t5/microsoft-365-blog/microsoft-365-apps-say-farewell-to-internet-explorer-11-and/ba-p/1591666)。而就在几天前， [WordPress 也做出了移除 IE11 支持的决定](https://make.wordpress.org/core/2021/03/25/discussion-summary-dropping-support-for-ie11/)。IE11 的全球使用率已[下降至不足 1%](https://caniuse.com/usage-table)。当我们谈论面向公众的网站和应用时，IE11 的下滑趋势十分明显。
 
-We believe this is an opportunity to rethink IE11 support for Vue 3.
+我们认为这是一个重新思考 Vue 3 支持 IE11 的好机会。
 
 ## The cost of supporting IE11 in Vue 3
 
