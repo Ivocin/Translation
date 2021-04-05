@@ -16,42 +16,42 @@
 
 我们认为这是一个重新思考 Vue 3 支持 IE11 的好机会。
 
-## The cost of supporting IE11 in Vue 3
+## Vue 3 中支持 IE11 的成本
 
-### Behavior inconsistencies
+### 行为不一致
 
-Vue 2's reactivity system is based on ES5 getter/setters. Vue 3 leverages ES2015 Proxies for a more performant and complete reactivity system, which cannot be polyfilled in IE11. This is the major roadblock since it means for Vue 3 to support IE11, it essentially needs to ship two different versions with different behavior - one using the Proxy-based reactivity system, and one using ES5-getter/setter-based similar to Vue 2.
+Vue 2 的响应式系统是基于 ES5 的 getter/setters。Vue 3 利用了 ES2015 的 Proxy 实现了一个更高性能、更完备的响应式系统，但无法在 IE11 中 polyfill 这一特性。这是我们最大的障碍，因为这意味着如果我们要支持 IE11，就必须发布两个不同行为的的版本：一个是基于 Proxy 的响应式系统，另一个则是基于和 Vue 2 类似的基于 ES5 的 getter/setters 特性的响应式系统。
 
-Vue 3's Proxy-based reactivity system provides near complete language feature coverage. It is able to detect many operations that are impossible or impractical to intercept in ES5, for example property addition/deletion, array indice and `length` mutations, and `in` operator checks. The same code written for the Proxy version of Vue 3 will not work in the IE11 version. Not only does this create technical complexity for us, it also creates a constant mental burden for the developers.
+Vue 3 的基于 Proxy 的响应式系统提供了近乎完整的语言特性覆盖。它能够检测到许多在 ES5 中完全无法检测的操作，比如属性到添加或删除，数组的索引以及长度变化，`in` 操作符检查。基于 Proxy 版本的代码无法在 IE11 里运行。这不仅仅给我们带来了技术上的复杂性，同时也给开发者造成了持续的心智负担。
 
-Our original plan was to ship both the Proxy and ES5 reactivity implementations in the development build of the IE11 version. When it is run inside a Proxy-enabled dev environment, it will detect and warn against non-IE11-compatible usage. This would work in theory, but creates an enormous amount of complexity as it requires mixing the two implementations together and risks behavior difference between development and production.
+我们原本的计划是在支持 IE11 版本的开发中同时发布 Proxy 和 ES5 的两种响应式版本。当它在支持 Proxy 的开发环境中运行时，会检测并对不兼容 IE11 的一些用法做出警告。这虽然在理论上可行，但是带来了极大的复杂性，因为它需要将两种实现混合在一起，而且增加了开发和生产环境行为不一致的风险。
 
-### Long-term maintenance burden
+### 长期维护的负担
 
-Supporting IE11 also means we have to consider language features used in the entire codebase, and figure out proper polyfill / transpilation strategy for our distribution files. Every new feature addition that cannot be polyfilled in IE11 will create yet another behavior caveat. Once Vue 3 commits to IE11 support, it won't be able to get rid of it until the next major release.
+支持 IE11 也意味着我们必须对整个代码库中使用的语言特性做出考量，并为我们的发布版本找到合适的 poliyfill / 编译策略。每一个在 IE11 中无法被 polyfill 的新特性都会带来新的行为警告。一旦 Vue 3 承诺支持 IE11，直到下一个大版本发布之前都无法摆脱它了。
 
-### Complexity for library authors
+### 给库开发者带来复杂性
 
-The complexity would still be somewhat acceptable if it can be fully contained within Vue itself. However, after discussing with community members, we realized the co-existence of two reactivity implementations inevitably leaks to library authors as well.
+如果 Vue 本身能够完全处理掉这种复杂性，那么在某种程度上也是可以接受的。然而，在与社区成员讨论后，我们意识到，共存的两个响应式系统实现也不可避免地影响到了库作者。
 
-By supporting IE11 in Vue 3, library authors essenitally need to make that call as well. Library authors will have to account for what build of Vue 3 their library is running with (on top of potentially also supporting Vue 2) - and if they decide to support IE11, they have to author their library with all the ES5 reactivity caveats in mind.
+通过在 Vue 3 中支持 IE11，本质上库作者也需要做同样的决定。库作者不得不考虑他们的库运行在哪种 Vue 3 版本上(可能还得支持 Vue 2)。如果他们决定支持 IE11，在编写库时，脑子里也必须时刻考虑 ES5 响应式系统的相关警告。
 
-### Contributing to IE11's staying power
+### 为 IE11 持续存在做贡献
 
-Nobody enjoys supporting IE11. It is a dying browser stuck in the past. The further the web ecosystem moves forward, the larger the gap we need to cover when trying to support it. Ironically, by supporting IE11 in Vue 3 we are giving it more reasons to stick around. Given our user base, dropping IE11 support will likely help make it obsolete a bit faster.
+没人愿意支持 IE11。它是一个停留在过去的行将就木的浏览器。未来 Web 生态向前发展的越远，我们为了支持 IE11 所要填补的缺口就越大。具有讽刺意味的是，如果 Vue 3 支持 IE11，那么就等于我们给它注入了新的生命力。基于我们的用户基础，移除对 IE11 的支持可能会加快其被淘汰的速度。
 
-## For those who absolutely need IE11 support
+## 对于那些实在需要 IE11 支持的用户
 
-We are well aware that the real demand for IE11 comes from those who are unable to upgrade: financial institutions, education sectors, and those who rely on IE11 for screen readers. If you are building an application targeting these sectors, you may not have a choice.
+我们也很清楚，对 IE11 的真正需求来源于那些无法升级的用户：金融机构、教育部门和那些依赖 IE11 的屏幕阅读器。如果你正在构建一个面向这些领域的应用，你可能别无选择。
 
-Our recommendation is to use Vue 2 if you need IE11 support. Instead of incurring significant technical debt for Vue 3 and future versions of Vue, we believe it would be more meaningful to redirect the effort towards backporting compatible features to Vue 2 in the 2.7 release, and ensure a closer develpment experience across the two major versions.
+如果你需要 IE11 支持，我们推荐使用 Vue 2 版本。与其为 Vue3 和未来的版本承担巨大的技术债，我们认为把工作重心放在让 Vue2 拥有向后兼容特性、确保两个大版本之间的拥有更加近似的开发体验这件事更有意义。
 
-Some of the features that can be backport to 2.7:
+一些可以在 2.7 版本向后兼容的特性：
 
-- Merge the [`@vue/composition-api` plugin](https://github.com/vuejs/composition-api) into Vue 2. This will enable Composition API based libraries to directly work for both Vue 2 and Vue 3.
-- [`<script setup>`](https://github.com/vuejs/rfcs/pull/227) syntax in Single-File Components.
-- `emits` option.
-- Improved TypeScript typings.
-- Formalize Vue 2 support in Vite (currently via [non-official plugin](https://github.com/underfin/vite-plugin-vue2))
+- 把 [`@vue/composition-api` plugin](https://github.com/vuejs/composition-api) 合并进 Vue 2。这会让使用 Composition API 开发的库同时支持 Vue2 和 Vue3。
+- 单文件组件中的 [`<script setup>`](https://github.com/vuejs/rfcs/pull/227) 语法。
+- `emits` 选项。
+- 提升的 TypeScript 类型支持。
+- 正式在 Vite 中支持 Vue 2(目前的支持是通过[非官方插件](https://github.com/underfin/vite-plugin-vue2)实现的)
 
-Note: the above list is tentative/non-exhaustive and will be discussed/finalized in a separate RFC.
+注意：以上列表暂定，可能并不全面，我们会在单独的 RFC 中讨论这些内容，并做出最终决定。
