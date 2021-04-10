@@ -58,7 +58,7 @@ OK, let’s take look at each tool.
 
 ### [](#esbuild)esbuild
 
-![](https://css-tricks.com/wp-content/uploads/2021/03/s_864795E8DFCEBDF45A714B0A68D25726C4192DC77A541292A7CD86FFCB3E5238_1614109612386_esbuildlogo.svg)
+![](./images/cn01.svg)
 
 esbuild was created by [Evan Wallace](https://github.com/evanw) (CTO of [Figma](https://www.figma.com/)). Its main feature is that it provides a build step 10×-100× faster than Node-based bundlers (by their own benchmarks). It doesn’t provide many of the developer conveniences you might find in something like create-react-app. But there are more and more esbuild starters popping up that fills those gaps, including [create-react-app-esbuild](https://github.com/pradel/create-react-app-esbuild), [estrella](https://github.com/rsms/estrella) and [Snowpack](https://www.snowpack.dev/), which uses esbuild for its build step.
 
@@ -167,7 +167,7 @@ esbuild is an extremely powerful tool. But it might be difficult if you’re use
 
 ### [](#snowpack)Snowpack
 
-![](https://css-tricks.com/wp-content/uploads/2021/03/s_864795E8DFCEBDF45A714B0A68D25726C4192DC77A541292A7CD86FFCB3E5238_1615316970072_snowpacklogo.svg)
+![](./images/cn02-snowpack.svg)
 
 Snowpack is a build tool by the creators of [Skypack](https://www.skypack.dev/) and [Pika](https://www.pika.dev/). It provides an awesome development server and was created with an [“unbundled development”](https://www.snowpack.dev/concepts/how-snowpack-works#unbundled-development) philosophy. To quote the documentation: “You should be able to use a bundler because you want to, and not because you need to.”
 
@@ -328,7 +328,7 @@ Snowpack provides a lightweight developer experience with a full-featured develo
 
 ### [](#vite)Vite
 
-![](https://css-tricks.com/wp-content/uploads/2021/03/s_864795E8DFCEBDF45A714B0A68D25726C4192DC77A541292A7CD86FFCB3E5238_1614109678811_vitelogo.svg)
+![](./images/cn03-vite.svg)
 
 Vite is developed by Vue creator (and [Hades speedrunner](https://mobile.twitter.com/youyuxi/status/1331084461652516864)) Evan You. Where esbuild concentrates on the build step and Snowpack concentrates on the development server, Vite provides both: a full development server _and_ an optimized build command using Rollup.
 
@@ -380,7 +380,7 @@ The opinionated nature of Vite makes it a serious competitor with our current to
 
 ### [](#wmr)wmr
 
-![](https://css-tricks.com/wp-content/uploads/2021/03/s_864795E8DFCEBDF45A714B0A68D25726C4192DC77A541292A7CD86FFCB3E5238_1614109766330_wmrlogo.svg)
+![](./images/cn04-wmr.svg)
 
 Like Vite, wmr is another opinionated build tool that provides both a development server and a build step. It was built by the creator of [Preact](https://preactjs.com/), [Jason Miller](https://twitter.com/_developit), so it’s definitely a happy path for Preact developers. Jason Miller explained the thinking behind wmr when [he appeared as a guest on the JS Party podcast](https://changelog.com/jsparty/158):
 
@@ -501,7 +501,7 @@ html`<${MyComponent}>I am about as close as it gets to JSX as you can get while 
 
 Now, if we’re debugging our code and open the “Sources” panel in DevTools, we should see a script that’s almost identical to what the source code looks like in the editor.
 
-![](https://css-tricks.com/wp-content/uploads/2021/03/s_864795E8DFCEBDF45A714B0A68D25726C4192DC77A541292A7CD86FFCB3E5238_1614545243859_wmr-in-browser.png)
+![](./images/cn05.png)
 
 This way, we can properly investigate where bugs are located in the browser without having to use sourcemaps. Sure, this specific example is pretty contrived, but you can see how this could be really useful because it means wmr doesn’t need source maps in your developer environment.
 
