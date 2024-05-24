@@ -1,5 +1,5 @@
 # 测试
 
-A highly customizable and feature-rich tabs component library for React, inspired by Google Chrome's sleek tab design.
+一个高度可定制和功能丰富的标签组件库，适用于 React，灵感来源于 Google Chrome 优雅的标签设计。
 
-## IntroDuction
+## 简介
